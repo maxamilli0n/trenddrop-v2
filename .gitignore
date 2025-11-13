@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+
+# Node / Deno
+node_modules/
+dist/
+
+# Env (extended)
+.env.*
