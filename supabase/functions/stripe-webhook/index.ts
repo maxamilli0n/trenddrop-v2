@@ -23,8 +23,13 @@ const BREVO_KEY = Deno.env.get("BREVO_API_KEY");
 const EMAIL_FROM = Deno.env.get("EMAIL_FROM")!;
 const TG_URL = Deno.env.get("TELEGRAM_INVITE_URL") ?? "https://t.me/+yourInvite";
 
-const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
-const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? "";
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+const db = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
+  ? createSupabaseClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+      auth: { persistSession: false },
+    })
+  : null;
 
 function bad(msg: string, status = 400) {
   return new Response(JSON.stringify({ ok: false, error: msg }), {
@@ -157,6 +162,67 @@ function extractBuyerEmail(evt: any): string | null {
   }
 }
 
+// -------------------- Normalization --------------------
+type NormalizedStripeInfo = {
+  eventId: string;
+  customerId: string | null;
+  checkoutSessionId: string | null;
+  email: string | null;
+  productName: string;
+  planId: string | null;
+};
+
+function normalizeStripeEvent(evt: any): NormalizedStripeInfo {
+  const obj = evt?.data?.object ?? {};
+  const type = evt?.type ?? "";
+
+  const base: NormalizedStripeInfo = {
+    eventId: String(evt?.id ?? ""),
+    customerId: null,
+    checkoutSessionId: null,
+    email: null,
+    productName: extractProductName(evt),
+    planId: null,
+  };
+
+  if (type === "checkout.session.completed") {
+    base.customerId = obj?.customer ?? null;
+    base.checkoutSessionId = obj?.id ?? null;
+    base.email =
+      obj?.customer_details?.email ??
+      obj?.customer_email ??
+      obj?.customer?.email ??
+      null;
+    base.planId =
+      obj?.metadata?.plan_id ??
+      obj?.metadata?.product_name ??
+      null;
+    return base;
+  }
+
+  if (type === "payment_intent.succeeded") {
+    base.customerId = obj?.customer ?? null;
+    base.checkoutSessionId =
+      obj?.metadata?.checkout_session_id ??
+      obj?.latest_charge ??
+      null;
+    const charges0 = obj?.charges?.data?.[0];
+    base.email =
+      charges0?.billing_details?.email ??
+      obj?.receipt_email ??
+      obj?.customer?.email ??
+      null;
+    base.planId =
+      obj?.metadata?.plan_id ??
+      obj?.metadata?.product_name ??
+      null;
+    return base;
+  }
+
+  // Reasonable defaults for other event types
+  return base;
+}
+
 async function sendWithBrevo(to: string, subject: string, html: string) {
   const match = EMAIL_FROM.match(/^(.*)<(.+@.+)>$/);
   const sender = match
@@ -185,9 +251,26 @@ async function sendWithBrevo(to: string, subject: string, html: string) {
   }
 }
 
+type BrevoResult = { ok: true } | { ok: false; error: string };
+async function sendOnboardingEmail(to: string, productName: string): Promise<BrevoResult> {
+  try {
+    const subject = `Your access to ${productName}`;
+    const html = renderEmailHTML(productName, TG_URL);
+    await sendWithBrevo(to, subject, html);
+    return { ok: true };
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("[brevo] error", message);
+    return { ok: false, error: message };
+  }
+}
+
 // -------------------- Handler --------------------
 Deno.serve(async (req) => {
   try {
+    // Health check
+    if (req.method === "GET") return ok({ status: "ok" });
+
     if (!STRIPE_SECRET) return bad("server not configured (secret)", 500);
     if (!BREVO_KEY || !EMAIL_FROM) return bad("server not configured (email)", 500);
 
@@ -208,23 +291,24 @@ Deno.serve(async (req) => {
     const evt = JSON.parse(raw);
 
     // Idempotency via Postgres (no Deno.openKv)
-    const supa = createSupabaseClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
-      auth: { persistSession: false },
-    });
+    if (db) {
+      const ledgerUpsert = await db
+        .from("stripe_event_ledger")
+        .upsert(
+          { event_id: evt.id, event_type: evt.type },
+          { onConflict: "event_id", ignoreDuplicates: true },
+        )
+        .select("event_id");
 
-    const ledgerInsert = await supa
-      .from("stripe_event_ledger")
-      .insert({ event_id: evt.id, event_type: evt.type })
-      .select("event_id")
-      .maybeSingle();
-
-    if (ledgerInsert.error) {
-      if (ledgerInsert.error.code === "23505") {
-        console.log("[stripe-webhook] duplicate event; skipping", evt.id);
-        return ok({ deduped: true });
+      if (ledgerUpsert.error) {
+        console.error("[stripe-webhook] ledger upsert error", ledgerUpsert.error);
+        // continue; do not fail the webhook
+      } else if ((ledgerUpsert.data ?? []).length === 0) {
+        console.log(`[stripe-webhook] duplicate event ${evt.id}, skipping`);
+        return ok({ received: true, duplicate: true });
       }
-      console.error("[ledger] insert error", ledgerInsert.error);
-      return bad("ledger error", 500);
+    } else {
+      console.error("[stripe-webhook] db not configured, skipping DB writes (ledger)");
     }
 
     // Only these events send the email
@@ -238,26 +322,91 @@ Deno.serve(async (req) => {
       return ok({ ignored: true });
     }
 
-    const buyerEmail = extractBuyerEmail(evt);
+    // Normalize once
+    const normalized = normalizeStripeEvent(evt);
+    const buyerEmail = normalized.email ?? extractBuyerEmail(evt);
     if (!buyerEmail) {
       console.log("[stripe-webhook] no buyer email; skipping send. type:", evt.type);
       return ok({ skipped: true, reason: "no_email" });
     }
 
-    const productName = extractProductName(evt);
-    const subject = `Your access to ${productName}`;
-    const html = renderEmailHTML(productName, TG_URL);
+    // DB writes for successful checkout events
+    const shouldProcessDb =
+      evt.type === "checkout.session.completed" ||
+      evt.type === "payment_intent.succeeded";
+    let customerRow: any | null = null;
+    if (db && shouldProcessDb) {
+      try {
+        // 1) Upsert customer
+        const customerRes = await db
+          .from("customers")
+          .upsert(
+            {
+              stripe_customer_id: normalized.customerId,
+              email: buyerEmail ?? "",
+            },
+            {
+              onConflict: "stripe_customer_id",
+              ignoreDuplicates: false,
+            },
+          )
+          .select("*")
+          .single();
+        if (customerRes.error) {
+          console.error("[stripe-webhook] db error (customers.upsert)", customerRes.error);
+        } else {
+          customerRow = customerRes.data ?? null;
+        }
 
-    await sendWithBrevo(buyerEmail, subject, html);
+        // 2) Upsert premium_subscriptions
+        const subRes = await db
+          .from("premium_subscriptions")
+          .upsert(
+            {
+              customer_id: customerRow?.id ?? null,
+              stripe_subscription_id: null,
+              stripe_checkout_session_id: normalized.checkoutSessionId,
+              status: "active",
+              plan_id: normalized.planId ?? normalized.productName,
+              last_event_at: new Date().toISOString(),
+            },
+            {
+              onConflict: "stripe_checkout_session_id",
+              ignoreDuplicates: false,
+            },
+          );
+        if (subRes.error) {
+          console.error("[stripe-webhook] db error (premium_subscriptions.upsert)", subRes.error);
+        }
+      } catch (err) {
+        console.error("[stripe-webhook] db error (upserts)", err);
+      }
+    } else if (!db) {
+      console.error("[stripe-webhook] db not configured, skipping DB upserts");
+    }
 
-    await supa.from("onboarding_emails").insert({
-      to_email: buyerEmail,
-      product_name: productName,
-      event_id: evt.id,
-    });
+    // Brevo + onboarding_emails linkage
+    const brevo = await sendOnboardingEmail(buyerEmail, normalized.productName);
 
-    console.log("[stripe-webhook] onboarding email queued ->", buyerEmail);
-    return ok({ sent: true });
+    if (db) {
+      const ins = await db.from("onboarding_emails").insert({
+        to_email: buyerEmail,
+        product_name: normalized.productName,
+        event_id: normalized.eventId,
+        stripe_checkout_session_id: normalized.checkoutSessionId,
+        stripe_customer_id: normalized.customerId,
+        status: brevo.ok ? "sent" : "error",
+        error_message: brevo.ok ? null : brevo.error,
+      });
+      if (ins.error) {
+        console.error("[stripe-webhook] db error (onboarding_emails.insert)", ins.error);
+      }
+    } else {
+      console.error("[stripe-webhook] db not configured, skipping onboarding_emails insert");
+    }
+
+    console.log("[stripe-webhook] onboarding email processed ->", buyerEmail);
+    return ok({ received: true, sent: brevo.ok });
   } catch (err) {
     console.error("[stripe-webhook] unhandled", err);
     return bad("internal error", 500);
