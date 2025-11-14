@@ -1,6 +1,7 @@
 import os, json, time, requests, pathlib, html
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
+from trenddrop.config import CLICK_REDIRECT_BASE, BOT_TOKEN, CHAT_ID
 
 # Ensure root .env is loaded
 ENV_PATH = load_env_once()
@@ -122,7 +123,7 @@ def update_storefront(products: List[Dict]):
             p["caption"] = p.get("title", "")
     ensure_dirs()
     # compute click redirect URL if configured
-    base = os.environ.get("CLICK_REDIRECT_BASE")
+    base = CLICK_REDIRECT_BASE
     if base:
         try:
             from urllib.parse import urlencode
@@ -146,8 +147,8 @@ def update_storefront(products: List[Dict]):
         pass
 
 def post_telegram(products: List[Dict], limit=5):
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
-    chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+    token = BOT_TOKEN
+    chat_id = CHAT_ID
     if not token or not chat_id or not products:
         return
 

@@ -4,6 +4,7 @@ import time
 from typing import Any, Dict, Literal, Optional
 from pathlib import Path
 from dotenv import load_dotenv
+from trenddrop.config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_ANON_KEY
 
 # Ensure root .env is loaded for local runs
 env_path = Path(__file__).resolve().parents[1] / ".env"
@@ -19,8 +20,8 @@ except Exception:
 
 
 def _client() -> Optional[Client]:
-    url = os.environ.get("SUPABASE_URL")
-    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY") or os.environ.get("SUPABASE_ANON_KEY")
+    url = SUPABASE_URL
+    key = SUPABASE_SERVICE_ROLE_KEY or SUPABASE_ANON_KEY
     if not (create_client and url and key):
         return None
     try:

@@ -1,7 +1,13 @@
 // supabase/functions/stripe-webhook/index.ts
 
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
-import { createClient as createSupabaseClient } from "jsr:@supabase/supabase-js@2.46.1";
+import {
+  db,
+  stripeWebhookSecret,
+  brevoApiKey,
+  emailFrom,
+  telegramInviteUrl,
+} from "../_shared/config.ts";
 
 /**
  * 1) ENV
@@ -13,23 +19,9 @@ import { createClient as createSupabaseClient } from "jsr:@supabase/supabase-js@
  * - SUPABASE_URL
  * - SUPABASE_SERVICE_ROLE_KEY
  */
-const mode = (Deno.env.get("MODE") ?? "live").toLowerCase();
-const STRIPE_SECRET =
-  mode === "live"
-    ? Deno.env.get("STRIPE_WEBHOOK_SECRET_LIVE")
-    : Deno.env.get("STRIPE_WEBHOOK_SECRET_TEST");
-
-const BREVO_KEY = Deno.env.get("BREVO_API_KEY");
-const EMAIL_FROM = Deno.env.get("EMAIL_FROM")!;
-const TG_URL = Deno.env.get("TELEGRAM_INVITE_URL") ?? "https://t.me/+yourInvite";
-
-const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? "";
-const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
-const db = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
-  ? createSupabaseClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
-      auth: { persistSession: false },
-    })
-  : null;
+const WEBHOOK_SECRET = stripeWebhookSecret;
+const EMAIL_FROM = emailFrom || "";
+const TG_URL = telegramInviteUrl || "https://t.me/+yourInvite";
 
 function bad(msg: string, status = 400) {
   return new Response(JSON.stringify({ ok: false, error: msg }), {
@@ -234,7 +226,7 @@ async function sendWithBrevo(to: string, subject: string, html: string) {
     headers: {
       accept: "application/json",
       "content-type": "application/json",
-      "api-key": BREVO_KEY!,
+      "api-key": brevoApiKey || "",
     },
     body: JSON.stringify({
       sender,
@@ -271,8 +263,8 @@ Deno.serve(async (req) => {
     // Health check
     if (req.method === "GET") return ok({ status: "ok" });
 
-    if (!STRIPE_SECRET) return bad("server not configured (secret)", 500);
-    if (!BREVO_KEY || !EMAIL_FROM) return bad("server not configured (email)", 500);
+    if (!WEBHOOK_SECRET) return bad("server not configured (secret)", 500);
+    if (!brevoApiKey || !EMAIL_FROM) return bad("server not configured (email)", 500);
 
     // IMPORTANT: get raw body FIRST
     const raw = await req.text();
@@ -281,7 +273,7 @@ Deno.serve(async (req) => {
     const sigHeader = req.headers.get("stripe-signature");
     if (!sigHeader) return bad("missing signature", 400);
 
-    const valid = await verifyStripeSignature(raw, sigHeader, STRIPE_SECRET);
+    const valid = await verifyStripeSignature(raw, sigHeader, WEBHOOK_SECRET);
     if (!valid) {
       console.warn("[stripe-webhook] signature verification failed");
       return bad("bad signature", 400);

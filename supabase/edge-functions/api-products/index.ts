@@ -1,14 +1,9 @@
 // TD-AUTO: BEGIN api-products
 // deno-lint-ignore-file no-explicit-any
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { db } from "../../_shared/config.ts";
 
-function supa() {
-  const url = Deno.env.get("SUPABASE_URL");
-  const key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-  if (!url || !key) throw new Error("supabase not configured");
-  return createClient(url, key);
-}
+function supa() { if (!db) throw new Error("supabase not configured"); return db; }
 
 function authed(req: Request): boolean {
   const a = req.headers.get("authorization") || req.headers.get("Authorization");

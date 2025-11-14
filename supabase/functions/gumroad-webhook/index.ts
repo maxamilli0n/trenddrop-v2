@@ -1,13 +1,9 @@
 // @ts-nocheck
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { db, gumroadWebhookSecret, gumroadSellerId, requireGumroadAuth, telegramBotToken, telegramCommunityChatId, supabaseUrl, supabaseServiceRoleKey, reportsBucket } from "../_shared/config.ts";
 import { crypto } from "https://deno.land/std@0.224.0/crypto/mod.ts";
 
-function supa() {
-  const url = Deno.env.get("SUPABASE_URL")!;
-  const key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-  return createClient(url, key);
-}
+function supa() { if (!db) throw new Error("supabase not configured"); return db; }
 
 function parseForm(body: string) {
   const out: Record<string, unknown> = {};
@@ -29,7 +25,7 @@ const actionOf = (p: Record<string, unknown>) =>
 
 /** HMAC check: X-Gumroad-Signature = hex( HMAC_SHA256(secret, rawBody) ) */
 async function verifyHmac(req: Request, rawBody: string): Promise<boolean> {
-  const secret = Deno.env.get("GUMROAD_WEBHOOK_SECRET");
+  const secret = gumroadWebhookSecret;
   if (!secret) return false;
 
   const header =
@@ -87,8 +83,8 @@ async function handleSale(p: Record<string, any>) {
 
   // Optional Telegram notify
   try {
-    const bot  = Deno.env.get("TELEGRAM_BOT_TOKEN");
-    const chat = Deno.env.get("TELEGRAM_COMMUNITY_CHAT_ID");
+    const bot  = telegramBotToken;
+    const chat = telegramCommunityChatId;
     if (bot && chat) {
       const text = `✅ New TrendDrop+ subscriber: ${email} (product ${productId || "n/a"})`;
       await fetch(`https://api.telegram.org/bot${bot}/sendMessage`, {
@@ -111,8 +107,8 @@ async function handleSale(p: Record<string, any>) {
       p?.telegram ?? "",
     ).replace(/^@+/, "");
     const tgId = Number(rawTg);
-    const supaUrl = Deno.env.get("SUPABASE_URL");
-    const svcKey  = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+    const supaUrl = supabaseUrl;
+    const svcKey  = supabaseServiceRoleKey;
     if (rawTg && Number.isFinite(tgId) && supaUrl && svcKey) {
       const r = await fetch(`${supaUrl}/functions/v1/add-telegram-member`, {
         method: "POST",
@@ -126,7 +122,7 @@ async function handleSale(p: Record<string, any>) {
   }
 
   // Attach 7-day signed links to latest artifacts (best-effort)
-  const bucket = Deno.env.get("REPORTS_BUCKET") || Deno.env.get("SUPABASE_BUCKET") || "trenddrop-reports";
+  const bucket = reportsBucket;
   const expiresIn = 60 * 60 * 24 * 7;
   const pdfKey = "weekly/latest.pdf";
   const csvKey = "weekly/latest.csv";
@@ -165,9 +161,9 @@ serve(async (req) => {
   }
 
   // Optional auth
-  if (ON(Deno.env.get("REQUIRE_GUMROAD_AUTH"))) {
-    const needSecret = Deno.env.get("GUMROAD_WEBHOOK_SECRET");
-    const needSeller = Deno.env.get("GUMROAD_SELLER_ID");
+  if (requireGumroadAuth) {
+    const needSecret = gumroadWebhookSecret;
+    const needSeller = gumroadSellerId;
 
     // Prefer header HMAC if present
     let authed = false;

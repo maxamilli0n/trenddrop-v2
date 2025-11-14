@@ -1,19 +1,14 @@
 // TD-AUTO: BEGIN health-ping
 // deno-lint-ignore-file no-explicit-any
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { db, reportsBucket, supabaseUrl, supabaseServiceRoleKey, telegramBotToken, telegramAlertChatId } from "../../_shared/config.ts";
 
-function supa() {
-  const url = Deno.env.get("SUPABASE_URL");
-  const key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-  if (!url || !key) throw new Error("supabase not configured");
-  return createClient(url, key);
-}
+function supa() { if (!db) throw new Error("supabase not configured"); return db; }
 
 async function checkStorage(): Promise<{ ok: boolean; error?: string }> {
   try {
     const s = supa();
-    const bucket = Deno.env.get("REPORTS_BUCKET") || "trenddrop-reports";
+    const bucket = reportsBucket;
     const { data, error } = await s.storage.from(bucket).createSignedUrl("weekly/latest.pdf", 60);
     if (error) return { ok: false, error: error.message };
     return { ok: !!data?.signedUrl };
@@ -24,8 +19,8 @@ async function checkStorage(): Promise<{ ok: boolean; error?: string }> {
 
 async function checkProductsReport(): Promise<{ ok: boolean; status?: number }> {
   try {
-    const url = Deno.env.get("SUPABASE_URL");
-    const key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+    const url = supabaseUrl;
+    const key = supabaseServiceRoleKey;
     if (!url || !key) return { ok: false };
     const r = await fetch(`${url}/functions/v1/products-report`, { headers: { authorization: `Bearer ${key}` } });
     return { ok: r.ok, status: r.status };
@@ -36,8 +31,8 @@ async function checkProductsReport(): Promise<{ ok: boolean; status?: number }> 
 
 async function alertTelegram(msg: string) {
   try {
-    const bot = Deno.env.get("TELEGRAM_BOT_TOKEN");
-    const chat = Deno.env.get("TELEGRAM_ALERT_CHAT_ID") || Deno.env.get("TELEGRAM_CHAT_ID");
+    const bot = telegramBotToken;
+    const chat = telegramAlertChatId;
     if (!bot || !chat) return;
     await fetch(`https://api.telegram.org/bot${bot}/sendMessage`, {
       method: "POST",

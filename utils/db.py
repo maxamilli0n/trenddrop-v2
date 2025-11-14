@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from typing import List, Dict, Optional, Tuple
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
+from trenddrop.config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_ANON_KEY
 
 # Ensure root .env is loaded for local runs and subfolders
 ENV_PATH = load_env_once()
@@ -17,9 +18,9 @@ _sb: Optional[Client] = None
 
 
 def _read_env_credentials() -> Tuple[Optional[str], Optional[str]]:
-    url = os.environ.get("SUPABASE_URL")
+    url = SUPABASE_URL
     # Prefer service role for server-side tasks like uploads; fall back to anon
-    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY") or os.environ.get("SUPABASE_ANON_KEY")
+    key = SUPABASE_SERVICE_ROLE_KEY or SUPABASE_ANON_KEY
     return url, key
 
 

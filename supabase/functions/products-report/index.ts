@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { db } from "../_shared/config.ts";
 
 type Row = {
   id: string;
@@ -16,11 +16,7 @@ type Row = {
   created_at: string;
 };
 
-function supa() {
-  const url = Deno.env.get("SUPABASE_URL")!;
-  const key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-  return createClient(url, key, { auth: { persistSession: false } });
-}
+function supa() { if (!db) throw new Error("supabase not configured"); return db; }
 
 function toCSV(rows: Row[]): string {
   if (!rows.length) return "";

@@ -1,17 +1,12 @@
 // TD-AUTO: BEGIN payhip-webhook
 // deno-lint-ignore-file no-explicit-any
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { db, payhipApiKey } from "../_shared/config.ts";
 
-function supa() {
-  const url = Deno.env.get("SUPABASE_URL");
-  const key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-  if (!url || !key) throw new Error("supabase not configured");
-  return createClient(url, key);
-}
+function supa() { if (!db) throw new Error("supabase not configured"); return db; }
 
 async function verifyHmac(req: Request, raw: string): Promise<boolean> {
-  const secret = Deno.env.get("PAYHIP_API_KEY");
+  const secret = payhipApiKey;
   if (!secret) return false;
   const hdr = req.headers.get("X-Payhip-Signature") || req.headers.get("x-payhip-signature") || "";
   if (!hdr) return false;

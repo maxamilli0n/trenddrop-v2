@@ -1,6 +1,6 @@
 // deno-lint-ignore-file no-explicit-any
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { db, telegramBotToken, telegramCommunityChatId } from "../_shared/config.ts";
 
 async function createInviteLink(chatId: string, botToken: string): Promise<string> {
   const expire = Math.floor(Date.now() / 1000) + 7 * 24 * 3600;
@@ -23,10 +23,8 @@ serve(async (req) => {
     const purchase_id = (body?.purchase_id || "").toString().trim();
     if (!email) return new Response(JSON.stringify({ error: "email required" }), { status: 400 });
 
-    const supabase = createClient(
-      Deno.env.get("SUPABASE_URL")!,
-      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
-    );
+    const supabase = db;
+    if (!supabase) return new Response(JSON.stringify({ error: "supabase not configured" }), { status: 500 });
 
     let query = supabase.from("subscribers").select("id, status, claimed_at").eq("email", email);
     if (purchase_id) query = query.eq("purchase_id", purchase_id);
@@ -36,8 +34,8 @@ serve(async (req) => {
     if (subs.status !== "paid") return new Response(JSON.stringify({ error: subs.status }), { status: 403 });
     if (subs.claimed_at) return new Response(JSON.stringify({ error: "already claimed" }), { status: 409 });
 
-    const bot = Deno.env.get("TELEGRAM_BOT_TOKEN");
-    const chat = Deno.env.get("TELEGRAM_COMMUNITY_CHAT_ID");
+    const bot = telegramBotToken;
+    const chat = telegramCommunityChatId;
     if (!bot || !chat) return new Response(JSON.stringify({ error: "telegram not configured" }), { status: 500 });
 
     const invite_link = await createInviteLink(chat, bot);

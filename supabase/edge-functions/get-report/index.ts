@@ -1,14 +1,12 @@
 // deno-lint-ignore-file no-explicit-any
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { db } from "../../_shared/config.ts";
 
-const supabase = createClient(
-  Deno.env.get("SUPABASE_URL")!,
-  Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
-);
+const supabase = db;
 
 serve(async (req) => {
   try {
+    if (!supabase) return new Response("supabase not configured", { status: 500 });
     const url = new URL(req.url);
     const email = url.searchParams.get("email") || "";
     const product = (url.searchParams.get("product") || "weekly-report").trim();

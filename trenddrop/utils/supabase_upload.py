@@ -3,6 +3,7 @@ import time
 from typing import Optional
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
+from trenddrop.config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
 
 ENV_PATH = load_env_once()
 
@@ -19,8 +20,8 @@ def _service_client() -> Optional[Client]:
     Uses env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY.
     Returns None if credentials are missing or client cannot be created.
     """
-    url = os.environ.get("SUPABASE_URL")
-    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    url = SUPABASE_URL
+    key = SUPABASE_SERVICE_ROLE_KEY
     if not (create_client and url and key):
         return None
     try:
@@ -79,7 +80,7 @@ def upload_file(bucket: str, local_path: str, dest_path: str, content_type: str)
                 return pub.get("publicUrl") if isinstance(pub, dict) else pub
             except Exception:
                 # If public URL API fails, construct best-effort URL
-                url = os.environ.get("SUPABASE_URL", "").rstrip("/")
+                url = (SUPABASE_URL or "").rstrip("/")
                 if url:
                     # https://<proj>.supabase.co/storage/v1/object/public/<bucket>/<path>
                     return f"{url}/storage/v1/object/public/{bucket}/{dest_path}"

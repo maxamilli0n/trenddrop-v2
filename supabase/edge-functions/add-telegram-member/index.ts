@@ -1,5 +1,6 @@
 // deno-lint-ignore-file no-explicit-any
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
+import { telegramBotToken, telegramCommunityChatId } from "../../_shared/config.ts";
 
 async function approveJoinRequest(chatId: string, botToken: string, userId: number) {
   const r = await fetch(`https://api.telegram.org/bot${botToken}/approveChatJoinRequest`, {
@@ -34,8 +35,8 @@ serve(async (req) => {
       return new Response(JSON.stringify({ ok: false, error: "invalid telegram_user_id" }), { status: 400 });
     }
 
-    const bot = Deno.env.get("TELEGRAM_BOT_TOKEN");
-    const chat = Deno.env.get("TELEGRAM_COMMUNITY_CHAT_ID");
+    const bot = telegramBotToken;
+    const chat = telegramCommunityChatId;
     if (!bot || !chat) {
       return new Response(JSON.stringify({ ok: false, error: "telegram not configured" }), { status: 500 });
     }
