@@ -1,4 +1,5 @@
 import os, time, base64, json, requests
+from datetime import datetime, timezone
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
 
@@ -79,6 +80,7 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
     data = r.json()
     items = data.get("itemSummaries", []) or []
     out: List[Dict] = []
+    now_iso = datetime.now(timezone.utc).isoformat()
     for it in items:
         try:
             title = it.get("title", "")
@@ -89,7 +91,14 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
             url2 = it.get("itemWebUrl") or it.get("itemAffiliateWebUrl") or ""
             seller = (it.get("seller") or {})
             feedback = int(seller.get("feedbackScore") or 0)
+            seller_username = seller.get("username") or seller.get("sellerId") or ""
             top_rated = bool(seller.get("sellerAccountType") == "BUSINESS")
+            inserted_raw = (
+                it.get("itemCreationDate")
+                or it.get("itemStartDate")
+                or it.get("itemStartTime")
+            )
+            inserted_at = inserted_raw or now_iso
 
             out.append({
                 "source": "ebay",
@@ -101,7 +110,9 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
                 "image_url": image_url,
                 "url": url2,
                 "seller_feedback": feedback,
-                "top_rated": top_rated
+                "top_rated": top_rated,
+                "seller_username": seller_username,
+                "inserted_at": inserted_at,
             })
         except Exception as e:
             print(f"[browse] item parse error '{keyword}': {e}")

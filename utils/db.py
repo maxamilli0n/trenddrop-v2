@@ -1,15 +1,19 @@
-import os, time, uuid
+import json
+import os
+import sys
+import time
+import uuid
 from datetime import datetime, timezone
-from typing import List, Dict, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Any
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
-from trenddrop.config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_ANON_KEY
+from trenddrop.config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
 
 # Ensure root .env is loaded for local runs and subfolders
 ENV_PATH = load_env_once()
 
 try:
-    from supabase import create_client, Client
+    from supabase import Client, create_client
 except Exception:
     create_client = None  # type: ignore
     Client = object  # type: ignore
@@ -17,43 +21,109 @@ except Exception:
 _sb: Optional[Client] = None
 
 
-def _read_env_credentials() -> Tuple[Optional[str], Optional[str]]:
-    url = SUPABASE_URL
-    # Prefer service role for server-side tasks like uploads; fall back to anon
-    key = SUPABASE_SERVICE_ROLE_KEY or SUPABASE_ANON_KEY
+def _read_env_credentials() -> Tuple[str, str]:
+    url = (SUPABASE_URL or "").strip()
+    key = (SUPABASE_SERVICE_ROLE_KEY or "").strip()
+    if not url or not key:
+        raise RuntimeError(
+            "Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY; cannot write to public.products."
+        )
     return url, key
 
 
-def sb() -> Optional[Client]:
+def sb() -> Client:
     global _sb
     if _sb is None:
+        if not create_client:
+            raise RuntimeError("supabase Python client is not available")
         url, key = _read_env_credentials()
-        if create_client and url and key:
-            try:
-                _sb = create_client(url, key)
-            except Exception:
-                _sb = None
+        _sb = create_client(url, key)
     return _sb
 
 
+def _get_supabase_admin() -> Client:
+    if not create_client:
+        raise RuntimeError("supabase Python client is not available")
+    url, key = _read_env_credentials()
+    return create_client(url, key)
+
+
+def log_report_run(
+    *,
+    run_started_at: datetime,
+    data_window_label: Optional[str],
+    products_total: int,
+    curated_count: int,
+    pdf_url: Optional[str],
+    csv_url: Optional[str],
+    success: bool,
+    error_message: Optional[str] = None,
+) -> None:
+    """
+    Insert a row into public.report_runs capturing the outcome of a report generation run.
+    Failures here should not interrupt the main reporting flow.
+    """
+    try:
+        client = sb()
+    except RuntimeError as exc:
+        print(f"[reports] warning: Supabase client unavailable for report log: {exc}")
+        return
+    payload = {
+        "run_started_at": run_started_at.isoformat(),
+        "data_window_label": data_window_label,
+        "products_total": products_total,
+        "curated_count": curated_count,
+        "pdf_url": pdf_url or "",
+        "csv_url": csv_url or "",
+        "success": success,
+        "error_message": error_message,
+    }
+    try:
+        client.table("report_runs").insert(payload).execute()
+    except Exception as exc:
+        print(f"[reports] warning: failed to log report run: {exc}")
+
+
 def save_run_summary(topic_count: int, item_count: int) -> Optional[str]:
-    if not _sb:
+    try:
+        client = sb()
+    except RuntimeError:
         return None
     now = int(time.time())
     try:
-        r = _sb.table("runs").insert({"ran_at": now, "topics": topic_count, "items": item_count}).execute()
+        r = client.table("runs").insert({"ran_at": now, "topics": topic_count, "items": item_count}).execute()
         return str((r.data or [{}])[0].get("id"))
     except Exception:
         return None
 
 
+_ALLOWED_PROVIDERS = {"ebay", "amazon", "aliexpress", "gumroad", "payhip", "manual"}
+
+
 def _provider_from_source(source: Optional[str]) -> str:
     s = str(source or "").strip().lower()
-    # Restrict to allowed providers
-    if s in ("ebay", "gumroad", "payhip", "manual"):
+    if s in _ALLOWED_PROVIDERS:
         return s
-    # Default to 'manual' for any unknown source to avoid NULL
     return "manual"
+
+
+def _ensure_timezone(dt_value: datetime) -> datetime:
+    if dt_value.tzinfo is None:
+        return dt_value.replace(tzinfo=timezone.utc)
+    return dt_value
+
+
+def _timestamp_iso(value: Optional[Any]) -> str:
+    if isinstance(value, datetime):
+        return _ensure_timezone(value).isoformat()
+    if isinstance(value, str) and value:
+        try:
+            normalized = value.replace("Z", "+00:00")
+            parsed = datetime.fromisoformat(normalized)
+            return _ensure_timezone(parsed).isoformat()
+        except Exception:
+            pass
+    return datetime.now(timezone.utc).isoformat()
 
 
 def _stable_product_id(provider: str, url: str) -> str:
@@ -63,43 +133,108 @@ def _stable_product_id(provider: str, url: str) -> str:
 
 
 def upsert_products(products: List[Dict]):
-    if not _sb or not products:
-        return
+    if not products:
+        raise RuntimeError("No products provided to upsert.")
+    client = sb()
     rows = []
+    now_iso = datetime.now(timezone.utc).isoformat()
     for p in products:
         title = p.get("title")
         url = p.get("url")
         if not title or not url:
             continue
-        # Map provider from source with a safe default
+        # Map provider from source with a safe default (used only for stable id + source)
         provider = _provider_from_source(p.get("provider") or p.get("source") or "manual")
-        # Timestamps in ISO 8601 UTC
-        now_iso = datetime.now(timezone.utc).isoformat()
+        name = p.get("name") or title
+        source_value = p.get("source") or f"{provider}-scraper"
+        inserted_at_iso = _timestamp_iso(p.get("inserted_at") or p.get("created_at"))
+        created_at_iso = _timestamp_iso(p.get("created_at") or now_iso)
+        price_value = p.get("price")
+        if price_value is None:
+            price_value = 0.0
+        currency_value = str(p.get("currency") or "USD").upper()
+        image_url_value = str(p.get("image_url") or "")
+        try:
+            seller_feedback_value = int(float(p.get("seller_feedback") or 0))
+        except Exception:
+            seller_feedback_value = 0
+        try:
+            signals_raw = float(p.get("signals") or 0.0)
+        except Exception:
+            signals_raw = 0.0
+        signals_value = int(round(signals_raw))
         # Stable id based on provider+url
         pid = _stable_product_id(provider, url)
-        # Prepare full row with explicit columns expected by DB
+        # Prepare row aligned with public.products schema
         rows.append({
             "id": pid,
-            "inserted_at": now_iso,
-            "source": p.get("source", provider),
             "title": title,
-            "price": p.get("price"),
-            "currency": p.get("currency", "USD"),
-            "image_url": p.get("image_url"),
+            "name": name,
+            "provider": provider,
+            "source": source_value,
+            "price": price_value,
+            "currency": currency_value,
+            "image_url": image_url_value,
             "url": url,
             "keyword": p.get("keyword"),
-            "seller_feedback": p.get("seller_feedback"),
+            "seller_feedback": seller_feedback_value,
             "top_rated": bool(p.get("top_rated", False)),
-            "active": bool(p.get("active", True)),
-            "name": p.get("name") or title,
-            "provider": provider,
-            "created_at": now_iso,
+            "signals": signals_value,
+            "inserted_at": inserted_at_iso,
+            "created_at": created_at_iso,
         })
-    if rows:
-        try:
-            # Upsert on id to match explicit SQL semantics
-            _sb.table("products").upsert(rows, on_conflict="id").execute()
-        except Exception:
-            pass
+    if not rows:
+        raise RuntimeError("No valid products with title+url to upsert.")
+    print(f"[TD-products] attempting upsert of {len(rows)} products to Supabase")
+
+    supabase_url, _ = _read_env_credentials()
+    provider_label = rows[0].get("provider") if rows else "unknown"
+    print(
+        f"[scraper] upserting {len(rows)} {provider_label} products to Supabase project {supabase_url}"
+    )
+    try:
+        res = client.table("products").upsert(rows, on_conflict="id").execute()
+    except Exception as exc:
+        print(
+            "[TD-products] SUPABASE ERROR (exception) during upsert.\n"
+            f"Payload: {json.dumps(rows, default=str)[:2000]}\nError: {exc}",
+            file=sys.stderr,
+        )
+        raise
+
+    error = getattr(res, "error", None)
+    if error:
+        print(
+            "[TD-products] SUPABASE ERROR.\n"
+            f"Payload: {json.dumps(rows, default=str)[:2000]}\nError: {error}",
+            file=sys.stderr,
+        )
+        raise RuntimeError("Supabase products upsert failed.")
+    print(f"[TD-products] upsert success ({len(rows)} rows).")
+
+
+def load_clean_products_for_providers(providers: List[str], limit: int = 500) -> List[Dict]:
+    if not providers:
+        return []
+    try:
+        client = _get_supabase_admin()
+    except RuntimeError as exc:
+        print(f"[reports] unable to load clean products: {exc}")
+        return []
+    try:
+        res = (
+            client.table("v_products_clean")
+            .select(
+                "title, price, currency, image_url, url, seller_feedback, top_rated, source, inserted_at, keyword, signals"
+            )
+            .in_("source", providers)
+            .order("signals", desc=True)
+            .limit(max(1, limit))
+            .execute()
+        )
+        return res.data or []
+    except Exception as exc:
+        print(f"[reports] error loading providers {providers}: {exc}")
+        return []
 
 

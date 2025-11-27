@@ -14,7 +14,7 @@ def _docs_products_path() -> str:
     return str(root / "docs" / "data" / "products.json")
 
 
-def _load_top_products(limit: int = 10):
+def _load_top_products(limit: int = 50):
     try:
         with open(_docs_products_path(), "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -25,7 +25,7 @@ def _load_top_products(limit: int = 10):
         return []
 
 
-def _load_top_products_last7_from_supabase(limit: int = 10):
+def _load_top_products_last7_from_supabase(limit: int = 50):
     """Prefer ranking by clicks in the last 7 days if Supabase is configured."""
     client = sb()
     if not client:
@@ -53,13 +53,13 @@ def _load_top_products_last7_from_supabase(limit: int = 10):
         return None
 
 
-def main():
+def main(limit: int = 50):
     out_dir = pathlib.Path("reports")
     out_dir.mkdir(parents=True, exist_ok=True)
     ts = time.strftime("%Y-%m-%d", time.gmtime())
     local_path = str(out_dir / f"trenddrop-weekly-{ts}.pdf")
 
-    products = _load_top_products_last7_from_supabase(limit=10) or _load_top_products(limit=10)
+    products = _load_top_products_last7_from_supabase(limit=limit) or _load_top_products(limit=limit)
     if not products:
         print("[weekly] no products to include; exiting")
         return

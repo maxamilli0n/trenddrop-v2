@@ -2,11 +2,16 @@ import os, json, time, requests, pathlib, html
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
 from trenddrop.config import CLICK_REDIRECT_BASE, BOT_TOKEN, CHAT_ID
+from trenddrop.reports.product_quality import (
+    dedupe_near_duplicates,
+    rank_key,
+    ensure_rank_fields,
+)
 
 # Ensure root .env is loaded
 ENV_PATH = load_env_once()
 from io import BytesIO
-from typing import List, Dict
+from typing import List, Dict, Optional
 from utils.db import save_run_summary, upsert_products
 from trenddrop.utils.telegram_cta import maybe_send_cta
 from utils.epn import affiliate_wrap
@@ -103,7 +108,10 @@ def _generate_og_image(products: List[Dict]) -> None:
         # soft-fail; skip OG generation
         return
 
-def update_storefront(products: List[Dict]):
+def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] = None):
+    raw_for_upsert = raw_products if raw_products else products
+    print(f"[scraper] fetched {len(raw_for_upsert)} raw eBay products before filtering/dedup")
+    upsert_products(raw_for_upsert)
     # enrich captions for site/telegram
     for p in products:
         try:
@@ -140,11 +148,6 @@ def update_storefront(products: List[Dict]):
         _generate_og_image(products)
     except Exception:
         pass
-    # also persist to Supabase if configured
-    try:
-        upsert_products(products)
-    except Exception:
-        pass
 
 def post_telegram(products: List[Dict], limit=5):
     token = BOT_TOKEN
@@ -153,7 +156,10 @@ def post_telegram(products: List[Dict], limit=5):
         return
 
     api = f"https://api.telegram.org/bot{token}"
-    pick = products[:limit]
+    prepared = [ensure_rank_fields(dict(p)) for p in products]
+    collapsed = dedupe_near_duplicates(prepared)
+    ranked = sorted(collapsed, key=rank_key, reverse=True)
+    pick = ranked[:limit]
     for p in pick:
         try:
             # prefer AI headline; fallback to title

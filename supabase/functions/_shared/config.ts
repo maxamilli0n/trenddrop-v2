@@ -1,4 +1,4 @@
-// supabase/_shared/config.ts
+// supabase/functions/_shared/config.ts
 // Centralized configuration for Deno Edge Functions (TrendDrop)
 // Only Deno-compatible APIs. No Node/process imports.
 import { createClient as createSupabaseClient } from "jsr:@supabase/supabase-js@2.46.1";

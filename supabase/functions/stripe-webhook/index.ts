@@ -85,32 +85,121 @@ async function verifyStripeSignature(rawBody: string, sigHeader: string, secret:
   return parsed.v1.some((given) => tsec(given, expected));
 }
 
+const BRAND_BG = "#050813";
+const CARD_BG = "#0f172a";
+const TEXT = "#e5edff";
+const MUTED = "#9ca3af";
+const ACCENT = "#38bdf8";
+const BUTTON = "#22c55e";
+
 /** Email template */
-function renderEmailHTML(productName: string, inviteUrl: string) {
-  const title = productName || "Premium Access";
-  return `<!doctype html>
-<html><head><meta charset="utf-8"/>
-<meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark">
-<title>Your access to ${title}</title>
-<style>
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:0;background:#0b0b0b;color:#fff}
-.wrap{max-width:560px;margin:0 auto;padding:32px}
-.card{background:#121212;border:1px solid #222;border-radius:14px;padding:28px}
-h1{font-size:22px;margin:0 0 10px}
-p{line-height:1.55;color:#cfd3d8}
-.btn{display:inline-block;margin-top:16px;padding:12px 18px;border-radius:10px;background:#16a34a;color:#fff !important;text-decoration:none;font-weight:600}
-.sub{font-size:12px;color:#9aa2b1;margin-top:18px}
-a{color:#7dd3fc}
-</style></head>
-<body><div class="wrap"><div class="card">
-<h1>Welcome to ${title} 🎉</h1>
-<p>You’re in. Click the button below to join the private community.</p>
-<p><a class="btn" href="${inviteUrl}" target="_blank" rel="noopener">Join Premium</a></p>
-<p class="sub">If the button doesn’t work, open this link:<br><a href="${inviteUrl}">${inviteUrl}</a></p>
-</div>
-<p class="sub">You’re receiving this because a purchase or subscription completed on TrendDrop Studio.</p>
-</div></body></html>`;
+function renderEmailHTML(productName: string, tgUrl: string): string {
+  const safeProduct = productName || "TrendDrop Premium Access";
+
+  return `
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Your access to ${safeProduct}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body style="margin:0;padding:0;background:${BRAND_BG};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:${BRAND_BG};padding:32px 16px;">
+    <tr>
+      <td align="center">
+        <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="max-width:560px;background:${CARD_BG};border-radius:18px;overflow:hidden;border:1px solid #1e293b;">
+          <!-- Header -->
+          <tr>
+            <td style="padding:20px 24px 12px 24px;border-bottom:1px solid #1e293b;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td align="left">
+                    <div style="display:flex;align-items:center;gap:10px;">
+                      <span style="display:inline-block;width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#60a5fa,#22d3ee);"></span>
+                      <div style="color:${TEXT};font-size:16px;font-weight:600;">TrendDrop Studio</div>
+                    </div>
+                    <div style="color:${MUTED};font-size:12px;margin-top:4px;">Weekly data-driven product reports</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Hero -->
+          <tr>
+            <td style="padding:24px 24px 8px 24px;">
+              <h1 style="margin:0 0 8px 0;color:${TEXT};font-size:22px;line-height:1.3;">
+                Your Premium access is ready 🎉
+              </h1>
+              <p style="margin:0;color:${MUTED};font-size:14px;line-height:1.6;">
+                Thanks for grabbing <strong style="color:${TEXT};font-weight:600;">${safeProduct}</strong>.
+                Below is your button to join the private community where new drops, reports, and updates are shared first.
+              </p>
+            </td>
+          </tr>
+
+          <!-- CTA Button -->
+          <tr>
+            <td style="padding:8px 24px 16px 24px;">
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="left">
+                    <a href="${tgUrl}"
+                       style="display:inline-block;padding:12px 22px;border-radius:999px;background:${BUTTON};color:#020617;font-weight:600;font-size:14px;text-decoration:none;">
+                      Join Premium
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin:14px 0 0 0;color:${MUTED};font-size:12px;line-height:1.5;">
+                If the button doesn’t work, copy and paste this link into your browser:
+                <br />
+                <span style="color:${ACCENT};word-break:break-all;">${tgUrl}</span>
+              </p>
+            </td>
+          </tr>
+
+          <!-- What happens next -->
+          <tr>
+            <td style="padding:12px 24px 8px 24px;">
+              <p style="margin:0 0 6px 0;color:${TEXT};font-size:14px;font-weight:600;">
+                What you can expect:
+              </p>
+              <ul style="margin:4px 0 10px 18px;padding:0;color:${MUTED};font-size:13px;line-height:1.5;">
+                <li>Access to the private Telegram channel for Premium members.</li>
+                <li>Fresh trending product reports as they’re released.</li>
+                <li>Quick updates if anything changes with your subscription or access.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Help -->
+          <tr>
+            <td style="padding:0 24px 22px 24px;">
+              <p style="margin:0;color:${MUTED};font-size:12px;line-height:1.6;">
+                If you ever lose this email, you can always re-check your status using the email you paid with on the TrendDrop Studio website.
+                If something looks off, reply to this message and we’ll help you out.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:12px 24px 18px 24px;border-top:1px solid #1e293b;">
+              <p style="margin:0;color:${MUTED};font-size:11px;line-height:1.5;">
+                You’re receiving this because a purchase or subscription was completed on
+                <span style="color:${TEXT};">TrendDrop Studio</span>.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+  `;
 }
 
 /** extract product name (best-effort) */
@@ -246,7 +335,7 @@ async function sendWithBrevo(to: string, subject: string, html: string) {
 type BrevoResult = { ok: true } | { ok: false; error: string };
 async function sendOnboardingEmail(to: string, productName: string): Promise<BrevoResult> {
   try {
-    const subject = `Your access to ${productName}`;
+    const subject = `Your TrendDrop Premium access is ready`;
     const html = renderEmailHTML(productName, TG_URL);
     await sendWithBrevo(to, subject, html);
     return { ok: true };

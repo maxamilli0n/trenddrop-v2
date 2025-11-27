@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrendDrop Premium | Private Research + Telegram Access</title>
+  <meta name="description" content="Join TrendDrop Premium for private Telegram drops, weekly packs, and invite-only research.">
+  <link rel="stylesheet" href="premium.css">
+</head>
+<body
+  data-checkout-endpoint="https://YOUR-PROJECT.functions.supabase.co/create-checkout-session"
+  data-price-id="price_xxx"
+  data-plan-id="premium_telegram"
+  data-product-name="TrendDrop Premium Access"
+  data-success-url=""
+  data-cancel-url=""
+  data-invite-fallback="https://t.me/+yourInvite"
+>
+  <!-- Update data-* attributes above with your Supabase function URL, Stripe price ID, and fallback Telegram invite. -->
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Premium Access • Limited seats</span>
+      <h1>Daily signal, weekly packs, and a private Telegram room.</h1>
+      <p>Every premium drop is researched by TrendDrop’s internal tooling: eBay + Stripe data, telemetry from the free feed, and private supplier intel. Get the signal early and ship it to your store or newsletter.</p>
+      <div class="price-row">
+        <div class="price-tag">
+          <span>$29</span><small>/month</small>
+        </div>
+        <div class="guarantee" style="color:var(--muted);font-size:15px;">Cancel anytime • 7-day guarantee</div>
+      </div>
+      <button type="button" data-premium-cta>Join Premium</button>
+      <p class="cta-hint">Secure checkout via Stripe. Limited seats to keep quality high.</p>
+      <p class="status" data-premium-status hidden></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>What’s inside</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Private Telegram room</h3>
+          <p>Real-time chatter, alerts when premium drops go live, and a direct line to the TrendDrop team.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Weekly PDF + CSV pack</h3>
+          <p>Top 25 products with pricing, supplier notes, traffic snapshots, and swipe copy for your store.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Strategy playbooks</h3>
+          <p>Mini-guides on ad angles, bundle upsells, and how other members are scaling offers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Your premium toolbox</h2>
+      <ul class="deliverables">
+        <li>
+          <strong>1. Daily signal</strong>
+          <span>Shortlist of products moving on eBay, Etsy, and internal telemetry—before they trend publicly.</span>
+        </li>
+        <li>
+          <strong>2. Weekly deep dive</strong>
+          <span>PDF + CSV with margin math, supplier contacts, ad angle prompts, and cross-sell ideas.</span>
+        </li>
+        <li>
+          <strong>3. Community safety net</strong>
+          <span>Ask questions, share wins, and get instant feedback from builders running the same playbook.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section faq">
+      <h2>FAQ</h2>
+      <details open>
+        <summary>What happens after I pay?</summary>
+        <p>You’ll land on the success page with next steps, then get an email from TrendDrop with your Telegram invite link plus onboarding instructions.</p>
+      </details>
+      <details>
+        <summary>Can I cancel anytime?</summary>
+        <p>Yes. Manage your subscription through the Stripe portal (linked in every receipt). Cancel and you won’t be charged again.</p>
+      </details>
+      <details>
+        <summary>Is there a refund policy?</summary>
+        <p>Try Premium for 7 days. If it’s not for you, reply to the onboarding email and we’ll refund you—no drama.</p>
+      </details>
+      <details>
+        <summary>Need help?</summary>
+        <p>Email <a href="mailto:hi@trenddrop.com">hi@trenddrop.com</a> or ping us inside the free TrendDrop Telegram channel.</p>
+      </details>
+    </section>
+
+    <section class="cta-panel">
+      <h2>Ready to ship faster?</h2>
+      <p style="color:var(--muted);max-width:520px;margin:0 auto 20px;">Premium members get vetted signals, plug-and-play assets, and a private room of operators executing the same strategy.</p>
+      <button type="button" data-premium-cta>Join Premium</button>
+      <p class="status" data-premium-status hidden></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by TrendDrop. <a href="index.html">Back to free feed</a></p>
+  </footer>
+
+  <script src="premium.js" defer></script>
+</body>
+</html>
+
+

@@ -1,100 +1,137 @@
 {
-  "updated_at": 1759520871,
+  "updated_at": 1763825831,
   "products": [
     {
       "source": "ebay",
-      "keyword": "pickleball paddle",
-      "title": "Joola Ben Johns Hyperion Pro IV 14mm Pickleball Paddle",
-      "price": 159.99,
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Sharper Image Powerboost Sport Percussion Handheld Massager: Metal",
+      "price": 24.64,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/knQAAeSwLwxo3vKg/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/317363336408?_skw=pickleball+paddle&hash=item49e45434d8%3Ag%3AknQAAeSwLwxo3vKg&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 22028,
+      "image_url": "https://i.ebayimg.com/images/g/tc4AAeSw7FFpIaeg/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205721111842?_skw=massage+gun&hash=item2fe5ef0d22%3Ag%3Atc4AAeSw7FFpIaeg&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 750495,
       "top_rated": false,
-      "score": 6.0,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-09-11T16:31:16.000Z",
+      "signals": 9.0,
       "tags": [
-        "pickleball paddle"
+        "massage gun"
       ],
-      "caption": "Joola Ben Johns Hyperion Pro IV 14mm Pickleball Paddle \u2022 USD 159.99",
-      "headline": "\ud83d\udd25\u2728 Joola Ben Johns Hyperion Pro IV 14mm Pickleball Paddle",
-      "blurb": "USD 159.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Unleash your power with the Sharper Image Powerboost Massager! \ud83d\udcaa Feel the relief today for just $24.64! Grab yours now!",
+      "headline": "\ud83d\udcaa Unleash Relaxation with the Powerboost Massager!",
+      "blurb": "Revitalize your muscles with the Sharper Image Powerboost Massager for just $24.64! Limited stock\u2014grab yours now and feel the difference!",
+      "emojis": "['\ud83d\udcaa', '\ud83d\udecb\ufe0f']"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "cordless vacuum deals",
+      "title": "Black & Decker HLVA325JP07 dustbuster furbuster AdvanceClean Pet Vacuum New",
+      "price": 59.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/1SAAAeSwTo5pGuFH/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/394538018615?_skw=cordless+vacuum+deals&hash=item5bdc4c6737%3Ag%3A1SAAAeSwTo5pGuFH&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 653870,
+      "top_rated": false,
+      "seller_username": "cpo-outlets",
+      "inserted_at": "2023-03-29T16:55:22.000Z",
+      "signals": 9.0,
+      "tags": [
+        "cordless vacuum"
+      ],
+      "caption": "Tackle pet hair like a pro with the Black & Decker Dustbuster! \ud83d\udc3e Grab yours for just $59.99 and unleash clean today! \ud83d\uded2\u2728",
+      "headline": "\ud83d\udc3e Clean Pet Hair in a Flash with the New Dustbuster!",
+      "blurb": "Don\u2019t miss out! Grab the Black & Decker Pet Vacuum for just $59.99 and tackle fur like a pro. Limited stock available\u2014order now!",
+      "emojis": "['\ud83d\udc3e', '\ud83e\uddf9']"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard",
+      "title": "Logitech G PRO TKL Wired Mechanical GX Blue Clicky Gaming Keyboard w/ RGB",
+      "price": 52.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/djEAAOSwuu9mOop5/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/256503800129?_skw=mechanical+keyboard&hash=item3bb8d16141%3Ag%3AdjEAAOSwuu9mOop5&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYps8bcr7xUnVFFCcJn0p0lhC2CXQc1hzROGbA99vvpJI%2BLqby%2FPtUc2lMwLORZDjTKnNnJWe%2BTrLwlxXcsaIUiYx9%2Bb6SPOirduJvWfr%2BAuXCPrzWG3lXCRA0oNzacMsf6ZVR%2FlxZGo1zMc6c7U41yMWlVu2UBVsffQ0wl7s4KDyTyO3jeTLQZbKvtdOdfskBhnpgiHEQADBw3joEtMG%2BTbeBKjWBbpwM1Dx6dIWWNlpTDs7rQLEW8UHc%2BKyW6bcJqYmpOciBYwZNe9PS5w2qv2li%2FY1x2H0lm6cO4ShUowg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 453660,
+      "top_rated": false,
+      "seller_username": "bigdeals",
+      "inserted_at": "2024-05-07T20:27:28.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Logitech G PRO TKL Wired Mechanical GX Blue Clicky Gaming Keyboard w/ RGB \u2022 USD 52.99",
+      "headline": "\ud83d\udd79\ufe0f Unlock Gaming Precision with Logitech G PRO TKL!",
+      "blurb": "Level up your gameplay with the Logitech G PRO TKL Mechanical Keyboard at just $52.99! Limited stock\u2014grab yours now and dominate the game!",
+      "emojis": "['\ud83d\udd79\ufe0f', '\ud83c\udfae']"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "portable monitor deals",
+      "title": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "price": 58.05,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/JNEAAOSwpIJnXbkp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365287320803?_skw=portable+monitor+deals&hash=item550cd22ce3%3Ag%3AJNEAAOSwpIJnXbkp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 396007,
+      "top_rated": false,
+      "seller_username": "quickshipelectronics",
+      "inserted_at": "2024-12-14T16:58:20.000Z",
+      "signals": 9.0,
+      "tags": [
+        "portable monitor"
+      ],
+      "caption": "Elevate your viewing experience on the go with the Acer PM1 15.6\" FHD Monitor! \ud83c\udf1f Grab yours now for just $58.05! \ud83d\udcf2",
+      "headline": "\ud83d\udd25\u2728 Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "blurb": "USD 58.05 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
-      "keyword": "pickleball paddle",
-      "title": "Engage Pickleball Paddle|Clearance|Pursuit Pro1 Elongated| Lime",
-      "price": 100.0,
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "price": 15.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/9rgAAeSwBUJo1WqM/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/187597013107?_skw=pickleball+paddle&hash=item2bada74073%3Ag%3A9rgAAeSwBUJo1WqM&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UaVVe7fmo%2FDGIk59FbBagaMioLMd6dBGXhzEJ0mmVqsAgQF5tQ5hWooe%2BWj3FJqQCRb05RD59HLpglyw%2FLezmZkOQ8%2BEQZMkkzKyASLIYUWkpTl4O0%2FRw0YXBugGzy%2FIVmPJNbqLYzxiuTZJ%2F48btLECEHaNzjkHMk2Csq0RsQJo5uLJrlKj%2FagNWdizw9klWfwY%2FaJe4ZIAjqK0W4yqHYmcOPYcNYTpnupoNuYKoydPbyulcQulv6gSDZXsuUfFa%2Bf4a7MYDJGjrVzZ97Xbx8vi0U4ECrqKjCexYVB68qL2g%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 259,
+      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVa0bAkmVndHacyVhKDKNm2inZ3a5xqT5o73F%2F9LU%2B8PZ5TVE%2ByKBPxU5CffrIa4zI2Probb4OiBWxWlLyPzlfGrqPMigjVTxaoSrkPcz0u8lMMHHltoLZyxKL%2BM8rFYRwwPD6QX6U79hx581isW3ZH1&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 350273,
       "top_rated": false,
-      "score": 4.259,
+      "seller_username": "gameinfinity",
+      "inserted_at": "2023-04-13T18:58:49.000Z",
+      "signals": 9.0,
       "tags": [
-        "pickleball paddle"
+        "massage gun"
       ],
-      "caption": "Engage Pickleball Paddle|Clearance|Pursuit Pro1 Elongated| Lime \u2022 USD 100.0",
-      "headline": "\ud83d\udd25\u2728 Engage Pickleball Paddle|Clearance|Pursuit Pro1 Elongated| Lime",
-      "blurb": "USD 100.00 steal. Limited stock\u2014grab it now!",
+      "caption": "Revitalize your muscles with our 6-speed massage gun! \ud83d\udca5 Unwind and relax for just $15.99. Grab yours now and feel the difference!",
+      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
-      "keyword": "pickleball paddle",
-      "title": "Engage Pickleball Paddle|Clearance|Pursuit Pro1 Elongated| RWB",
-      "price": 100.0,
+      "provider": "ebay",
+      "keyword": "cordless vacuum",
+      "title": "Shark Ip1251 Powerdetect Cordless Stick Vacuum",
+      "price": 150.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/-yYAAeSwzRto1Wtc/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/187597016008?_skw=pickleball+paddle&hash=item2bada74bc8%3Ag%3A-yYAAeSwzRto1Wtc&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY9S64EtghBK7HQBOGr0zIq16%2FtPQ%2BWDEM2OagA%2FxhB0Lw14OAmzstfqoZhERwb%2BKi%2BUducttPPri6MTtl4HgQMIajNvtwiHoCqnS48BpRBphatyQMKgJrHTQzuw2QpBRNYXNg5D6TLQ79jyzThlVNQxwCiPh%2B4VnAB6Lsk9H4x1eG5yPaUgFvI99iQ5mzYht5w6wZ0zH0vwbRfIJ4RiW1jQHskJsQpwqwN6ziuYsRTEox3BKxQ7HKiiG764zo1Y0xdVr2ox1yd9X%2Bk%2BldwSESZb%2BDwuHBXvDnu5ura%2Fnbthg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 259,
+      "image_url": "https://i.ebayimg.com/images/g/aagAAeSw-8VpGzYC/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/167596829674?_skw=cordless+vacuum&hash=item27058cabea%3Ag%3AaagAAeSw-8VpGzYC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 179354,
       "top_rated": false,
-      "score": 4.259,
+      "seller_username": "guaranteecellular",
+      "inserted_at": "2025-06-18T17:13:39.000Z",
+      "signals": 9.0,
       "tags": [
-        "pickleball paddle"
+        "cordless vacuum"
       ],
-      "caption": "Engage Pickleball Paddle|Clearance|Pursuit Pro1 Elongated| RWB \u2022 USD 100.0",
-      "headline": "\ud83d\udd25\u2728 Engage Pickleball Paddle|Clearance|Pursuit Pro1 Elongated| RWB",
-      "blurb": "USD 100.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "keyword": "pickleball paddle",
-      "title": "BRAND NEW CRBN 1 TruFoam Genesis Pickleball Paddle CRBN\u00b9 TF Genesis With Cover",
-      "price": 159.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/h78AAeSw3y1o3aIC/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205761008701?_skw=pickleball+paddle&hash=item2fe84fd43d%3Ag%3Ah78AAeSw3y1o3aIC&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UaSga%2BvPxaai%2BJN22HjEn22EykoDtw2BhO2IG5aLq%2Bo%2FCGd12CyIFdKb1%2BMBQGr09Io4TDTVpZuod60pLOLgrh2q7DXSVeVTADfmoQdBDnaGSoTCvcOgCYp%2FLdLvIhNeQH76LjLMKx%2B5hXEfLJ%2BdplQQgARzZQU3NqlKlaIieRU5WIHLSTPQlFFS1sqx8siI%2FJ7ic3zh6pZAFYi91byeV4EJZvhTwFA%2BGU723yzLNEWuQ4iWe5FhyD1tE9cb0IldEUAEt82516NwZMVyHDDmaxUsnN1q49ANBmHI9xYKri3Ag%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 143,
-      "top_rated": false,
-      "score": 1.143,
-      "tags": [
-        "pickleball paddle"
-      ],
-      "caption": "BRAND NEW CRBN 1 TruFoam Genesis Pickleball Paddle CRBN\u00b9 TF Genesis With Cover \u2022 USD 159.99",
-      "headline": "\ud83d\udd25\u2728 CRBN 1 TruFoam Genesis Pickleball Paddle CRBN\u00b9 TF Genesis With Cover",
-      "blurb": "USD 159.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "keyword": "pickleball paddle",
-      "title": "POTENZA \u201cROSSO+\u201d Pro Pickleball Paddle (Carbon Fiber, 21mm COREx3 Open Throat)",
-      "price": 164.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/izwAAOSwnYpn06gp/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/176524787496?_skw=pickleball+paddle&hash=item2919b27f28%3Ag%3AizwAAOSwnYpn06gp&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZjJSvX9%2F7aC6tmB3kEEsNYKEOg29BQStJz9ff2uFliGWkRl%2FoDuSGlMRhE0Yf2DA0h8tPxemM94kjxrJfGsJ6LZmEeMJunWqRnMh8%2BJk8w8HQovWM0NmUcSq8Hj5ob8n%2Fn6b3643gwAiLeBvu6v%2FKRrBgrVYftHlIE7jHMif2tRYK8XaEYX2Y0fFpGDx%2Fw7XtJ1kLWpshfPFWr3TeTKsLpynnvadR0vxZBMTFbGUkvx5mmQcV%2FGIbxG8rVi%2FSNcYmyftHHvO%2B0%2FDV4yXs9m6dP8o%2F4yz8Pv1RQ%2BXx2npY2XA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 57,
-      "top_rated": false,
-      "score": 1.057,
-      "tags": [
-        "pickleball paddle"
-      ],
-      "caption": "POTENZA \u201cROSSO+\u201d Pro Pickleball Paddle (Carbon Fiber, 21mm COREx3 Open Throat) \u2022 USD 164.95",
-      "headline": "\ud83d\udd25\u2728 POTENZA \u201cROSSO+\u201d Pro Pickleball Paddle (Carbon Fiber, 21mm COREx3 Open Throat)",
-      "blurb": "USD 164.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Shark Ip1251 Powerdetect Cordless Stick Vacuum \u2022 USD 150.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark Ip1251 Powerdetect Cordless Stick Vacuum",
+      "blurb": "USD 150.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }

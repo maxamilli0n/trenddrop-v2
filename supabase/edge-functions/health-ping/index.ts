@@ -1,7 +1,7 @@
 // TD-AUTO: BEGIN health-ping
 // deno-lint-ignore-file no-explicit-any
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { db, reportsBucket, supabaseUrl, supabaseServiceRoleKey, telegramBotToken, telegramAlertChatId } from "../../_shared/config.ts";
+import { db, reportsBucket, supabaseUrl, supabaseServiceRoleKey, telegramBotToken, telegramAlertChatId } from "../../functions/_shared/config.ts";
 
 function supa() { if (!db) throw new Error("supabase not configured"); return db; }
 

@@ -3,7 +3,7 @@
 // Usage examples are at the bottom of this file.
 
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { db } from "../../_shared/config.ts";
+import { db } from "../../functions/_shared/config.ts";
 
 type Row = {
   id: string;

@@ -5,3 +5,5 @@ openai==1.52.2
 supabase==2.9.0
 Pillow==10.4.0
 reportlab==4.2.2
+pandas==2.2.3
+beautifulsoup4==4.12.3

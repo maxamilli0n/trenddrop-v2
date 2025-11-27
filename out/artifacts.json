@@ -1,13 +1,43 @@
 {
   "bucket": "trenddrop-reports",
-  "latest_pdf_key": "weekly/latest.pdf",
-  "latest_csv_key": "weekly/latest.csv",
-  "dated_pdf_key": "weekly/2025-10-12/report.pdf",
-  "dated_csv_key": "weekly/2025-10-12/report.csv",
+  "latest_pdf_key": "weekly/ebay/latest.pdf",
+  "latest_csv_key": "weekly/ebay/latest.csv",
+  "dated_pdf_key": "weekly/ebay/2025-11-23/report.pdf",
+  "dated_csv_key": "weekly/ebay/2025-11-23/report.csv",
   "artifacts": {
-    "pdf_url_latest": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/latest.pdf?",
-    "pdf_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/2025-10-12/report.pdf?",
-    "csv_url_latest": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/latest.csv?",
-    "csv_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/2025-10-12/report.csv?"
+    "pdf_url_latest": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/latest.pdf?",
+    "pdf_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/2025-11-23/report.pdf?",
+    "csv_url_latest": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/latest.csv?",
+    "csv_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/2025-11-23/report.csv?"
+  },
+  "ebay": {
+    "pdf_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/latest.pdf?",
+    "csv_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/latest.csv?",
+    "pdf_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/2025-11-27/report.pdf?",
+    "csv_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/2025-11-27/report.csv?",
+    "zip_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/latest.zip?",
+    "zip_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/ebay/2025-11-27/pack.zip?",
+    "data_window_label": "Nov 22 2025 \u2192 Nov 26 2025 08:17 PM EST",
+    "run_started_at": "2025-11-27T15:24:07.807814-05:00"
+  },
+  "amazon": {
+    "pdf_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/amazon/latest.pdf?",
+    "csv_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/amazon/latest.csv?",
+    "pdf_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/amazon/2025-11-27/report.pdf?",
+    "csv_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/amazon/2025-11-27/report.csv?",
+    "zip_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/amazon/latest.zip?",
+    "zip_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/amazon/2025-11-27/pack.zip?",
+    "data_window_label": "Nov 24 2025 \u2192 Nov 26 2025 10:47 PM EST",
+    "run_started_at": "2025-11-27T15:22:02.680501-05:00"
+  },
+  "aliexpress": {
+    "pdf_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/aliexpress/latest.pdf?",
+    "csv_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/aliexpress/latest.csv?",
+    "pdf_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/aliexpress/2025-11-23/report.pdf?",
+    "csv_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/aliexpress/2025-11-23/report.csv?",
+    "zip_url": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/aliexpress/latest.zip?",
+    "zip_url_dated": "https://nkuanqodjejvojwvypvp.supabase.co/storage/v1/object/public/trenddrop-reports/weekly/aliexpress/2025-11-23/pack.zip?",
+    "data_window_label": "Nov 16 2025 \u2192 Nov 23 2025 09:38 PM EST",
+    "run_started_at": "2025-11-23T21:38:19.219497-05:00"
   }
 }

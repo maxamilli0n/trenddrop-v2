@@ -43,8 +43,16 @@ async function loadProducts(){
     // Premium button wiring (set via env var on the page if added)
     const premium = document.getElementById('goPremium');
     if (premium){
-      const url = (window.PREMIUM_CHECKOUT_URL || '').trim();
-      if (url) premium.href = url;
+      const configured = (window.PREMIUM_CHECKOUT_URL || '').trim();
+      const targetUrl = configured || 'premium.html';
+      premium.href = targetUrl;
+      if (configured && /^https?:/i.test(configured)){
+        premium.target = '_blank';
+        premium.rel = 'nofollow noopener';
+      }else{
+        premium.removeAttribute('target');
+        premium.rel = 'nofollow noopener';
+      }
     }
   }catch(e){
     console.error(e);

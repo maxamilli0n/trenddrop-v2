@@ -19,6 +19,36 @@ def clean_topic(t: str) -> str:
         return ""
     return t
 
+def topic_query_variants(topic: str, max_variants: int = 3) -> List[str]:
+    """
+    Expand a topic into multiple keyword/search variants to widen the eBay scrape.
+    Ensures deterministic ordering and removes duplicates/empties.
+    """
+    base = clean_topic(topic)
+    if not base:
+        return []
+    max_variants = max(1, max_variants)
+    candidates = [
+        base,
+        f"{base} deals",
+        f"best {base}",
+        f"{base} sale",
+        f"trending {base}",
+    ]
+    if len(base.split()) == 1:
+        candidates.append(f"{base} gadget")
+    variants: List[str] = []
+    for phrase in candidates:
+        cleaned = " ".join(phrase.split()).strip()
+        if not cleaned:
+            continue
+        if cleaned in variants:
+            continue
+        variants.append(cleaned)
+        if len(variants) >= max_variants:
+            break
+    return variants
+
 def top_topics(limit: int = 8, geo: str = "US") -> List[str]:
     try:
         pytrends = TrendReq(hl='en-US', tz=360)

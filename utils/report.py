@@ -28,6 +28,18 @@ def _safe_text(val: Optional[str]) -> str:
     return (val or "").strip()
 
 
+BULLET_PREFIXES = ("■", "▪", "•", "●", "◼", "◾", "▫", "◻", "●", "●")
+
+
+def _strip_leading_bullet(text: str) -> str:
+    if not text:
+        return text
+    for bullet in BULLET_PREFIXES:
+        if text.startswith(bullet):
+            return text[len(bullet):].lstrip()
+    return text
+
+
 # Register a Unicode font with star glyphs if available
 DEJAVU_REGISTERED = False
 try:
@@ -153,19 +165,29 @@ def generate_weekly_pdf(products: List[Dict], outfile_path: str) -> None:
 
 def _value_for_column(p: Dict, key: str) -> str:
     if key == "title":
-        return _safe_text(p.get("headline") or p.get("title"))
+        raw = _safe_text(p.get("title") or p.get("headline"))
+        return _strip_leading_bullet(raw)
     if key == "price":
         price = p.get("price")
         return f"{price:.2f}" if isinstance(price, (int, float)) else _safe_text(str(price))
     if key == "currency":
         return _safe_text(p.get("currency") or "USD")
     if key == "signals":
-        # Map seller feedback to star string for PDF/CSV (support both key names)
-        return seller_fb_to_stars(p.get("seller_fb") or p.get("seller_feedback"))
+        sig = p.get("signals")
+        try:
+            return f"{float(sig):.2f}"
+        except Exception:
+            return _safe_text(str(sig or "0"))
     return _safe_text(str(p.get(key)))
 
 
-def generate_table_pdf(products: List[Dict], outfile_path: str, columns: List[Dict[str, str]], title: Optional[str] = None) -> None:
+def generate_table_pdf(
+    products: List[Dict],
+    outfile_path: str,
+    columns: List[Dict[str, str]],
+    title: Optional[str] = None,
+    subtitle_lines: Optional[List[str]] = None,
+) -> None:
     """Create a compact table PDF with dynamic columns.
 
     columns: list of {"key": "price", "label": "Price"}
@@ -239,16 +261,22 @@ def generate_table_pdf(products: List[Dict], outfile_path: str, columns: List[Di
             TitleStyle = styles["Title"]
             SubTitleStyle = styles["Normal"]
         elements.append(Paragraph(_safe_text(title), TitleStyle))
-        try:
-            import datetime, zoneinfo  # py3.9+: zoneinfo
-            tzname = os.environ.get("REPORT_TZ", "America/New_York")
-            tz = zoneinfo.ZoneInfo(tzname)
-            now_local = datetime.datetime.now(tz)
-            ts_line = now_local.strftime("Generated %Y-%m-%d %I:%M %p %Z")
-        except Exception:
-            ts_line = time.strftime("Generated %Y-%m-%d %H:%M UTC", time.gmtime())
-        elements.append(Paragraph(ts_line, SubTitleStyle))
-        elements.append(Paragraph("Sorted by seller reputation and price for optimal sell-through. PDF shows curated picks; full dataset in CSV.", SubTitleStyle))
+        lines = subtitle_lines
+        if not lines:
+            try:
+                import datetime, zoneinfo  # py3.9+: zoneinfo
+                tzname = os.environ.get("REPORT_TZ", "America/New_York")
+                tz = zoneinfo.ZoneInfo(tzname)
+                now_local = datetime.datetime.now(tz)
+                ts_line = now_local.strftime("Generated %Y-%m-%d %I:%M %p %Z")
+            except Exception:
+                ts_line = time.strftime("Generated %Y-%m-%d %H:%M UTC", time.gmtime())
+            lines = [
+                ts_line,
+                "Sorted by seller reputation and price for optimal sell-through. PDF shows curated picks; full dataset in CSV.",
+            ]
+        for line in lines:
+            elements.append(Paragraph(line, SubTitleStyle))
 
     # Build data
     header = [c.get("label") or c.get("key") for c in columns]

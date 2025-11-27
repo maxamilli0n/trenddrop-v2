@@ -1,0 +1,16 @@
+{
+  "name": "TrendDrop Weekly Pack",
+  "generated_at": "2025-11-14T03:35:48.900801Z",
+  "artifacts": [
+    {
+      "type": "pdf",
+      "path": "out\\weekly-report.pdf",
+      "hash": "e0bdb82f75622afdb6fde8d3ae65cc449bee61b4d0a4bb97071d3d4c3fee1f12"
+    },
+    {
+      "type": "csv",
+      "path": "out\\weekly-report.csv",
+      "hash": "f3ff87352d638381fea8b5125c32dcbcd88c0a6393cd179ab904c4437cc36b13"
+    }
+  ]
+}
