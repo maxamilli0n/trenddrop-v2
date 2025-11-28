@@ -1,17 +1,16 @@
 name: Weekly TrendDrop Reports (Multi-Provider)
 
 on:
-  schedule:
-    - cron: "5 8 * * 1"
   workflow_dispatch:
 
 jobs:
   weekly-reports:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
-        provider: [ "ebay", "amazon", "aliexpress" ]
-      max-parallel: 1
+        provider: [ebay, amazon]  # we'll add aliexpress later when it's working
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -21,25 +20,21 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install report dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements-reports.txt
+
+      - name: Restore .env from GitHub Secret
+        run: |
+          echo "::add-mask::${{ secrets.ENV_FILE }}"
+          printf "%s" "${{ secrets.ENV_FILE }}" > .env
 
       - name: Generate weekly report
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          SUPABASE_STORAGE_BUCKET: "trenddrop-reports"
         run: |
           python -m trenddrop.reports.generate_reports --provider "${{ matrix.provider }}"
 
-      - name: Build packs
+      - name: Build master pack (only once, after ebay)
         if: matrix.provider == 'ebay'
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          SUPABASE_STORAGE_BUCKET: "trenddrop-reports"
         run: |
-          python -m trenddrop.reports.build_packs
-
+          python -m trenddrop.reports.generate_reports --master
