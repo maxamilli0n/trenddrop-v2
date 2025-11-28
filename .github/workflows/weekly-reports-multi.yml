@@ -26,6 +26,7 @@ jobs:
           pip install -r requirements-reports.txt
 
       - name: Restore .env from GitHub Secret
+        shell: bash
         run: |
           echo "::add-mask::${{ secrets.ENV_FILE }}"
           printf "%s" "${{ secrets.ENV_FILE }}" > .env

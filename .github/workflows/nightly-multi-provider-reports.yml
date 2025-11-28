@@ -25,6 +25,7 @@ jobs:
           pip install -r requirements-reports.txt
 
       - name: Restore .env from GitHub Secret
+        shell: bash
         run: |
           echo "::add-mask::${{ secrets.ENV_FILE }}"
           printf "%s" "${{ secrets.ENV_FILE }}" > .env
@@ -34,7 +35,7 @@ jobs:
           python -m trenddrop.scraper.ebay
           python -m trenddrop.scraper.amazon
 
-      - name: Generate weekly reports (ebay + amazon)
+      - name: Generate nightly reports (ebay + amazon)
         run: |
           python -m trenddrop.reports.generate_reports --provider ebay
           python -m trenddrop.reports.generate_reports --provider amazon
