@@ -1,49 +1,27 @@
 {
-  "updated_at": 1764383201,
+  "updated_at": 1764387674,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "price": 28.95,
+      "keyword": "mechanical keyboard deals",
+      "title": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "price": 24.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNWz3SR27fLILvDTvrUmcxsPMeAs5xP7pB1RgupTd96uyzklsFzu21jzXUYmwB61DsOgSxmS4jwSP5CrmXL8w6fDDy%2Be0AJFKNu1wOvUg%2BOLx2VuNTf27yfyw%2BUiakUi1oJ8kYHQTFzxxON76rY9S%2FgV1gUQrBXKggDfUQctpUKxw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 999061,
+      "image_url": "https://i.ebayimg.com/images/g/JEQAAeSwnfdpKiQp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315781118209?_skw=mechanical+keyboard+deals&hash=item4986057901%3Ag%3AJEQAAeSwnfdpKiQp&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbfyV2HfsZQuYuoIWfGa6uKwbCJuGpp7%2FYhQIDNNoKg3WAPzRbYw8ZPR62oPjFrhte8t02MmWNMj%2FJPALZPgK1bZWgLVzxdsd4LLs96o1ChHOTxvBpNEw3k2lEvJmu5BGbEHMvCnR0BdV6JPa4WyZkxMtMzREjPJb3Hiz1xwGuWldbRcqpjUklaJE7piGRuxXURwgRLdeWEdpo1xsQnqYy5sj9lg4chnk31qGusYcanpEAXoCbIr3qqBcz%2BkYsnet5bWJpriP4Ls7vIDkM5MRA3gsSzEHMLu%2FenjXlnR%2Bz3zg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 859846,
       "top_rated": false,
-      "seller_username": "theperfectpart",
-      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "seller_username": "a4c",
+      "inserted_at": "2024-09-23T23:43:37.000Z",
       "signals": 9.0,
       "tags": [
-        "massage gun"
+        "mechanical keyboard"
       ],
-      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "price": 129.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/p2UAAeSwGSZpKRWv/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3Ap2UAAeSwGSZpKRWv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 897725,
-      "top_rated": false,
-      "seller_username": "best_buy",
-      "inserted_at": "2025-10-22T15:52:43.000Z",
-      "signals": 9.0,
-      "tags": [
-        "air fryer"
-      ],
-      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
-      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray \u2022 USD 24.95",
+      "headline": "\ud83d\udd79\ufe0f Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
     },
     {
       "source": "ebay",
@@ -54,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/XNYAAeSwDu9pKWfe/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205721047564?_skw=air+fryer+deals&hash=item2fe5ee120c%3Ag%3AXNYAAeSwDu9pKWfe&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 768380,
+      "seller_feedback": 768541,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-09-11T15:49:56.000Z",
@@ -76,7 +54,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/8uwAAeSwYCVpKfEA/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3A8uwAAeSwYCVpKfEA&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 768380,
+      "seller_feedback": 768541,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-11-17T13:49:44.000Z",
@@ -92,46 +70,68 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "price": 15.99,
+      "keyword": "pickleball paddle deals",
+      "title": "VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle*",
+      "price": 87.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVYJOFuTPt29YbQ%2B7hCcEzzV3s5vc6QnZp%2BJgpk80Jyfse5FO%2Fu4Gc%2FKU0OpZ90Grr7uSqkIJmiaVHF9UN3hOt6lFVyU59Qb0JSHRl6G8Yzetq%2FvgGFsyrJDYa6wlH8HrfAUUTbM1VauBTZx8dHKqkdv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 350590,
+      "image_url": "https://i.ebayimg.com/images/g/NXIAAeSwkAJo7nzp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/236389360936?_skw=pickleball+paddle+deals&hash=item3709e76528%3Ag%3ANXIAAeSwkAJo7nzp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 702769,
       "top_rated": false,
-      "seller_username": "gameinfinity",
-      "inserted_at": "2023-04-13T18:58:49.000Z",
+      "seller_username": "nps",
+      "inserted_at": "2025-10-14T16:37:03.000Z",
       "signals": 9.0,
       "tags": [
-        "massage gun"
+        "pickleball paddle"
       ],
-      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
-      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
+      "caption": "VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle* \u2022 USD 87.99",
+      "headline": "\ud83d\udd25\u2728 VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle*",
+      "blurb": "USD 87.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
-      "price": 42.99,
+      "keyword": "mechanical keyboard deals",
+      "title": "Deco Gear Mechanical Gaming Keyboard, RGB Back Lighting, Anti-Ghosting, Black",
+      "price": 48.98,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Z74AAeSwRohpKgJi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AZ74AAeSwRohpKgJi&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvwiTPYr6qVO%2F%2BoGqL%2FxuLr5aSNdsipWf5ouBRzDfqw6hWc%2Bh0LlaHId1sXsFoiMWRzyByHzRi%2FLkHeMRiojDMMpDN72iob7GRN5h%2FsaUiAMyN5TOj8qILYV1UISPmhkFARqqSDtO2LaM%2FhwtVL8QCtO810HZWJnzF559GAlw5NIMg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 177667,
+      "image_url": "https://i.ebayimg.com/images/g/ZWwAAeSwYV9pKmSE/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/314489771579?_skw=mechanical+keyboard+deals&hash=item49390d163b%3Ag%3AZWwAAeSwYV9pKmSE&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 652760,
       "top_rated": false,
-      "seller_username": "tradeportusa",
-      "inserted_at": "2025-08-26T14:30:59.000Z",
+      "seller_username": "buydig",
+      "inserted_at": "2023-03-29T14:45:20.000Z",
       "signals": 9.0,
       "tags": [
-        "massage gun"
+        "mechanical keyboard"
       ],
-      "caption": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain- \u2022 USD 42.99",
-      "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
-      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Deco Gear Mechanical Gaming Keyboard, RGB Back Lighting, Anti-Ghosting, Black \u2022 USD 48.98",
+      "headline": "\ud83d\udd79\ufe0f Deco Gear Mechanical Gaming Keyboard, RGB Back Lighting, Anti-Ghosting, Black",
+      "blurb": "USD 48.98 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard deals",
+      "title": "Microsoft Type Cover for Surface Pro - Black",
+      "price": 90.75,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/6cIAAeSwP2VpKkOU/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/326711095795?_skw=mechanical+keyboard+deals&hash=item4c117fb1f3%3Ag%3A6cIAAeSwP2VpKkOU&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYgFi3dRMKv%2B%2FuhByHrEQRFQQnWnIxDTgGs9O9MoWk43B4y0mocnl0aT00CVjoSWJ5qChk49O1HM620kYyBwCrdJ66GhyFgzsB%2Fjr3%2FLmTq8VvIj0Xs7y2ncYYTojRm7bgEuT5FGvb29GZG5N18pBG6CwIBFEdQ5pXlBDSoYMJeRXKYpJal6Zwf1TJYerYheIaweYozi0VGSqvOwHCKNtBaoo3feiUyrh4loxqMviotKV3hdwcTQFwB5mmdvdYcrqFKTqKcyB8RUDHg8xQ5UG3OH6y52jgcS%2FtnGNBndsAEyw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 652760,
+      "top_rated": false,
+      "seller_username": "buydig",
+      "inserted_at": "2025-07-31T02:00:48.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Microsoft Type Cover for Surface Pro - Black \u2022 USD 90.75",
+      "headline": "\ud83d\udd79\ufe0f Microsoft Type Cover for Surface Pro - Black",
+      "blurb": "USD 90.75 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
     }
   ]
 }
