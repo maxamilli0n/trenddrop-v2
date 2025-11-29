@@ -1,5 +1,5 @@
 {
-  "updated_at": 1764377657,
+  "updated_at": 1764383201,
   "products": [
     {
       "source": "ebay",
@@ -9,8 +9,8 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNLlw9puIg0FMEWX0auFAZJ5CQvOhHAZCRispYHi24yxoaOGle%2BjW7r4TGpJH3S7kAL1arjAaZVi38JkHo8z3AaMdEaLlaY2I36oUpJxSd2vNcoEYJAh8mtOpB0r%2Bp0ugOWqnM55dAbhWoh%2B1raFw4sT9mW78zNE6EXz1Ec%2BPVF1Q%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 999022,
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNWz3SR27fLILvDTvrUmcxsPMeAs5xP7pB1RgupTd96uyzklsFzu21jzXUYmwB61DsOgSxmS4jwSP5CrmXL8w6fDDy%2Be0AJFKNu1wOvUg%2BOLx2VuNTf27yfyw%2BUiakUi1oJ8kYHQTFzxxON76rY9S%2FgV1gUQrBXKggDfUQctpUKxw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 999061,
       "top_rated": false,
       "seller_username": "theperfectpart",
       "inserted_at": "2022-11-18T00:58:24.000Z",
@@ -26,13 +26,79 @@
     {
       "source": "ebay",
       "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/p2UAAeSwGSZpKRWv/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3Ap2UAAeSwGSZpKRWv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 897725,
+      "top_rated": false,
+      "seller_username": "best_buy",
+      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "bella 4qt Slim Air Fryer Oatmilk: Small Beige Electric Fryer, 1300W, Plastic",
+      "price": 29.74,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/XNYAAeSwDu9pKWfe/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205721047564?_skw=air+fryer+deals&hash=item2fe5ee120c%3Ag%3AXNYAAeSwDu9pKWfe&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 768380,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-09-11T15:49:56.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "bella 4qt Slim Air Fryer Oatmilk: Small Beige Electric Fryer, 1300W, Plastic \u2022 USD 29.74",
+      "headline": "\ud83d\udd25\u2728 bella 4qt Slim Air Fryer Oatmilk: Small Beige Electric Fryer, 1300W, Plastic",
+      "blurb": "USD 29.74 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 35.69,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/8uwAAeSwYCVpKfEA/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3A8uwAAeSwYCVpKfEA&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 768380,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-11-17T13:49:44.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
       "keyword": "massage gun",
       "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
       "price": 15.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVa0SXXEBQ%2B5rMayTVFeov1lZXbB4bQj9SclmxC2p8ANq4B7gTFWSU%2FxvvMUPeayYyAKNWds04e2yuqLkXnxeZQgaAKa874Z5Vx46q%2FJgnx%2Fwz8OGA0sPwneNSPdzVfsFNMopo2MWEglk5YqzorObCs1&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 350588,
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVYJOFuTPt29YbQ%2B7hCcEzzV3s5vc6QnZp%2BJgpk80Jyfse5FO%2Fu4Gc%2FKU0OpZ90Grr7uSqkIJmiaVHF9UN3hOt6lFVyU59Qb0JSHRl6G8Yzetq%2FvgGFsyrJDYa6wlH8HrfAUUTbM1VauBTZx8dHKqkdv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 350590,
       "top_rated": false,
       "seller_username": "gameinfinity",
       "inserted_at": "2023-04-13T18:58:49.000Z",
@@ -48,57 +114,13 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2By12CvTm1Pvp%2BNtfyDXcPxNb%2B75XueyJeZyYq3l7PqombipDVbpS%2FgBQlnb01AFyN%2FtS8Cr740WMBmsQ8QfXwQ5f7HXiotjkVFVcZszSdPIwU3N4qMKcPYuiBNK2qKfB%2FhHDJxbI685y2dA%2BqaCj%2FprXWRFtWy6WkpP1CCfIOOF1w%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283093,
-      "top_rated": false,
-      "seller_username": "sale2015express",
-      "inserted_at": "2020-01-12T18:12:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "rgb lamp"
-      ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Milwaukee 0882-20 M18 18V Lithium-ion Cordless Compact Vacuum - Bare Tool",
-      "price": 129.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/2KAAAeSwdxdpJgKU/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/175433463227?_skw=cordless+vacuum&hash=item28d8a635bb%3Ag%3A2KAAAeSwdxdpJgKU&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 253581,
-      "top_rated": false,
-      "seller_username": "factory_authorized_outlet",
-      "inserted_at": "2022-09-30T21:10:55.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Milwaukee 0882-20 M18 18V Lithium-ion Cordless Compact Vacuum - Bare Tool \u2022 USD 129.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Milwaukee 0882-20 M18 18V Lithium-ion Cordless Compact Vacuum - Bare Tool",
-      "blurb": "USD 129.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "massage gun",
       "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
       "price": 42.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Z74AAeSwRohpKgJi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AZ74AAeSwRohpKgJi&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvzJDW%2FkTdONz8AAJykcC7lEYxp3Mo9X1CPGdwtm1vW8V77CgEfpoizNhhXdvivdG7NZOYQW1k%2FqnJgYLK4%2BNTYuAd6EZbTwWhYiYhOUiL46H7K%2F6fFKPgvFwzLR%2BFoHhLp2TQEz9OpjUcUoA2y0P%2B3uV8L7PWeOkUPFjW%2Bcto%2F4gQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 177663,
+      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AZ74AAeSwRohpKgJi&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvwiTPYr6qVO%2F%2BoGqL%2FxuLr5aSNdsipWf5ouBRzDfqw6hWc%2Bh0LlaHId1sXsFoiMWRzyByHzRi%2FLkHeMRiojDMMpDN72iob7GRN5h%2FsaUiAMyN5TOj8qILYV1UISPmhkFARqqSDtO2LaM%2FhwtVL8QCtO810HZWJnzF559GAlw5NIMg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 177667,
       "top_rated": false,
       "seller_username": "tradeportusa",
       "inserted_at": "2025-08-26T14:30:59.000Z",
@@ -110,28 +132,6 @@
       "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
       "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best rgb lamp",
-      "title": "RGB Hexagon Garage Lights LED Honeycomb Ceiling Lamps for Garage Home Gym Bar",
-      "price": 104.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/flgAAeSw8XBor8L4/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/176758123452?_skw=best+rgb+lamp&hash=item29279aebbc%3Ag%3AflgAAeSw8XBor8L4&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYF1GE5%2BXzMGfpB0ySbK5nGmDfCFyPGGrpnZ5tMMKArpsWolDvedWMAS8FeL48AppHCK3aKr9b4MXKZjlcKnxTnYxBdQ8tYzUYJbg2%2F9vHruNpfPfxKdKI21LP%2BgZ%2BA8hj%2Bpoatri5GyjbK%2FFuybNPQqxNlLj4aV0ahzE%2FOQAKoUChbl8T4j6xI4VdCX2bYjLQCTPl0uoxEHql2RQcPrrbZcdjlrAvkkZwiAG5tUcMd4XWuD%2F4LZ%2FeIV%2F0mPiUDj05%2BSuQppELdeyvboZxlXyg9jIvXmOsw0WkP4i5xO363xw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 108029,
-      "top_rated": false,
-      "seller_username": "brotherhuang1983",
-      "inserted_at": "2024-12-26T07:24:38.000Z",
-      "signals": 9.0,
-      "tags": [
-        "rgb lamp"
-      ],
-      "caption": "RGB Hexagon Garage Lights LED Honeycomb Ceiling Lamps for Garage Home Gym Bar \u2022 USD 104.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb RGB Hexagon Garage Lights LED Honeycomb Ceiling Lamps for Garage Home Gym Bar",
-      "blurb": "USD 104.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
