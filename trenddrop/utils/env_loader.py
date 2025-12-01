@@ -1,40 +1,32 @@
 from __future__ import annotations
-from pathlib import Path
-from functools import lru_cache
-from typing import Optional
+
 import os
+from functools import lru_cache
+from pathlib import Path
+
+try:
+    from dotenv import load_dotenv
+except ImportError:  # pragma: no cover - optional
+    load_dotenv = None  # type: ignore[assignment]
 
 
-@lru_cache(maxsize=1)
-def load_env_once() -> Path:
+@lru_cache()
+def load_env_once() -> str | None:
     """
-    Locate the repository root and load ONLY the root `.env` file.
-    Never read `.env.example`. Returns the resolved .env path if found,
-    otherwise raises FileNotFoundError on first use.
+    Load a .env file from the repo root *if it exists*.
+
+    - In local dev: you typically have a .env; we'll load it once.
+    - In CI: env vars come from GitHub Secrets; .env is optional.
+      If no .env exists, we do NOTHING and DO NOT raise.
     """
-    try:
-        from dotenv import load_dotenv  # type: ignore
-    except Exception as e:
-        raise RuntimeError("python-dotenv is required") from e
+    # Find repo root by going two levels up from this file:
+    # trenddrop/utils/env_loader.py -> trenddrop -> repo root
+    repo_root = Path(__file__).resolve().parents[2]
+    env_path = repo_root / ".env"
 
-    # Start from this file and walk up looking for repo markers
-    start = Path(__file__).resolve()
-    cur = start
-    for _ in range(12):
-        env_path = cur / ".env"
-        if env_path.exists():
-            load_dotenv(env_path, override=False)
-            return env_path
-        if cur.parent == cur:
-            break
-        cur = cur.parent
+    if env_path.exists() and load_dotenv is not None:
+        load_dotenv(dotenv_path=env_path)
+        return str(env_path)
 
-    # Fallback: try CWD .env if present
-    cwd_env = Path.cwd() / ".env"
-    if cwd_env.exists():
-        load_dotenv(cwd_env, override=False)
-        return cwd_env
-
-    raise FileNotFoundError("Root .env not found. Place a .env at the repo root.")
-
-
+    # No .env (typical on CI) -> just rely on existing environment
+    return None
