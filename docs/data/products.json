@@ -1,28 +1,6 @@
 {
-  "updated_at": 1764584142,
+  "updated_at": 1764587554,
   "products": [
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "price": 28.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNMtGT7FPnkKuLCaKkVhLB6YP01rnXVGI7sE3iMP2ggokD7BDdZkATsApg06IWdQ2kkh2xvCqrHo%2Bpe2VpXHSGifbV0wy0jdcBMcSquRmExel8qtp1wzXuwvVGluwZ%2Fb6aNbptRDFzfWRlZXv4Euf%2FVHIBniuadqHqPeFLsMzG7kg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1000272,
-      "top_rated": false,
-      "seller_username": "theperfectpart",
-      "inserted_at": "2022-11-18T00:58:24.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -32,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/4CwAAeSw9RhpKLU9/s-l225.jpg",
       "url": "https://www.ebay.com/itm/326829859786?_skw=mechanical+keyboard&hash=item4c1893e3ca%3Ag%3A4CwAAeSw9RhpKLU9&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 898295,
+      "seller_feedback": 898304,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2025-10-22T15:51:38.000Z",
@@ -48,12 +26,34 @@
     {
       "source": "ebay",
       "provider": "ebay",
+      "keyword": "mechanical keyboard deals",
+      "title": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "price": 24.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/TfgAAeSwGjtpLQjZ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315781118209?_skw=mechanical+keyboard+deals&hash=item4986057901%3Ag%3ATfgAAeSwGjtpLQjZ&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbfyV2HfsZQuYuoIWfGa6uKwbCJuGpp7%2FYhQIDNNoKg3WAPzRbYw8ZPR62oPjFrhte8t02MmWNMj%2FJPALZPgK1bZWgLVzxdsd4LLs96o1ChHOTxvBpNEw3k2lEvJmu5BGbkNLmPAiZIneKJ9%2Bm19MXe1GEDtiTc97IbwOFgOIl8c7PiZA37yKkKQQXvBbWLIvDLqJudDRBQ4jocaSk7WVKFu83EQIZjotdj9B3l9LO4WjRtNIUgRERBS6TFNmFHcQVXArk2IrKm5lvHEX2BesNmueaat0pjMQlSuJv7Jp5vaQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 859961,
+      "top_rated": false,
+      "seller_username": "a4c",
+      "inserted_at": "2024-09-23T23:43:37.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray \u2022 USD 24.95",
+      "headline": "\ud83d\udd79\ufe0f Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
       "keyword": "mechanical keyboard",
       "title": "Logitech G PRO TKL Wired Mechanical GX Blue Clicky Gaming Keyboard w/ RGB",
       "price": 52.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/djEAAOSwuu9mOop5/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/256503800129?_skw=mechanical+keyboard&hash=item3bb8d16141%3Ag%3AdjEAAOSwuu9mOop5&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYps8bcr7xUnVFFCcJn0p0lhC2CXQc1hzROGbA99vvpJI%2BLqby%2FPtUc2lMwLORZDjTKnNnJWe%2BTrLwlxXcsaIUiYx9%2Bb6SPOirduJvWfr%2BAuXCPrzWG3lXCRA0oNzacMsccvbnUAULNRiq%2BGm1khedNB13TEqKs2r9Lsk8fQcz0Qn83EPB1QR0J1fwWHoR9I6UGOvCm7bOt%2BqS6IXITg6c%2B6pGdyW8c51%2BRL5Z2CjvdbwqyPk2frvIaeaveDqRGd3oFKoxFIVU4WmXjJOi%2BX9Ko1q%2BnVXyEukcb1HA6WeNsEg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "url": "https://www.ebay.com/itm/256503800129?_skw=mechanical+keyboard&hash=item3bb8d16141%3Ag%3AdjEAAOSwuu9mOop5&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYps8bcr7xUnVFFCcJn0p0lhC2CXQc1hzROGbA99vvpJI%2BLqby%2FPtUc2lMwLORZDjTKnNnJWe%2BTrLwlxXcsaIUiYx9%2Bb6SPOirduJvWfr%2BAuXCPrzWG3lXCRA0oNzacMse3PWz9j56ArEfXh9GEjEB3YheWnxaFuWhk0mq16W9EGmdIOv1FLas20a%2FjwxGKwGKbweDva4Q2d4EU0NabVoI49sKeIsqnxmfTQre%2BSYR2D0grrKFcxxkteLtHUiPCvdPIVH085ViMknGE%2FJINivkHQyrW4F1MrDrKjZdskXFw%2Bg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
       "seller_feedback": 453921,
       "top_rated": false,
       "seller_username": "bigdeals",
@@ -70,68 +70,68 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 16.39,
+      "keyword": "mechanical keyboard deals",
+      "title": "8BitDo Retro Mechanical Keyboard N Edition New",
+      "price": 89.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354235,
+      "image_url": "https://i.ebayimg.com/images/g/YSYAAOSwDAhmWk2e/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196420920607?_skw=mechanical+keyboard+deals&hash=item2dbb99651f%3Ag%3AYSYAAOSwDAhmWk2e&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 167252,
       "top_rated": false,
-      "seller_username": "buildyourbike",
-      "inserted_at": "2015-08-27T20:27:44.000Z",
+      "seller_username": "qualitycellz",
+      "inserted_at": "2024-05-31T22:24:20.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "mechanical keyboard"
       ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.39",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 16.39 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "8BitDo Retro Mechanical Keyboard N Edition New \u2022 USD 89.99",
+      "headline": "\ud83d\udd79\ufe0f 8BitDo Retro Mechanical Keyboard N Edition",
+      "blurb": "USD 89.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "price": 15.99,
+      "keyword": "mechanical keyboard",
+      "title": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
+      "price": 31.49,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVbfOTigqAWwZlKgqPgXkUCMk3nndwNsptECvXOt5%2BvLZWiXf9vsepIFbsx8%2FZTP5W998TmUGXuHwnKA4QyQEG1FzQus3mwWAZe84whBPCa9Thoxg%2Bz6CrpbrNka--pcLXWSf%2FBT4W%2BIzAvBSZvq9OMD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 350641,
+      "image_url": "https://i.ebayimg.com/images/g/MbYAAOSwXolnnFGN/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/306077311823?_skw=mechanical+keyboard&hash=item4743a1234f%3Ag%3AMbYAAOSwXolnnFGN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 113917,
       "top_rated": false,
-      "seller_username": "gameinfinity",
-      "inserted_at": "2023-04-13T18:58:49.000Z",
+      "seller_username": "mobileshark",
+      "inserted_at": "2025-01-31T04:30:37.000Z",
       "signals": 9.0,
       "tags": [
-        "massage gun"
+        "mechanical keyboard"
       ],
-      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
-      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX \u2022 USD 31.49",
+      "headline": "\ud83d\udd79\ufe0f OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
+      "blurb": "USD 31.49 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED",
-      "price": 37.9,
+      "keyword": "cordless vacuum deals",
+      "title": "Black Friday Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
+      "price": 40.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/FY4AAOSwf0hbUYck/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/292130880062?_skw=bike+light+deals&hash=item44045b7a3e%3Ag%3AFY4AAOSwf0hbUYck&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 263885,
+      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 107653,
       "top_rated": false,
-      "seller_username": "the_bikesmiths",
-      "inserted_at": "2017-05-26T22:05:35.000Z",
+      "seller_username": "dd707city",
+      "inserted_at": "2025-11-04T21:44:40.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "cordless vacuum"
       ],
-      "caption": "Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED \u2022 USD 37.9",
-      "headline": "\ud83d\udd25\u2728 Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED",
-      "blurb": "USD 37.90 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Black Friday Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 40.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Black Friday Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
+      "blurb": "USD 40.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
