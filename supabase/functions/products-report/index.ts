@@ -25,8 +25,7 @@ function makeCsv(rows: any[], headers: string[]): string {
         const value = row[key];
         if (value === null || value === undefined) return "";
         const s = String(value);
-        // Escape quotes
-        return `"${s.replace(/"/g, '""')}"`
+        return `"${s.replace(/"/g, '""')}"`;
       })
       .join(",")
   );
@@ -82,7 +81,6 @@ serve(async (req) => {
     }
 
     if (format === "csv") {
-      // Columns we care about in CSV
       const headers = [
         "id",
         "provider",
@@ -109,7 +107,7 @@ serve(async (req) => {
       });
     }
 
-    // Default: JSON
+    // Default JSON
     return new Response(
       JSON.stringify({ ok: true, data }),
       {
@@ -122,7 +120,19 @@ serve(async (req) => {
     );
   } catch (err) {
     console.error("[products-report] Handler error:", err);
-    const message = err instanceof Error ? err.message : String(err);
+
+    let message: string;
+    if (err instanceof Error) {
+      message = err.message;
+    } else if (typeof err === "object") {
+      try {
+        message = JSON.stringify(err);
+      } catch {
+        message = String(err);
+      }
+    } else {
+      message = String(err);
+    }
 
     return new Response(
       JSON.stringify({ ok: false, error: message }),
