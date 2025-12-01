@@ -1,71 +1,49 @@
 {
-  "updated_at": 1764544298,
+  "updated_at": 1764551244,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "price": 129.99,
+      "keyword": "bike light deals",
+      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "price": 16.39,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/p2UAAeSwGSZpKRWv/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3Ap2UAAeSwGSZpKRWv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 898211,
+      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 354235,
       "top_rated": false,
-      "seller_username": "best_buy",
-      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "seller_username": "buildyourbike",
+      "inserted_at": "2015-08-27T20:27:44.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "bike light"
       ],
-      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
-      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.39",
+      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "blurb": "USD 16.39 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer deals",
-      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
-      "price": 35.69,
+      "keyword": "bike light deals",
+      "title": "Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED",
+      "price": 37.9,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/9ocAAeSwSIRpLAxO/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3A9ocAAeSwSIRpLAxO&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 772084,
+      "image_url": "https://i.ebayimg.com/images/g/FY4AAOSwf0hbUYck/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/292130880062?_skw=bike+light+deals&hash=item44045b7a3e%3Ag%3AFY4AAOSwf0hbUYck&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 263885,
       "top_rated": false,
-      "seller_username": "bullseye_deals",
-      "inserted_at": "2025-11-17T13:49:44.000Z",
+      "seller_username": "the_bikesmiths",
+      "inserted_at": "2017-05-26T22:05:35.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "bike light"
       ],
-      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
-      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2ByTxfKFZDOPSL4CqQeZhaHTtlez77xWD%2FsfO1%2FqHvvPgrkfaQXtCAJi39iFZ6efRwzjilGzm%2FItr3JADYEAWUGx5rV8NO%2BTUQTc5SDo6rkesWr62z0VJ50FHhqkT3jF1oM1NPD3AJaZMqunAAp9W0JYWG6qqEoctaZc7%2BoGtB8UHw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283120,
-      "top_rated": false,
-      "seller_username": "sale2015express",
-      "inserted_at": "2020-01-12T18:12:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "rgb lamp"
-      ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED \u2022 USD 37.9",
+      "headline": "\ud83d\udd25\u2728 Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED",
+      "blurb": "USD 37.90 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -76,7 +54,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/2KAAAeSwdxdpJgKU/s-l225.jpg",
       "url": "https://www.ebay.com/itm/175433463227?_skw=cordless+vacuum&hash=item28d8a635bb%3Ag%3A2KAAAeSwdxdpJgKU&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 253896,
+      "seller_feedback": 253899,
       "top_rated": false,
       "seller_username": "factory_authorized_outlet",
       "inserted_at": "2022-09-30T21:10:55.000Z",
@@ -88,6 +66,50 @@
       "headline": "\ud83c\udfe0\ud83d\udecb Milwaukee 0882-20 M18 18V Lithium-ion Cordless Compact Vacuum - Bare Tool",
       "blurb": "USD 129.00 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "bike light deals",
+      "title": "Harley-Davidson Brake Light Flash De D96274 Mens Black Motorcycle Boots",
+      "price": 113.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/wu4AAOSw3SlnP3yZ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/405371859786?_skw=bike+light+deals&hash=item5e620bb34a%3Ag%3Awu4AAOSw3SlnP3yZ&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ubzvui%2BxytMvRHBDgl8vd%2B%2BGi1giNA1n04lWKXq8krVns5alRPw1bfCVDEZpW3C31WGjv%2B57lD4rhAdbRLFGoV4hhUvEkxdc0F4RkQNatvInq2K1S%2Bj%2FTOKnDfKSrlIxhNzo4Sv9YTljb0zHZ2rbZMr4OjeypAR1CfK53Mccw7aqhYdiy5dJaEt0WwZZm6VfphsY%2FEBWNmOGYrDoy86OEIi0jxh51qj81LLWTVlJ6%2F23DOr%2BaU2gQkN%2FvuoAohGiR2ahTqwZzB6Tvb%2FUDs%2FkwwlsYZpIiLCE7ZR0hlMkwzDhA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 223997,
+      "top_rated": false,
+      "seller_username": "victorioussales22",
+      "inserted_at": "2024-11-21T18:29:02.000Z",
+      "signals": 9.0,
+      "tags": [
+        "bike light"
+      ],
+      "caption": "Harley-Davidson Brake Light Flash De D96274 Mens Black Motorcycle Boots \u2022 USD 113.99",
+      "headline": "\ud83d\udd25\u2728 Harley-Davidson Brake Light Flash De D96274 Mens Black Motorcycle Boots",
+      "blurb": "USD 113.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "bike light deals",
+      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "price": 91.69,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/-MEAAOSwu2dgUkFs/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3A-MEAAOSwu2dgUkFs&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9eim%2F2Ig2oINb6RuZ25WibsJLZvnRJXTqgLf%2F3QisaXPegJ5cTW8SGDcqjbuyHjjy0uS%2BNzMPYt%2Bt%2BKbzKNj%2Bt2F%2Fhg1roGTLkgsr65KEsIC4zh6waDVDWbFJxkCJYssOI%2FubT7RCwndWvV3Uz5rBVR29DS36B943wUlqGI2S%2BNgQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 211777,
+      "top_rated": false,
+      "seller_username": "cyclingdeal",
+      "inserted_at": "2020-08-24T11:46:29.000Z",
+      "signals": 9.0,
+      "tags": [
+        "bike light"
+      ],
+      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 91.69",
+      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "blurb": "USD 91.69 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -109,28 +131,6 @@
       "caption": "Black Friday Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 40.0",
       "headline": "\ud83c\udfe0\ud83d\udecb Black Friday Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
       "blurb": "USD 40.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark IZ340H Pet Pro Cordless Stick Vacuum (Certified Refurbished)",
-      "price": 129.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/~PYAAOSwFqVjfpck/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/275552007289?_skw=cordless+vacuum&hash=item40282df479%3Ag%3A~PYAAOSwFqVjfpck&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 96707,
-      "top_rated": false,
-      "seller_username": "goodasnewelectronics",
-      "inserted_at": "2022-11-23T22:00:17.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Shark IZ340H Pet Pro Cordless Stick Vacuum (Certified Refurbished) \u2022 USD 129.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark IZ340H Pet Pro Cordless Stick Vacuum (Certified Refurbished)",
-      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
