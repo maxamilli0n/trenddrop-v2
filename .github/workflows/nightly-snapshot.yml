@@ -8,6 +8,7 @@ on:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,7 +19,7 @@ jobs:
           node-version: "20"
 
       - name: Install deps
-        run: npm ci
+        run: npm install
 
       - name: Run snapshot
         env:
@@ -37,5 +38,3 @@ jobs:
           name: nightly-csv
           path: snapshots/*.csv
           if-no-files-found: ignore
-
-
