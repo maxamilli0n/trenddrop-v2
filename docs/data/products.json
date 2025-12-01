@@ -1,94 +1,6 @@
 {
-  "updated_at": 1764564004,
+  "updated_at": 1764564167,
   "products": [
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 19.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/LjUAAeSw6IdpKDno/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ALjUAAeSw6IdpKDno&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 898232,
-      "top_rated": false,
-      "seller_username": "best_buy",
-      "inserted_at": "2024-08-13T15:00:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 19.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 19.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 7.5W Magnetic Wireless Vehicle Charger for iPhone 15/1...",
-      "price": 22.22,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/ih4AAeSwt3lpLFZ0/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/325447857804?_skw=best+wireless+charger&hash=item4bc634368c%3Ag%3Aih4AAeSwt3lpLFZ0&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 898232,
-      "top_rated": false,
-      "seller_username": "best_buy",
-      "inserted_at": "2022-12-02T18:50:51.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 7.5W Magnetic Wireless Vehicle Charger for iPhone 15/1... \u2022 USD 22.22",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 7.5W Magnetic Wireless Vehicle Charger for iPhone 15/1...",
-      "blurb": "USD 22.22 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "price": 24.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/grYAAeSwrxVpKDm2/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3AgrYAAeSwrxVpKDm2&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 898232,
-      "top_rated": false,
-      "seller_username": "best_buy",
-      "inserted_at": "2024-11-21T02:36:52.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 24.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "blurb": "USD 24.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 15W Wireless Charger Kit with Watch Charger Hol...",
-      "price": 34.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/-LwAAeSwlURpKHT1/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204516288831?_skw=best+wireless+charger&hash=item2f9e1ee93f%3Ag%3A-LwAAeSwlURpKHT1&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 898232,
-      "top_rated": false,
-      "seller_username": "best_buy",
-      "inserted_at": "2023-10-25T20:30:51.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 2-in-1 15W Wireless Charger Kit with Watch Charger Hol... \u2022 USD 34.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 15W Wireless Charger Kit with Watch Charger Hol...",
-      "blurb": "USD 34.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -132,6 +44,94 @@
       "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
       "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard deals",
+      "title": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "price": 24.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/TfgAAeSwGjtpLQjZ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315781118209?_skw=mechanical+keyboard+deals&hash=item4986057901%3Ag%3ATfgAAeSwGjtpLQjZ&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbfyV2HfsZQuYuoIWfGa6uKwbCJuGpp7%2FYhQIDNNoKg3WAPzRbYw8ZPR62oPjFrhte8t02MmWNMj%2FJPALZPgK1bZWgLVzxdsd4LLs96o1ChHOTxvBpNEw3k2lEvJmu5BGZzWaZbEHcLDBRElry8AHTcOot8XnuhBwCkVso2bheIEMseypF6yDBCTNxkMl0CUzjZfzuEPO3fqOlcSDaa5JesO2LWrXjFWhpZ%2FwDu2lD4V0fdSOET5t9wq5r62%2BZPgK1ymhuqM6DAuz1%2FlJ9Ufzpd2OL%2FZT1pIH17ULILoIO18Q%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 859959,
+      "top_rated": false,
+      "seller_username": "a4c",
+      "inserted_at": "2024-09-23T23:43:37.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray \u2022 USD 24.95",
+      "headline": "\ud83d\udd79\ufe0f Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 35.69,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/8zsAAeSwnfdpLQc4/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3A8zsAAeSwnfdpLQc4&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 772163,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-11-17T13:49:44.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard deals",
+      "title": "Deco Gear Mechanical Gaming Keyboard, RGB Back Lighting, Anti-Ghosting, Black",
+      "price": 48.98,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/4cQAAeSwFo1pLQcu/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/314489771579?_skw=mechanical+keyboard+deals&hash=item49390d163b%3Ag%3A4cQAAeSwFo1pLQcu&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 652905,
+      "top_rated": false,
+      "seller_username": "buydig",
+      "inserted_at": "2023-03-29T14:45:20.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Deco Gear Mechanical Gaming Keyboard, RGB Back Lighting, Anti-Ghosting, Black \u2022 USD 48.98",
+      "headline": "\ud83d\udd79\ufe0f Deco Gear Mechanical Gaming Keyboard, RGB Back Lighting, Anti-Ghosting, Black",
+      "blurb": "USD 48.98 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard deals",
+      "title": "Microsoft Type Cover for Surface Pro - Black",
+      "price": 90.75,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/Dp0AAeSwdCVpLRCg/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/326711095795?_skw=mechanical+keyboard+deals&hash=item4c117fb1f3%3Ag%3ADp0AAeSwdCVpLRCg&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYgFi3dRMKv%2B%2FuhByHrEQRFQQnWnIxDTgGs9O9MoWk43B4y0mocnl0aT00CVjoSWJ5qChk49O1HM620kYyBwCrdJ66GhyFgzsB%2Fjr3%2FLmTq8VvIj0Xs7y2ncYYTojRm7bgyhU13YXb6gMGiXKAE3WlkluqvzkJf2C0cQVXSGTg%2BjUVmGPhS7PPW%2FapAy9vgAdX0Pf0zs%2BO36cPdAWL9%2B0COQfWOIA5VnLHGC77Y0lLuVd47FU3cwjOXjE%2FK086mMy5WpgngMuUomC3cyiLyEnylXSdIaWDGzpxABGfwk8m84Q%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 652905,
+      "top_rated": false,
+      "seller_username": "buydig",
+      "inserted_at": "2025-07-31T02:00:48.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Microsoft Type Cover for Surface Pro - Black \u2022 USD 90.75",
+      "headline": "\ud83d\udd79\ufe0f Microsoft Type Cover for Surface Pro - Black",
+      "blurb": "USD 90.75 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
     }
   ]
 }
