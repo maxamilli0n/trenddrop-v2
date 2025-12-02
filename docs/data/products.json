@@ -1,6 +1,28 @@
 {
-  "updated_at": 1764652429,
+  "updated_at": 1764656442,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "cordless vacuum",
+      "title": "Shark Stratos Cordless Vacuum, Clean IQ & PowerFins (Certified Refurbished)",
+      "price": 148.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/d20AAeSwWt1pKJ7p/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum&hash=item370d1c9226%3Ag%3Ad20AAeSwWt1pKJ7p&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 2308504,
+      "top_rated": false,
+      "seller_username": "spreetail",
+      "inserted_at": "2025-11-07T16:03:08.000Z",
+      "signals": 9.0,
+      "tags": [
+        "cordless vacuum"
+      ],
+      "caption": "Shark Stratos Cordless Vacuum, Clean IQ & PowerFins (Certified Refurbished) \u2022 USD 148.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean IQ & PowerFins (Certified Refurbished)",
+      "blurb": "USD 148.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/rQgAAeSwAo1pKSoj/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205254466240?_skw=air+fryer&hash=item2fca1e9ac0%3Ag%3ArQgAAeSwAo1pKSoj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 898896,
+      "seller_feedback": 898936,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2025-01-29T19:55:31.000Z",
@@ -32,7 +54,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/p2UAAeSwGSZpKRWv/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3Ap2UAAeSwGSZpKRWv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 898896,
+      "seller_feedback": 898936,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2025-10-22T15:52:43.000Z",
@@ -54,7 +76,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/5IMAAeSw7Z9pLWWi/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205721047564?_skw=air+fryer+deals&hash=item2fe5ee120c%3Ag%3A5IMAAeSw7Z9pLWWi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 775245,
+      "seller_feedback": 775386,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-09-11T15:49:56.000Z",
@@ -76,7 +98,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/utMAAeSw4H9pLmpU/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3AutMAAeSw4H9pLmpU&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 775245,
+      "seller_feedback": 775386,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-11-17T13:49:44.000Z",
@@ -92,45 +114,23 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "pet hair trimmer deals",
-      "title": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
-      "price": 17.95,
+      "keyword": "portable monitor",
+      "title": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "price": 59.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/JacAAOSwuIRdJg8G/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/352493815621?_skw=pet+hair+trimmer+deals&hash=item521244c745%3Ag%3AJacAAOSwuIRdJg8G&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pet_hair_trimmer&toolid=10001",
-      "seller_feedback": 708718,
+      "image_url": "https://i.ebayimg.com/images/g/JNEAAOSwpIJnXbkp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365287320803?_skw=portable+monitor&hash=item550cd22ce3%3Ag%3AJNEAAOSwpIJnXbkp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 396969,
       "top_rated": false,
-      "seller_username": "inkcredibleprinting",
-      "inserted_at": "2018-10-22T19:20:49.000Z",
+      "seller_username": "quickshipelectronics",
+      "inserted_at": "2024-12-14T16:58:20.000Z",
       "signals": 9.0,
       "tags": [
-        "pet hair trimmer"
+        "portable monitor"
       ],
-      "caption": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper \u2022 USD 17.95",
-      "headline": "\ud83d\udd25\u2728 Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
-      "blurb": "USD 17.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 16.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354254,
-      "top_rated": false,
-      "seller_username": "buildyourbike",
-      "inserted_at": "2015-08-27T20:27:44.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J \u2022 USD 59.99",
+      "headline": "\ud83d\udd25\u2728 Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "blurb": "USD 59.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
