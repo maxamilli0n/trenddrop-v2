@@ -2,12 +2,43 @@ name: Nightly Multi-Provider Reports
 
 on:
   schedule:
-    - cron: "5 7 * * *"  # 07:05 UTC → 02:05 EST, adjust later if you want
-  workflow_dispatch:
+    - cron: "5 7 * * *"  # 07:05 UTC → 02:05 EST (adjust if you want)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nightly-multi-reports
+  cancel-in-progress: true
 
 jobs:
-  nightly-reports:
+  nightly-multi:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      # ---- NIGHTLY MODE & options ----
+      REPORT_MODE: nightly_multi
+      REPORT_MAX_ITEMS: "50"
+      REPORT_SORT_STRATEGY: conversion
+      EPN_CUSTOM_ID: NIGHTLY_MULTI
+
+      # Report presentation
+      REPORT_TITLE: "Nightly Multi-Provider Movers — eBay + Amazon"
+      REPORT_LAYOUT: table
+      REPORT_TZ: America/New_York
+      CURRENCY: USD
+
+      # 👇 Multi-provider selection (ebay + amazon + master pack)
+      PRODUCT_SOURCE: multi
+
+      # Storage bucket
+      SUPABASE_BUCKET: trenddrop-reports
+
+      # Supabase credentials (from Secrets)
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
     steps:
       - name: Checkout repository
@@ -36,11 +67,7 @@ jobs:
           python -m trenddrop.scraper.ebay
           python -m trenddrop.scraper.amazon
 
-      - name: Generate nightly reports (ebay + amazon)
-        run: |
-          python -m trenddrop.reports.generate_reports --provider ebay
-          python -m trenddrop.reports.generate_reports --provider amazon
-
-      - name: Build master pack
-        run: |
-          python -m trenddrop.reports.generate_reports --master
+      - name: Generate Nightly Multi-Provider Reports + Master Pack
+        # Again, PRODUCT_SOURCE=multi makes generate_reports run both providers
+        # and then build the master pack automatically.
+        run: python -m trenddrop.reports.generate_reports
