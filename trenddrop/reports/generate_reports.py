@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 from typing import List, Dict, Optional, Tuple
 import re
 import sys
+
 from supabase import create_client
 try:
     from zoneinfo import ZoneInfo
@@ -18,6 +19,7 @@ from utils.report import (
     generate_weekly_pdf,
     generate_table_pdf,
     write_csv,
+    get_provider_filter,  # NEW: env-driven provider selector
 )
 from trenddrop.utils.supabase_upload import upload_file
 from trenddrop.utils.env_loader import load_env_once
@@ -36,6 +38,7 @@ try:  # Ensure Unicode-friendly stdout for rich labels
     sys.stdout.reconfigure(encoding="utf-8")
 except Exception:
     pass
+
 ENV_PATH = load_env_once()
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 OUT_DIR = ROOT / "out"
@@ -434,7 +437,6 @@ def generate_weekly_report(provider: str) -> None:
         except RuntimeError:
             read_client = None
     try:
-        # Load .env if present so local runs have credentials
         # Mode and options
         mode = _get_env("REPORT_MODE", "weekly_paid")
         max_items = PDF_TOP_N
@@ -455,6 +457,7 @@ def generate_weekly_report(provider: str) -> None:
         else:
             pdf_outfile = out_dir / "daily-report.pdf"
             csv_outfile = out_dir / "daily-report.csv"
+
         latest_run_id, latest_run_started_at = _get_latest_successful_run()
         if latest_run_started_at:
             print(f"[reports] latest successful run {latest_run_id} @ {latest_run_started_at.isoformat()}")
@@ -740,14 +743,27 @@ def main(argv: Optional[List[str]] = None) -> None:
         _run_master_pack()
         return
 
+    # Decide which providers to run
     run_master_after = False
     if provider_arg:
+        # CLI arg wins
         if provider_arg not in SUPPORTED_PROVIDERS:
             raise SystemExit(f"Unsupported provider: {provider_arg}")
         providers_to_run = [provider_arg]
     else:
-        providers_to_run = list(DEFAULT_PROVIDERS)
-        run_master_after = True
+        # No CLI provider → use env-driven filter from utils.report
+        selected = get_provider_filter()  # may be None for "multi/all/*"
+        if selected is None:
+            # multi/all → fall back to the default multi-provider set
+            providers_to_run = list(DEFAULT_PROVIDERS)
+        else:
+            # Use only supported providers
+            providers_to_run = [p for p in selected if p in SUPPORTED_PROVIDERS]
+            if not providers_to_run:
+                providers_to_run = list(DEFAULT_PROVIDERS)
+
+        # Run master pack only if we're running more than one provider
+        run_master_after = len(providers_to_run) > 1
 
     last_result: Optional[Dict[str, object]] = None
     for provider in providers_to_run:
@@ -775,5 +791,3 @@ def main(argv: Optional[List[str]] = None) -> None:
 
 if __name__ == "__main__":
     main()
-
-
