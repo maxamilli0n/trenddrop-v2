@@ -1,27 +1,27 @@
 {
-  "updated_at": 1764667146,
+  "updated_at": 1764670514,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer deals",
-      "title": "bella PRO - 4-qt. Touchscreen Slim Air Fryer - Oatmilk",
-      "price": 29.99,
+      "keyword": "cordless vacuum",
+      "title": "Shark Stratos Cordless Vacuum, Clean IQ & PowerFins (Certified Refurbished)",
+      "price": 148.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/rQgAAeSwAo1pKSoj/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205254466240?_skw=air+fryer+deals&hash=item2fca1e9ac0%3Ag%3ArQgAAeSwAo1pKSoj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 899001,
+      "image_url": "https://i.ebayimg.com/images/g/d20AAeSwWt1pKJ7p/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum&hash=item370d1c9226%3Ag%3Ad20AAeSwWt1pKJ7p&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 2308521,
       "top_rated": false,
-      "seller_username": "best_buy",
-      "inserted_at": "2025-01-29T19:55:31.000Z",
+      "seller_username": "spreetail",
+      "inserted_at": "2025-11-07T16:03:08.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "cordless vacuum"
       ],
-      "caption": "bella PRO - 4-qt. Touchscreen Slim Air Fryer - Oatmilk \u2022 USD 29.99",
-      "headline": "\ud83d\udd25\u2728 bella PRO - 4-qt. Touchscreen Slim Air Fryer - Oatmilk",
-      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Shark Stratos Cordless Vacuum, Clean IQ & PowerFins (Certified Refurbished) \u2022 USD 148.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean IQ & PowerFins (Certified Refurbished)",
+      "blurb": "USD 148.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
@@ -32,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/LjUAAeSw6IdpKDno/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ALjUAAeSw6IdpKDno&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 898997,
+      "seller_feedback": 899005,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2024-08-13T15:00:21.000Z",
@@ -48,23 +48,45 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "price": 129.99,
+      "keyword": "best wireless charger",
+      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
+      "price": 39.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/p2UAAeSwGSZpKRWv/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3Ap2UAAeSwGSZpKRWv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 898997,
+      "image_url": "https://i.ebayimg.com/images/g/grYAAeSwrxVpKDm2/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3AgrYAAeSwrxVpKDm2&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 899005,
       "top_rated": false,
       "seller_username": "best_buy",
-      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "inserted_at": "2024-11-21T02:36:52.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "wireless charger"
       ],
-      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
-      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 39.99",
+      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "price": 18.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/0YYAAeSwGGJpK2US/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3A0YYAAeSwGGJpK2US&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjQ%2BuTiG8jDSObUPSPza%2B6QDWWn9giWlTRuLd1KPMogqShxSwf1IJ6etuxytCBOATqrzZCcia4O6Ki2VevrylQ%2B2ilAp4z3d4euhG7c4TH5Q1O93jzL73J8IsYfZ37zIIBSt3bmSM70%2BZYB5E%2B%2FsV6pIyapFrToGokyJYHOQNhQhtfQzw68ULp7CaTNNvdILi0eqXpegMHs0BNMu%2BV05tWZnjnR08sbLM%2FPVmvRtFSG1i7nwnuzFuTNOfTa5vNr7eEcROy4x0NDqAcKagLKk3l4tPLVBcMea3J17%2FhF%2FGIJQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 860104,
+      "top_rated": false,
+      "seller_username": "a4c",
+      "inserted_at": "2024-06-07T11:43:55.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
@@ -109,28 +131,6 @@
       "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
       "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
       "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
-      "price": 24.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/tlIAAeSw27JpK~W3/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AtlIAAeSw27JpK~W3&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 860104,
-      "top_rated": false,
-      "seller_username": "a4c",
-      "inserted_at": "2025-03-10T16:52:12.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black \u2022 USD 24.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
-      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
