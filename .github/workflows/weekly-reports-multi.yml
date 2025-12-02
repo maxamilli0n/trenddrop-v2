@@ -1,18 +1,57 @@
 name: Weekly TrendDrop Reports (Multi-Provider)
 
 on:
-  workflow_dispatch:
+  schedule:
+    # Weekly on Monday at 13:00 UTC (≈ 9:00 AM Boston time)
+    - cron: "0 13 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-multi-reports
+  cancel-in-progress: true
 
 jobs:
-  weekly-reports:
+  weekly-multi:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      # ---- WEEKLY MODE & options ----
+      REPORT_MODE: weekly_paid
+      REPORT_MAX_ITEMS: "100"
+      REPORT_SORT_STRATEGY: balanced
+      EPN_CUSTOM_ID: WEEKLY_MULTI
 
-    strategy:
-      matrix:
-        provider: [ebay, amazon]  # we'll add aliexpress later when it's working
+      # Report presentation
+      REPORT_TITLE: "Top 100 Trending Products — eBay + Amazon"
+      REPORT_LAYOUT: table
+      REPORT_TZ: America/New_York
+      CURRENCY: USD
+
+      # 👇 Multi-provider selection handled in generate_reports via get_provider_filter()
+      # "multi" => run DEFAULT_PROVIDERS (ebay + amazon) and then master pack
+      PRODUCT_SOURCE: multi
+
+      # Storage bucket (no secrets here)
+      SUPABASE_BUCKET: trenddrop-reports
+
+      # Supabase credentials (kept in GitHub Secrets)
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      # Optional email (safe – all from Secrets)
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      EMAIL_TEST_TO: ${{ secrets.EMAIL_TEST_TO }}
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -21,22 +60,8 @@ jobs:
           python-version: "3.11"
 
       - name: Install report dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements-reports.txt
+        run: pip install -r requirements-reports.txt
 
-      - name: Restore .env from GitHub Secret
-        shell: bash
-        run: |
-          cat << 'EOF' > .env
-          ${{ secrets.ENV_FILE }}
-          EOF
-
-      - name: Generate weekly report
-        run: |
-          python -m trenddrop.reports.generate_reports --provider "${{ matrix.provider }}"
-
-      - name: Build master pack (only once, after ebay)
-        if: matrix.provider == 'ebay'
-        run: |
-          python -m trenddrop.reports.generate_reports --master
+      - name: Generate Weekly Multi-Provider Reports + Master Pack
+        # No --provider or --master flags; logic is driven by PRODUCT_SOURCE=multi
+        run: python -m trenddrop.reports.generate_reports
