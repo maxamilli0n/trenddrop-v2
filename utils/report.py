@@ -385,3 +385,27 @@ def write_csv(products: List[Dict], outfile_path: str, columns: List[Dict[str, s
         w.writerow(headers)
         for p in products:
             w.writerow([_value_for_column(p, k) for k in keys])
+
+
+def get_provider_filter() -> Optional[List[str]]:
+    """
+    Read PRODUCT_SOURCE from env and normalize to a list of providers.
+
+    Returns:
+      - None  -> means "multi/all/default" (let caller use DEFAULT_PROVIDERS)
+      - ["ebay"] or ["amazon"] etc -> explicit provider list
+    """
+    raw = os.environ.get("PRODUCT_SOURCE") or ""
+    raw = raw.strip()
+    if not raw:
+        # No override → let caller decide (usually multi-provider default)
+        return None
+
+    lower = raw.lower()
+    if lower in ("multi", "all", "*"):
+        # Explicit "multi" / "all" → caller should use DEFAULT_PROVIDERS
+        return None
+
+    # Comma-separated provider list: "ebay,amazon"
+    parts = [p.strip().lower() for p in raw.split(",") if p.strip()]
+    return parts or None
