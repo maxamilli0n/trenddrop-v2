@@ -438,9 +438,29 @@ def generate_weekly_report(provider: str) -> None:
             read_client = None
     try:
         # Mode and options
-        mode = _get_env("REPORT_MODE", "weekly_paid")
+        mode = (_get_env("REPORT_MODE", "weekly_paid") or "").lower()
         max_items = PDF_TOP_N
-        default_title = "Top 50 Trending eBay Products — Weekly Report" if "weekly" in (mode or "") else "TrendDrop Report"
+
+        # Human-friendly provider label
+        provider_label_map = {
+            "ebay": "eBay",
+            "amazon": "Amazon",
+            "aliexpress": "AliExpress",
+        }
+        provider_label = provider_label_map.get(provider, provider.title())
+
+        # Default titles depend on mode + provider
+        if "weekly" in mode:
+            default_title = f"Top 50 Trending {provider_label} Products — Weekly Report"
+        elif "daily" in mode:
+            default_title = f"Top 10 {provider_label} Movers — Daily Report"
+        elif "nightly_multi" in mode:
+            # These are the per-provider nightly movers you saw
+            default_title = f"Nightly {provider_label} Movers — {provider_label} Marketplace"
+        else:
+            default_title = f"TrendDrop Report — {provider_label}"
+
+        # Allow override from env if you *really* want a custom title
         title = _get_env("REPORT_TITLE", default_title)
 
         out_dir = pathlib.Path("out")
