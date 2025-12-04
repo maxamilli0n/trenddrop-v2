@@ -20,7 +20,7 @@ jobs:
     env:
       # ---- WEEKLY MODE & options ----
       REPORT_MODE: weekly_paid
-      REPORT_MAX_ITEMS: "100"
+      REPORT_MAX_ITEMS: "50"
       REPORT_SORT_STRATEGY: balanced
       EPN_CUSTOM_ID: WEEKLY_MULTI
 
