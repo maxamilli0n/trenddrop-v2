@@ -25,7 +25,6 @@ jobs:
       EPN_CUSTOM_ID: WEEKLY_MULTI
 
       # Report presentation
-      REPORT_TITLE: "Top 100 Trending Products — eBay + Amazon"
       REPORT_LAYOUT: table
       REPORT_TZ: America/New_York
       CURRENCY: USD
