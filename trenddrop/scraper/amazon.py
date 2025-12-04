@@ -9,11 +9,11 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 from utils.db import upsert_products
-
 from .common import dedupe_by_url, fetch_html, now_iso, parse_price
 
 AMAZON_BASE = "https://www.amazon.com"
 AMAZON_SEARCH_URL = "https://www.amazon.com/s"
+
 SEED_QUERIES = [
     "smart home gadgets",
     "desk accessories",
@@ -25,9 +25,13 @@ SEED_QUERIES = [
 
 def _extract_rating(text: str) -> float:
     """
-    Parse something like '4.7 out of 5 stars' -> 4.7
+    Extract a float like 4.5 from strings such as:
+    - "4.5 out of 5 stars"
+    - "4.3"
     """
-    match = re.search(r"([\d\.]+)", text or "")
+    if not text:
+        return 0.0
+    match = re.search(r"([\d]+(?:\.\d+)?)", text)
     if not match:
         return 0.0
     try:
@@ -38,35 +42,32 @@ def _extract_rating(text: str) -> float:
 
 def _extract_reviews(text: str) -> int:
     """
-    Parse something like '12,345 ratings' -> 12345
+    Extract an int from strings such as:
+    - "1,234 ratings"
+    - "234 rating"
     """
-    digits = re.sub(r"[^\d]", "", text or "")
+    if not text:
+        return 0
+    digits = re.sub(r"[^\d]", "", text)
+    if not digits:
+        return 0
     try:
         return int(digits)
     except ValueError:
         return 0
 
 
-def _compute_signals(rating: float, review_count: int) -> float:
-    """
-    Composite Amazon signal score:
-      - higher rating is better
-      - many reviews is *much* better than a handful
-      - uses log10 so it doesn't blow up for huge SKUs
-    """
-    if rating <= 0 or review_count <= 0:
-        return 0.0
-    return rating * math.log10(review_count + 10)
-
-
 def _parse_card(card, keyword: str) -> Tuple[bool, dict]:
+    # ---- Title + URL ---------------------------------------------------------
     title_tag = card.find("h2")
     title = " ".join(title_tag.get_text(" ").split()) if title_tag else ""
 
-    link_tag = card.select_one("h2 a[href]") or card.select_one("a.a-link-normal[href]")
+    link_tag = (
+        card.select_one("h2 a[href]")
+        or card.select_one("a.a-link-normal[href]")
+    )
     if not link_tag:
         return False, {}
-
     if not title:
         title = " ".join(link_tag.get_text(" ").split())
 
@@ -75,38 +76,64 @@ def _parse_card(card, keyword: str) -> Tuple[bool, dict]:
         return False, {}
     url = urljoin(AMAZON_BASE, href)
 
-    # --- price ---
-    price_whole = card.select_one("span.a-price-whole")
-    price_fraction = card.select_one("span.a-price-fraction")
+    # ---- Price ---------------------------------------------------------------
     price = None
-    if price_whole:
-        combined = price_whole.get_text("").strip()
-        if price_fraction:
-            combined = f"{combined}.{price_fraction.get_text('').strip()}"
-        price = parse_price(combined)
 
-    # normalize to a float so downstream code never sees None
-    if price is None:
-        price = 0.0
+    # Preferred: a-offscreen has full "$39.99"
+    price_tag = card.select_one("span.a-price span.a-offscreen")
+    if price_tag:
+        price = parse_price(price_tag.get_text().strip())
+    else:
+        # Fallback: whole + fraction like "39" + "99"
+        price_whole = card.select_one("span.a-price-whole")
+        price_fraction = card.select_one("span.a-price-fraction")
+        if price_whole:
+            combined = price_whole.get_text("").strip()
+            if price_fraction:
+                combined = f"{combined}.{price_fraction.get_text('').strip()}"
+            price = parse_price(combined)
 
-    # --- image ---
+    # ---- Image ---------------------------------------------------------------
     image_tag = card.find("img", attrs={"src": True})
     image_url = image_tag["src"] if image_tag else ""
 
-    # --- rating & reviews ---
+    # ---- Rating + reviews ----------------------------------------------------
+    rating_value = 0.0
+    review_count = 0
+
+    # Rating text like "4.5 out of 5 stars"
     rating_tag = card.select_one("span.a-icon-alt")
-    rating_value = _extract_rating(rating_tag.get_text() if rating_tag else "")
+    if rating_tag:
+        rating_value = _extract_rating(rating_tag.get_text())
+    else:
+        # Sometimes stored in aria-label
+        alt_rating = card.select_one("span[aria-label$='out of 5 stars']")
+        if alt_rating:
+            rating_value = _extract_rating(
+                alt_rating.get("aria-label") or alt_rating.get_text()
+            )
 
-    review_tag = card.select_one("span.a-size-base.s-underline-text")
-    review_count = _extract_reviews(review_tag.get_text() if review_tag else "")
+    # Reviews text like "1,234 ratings"
+    review_tag = (
+        card.select_one("span[aria-label$='ratings']")
+        or card.select_one("span[aria-label$='rating']")
+        or card.select_one("span.a-size-base.s-underline-text")
+    )
+    if review_tag:
+        label = review_tag.get("aria-label") or review_tag.get_text()
+        review_count = _extract_reviews(label)
 
-    # For Amazon, treat "seller_feedback" as "number of reviews"
-    seller_feedback = review_count
+    # ---- Signals heuristic ---------------------------------------------------
+    # Combine rating (0–5) and review_count into a single sortable score.
+    # This is just for ranking; absolute numbers don't matter.
+    if rating_value <= 0 or review_count <= 0:
+        signals = 0.0
+    else:
+        signals = rating_value * (1.0 + math.log10(1.0 + review_count))
 
-    # Composite signal score
-    signals = _compute_signals(rating_value, review_count)
-
-    top_rated = "Amazon's Choice" in card.get_text()
+    # ---- Top-rated flag ------------------------------------------------------
+    txt = card.get_text(" ")
+    top_rated = "Amazon's Choice" in txt or "Best Seller" in txt
 
     product = {
         "title": title[:200],
@@ -114,7 +141,7 @@ def _parse_card(card, keyword: str) -> Tuple[bool, dict]:
         "image_url": image_url,
         "price": price,
         "currency": "USD",
-        "seller_feedback": seller_feedback,
+        "seller_feedback": review_count,
         "signals": signals,
         "top_rated": top_rated,
         "provider": "amazon",
@@ -156,6 +183,7 @@ def scrape_amazon(queries: List[str], per_page: int) -> List[dict]:
             continue
         print(f"[scraper-amazon] fetched {len(rows)} products for query '{keyword}'")
         collected.extend(rows)
+
     unique = dedupe_by_url(collected)
     print(f"[scraper-amazon] upserting {len(unique)} unique products into provider=amazon")
     if unique:
@@ -164,7 +192,9 @@ def scrape_amazon(queries: List[str], per_page: int) -> List[dict]:
 
 
 def main(argv: List[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(description="Scrape Amazon search results into Supabase.")
+    parser = argparse.ArgumentParser(
+        description="Scrape Amazon search results into Supabase."
+    )
     parser.add_argument(
         "--queries",
         nargs="*",
