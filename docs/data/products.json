@@ -1,5 +1,5 @@
 {
-  "updated_at": 1764818298,
+  "updated_at": 1764818624,
   "products": [
     {
       "source": "ebay",
@@ -9,8 +9,8 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGMXZTxyxLxU--qXjLRvZZXKvJB9Sa9atLK3Dyv%2FZ7TJIVQmWcdryrccQBOfeGH0X7DNukOdt47B3jBZv%2BhbVukLG76s3j71JK%2BfCPM9wK0nb55p4%2BeLv%2Bn1LtxJOgKcsl4DDOlAN4lQ1lsMSuryFFr5IlgzMZUd0ysf39UIy%2BQngQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1002253,
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNU69Hipg53tx0x7TmWbcES5ZntyzHJDw0cA8mrw8aEGdKz156VZif1FFRmC%2BT4o8oBqTP5A2tYU3ro8ARJZanyaw63YU5siQ%2Fpji2KpKFc1UiWhQ7w%2BTDClZUNZr6E2IuC65079pLhRzitpLj4uD%2BWMbnoht4uUiZYvPP2%2BKWleA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1002268,
       "top_rated": false,
       "seller_username": "theperfectpart",
       "inserted_at": "2022-11-18T00:58:24.000Z",
@@ -26,34 +26,12 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "mechanical keyboard deals",
-      "title": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
-      "price": 24.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/opQAAeSw4VRpMK4G/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/315781118209?_skw=mechanical+keyboard+deals&hash=item4986057901%3Ag%3AopQAAeSw4VRpMK4G&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbfyV2HfsZQuYuoIWfGa6uKwbCJuGpp7%2FYhQIDNNoKg3WAPzRbYw8ZPR62oPjFrhte8t02MmWNMj%2FJPALZPgK1bZWgLVzxdsd4LLs96o1ChHOTxvBpNEw3k2lEvJmu5BGa2OoYhM1oF0jEtOH8qjXz1jbT%2Fgw%2Bm50s61ozmjvfPpz01iyHvXyPJDCsTe0x0Knl4YFn1MQ7zVEstz%2ByUHVsnqBEgCyafn5Sad3qKJMNdXQusrXQOpFgsJrZmUJxyAWWFQoBlmV037JpOB%2BLaMdQUWcslTuG9iswmVD%2FX1pctRg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 860224,
-      "top_rated": false,
-      "seller_username": "a4c",
-      "inserted_at": "2024-09-23T23:43:37.000Z",
-      "signals": 9.0,
-      "tags": [
-        "mechanical keyboard"
-      ],
-      "caption": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray \u2022 USD 24.95",
-      "headline": "\ud83d\udd79\ufe0f Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
-      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "best cordless vacuum",
       "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
       "price": 45.0,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZCbJJDuy0iWc%2Fckpk%2BknhLSlvJoJ%2BbKh%2BJmU5WT2U6MZWPtG0b7xd5l%2B1KfHw51OulyqQUxQfcj786ndrqoNw4RGIFaWObyojezuw%2FM1hsKpRcVqybOanHaaz2uHRLKuvukCKYL0KZEi2ootCXTpGEFVRSIf5je9HHELH%2BXG9YOYA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZCHDiuvuU18EDbLion0mc73PBLFHm6Vk1aaybNchV8L0IxPp5xcO6r0plzYd%2Fcv3jOkkkHSBzoZeuVHRxix6aIUA4XmVpblqi1%2Bzyk8KE7Wu0wRvAVslTs9To3egp5UFGsOHu%2F%2BVNw71SIL8MaZP7KTtrodCMbAVjonxxOQcMpLYw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
       "seller_feedback": 554662,
       "top_rated": false,
       "seller_username": "vipoutlet",
@@ -70,34 +48,12 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "Logitech G PRO TKL Wired Mechanical GX Blue Clicky Gaming Keyboard w/ RGB",
-      "price": 52.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/djEAAOSwuu9mOop5/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/256503800129?_skw=mechanical+keyboard&hash=item3bb8d16141%3Ag%3AdjEAAOSwuu9mOop5&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYps8bcr7xUnVFFCcJn0p0lhC2CXQc1hzROGbA99vvpJI%2BLqby%2FPtUc2lMwLORZDjTKnNnJWe%2BTrLwlxXcsaIUiYx9%2Bb6SPOirduJvWfr%2BAuXCPrzWG3lXCRA0oNzacMsdN%2F8mdZvmu%2FpvEstRWQg%2FIbDAvG3VIdFyxR4EniUnb6bpxduTdJUCuuct9Lnb88Ovjk1DAncWBCCeNS4JaU7e8WtogIpYOPS3wMbijjjPWD0g1ZWesyu4Rb9jtOQaKRByxRcns4Xd9vE%2ByqRsD2g5o8XtsNpZK4mY8SWSot5uQgg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 454041,
-      "top_rated": false,
-      "seller_username": "bigdeals",
-      "inserted_at": "2024-05-07T20:27:28.000Z",
-      "signals": 9.0,
-      "tags": [
-        "mechanical keyboard"
-      ],
-      "caption": "Logitech G PRO TKL Wired Mechanical GX Blue Clicky Gaming Keyboard w/ RGB \u2022 USD 52.99",
-      "headline": "\ud83d\udd79\ufe0f Logitech G PRO TKL Wired Mechanical GX Blue Clicky Gaming Keyboard w/ RGB",
-      "blurb": "USD 52.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "massage gun",
       "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
       "price": 15.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVYqYdJg0%2FxSR8Secb0GNb9WbewDLU46sK4G52S5Qh9zJnZftqXdPIx6OPdPN4%2FFg9YetJdKrEOz6u7L2ia0CzOrkQq2mSTnpJFZVnxKRSfZX6IPdUqP%2F7DVFk5pBL4fX733UKQXCF7PEY7np4ee%2BLX0&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVbAyzL%2B4yeiglKgVqncZsfbGkze8M4xf8XD%2BG2u5iSrBW2HOLU%2Bi1e9uS2K4lIvP0MG6I8KqVB5P0%2F86k3xaFLdOgzBx8u36TFGUl%2F4K0b2PgnufzIKxUzCRteXT9ffnfG6dj6tDJkZAm%2BdGConkQZy&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
       "seller_feedback": 350811,
       "top_rated": false,
       "seller_username": "gameinfinity",
@@ -119,7 +75,7 @@
       "price": 32.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2Bynf7RQbaSnngJrrVWUGfu044%2FkCjDYEzcndnux2QzZGDmPyp%2Bmv7Pm0tuJSumuQ9J3T%2BHz1UZ3ymxPyik6hY5ruxyc0jU3kZJGzpwPXfl4ndEK7GVX3glJeNbV8jOSHoNclI%2BDCVgBleB25SJ9pW%2Frh9e385pOFUwiCVFs7Mx7bg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
+      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2ByHMZvS%2BzFlK%2BRE%2FNccvUp8S%2BzqJ4Fvnvq35xXtvYK2nRO5W%2F7UjsTS%2FqQmcr3O4LI%2B4Yycn%2BNlC%2BSXi2dZcw20P7%2F3YBITCiWFDzz3mO1mlJqXIK%2BHhzn%2B6Sr9NwjsqQ%2FLAQBoPk2ioMqNHFR0sAKiKoeFCOSGMk0mFWQGraCqmg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
       "seller_feedback": 283182,
       "top_rated": false,
       "seller_username": "sale2015express",
@@ -132,6 +88,50 @@
       "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
       "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "cordless vacuum",
+      "title": "Shark Ip1251 Powerdetect Cordless Stick Vacuum",
+      "price": 150.0,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/aagAAeSw-8VpGzYC/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/167596829674?_skw=cordless+vacuum&hash=item27058cabea%3Ag%3AaagAAeSw-8VpGzYC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 180090,
+      "top_rated": false,
+      "seller_username": "guaranteecellular",
+      "inserted_at": "2025-06-18T17:13:39.000Z",
+      "signals": 9.0,
+      "tags": [
+        "cordless vacuum"
+      ],
+      "caption": "Shark Ip1251 Powerdetect Cordless Stick Vacuum \u2022 USD 150.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark Ip1251 Powerdetect Cordless Stick Vacuum",
+      "blurb": "USD 150.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
+      "price": 42.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/Z74AAeSwRohpKgJi/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AZ74AAeSwRohpKgJi&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvykDkY6HspFpYr9NyIPGJtJ25yKPliz%2FNztMv5HCHBPAdBK%2BX6ssOPHcyUv8nK2O0wvHRCSN8BIgAWf70nLBNziKnrXgOXQkYAO%2FIJlhAjl1NQVWBoJcIGlHo67WA%2FM%2BhPY%2B7ZcinBDQR8JaKd8YBBeuxcRGvnhYcyo%2FrRK8ws1bA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 177885,
+      "top_rated": false,
+      "seller_username": "tradeportusa",
+      "inserted_at": "2025-08-26T14:30:59.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain- \u2022 USD 42.99",
+      "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
+      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
