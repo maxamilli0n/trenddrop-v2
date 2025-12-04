@@ -461,6 +461,7 @@ def generate_weekly_report(provider: str) -> None:
             default_title = f"TrendDrop Report — {provider_label}"
 
         # Allow override from env if you *really* want a custom title
+        title = _get_env("REPORT_TITLE", default_title)
 
         out_dir = pathlib.Path("out")
         _ensure_dir(str(out_dir))
