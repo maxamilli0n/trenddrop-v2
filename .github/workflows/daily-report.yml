@@ -30,7 +30,6 @@ jobs:
       SUPABASE_LATEST_CSV_PATH: daily/latest.csv
 
       # Shared project env
-      REPORT_TITLE: "Top 10 Daily Movers — TrendDrop"
       REPORT_LAYOUT: table
       REPORT_TZ: America/New_York
       CURRENCY: USD
