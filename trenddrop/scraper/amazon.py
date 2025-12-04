@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import math
 import re
 from typing import List, Tuple
 from urllib.parse import urljoin
@@ -23,6 +24,9 @@ SEED_QUERIES = [
 
 
 def _extract_rating(text: str) -> float:
+    """
+    Parse something like '4.7 out of 5 stars' -> 4.7
+    """
     match = re.search(r"([\d\.]+)", text or "")
     if not match:
         return 0.0
@@ -33,6 +37,9 @@ def _extract_rating(text: str) -> float:
 
 
 def _extract_reviews(text: str) -> int:
+    """
+    Parse something like '12,345 ratings' -> 12345
+    """
     digits = re.sub(r"[^\d]", "", text or "")
     try:
         return int(digits)
@@ -40,22 +47,35 @@ def _extract_reviews(text: str) -> int:
         return 0
 
 
+def _compute_signals(rating: float, review_count: int) -> float:
+    """
+    Composite Amazon signal score:
+      - higher rating is better
+      - many reviews is *much* better than a handful
+      - uses log10 so it doesn't blow up for huge SKUs
+    """
+    if rating <= 0 or review_count <= 0:
+        return 0.0
+    return rating * math.log10(review_count + 10)
+
+
 def _parse_card(card, keyword: str) -> Tuple[bool, dict]:
     title_tag = card.find("h2")
-    title = (
-        " ".join(title_tag.get_text(" ").split()) if title_tag else ""
-    )
-    link_tag = (
-        card.select_one("h2 a[href]") or card.select_one("a.a-link-normal[href]")
-    )
+    title = " ".join(title_tag.get_text(" ").split()) if title_tag else ""
+
+    link_tag = card.select_one("h2 a[href]") or card.select_one("a.a-link-normal[href]")
     if not link_tag:
         return False, {}
+
     if not title:
         title = " ".join(link_tag.get_text(" ").split())
+
     href = link_tag.get("href")
     if not href:
         return False, {}
     url = urljoin(AMAZON_BASE, href)
+
+    # --- price ---
     price_whole = card.select_one("span.a-price-whole")
     price_fraction = card.select_one("span.a-price-fraction")
     price = None
@@ -64,21 +84,38 @@ def _parse_card(card, keyword: str) -> Tuple[bool, dict]:
         if price_fraction:
             combined = f"{combined}.{price_fraction.get_text('').strip()}"
         price = parse_price(combined)
+
+    # normalize to a float so downstream code never sees None
+    if price is None:
+        price = 0.0
+
+    # --- image ---
     image_tag = card.find("img", attrs={"src": True})
     image_url = image_tag["src"] if image_tag else ""
+
+    # --- rating & reviews ---
     rating_tag = card.select_one("span.a-icon-alt")
     rating_value = _extract_rating(rating_tag.get_text() if rating_tag else "")
+
     review_tag = card.select_one("span.a-size-base.s-underline-text")
     review_count = _extract_reviews(review_tag.get_text() if review_tag else "")
+
+    # For Amazon, treat "seller_feedback" as "number of reviews"
+    seller_feedback = review_count
+
+    # Composite signal score
+    signals = _compute_signals(rating_value, review_count)
+
     top_rated = "Amazon's Choice" in card.get_text()
+
     product = {
         "title": title[:200],
         "url": url,
         "image_url": image_url,
         "price": price,
         "currency": "USD",
-        "seller_feedback": review_count,
-        "signals": rating_value,
+        "seller_feedback": seller_feedback,
+        "signals": signals,
         "top_rated": top_rated,
         "provider": "amazon",
         "source": "amazon",
@@ -146,5 +183,3 @@ def main(argv: List[str] | None = None) -> None:
 
 if __name__ == "__main__":
     main()
-
-
