@@ -1,6 +1,28 @@
 {
-  "updated_at": 1764843343,
+  "updated_at": 1764846776,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGM6gvWHJe8lYf10btUaV4PujaZZIEgJ6DvW4vE%2BkcFvlNBRjDEBacvoLrn0yWODTzHdQ%2BULyhnLKBRmZnfSzfv2lgMyHfrubTYeer9oq9i4VpJWftc1gwOhwdXsZJeaX45BpmXCVN1XlRcpCPkXFon5t1%2FK61ntdjiwsdPNJVfMBQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1002357,
+      "top_rated": false,
+      "seller_username": "theperfectpart",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/PtYAAeSwQHFpMAVn/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3APtYAAeSwQHFpMAVn&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 900707,
+      "seller_feedback": 900709,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2024-08-13T15:00:21.000Z",
@@ -97,7 +119,7 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD9oINxbqHNdI5MHR1nPxejr1Enc%2FvsI4XA2qvtR2QBnaMRZSn%2FYgXy0k19gMSN5DCn%2FVdHhgoRczxIMNJc3vvZPCWIlKmDtnKhjZdGNkUhGBBlhLRX%2FA7t3uEVwKaJpsYfUotYWxNrhlPINTEC%2BY3jpqMmWV6vUL1PITdAgtaN1tg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD%2FIEM1hpRUxIor0n4NeGlZfap%2FwKNVFwNraCI1Ie6s6T7EJsC7zQoF8XR8iYvZW4fC6eMI6g4Lp3Zb6c2hcpsrjXBkGxmNUWz7vjVMQr0yS8U0ar44Fo59rL1BImCPv5MfR1gcVRlmKL3d2M39AgEnPnbOuc0g4jTZRAxkMuiM7FA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
       "seller_feedback": 860237,
       "top_rated": false,
       "seller_username": "a4c",
@@ -109,28 +131,6 @@
       "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
       "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
       "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Anker 623 MagGo Magnetic Wireless Charger - Black",
-      "price": 29.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/l9cAAeSwHbhpK4Nw/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365279502593?_skw=wireless+charger+deals&hash=item550c5ae101%3Ag%3Al9cAAeSwHbhpK4Nw&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZtMJLHHJjg0qHNMscLdzPfb7fuXa9z7aDwRv9%2Bd7ln01U1jGxOUCwQb%2F8Hbp0mX6qyFOjOZ%2BIu7ou2HYkPKh7DYCj73R0XHV8feJ36f8wrdZHhk08vWvS5%2FK4IAqv2kpM6PCYQPQVsSLMXn5PRY1BZAxz8ledbS8QLQ16xxI%2Bkx%2B9b1dIWowTxEuSN%2F5Qww%2F8Id9q%2F4PWev7TEuqauKjuy6Howc3DSm86rny7V7B6p9lIEj56TI3giovpBg6MozrBBSz5Rbzyd3fZZj0vnXr8EIHQAPQd3jLm1RK3kBxFiIA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 860237,
-      "top_rated": false,
-      "seller_username": "a4c",
-      "inserted_at": "2024-12-10T15:08:16.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Anker 623 MagGo Magnetic Wireless Charger - Black \u2022 USD 29.95",
-      "headline": "\ud83d\udd25\u2728 Anker 623 MagGo Magnetic Wireless Charger - Black",
-      "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
