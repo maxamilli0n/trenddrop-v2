@@ -1,68 +1,148 @@
 """
-Master Top 25 pack builder.
+Master Top 25 pack builder (cross-market, eBay + Amazon only).
 """
 
 from __future__ import annotations
 
-import argparse
 from pathlib import Path
-from typing import List
+from datetime import datetime
+from typing import Dict, List, Tuple
 
-import pandas as pd
+from utils.db import sb
+from utils.report import generate_table_pdf, write_csv
+from trenddrop.reports.product_quality import dedupe_near_duplicates, rank_key
+from trenddrop.timezones import NYC_TZ
 
-from .pdf_table import make_pdf
-
+# Where to write master CSV/PDF
 OUT_DIR = Path("out")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-PROVIDERS = ["ebay", "amazon", "aliexpress"]
+
+MASTER_CSV = OUT_DIR / "master_top25.csv"
+MASTER_PDF = OUT_DIR / "master_top25.pdf"
+
+# Only providers we care about right now
+SUPPORTED_PROVIDERS = ["ebay", "amazon"]
 
 
-def load_csv(provider: str) -> pd.DataFrame:
-    path = OUT_DIR / f"{provider}_weekly.csv"
-    if not path.exists():
-        legacy = OUT_DIR / f"weekly-{provider}.csv"
-        path = legacy if legacy.exists() else path
-    if not path.exists():
-        return pd.DataFrame()
-    df = pd.read_csv(path)
-    df["provider"] = provider
-    if "signals" not in df.columns and "Signals" in df.columns:
-        df["signals"] = df["Signals"]
-    if "seller_feedback" not in df.columns and "Seller FB" in df.columns:
-        df["seller_feedback"] = df["Seller FB"]
-    return df
+def _fetch_clean_products() -> List[Dict]:
+    """
+    Pull cleaned products from v_products_clean for the supported providers.
+
+    We read directly from Supabase so we have full fields available
+    (title, url, provider, signals, seller_feedback, etc.).
+    """
+    client = sb()
+    rows: List[Dict] = []
+
+    for provider in SUPPORTED_PROVIDERS:
+        try:
+            print(f"[master] fetching rows for provider={provider}")
+            res = (
+                client.table("v_products_clean")
+                .select(
+                    "title, price, currency, image_url, url, "
+                    "seller_feedback, signals, provider, source, inserted_at"
+                )
+                .eq("provider", provider)
+                .order("inserted_at", desc=True)
+                .limit(200)
+                .execute()
+            )
+
+            for row in res.data or []:
+                # Make sure provider is always present
+                row.setdefault("provider", provider)
+                rows.append(row)
+        except Exception as exc:
+            print(f"[master] warning: failed for provider={provider}: {exc}")
+
+    print(f"[master] total rows fetched across providers: {len(rows)}")
+    return rows
 
 
-def build_master_top25():
-    frames: List[pd.DataFrame] = [df for df in (load_csv(p) for p in PROVIDERS) if not df.empty]
-    if not frames:
-        raise RuntimeError("No provider data available")
-    df = pd.concat(frames, ignore_index=True)
+def build_master_top25() -> Tuple[str, str]:
+    """
+    Build a cross-market Top-25 CSV + PDF and return their paths.
 
-    df["signals"] = pd.to_numeric(df["signals"], errors="coerce").fillna(0)
-    df["seller_feedback"] = pd.to_numeric(df["seller_feedback"], errors="coerce").fillna(0)
+    Returns:
+        (csv_path, pdf_path)
+    """
+    products = _fetch_clean_products()
 
-    # Ranking formula
-    df["rank"] = (df["signals"] * 100000) + df["seller_feedback"]
+    if not products:
+        print("[master] no products fetched; writing empty master files")
+        # still create empty CSV/PDF so the workflow doesn't explode
+        write_csv([], str(MASTER_CSV), [
+            {"key": "title", "label": "Title"},
+            {"key": "provider", "label": "Provider"},
+            {"key": "price", "label": "Price"},
+            {"key": "currency", "label": "Currency"},
+            {"key": "seller_feedback", "label": "Seller FB"},
+            {"key": "signals", "label": "Signals"},
+        ])
+        generate_table_pdf(
+            [],
+            str(MASTER_PDF),
+            columns=[
+                {"key": "title", "label": "Title"},
+                {"key": "provider", "label": "Provider"},
+                {"key": "price", "label": "Price"},
+                {"key": "currency", "label": "Currency"},
+                {"key": "seller_feedback", "label": "Seller FB"},
+                {"key": "signals", "label": "Signals"},
+            ],
+            title="TrendDrop Master Top 25 — Cross Marketplace",
+            subtitle_lines=["No data available"],
+        )
+        return str(MASTER_CSV), str(MASTER_PDF)
 
-    top25 = df.sort_values("rank", ascending=False).head(25)
+    # Use same dedupe + ranking logic as other reports
+    products = dedupe_near_duplicates(products)
+    products = sorted(products, key=rank_key, reverse=True)
+    top25 = products[:25]
 
-    csv_out = Path("out/master_top25.csv")
-    top25.to_csv(csv_out, index=False)
+    # Columns for CSV + PDF (Provider column included)
+    columns = [
+        {"key": "title", "label": "Title"},
+        {"key": "provider", "label": "Provider"},
+        {"key": "price", "label": "Price"},
+        {"key": "currency", "label": "Currency"},
+        {"key": "seller_feedback", "label": "Seller FB"},
+        {"key": "signals", "label": "Signals"},
+    ]
 
-    # Build a PDF version
-    pdf_out = Path("out/master_top25.pdf")
-    make_pdf(top25, title="TrendDrop Master Top 25 — Cross Marketplace", out_path=pdf_out)
+    # Subtitle lines (timestamp + explanation)
+    now_local = datetime.now(NYC_TZ)
+    subtitle_lines = [
+        now_local.strftime("Generated: %Y-%m-%d %I:%M %p %Z"),
+        "Cross-market Top 25 curated across eBay and Amazon.",
+        "PDF shows curated picks; full per-provider data lives in the individual packs.",
+    ]
 
-    return csv_out, pdf_out
+    # CSV (same columns as PDF)
+    write_csv(top25, str(MASTER_CSV), columns)
+
+    # PDF using the same nice table layout as the weekly reports
+    generate_table_pdf(
+        top25,
+        str(MASTER_PDF),
+        columns=columns,
+        title="TrendDrop Master Top 25 — Cross Marketplace",
+        subtitle_lines=subtitle_lines,
+    )
+
+    print(f"[master] wrote CSV -> {MASTER_CSV}")
+    print(f"[master] wrote PDF -> {MASTER_PDF}")
+
+    # Return as strings (works fine with create_master_zip etc.)
+    return str(MASTER_CSV), str(MASTER_PDF)
 
 
 def main(argv: List[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(description="Build Master Top 25 pack.")
-    parser.parse_args(argv)
+    # Simple CLI hook for manual runs: `python -m trenddrop.reports.master_pack`
+    _ = argv  # unused for now
     build_master_top25()
 
 
 if __name__ == "__main__":
     main()
-
