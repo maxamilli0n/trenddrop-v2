@@ -24,7 +24,6 @@ jobs:
       EPN_CUSTOM_ID: NIGHTLY_MULTI
 
       # Report presentation
-      REPORT_TITLE: "Nightly Multi-Provider Movers — eBay + Amazon"
       REPORT_LAYOUT: table
       REPORT_TZ: America/New_York
       CURRENCY: USD
