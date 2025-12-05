@@ -19,7 +19,7 @@ from utils.report import (
     generate_weekly_pdf,
     generate_table_pdf,
     write_csv,
-    get_provider_filter,  # NEW: env-driven provider selector
+    get_provider_filter,  # still imported, but V1 is eBay-only
 )
 from trenddrop.utils.supabase_upload import upload_file
 from trenddrop.utils.env_loader import load_env_once
@@ -44,9 +44,14 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 OUT_DIR = ROOT / "out"
 ARTIFACTS_PATH = OUT_DIR / "artifacts.json"
 
+# ==========================
+# V1: E B A Y   O N L Y
+# ==========================
 DEFAULT_PROVIDER = "ebay"
-DEFAULT_PROVIDERS = ["ebay", "amazon"]
-SUPPORTED_PROVIDERS = ["ebay", "amazon", "aliexpress"]
+# In V1 we only ever run eBay. Amazon / AliExpress are reserved for V2.
+DEFAULT_PROVIDERS = ["ebay"]
+SUPPORTED_PROVIDERS = ["ebay"]
+
 PDF_TOP_N = 50
 MAX_PULL = 150
 EST_TZ = ZoneInfo("America/New_York") if ZoneInfo else None
@@ -455,7 +460,6 @@ def generate_weekly_report(provider: str) -> None:
         elif "daily" in mode:
             default_title = f"Top 10 {provider_label} Movers — Daily Report"
         elif "nightly_multi" in mode:
-            # These are the per-provider nightly movers you saw
             default_title = f"Nightly {provider_label} Movers — {provider_label} Marketplace"
         else:
             default_title = f"TrendDrop Report — {provider_label}"
@@ -715,30 +719,12 @@ def generate_weekly_report(provider: str) -> None:
 
 
 def _run_master_pack(run_started_at: Optional[datetime] = None, bucket_hint: Optional[str] = None) -> None:
-    run_started_at = run_started_at or datetime.now(NYC_TZ)
-    csv_path, pdf_path = build_master_top25()
-    provider_zips: List[Tuple[str, pathlib.Path]] = []
-    for provider in SUPPORTED_PROVIDERS:
-        pack_path = pathlib.Path("out") / f"{provider}_weekly_pack.zip"
-        if pack_path.exists():
-            provider_zips.append((provider, pack_path))
-        else:
-            print(f"[reports-master] missing provider pack for {provider}: {pack_path}")
-    print(f"[reports-master] bundling providers: {[p for p, _ in provider_zips]}")
-    master_zip_path = create_master_zip(csv_path, pdf_path, provider_zips)
-    bucket = bucket_hint or (_get_env("REPORTS_BUCKET", None) or _get_env("SUPABASE_BUCKET", "trenddrop-reports"))
-    if bucket:
-        prefix = "weekly/master"
-        latest_key = f"{prefix}/latest.zip"
-        dated_key = f"{prefix}/{run_started_at.date().isoformat()}/report.zip"
-        upload_file(bucket, str(master_zip_path), latest_key, "application/zip")
-        upload_file(bucket, str(master_zip_path), dated_key, "application/zip")
-        print(
-            f"[reports-master] uploaded master pack ZIP to {bucket}/{latest_key} "
-            f"and {bucket}/{dated_key}"
-        )
-    else:
-        print(f"[reports-master] master pack ready at {master_zip_path} (bucket not configured)")
+    """
+    V1 NOTE: master pack is disabled (we only run eBay).
+    This stub is left here for easy re-enable in V2.
+    """
+    print("[reports-master] master pack generation is disabled in V1 (eBay-only).")
+    return
 
 
 def main(argv: Optional[List[str]] = None) -> None:
@@ -746,44 +732,30 @@ def main(argv: Optional[List[str]] = None) -> None:
     parser.add_argument(
         "--provider",
         type=str,
-        help=f"Provider to generate report for (one of {SUPPORTED_PROVIDERS})",
+        help=f"Provider to generate report for (supported: {SUPPORTED_PROVIDERS})",
     )
     parser.add_argument(
         "--master",
         action="store_true",
-        help="Generate only the Master Top 25 pack.",
+        help="(V1 disabled) Generate only the Master Top 25 pack.",
     )
     args = parser.parse_args(argv)
 
     provider_arg = args.provider.lower().strip() if args.provider else None
 
+    # V1: master pack is disabled
     if args.master:
-        if provider_arg:
-            print("[reports] INFO --master flag overrides --provider; running master-only mode.")
-        _run_master_pack()
+        print("[reports] --master requested but master pack is disabled in V1 (eBay-only).")
         return
 
-    # Decide which providers to run
-    run_master_after = False
+    # Decide which providers to run (V1: always eBay)
     if provider_arg:
-        # CLI arg wins
-        if provider_arg not in SUPPORTED_PROVIDERS:
-            raise SystemExit(f"Unsupported provider: {provider_arg}")
-        providers_to_run = [provider_arg]
+        if provider_arg != "ebay":
+            raise SystemExit("In V1, only provider 'ebay' is enabled.")
+        providers_to_run = ["ebay"]
     else:
-        # No CLI provider → use env-driven filter from utils.report
-        selected = get_provider_filter()  # may be None for "multi/all/*"
-        if selected is None:
-            # multi/all → fall back to the default multi-provider set
-            providers_to_run = list(DEFAULT_PROVIDERS)
-        else:
-            # Use only supported providers
-            providers_to_run = [p for p in selected if p in SUPPORTED_PROVIDERS]
-            if not providers_to_run:
-                providers_to_run = list(DEFAULT_PROVIDERS)
-
-        # Run master pack only if we're running more than one provider
-        run_master_after = len(providers_to_run) > 1
+        # Ignore PRODUCT_SOURCE / get_provider_filter in V1.
+        providers_to_run = ["ebay"]
 
     last_result: Optional[Dict[str, object]] = None
     for provider in providers_to_run:
@@ -799,14 +771,6 @@ def main(argv: Optional[List[str]] = None) -> None:
                 curated_count = 0
         print(f"[reports] === provider={provider} done ({curated_count} rows) ===")
         last_result = result
-
-    if run_master_after:
-        run_started_at = None
-        bucket_hint = None
-        if isinstance(last_result, dict):
-            run_started_at = last_result.get("run_started_at")
-            bucket_hint = last_result.get("bucket")
-        _run_master_pack(run_started_at=run_started_at, bucket_hint=bucket_hint)
 
 
 if __name__ == "__main__":
