@@ -1,4 +1,4 @@
-name: Nightly Multi-Provider Reports
+name: Nightly eBay Report (V1)
 
 on:
   schedule:
@@ -9,27 +9,27 @@ permissions:
   contents: read
 
 concurrency:
-  group: nightly-multi-reports
+  group: nightly-ebay-report
   cancel-in-progress: true
 
 jobs:
-  nightly-multi:
+  nightly-ebay:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
       # ---- NIGHTLY MODE & options ----
-      REPORT_MODE: nightly_multi
+      REPORT_MODE: nightly_multi  # name doesn't matter; generate_reports is eBay-only
       REPORT_MAX_ITEMS: "50"
       REPORT_SORT_STRATEGY: conversion
-      EPN_CUSTOM_ID: NIGHTLY_MULTI
+      EPN_CUSTOM_ID: NIGHTLY
 
       # Report presentation
       REPORT_LAYOUT: table
       REPORT_TZ: America/New_York
       CURRENCY: USD
 
-      # 👇 Multi-provider selection (ebay + amazon + master pack)
-      PRODUCT_SOURCE: multi
+      # V1: eBay-only
+      PRODUCT_SOURCE: ebay
 
       # Storage bucket
       SUPABASE_BUCKET: trenddrop-reports
@@ -61,12 +61,9 @@ jobs:
           ${{ secrets.ENV_FILE }}
           EOF
 
-      - name: Run scrapers (ebay + amazon)
+      - name: Run scraper (eBay only)
         run: |
           python -m trenddrop.scraper.ebay
-          python -m trenddrop.scraper.amazon
 
-      - name: Generate Nightly Multi-Provider Reports + Master Pack
-        # Again, PRODUCT_SOURCE=multi makes generate_reports run both providers
-        # and then build the master pack automatically.
+      - name: Generate Nightly eBay Report
         run: python -m trenddrop.reports.generate_reports
