@@ -1,4 +1,4 @@
-name: Weekly TrendDrop Reports (Multi-Provider)
+name: TrendDrop Weekly Report (eBay V1)
 
 on:
   schedule:
@@ -10,11 +10,11 @@ permissions:
   contents: read
 
 concurrency:
-  group: weekly-multi-reports
+  group: weekly-ebay-report
   cancel-in-progress: true
 
 jobs:
-  weekly-multi:
+  weekly-ebay:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
@@ -22,16 +22,15 @@ jobs:
       REPORT_MODE: weekly_paid
       REPORT_MAX_ITEMS: "50"
       REPORT_SORT_STRATEGY: balanced
-      EPN_CUSTOM_ID: WEEKLY_MULTI
+      EPN_CUSTOM_ID: WEEKLY
 
       # Report presentation
       REPORT_LAYOUT: table
       REPORT_TZ: America/New_York
       CURRENCY: USD
 
-      # 👇 Multi-provider selection handled in generate_reports via get_provider_filter()
-      # "multi" => run DEFAULT_PROVIDERS (ebay + amazon) and then master pack
-      PRODUCT_SOURCE: multi
+      # V1: eBay-only
+      PRODUCT_SOURCE: ebay
 
       # Storage bucket (no secrets here)
       SUPABASE_BUCKET: trenddrop-reports
@@ -61,6 +60,5 @@ jobs:
       - name: Install report dependencies
         run: pip install -r requirements-reports.txt
 
-      - name: Generate Weekly Multi-Provider Reports + Master Pack
-        # No --provider or --master flags; logic is driven by PRODUCT_SOURCE=multi
+      - name: Generate Weekly eBay Report
         run: python -m trenddrop.reports.generate_reports
