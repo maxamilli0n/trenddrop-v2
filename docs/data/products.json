@@ -1,5 +1,5 @@
 {
-  "updated_at": 1764933149,
+  "updated_at": 1764937481,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1002492,
+      "seller_feedback": 1002512,
       "top_rated": false,
       "seller_username": "theperfectpart",
       "inserted_at": "2022-11-18T00:58:24.000Z",
@@ -26,13 +26,57 @@
     {
       "source": "ebay",
       "provider": "ebay",
+      "keyword": "mechanical keyboard deals",
+      "title": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "price": 24.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/QYYAAeSwCyppMpYb/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315781118209?_skw=mechanical+keyboard+deals&hash=item4986057901%3Ag%3AQYYAAeSwCyppMpYb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbfyV2HfsZQuYuoIWfGa6uKwbCJuGpp7%2FYhQIDNNoKg3WAPzRbYw8ZPR62oPjFrhte8t02MmWNMj%2FJPALZPgK1bZWgLVzxdsd4LLs96o1ChHOTxvBpNEw3k2lEvJmu5BGbX%2F2n%2B%2FN7vpMlq7jehYcyb%2BdGs1Bnu7Fr1egdN1Cic%2BFVUU6p9k7eW5mhOjnjKUxBhe6cZjEjmgTJpNTYxp25LaloaTuvEySbewTqk%2B%2BabXmRt3dTz2U8RrkTg1zASoOywhLz7P5ho17srUCkAwWCUhmHkwhvY7U7h4PU%2B7Ezpaw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 860252,
+      "top_rated": false,
+      "seller_username": "a4c",
+      "inserted_at": "2024-09-23T23:43:37.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray \u2022 USD 24.95",
+      "headline": "\ud83d\udd79\ufe0f Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "pickleball paddle deals",
+      "title": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "price": 17.0,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/xX0AAeSwyt1pLDZN/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AxX0AAeSwyt1pLDZN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 781183,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-06-24T19:19:53.000Z",
+      "signals": 9.0,
+      "tags": [
+        "pickleball paddle"
+      ],
+      "caption": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0 \u2022 USD 17.0",
+      "headline": "\ud83d\udd25\u2728 GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "blurb": "USD 17.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
       "keyword": "massage gun",
       "title": "Sharper Image Powerboost Sport Percussion Handheld Massager: Metal",
       "price": 25.49,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/16UAAeSwEcxpMmww/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205721111842?_skw=massage+gun&hash=item2fe5ef0d22%3Ag%3A16UAAeSwEcxpMmww&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 781140,
+      "seller_feedback": 781183,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-09-11T16:31:16.000Z",
@@ -48,34 +92,12 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 16.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354285,
-      "top_rated": false,
-      "seller_username": "buildyourbike",
-      "inserted_at": "2015-08-27T20:27:44.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "massage gun",
       "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
       "price": 15.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVYgZefioFJKDYts%2BopbGQSawSegus7IjQovFTqXQTNbnFBj%2F0Qcc4EfkDgL2kDoTIvt7L7iS3XwnaOBe%2FYSnVesqRN7bT4jNT%2BPjHEh%2FVKf%2Bl3lE4GzMW7WWOLtZG5rMLfz6REQ%2BD3qudiF22qgkQk8&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVa6m5JCGa21mXHQjC20D%2BE5Ml3bU0Ck%2BzCwWBCyaosKGI4TSujfcNTQfIkU7%2FRk7fWI9kJ4wf6zclT0oni1Z9LIyrmkA9t0axRaz7q4T4MqogyvpSuyYPmXYeHYiW9H9VvEAuG2BI9O9MYCb2NE9wOD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
       "seller_feedback": 350832,
       "top_rated": false,
       "seller_username": "gameinfinity",
@@ -92,45 +114,23 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
+      "keyword": "massage gun",
+      "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
+      "price": 42.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2BzeLksoBQZcoymjvrIz9xcuO9k5wwydkLQih63rOFdiEJXoNhXSSQkCoLMIn3pRs7ey5tRF9NtH1rTdgGnIiTV9t2o%2BqsvtKDpP%2B0jgT8FETI1YjggfJduoa9%2BitLXdvF%2BZnlrZhnKNsM8JN8i4KqvTRVY1bOHyaln89or9id49Ig%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283188,
+      "image_url": "https://i.ebayimg.com/images/g/Z74AAeSwRohpKgJi/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AZ74AAeSwRohpKgJi&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvzx8pcOcLRu8k1%2F17tQxI2SmDBDdcDBMjrfTOC%2BJJdYsQ3FnvbtHyqQi%2BhZ%2FmwiZcHMn262mvQpIwNjpqMxr5JfLvDPYvh7uGXgGrpliDzLiNFC6DlA%2FL6gz8bBpHHHQZW9ia061D%2FsshxTbVgJH9rl%2FqL2qLlizlC6LN%2Bscc8xrw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 177906,
       "top_rated": false,
-      "seller_username": "sale2015express",
-      "inserted_at": "2020-01-12T18:12:21.000Z",
+      "seller_username": "tradeportusa",
+      "inserted_at": "2025-08-26T14:30:59.000Z",
       "signals": 9.0,
       "tags": [
-        "rgb lamp"
+        "massage gun"
       ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED",
-      "price": 37.9,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/FY4AAOSwf0hbUYck/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/292130880062?_skw=bike+light+deals&hash=item44045b7a3e%3Ag%3AFY4AAOSwf0hbUYck&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 264012,
-      "top_rated": false,
-      "seller_username": "the_bikesmiths",
-      "inserted_at": "2017-05-26T22:05:35.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED \u2022 USD 37.9",
-      "headline": "\ud83d\udd25\u2728 Cygolite Hotshot PRO 150 Rear Flashing Bike Safety Light USB Recharge Red LED",
-      "blurb": "USD 37.90 steal. Limited stock\u2014grab it now!",
+      "caption": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain- \u2022 USD 42.99",
+      "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
+      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
