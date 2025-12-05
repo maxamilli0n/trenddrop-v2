@@ -476,7 +476,10 @@ def generate_weekly_report(provider: str) -> None:
     try:
         # Mode and options
         mode = (_get_env("REPORT_MODE", "weekly_paid") or "").lower()
-        max_items = PDF_TOP_N
+
+        # How many rows we actually want in the PDF.
+        # Daily workflow sets REPORT_MAX_ITEMS=10, weekly sets 50.
+        max_items = _get_int("REPORT_MAX_ITEMS", PDF_TOP_N)
 
         # Human-friendly provider label
         provider_label_map = {
@@ -569,7 +572,7 @@ def generate_weekly_report(provider: str) -> None:
             )
             return
 
-        curated_products = products[:PDF_TOP_N]
+        curated_products = products[:max_items]
         print(f"[reports] curated_products for PDF: {len(curated_products)} of {len(products)} total")
         if not curated_products:
             print("[reports] no curated products found; exiting")
