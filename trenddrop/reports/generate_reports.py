@@ -68,16 +68,48 @@ class ReportStoragePaths:
     dated_zip_key: str
 
 
-def _build_storage_paths(provider: str, run_started_at: datetime) -> ReportStoragePaths:
+def _build_storage_paths(provider: str, run_started_at: datetime, mode: str) -> ReportStoragePaths:
+    """
+    Decide where to store PDF/CSV/ZIP in Supabase Storage.
+
+    - For DAILY mode we want:       daily/latest.pdf, daily/latest.csv, daily/YYYY-MM-DD/...
+    - For WEEKLY mode we want:      weekly/{provider}/latest.pdf, etc.
+    - For NIGHTLY_MULTI we also use weekly/{provider}/... (only eBay right now).
+
+    If SUPABASE_LATEST_PDF_PATH / SUPABASE_LATEST_CSV_PATH env vars are set,
+    they override the "latest.*" keys (useful for the daily freebie).
+    """
     date_str = run_started_at.date().isoformat()
-    prefix = f"weekly/{provider}"
+    mode = (mode or "").lower()
+
+    # Default prefixes based on mode
+    if "daily" in mode:
+        prefix = "daily"
+    else:
+        # weekly, nightly_multi, etc -> keep per-provider weekly paths
+        prefix = f"weekly/{provider}"
+
+    # Env overrides for "latest" keys (used by the daily workflow)
+    latest_pdf_env = os.environ.get("SUPABASE_LATEST_PDF_PATH")
+    latest_csv_env = os.environ.get("SUPABASE_LATEST_CSV_PATH")
+    latest_zip_env = os.environ.get("SUPABASE_LATEST_ZIP_PATH")
+
+    latest_pdf_key = latest_pdf_env or f"{prefix}/latest.pdf"
+    latest_csv_key = latest_csv_env or f"{prefix}/latest.csv"
+    latest_zip_key = latest_zip_env or f"{prefix}/latest.zip"
+
+    # Dated keys follow the prefix pattern
+    dated_pdf_key = f"{prefix}/{date_str}/report.pdf"
+    dated_csv_key = f"{prefix}/{date_str}/report.csv"
+    dated_zip_key = f"{prefix}/{date_str}/pack.zip"
+
     return ReportStoragePaths(
-        latest_pdf_key=f"{prefix}/latest.pdf",
-        dated_pdf_key=f"{prefix}/{date_str}/report.pdf",
-        latest_csv_key=f"{prefix}/latest.csv",
-        dated_csv_key=f"{prefix}/{date_str}/report.csv",
-        latest_zip_key=f"{prefix}/latest.zip",
-        dated_zip_key=f"{prefix}/{date_str}/pack.zip",
+        latest_pdf_key=latest_pdf_key,
+        dated_pdf_key=dated_pdf_key,
+        latest_csv_key=latest_csv_key,
+        dated_csv_key=dated_csv_key,
+        latest_zip_key=latest_zip_key,
+        dated_zip_key=dated_zip_key,
     )
 
 
@@ -601,7 +633,7 @@ def generate_weekly_report(provider: str) -> None:
         )
 
         bucket = _get_env("REPORTS_BUCKET", None) or _get_env("SUPABASE_BUCKET", "trenddrop-reports")
-        storage_paths = _build_storage_paths(provider, run_started_at)
+        storage_paths = _build_storage_paths(provider, run_started_at, mode)
 
         provider_artifacts: Dict[str, str] = {}
         if bucket:
