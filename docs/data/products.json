@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765019399,
+  "updated_at": 1765023696,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1002964,
+      "seller_feedback": 1002976,
       "top_rated": false,
       "seller_username": "theperfectpart",
       "inserted_at": "2022-11-18T00:58:24.000Z",
@@ -32,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/xX0AAeSwyt1pLDZN/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AxX0AAeSwyt1pLDZN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 783463,
+      "seller_feedback": 783564,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-06-24T19:19:53.000Z",
@@ -54,7 +54,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/y2UAAeSw1L5pM9lI/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205721111842?_skw=massage+gun&hash=item2fe5ef0d22%3Ag%3Ay2UAAeSw1L5pM9lI&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 783463,
+      "seller_feedback": 783564,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-09-11T16:31:16.000Z",
@@ -70,68 +70,68 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black",
-      "price": 54.95,
+      "keyword": "massage gun",
+      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "price": 15.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/NscAAeSwPiNpM~ST/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/335707876225?_skw=cordless+vacuum&hash=item4e29bfab81%3Ag%3ANscAAeSwPiNpM~ST&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 653385,
+      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVbqZCdamBy5ymF54Sx2ZMci8ah%2F8K%2FodN6JsDTy8C3pqJpICsCZwtE%2FPmVb0hOwvPZB1rCQknTNxF8SipMUabaT5fGzP3FHXL3WuJhUCuQ%2FoF2z4YYBfUwAH%2Fs0%2F2L1YlvkOFyPOeV80KSbFNx4wrMV&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 350853,
       "top_rated": false,
-      "seller_username": "buydig",
-      "inserted_at": "2024-12-02T22:00:29.000Z",
+      "seller_username": "gameinfinity",
+      "inserted_at": "2023-04-13T18:58:49.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "massage gun"
       ],
-      "caption": "Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black \u2022 USD 54.95",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black",
-      "blurb": "USD 54.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
+      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Shark UZ565H Pro Cordless Vacuum Clean Sense IQ & MultiFLEX Technology (Refurbis",
-      "price": 129.95,
+      "keyword": "massage gun",
+      "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
+      "price": 42.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/QJMAAeSwD11pM~5a/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/317199022760?_skw=cordless+vacuum+deals&hash=item49da88faa8%3Ag%3AQJMAAeSwD11pM~5a&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 653385,
+      "image_url": "https://i.ebayimg.com/images/g/Z74AAeSwRohpKgJi/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AZ74AAeSwRohpKgJi&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvyHGGOC9bZIagyw7VgSovAwy1Ol1QSFBpaFzFg6cileBhskCIUs1%2BURbwNm2meYZUnBuc3LGqnP6rBEJ8FgmV88Pyk7iU7z9KLGfuz2E4NkW6xS9S14ghEzWiR2%2F2fz2ExzsZpqAKZuf8F9F1QfbBIhPP9q7oZ5BS2YfCLdSmOfVw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 177958,
       "top_rated": false,
-      "seller_username": "buydig",
-      "inserted_at": "2025-08-21T17:00:21.000Z",
+      "seller_username": "tradeportusa",
+      "inserted_at": "2025-08-26T14:30:59.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "massage gun"
       ],
-      "caption": "Shark UZ565H Pro Cordless Vacuum Clean Sense IQ & MultiFLEX Technology (Refurbis \u2022 USD 129.95",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark UZ565H Pro Cordless Vacuum Clean Sense IQ & MultiFLEX Technology (Refurbis",
-      "blurb": "USD 129.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain- \u2022 USD 42.99",
+      "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
+      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best cordless vacuum",
-      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "price": 40.5,
+      "keyword": "smart light strip",
+      "title": "Smart Firework LED Strip Light  App Control Sync RGB Dream Color USB Powered",
+      "price": 83.56,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZAIj1GZ%2FnGtVVSj8rFkEmFf9aKQyAbETK8G1YUcvI3fHyE3hYbMA2TMcpJhKd0RrsbEzr8yYqFbBHPPTCA9Rpt%2BujrwRNXRuTHfXXb6tzsUPF2M%2BQ2NWF0MqZ0DDnFYG4A0x6scpU8Ch8Yb8TtxezAJhR1MHfjy7lntN2hUJ3z0aQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 555805,
+      "image_url": "https://i.ebayimg.com/images/g/LFMAAeSwxtFo1QoL/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/267430274610?_skw=smart+light+strip&var=567209753850&hash=item3e44162632%3Ag%3ALFMAAeSwxtFo1QoL&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZ40knILhS1XIAMCb5oEk5FBZowY6HRyRnuYZlmiqIk8DuB%2BjVMJ0JqRrQ4NAEPmKcCBIzGFKGWek5n7Fv66cuVSzfRDikn75jh5e5%2B%2F2SRYAaUbZszStQEGoyaS2xfSQelzWAaYITcNSL77yGIm7PGbwPtpYtwbybIqbzC55dQOt2QaqNlpR5scL%2BCwy4PmBz7yFtA9WZBmWkvpkQtvQobpR0OU%2BjNSavtobx%2F9T9iUxRyNGi4rgyaiI24zsCxMPECp3Orvon%2BN1Pp8jw3xZja9vbzrarspKPLiozd9PvXFw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
+      "seller_feedback": 73800,
       "top_rated": false,
-      "seller_username": "vipoutlet",
-      "inserted_at": "2025-07-30T20:28:05.000Z",
+      "seller_username": "smarttree66",
+      "inserted_at": "2025-10-08T14:42:52.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "smart light strip"
       ],
-      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 40.5",
-      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "blurb": "USD 40.50 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Smart Firework LED Strip Light  App Control Sync RGB Dream Color USB Powered \u2022 USD 83.56",
+      "headline": "\ud83d\udd25\u2728 Smart Firework LED Strip Light App Control Sync RGB Dream Color USB Powered",
+      "blurb": "USD 83.56 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
