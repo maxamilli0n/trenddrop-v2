@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765052163,
+  "updated_at": 1765053318,
   "products": [
     {
       "source": "ebay",
@@ -9,8 +9,8 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGN4nfHKLrz5guCTLnCaLKz7jD1K92%2BQNZ%2FAWalOkAHlzzW1daT3bN3sW1%2FRDuadYIIy4YxaQzSpFUXaFxLJ3qMQCZWiAyoBRTzW0RK2Vm8B7e2d4Z6oe%2FhKQXpN5j4gGisOPSd0T19mkd%2FTOqDNFDlGw3Qms6hNysBNBFRQ1w7oFA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1003167,
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGM5remrZQeq26zZDbKINokZurqhiII6Ca5jt6ZI7porgkJ6LbvHcaN9Nh96kAMi6%2FKFNvyLYjLpXr5PrrywSaX33kz85ELVSEwZtoLj%2Fl2%2BkdGGfRazfHwB34vShitf8LuVtoQysn%2BnIOYKQhI3shoJZlOH3zzzrZuCfUwGSKoQMg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1003185,
       "top_rated": false,
       "seller_username": "theperfectpart",
       "inserted_at": "2022-11-18T00:58:24.000Z",
@@ -32,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/y2UAAeSw1L5pM9lI/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205721111842?_skw=massage+gun&hash=item2fe5ef0d22%3Ag%3Ay2UAAeSw1L5pM9lI&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 784896,
+      "seller_feedback": 784956,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-09-11T16:31:16.000Z",
@@ -48,24 +48,68 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black",
-      "price": 54.95,
+      "keyword": "portable monitor",
+      "title": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "price": 59.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/tzAAAeSwbc5pNHbn/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/335707876225?_skw=cordless+vacuum&hash=item4e29bfab81%3Ag%3AtzAAAeSwbc5pNHbn&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 653500,
+      "image_url": "https://i.ebayimg.com/images/g/JNEAAOSwpIJnXbkp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365287320803?_skw=portable+monitor&hash=item550cd22ce3%3Ag%3AJNEAAOSwpIJnXbkp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 397408,
       "top_rated": false,
-      "seller_username": "buydig",
-      "inserted_at": "2024-12-02T22:00:29.000Z",
+      "seller_username": "quickshipelectronics",
+      "inserted_at": "2024-12-14T16:58:20.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "portable monitor"
       ],
-      "caption": "Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black \u2022 USD 54.95",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black",
-      "blurb": "USD 54.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J \u2022 USD 59.99",
+      "headline": "\ud83d\udd25\u2728 Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "blurb": "USD 59.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "price": 16.14,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 393838,
+      "top_rated": false,
+      "seller_username": "hiparts",
+      "inserted_at": "2017-09-19T04:14:30.000Z",
+      "signals": 9.0,
+      "tags": [
+        "portable monitor"
+      ],
+      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.14",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "blurb": "USD 16.14 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "price": 28.49,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 393838,
+      "top_rated": false,
+      "seller_username": "hiparts",
+      "inserted_at": "2017-03-10T15:42:19.000Z",
+      "signals": 9.0,
+      "tags": [
+        "portable monitor"
+      ],
+      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 28.49",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "blurb": "USD 28.49 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -75,7 +119,7 @@
       "price": 15.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVa86bM8XsfkPux0ysPJfupgvtGc4hD3csUGSLMHbgmCXqHTmyqHDfhdLaaBhTpwLhg%2BueGp%2FeDvcAEJbufOixCL3unCuoKA4D2x5sTtg%2BnL0vZGMG3mn136WCbvMZZEVndPDgr3Gjt%2BCLnc7eu57gCk&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVat4yY3wmpTTBb0e4vy98GpmHNA4HbCOLLGWEuoNr4Rq%2F6MbjXrNKg1SmRoeM30svLeskAaeFrszOATGVcNiSFKkFjZxkvqAkAGMXdeLF43Y3Zoc5Pw6wGMNjANvXRqVviLKm7byeoewoVpcwjdSze1&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
       "seller_feedback": 350865,
       "top_rated": false,
       "seller_username": "gameinfinity",
@@ -87,50 +131,6 @@
       "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
       "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
       "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "price": 150.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/aagAAeSw-8VpGzYC/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/167596829674?_skw=cordless+vacuum&hash=item27058cabea%3Ag%3AaagAAeSw-8VpGzYC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 180322,
-      "top_rated": false,
-      "seller_username": "guaranteecellular",
-      "inserted_at": "2025-06-18T17:13:39.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Shark Ip1251 Powerdetect Cordless Stick Vacuum \u2022 USD 150.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "blurb": "USD 150.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
-      "price": 42.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Z74AAeSwRohpKgJi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AZ74AAeSwRohpKgJi&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvzQB8PEbzKnAAxaJIc5gpiicTQxZinusWHt0%2FsfAdUTF6bWO5RMvjGavIlhgQP7r56h6w21IVADkFpoO9a8Ql9QvQQ4K4loTwtebzDKOzfg9%2F5oeUwchfVNpczHKOMI54EluoX5b8lYB2Pc9LbgMwmgbk2lNY84qVMQakhThUAR0A%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 177985,
-      "top_rated": false,
-      "seller_username": "tradeportusa",
-      "inserted_at": "2025-08-26T14:30:59.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain- \u2022 USD 42.99",
-      "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
-      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
