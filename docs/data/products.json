@@ -1,6 +1,28 @@
 {
-  "updated_at": 1765033891,
+  "updated_at": 1765037641,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "price": 39.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/FHYAAeSwy4ppNE53/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AFHYAAeSwy4ppNE53&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 901346,
+      "top_rated": false,
+      "seller_username": "best_buy",
+      "inserted_at": "2024-11-21T02:09:27.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel \u2022 USD 39.99",
+      "headline": "\ud83d\udd25\u2728 bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/FdIAAeSwE3hpMMUY/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AFdIAAeSwE3hpMMUY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 901342,
+      "seller_feedback": 901346,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2025-10-22T15:52:43.000Z",
@@ -32,7 +54,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Dd8AAeSwaU9pNAbC/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205816613218?_skw=air+fryer&hash=item2feba04962%3Ag%3ADd8AAeSwaU9pNAbC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 783924,
+      "seller_feedback": 784122,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-10-30T17:43:50.000Z",
@@ -54,7 +76,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/3FAAAeSws9tpM-7b/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3A3FAAAeSws9tpM-7b&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 783924,
+      "seller_feedback": 784122,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-11-17T13:49:44.000Z",
@@ -76,7 +98,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/BIIAAeSwYOFpM~XT/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer&hash=item2fec6db215%3Ag%3ABIIAAeSwYOFpM~XT&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 783924,
+      "seller_feedback": 784122,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-11-06T13:43:46.000Z",
@@ -92,46 +114,24 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Gourmia 14qt All-in-One Digital Air Fryer, Oven, Rotisserie & Dehydrator:",
-      "price": 53.99,
+      "keyword": "portable monitor",
+      "title": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "price": 59.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/m0YAAeSw7EFpM~nS/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205721068012?_skw=air+fryer&hash=item2fe5ee61ec%3Ag%3Am0YAAeSw7EFpM~nS&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 783924,
+      "image_url": "https://i.ebayimg.com/images/g/JNEAAOSwpIJnXbkp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365287320803?_skw=portable+monitor&hash=item550cd22ce3%3Ag%3AJNEAAOSwpIJnXbkp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 397385,
       "top_rated": false,
-      "seller_username": "bullseye_deals",
-      "inserted_at": "2025-09-11T16:01:54.000Z",
+      "seller_username": "quickshipelectronics",
+      "inserted_at": "2024-12-14T16:58:20.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "portable monitor"
       ],
-      "caption": "Gourmia 14qt All-in-One Digital Air Fryer, Oven, Rotisserie & Dehydrator: \u2022 USD 53.99",
-      "headline": "\ud83d\udd25\u2728 Gourmia 14qt All-in-One Digital Air Fryer, Oven, Rotisserie & Dehydrator:",
-      "blurb": "USD 53.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J \u2022 USD 59.99",
+      "headline": "\ud83d\udd25\u2728 Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "blurb": "USD 59.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black",
-      "price": 54.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/NscAAeSwPiNpM~ST/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/335707876225?_skw=cordless+vacuum&hash=item4e29bfab81%3Ag%3ANscAAeSwPiNpM~ST&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 653408,
-      "top_rated": false,
-      "seller_username": "buydig",
-      "inserted_at": "2024-12-02T22:00:29.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black \u2022 USD 54.95",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black",
-      "blurb": "USD 54.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
