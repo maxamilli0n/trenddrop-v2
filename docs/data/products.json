@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765210610,
+  "updated_at": 1765214046,
   "products": [
     {
       "source": "ebay",
@@ -9,8 +9,8 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGPmEESdVYB65KpLOvoA%2BfCSV96ZC0r27VHYFeX8Xe3FSU4m%2FYRR6dQ6x%2B1V50LVIu12GrRwjQsrzj0ye2547HMoncpgsmvAeK%2F8HSsXfBSbpal7Q3q34rFB35gDoTw9ISxwjIQLV%2F6RdLR7x0A1b2tQs1FNxK26h%2BbhA1Z30dLl7Q%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1003673,
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGOrDswE3mPx2CznNJnIeq3vp2Sdd9t26v4%2BM0SrGEHE78iPx4OtYAzYC%2BF454elH8J%2BgxHfkaQNWsf1vUOhEAkIkKhddTxhVueux0%2BNYUqkw8j2w8kqGYHLYZn6DabjJgE%2B7eeihvn8CK241gcXY1090LnV8l9iiH7KQSlKij8QjA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1003712,
       "top_rated": false,
       "seller_username": "theperfectpart",
       "inserted_at": "2022-11-18T00:58:24.000Z",
@@ -32,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/D1EAAeSwE3hpNngc/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205721111842?_skw=massage+gun&hash=item2fe5ef0d22%3Ag%3AD1EAAeSwE3hpNngc&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 788001,
+      "seller_feedback": 788117,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-09-11T16:31:16.000Z",
@@ -48,13 +48,35 @@
     {
       "source": "ebay",
       "provider": "ebay",
+      "keyword": "pickleball paddle deals",
+      "title": "VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle*",
+      "price": 87.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/NXIAAeSwkAJo7nzp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/236389360936?_skw=pickleball+paddle+deals&hash=item3709e76528%3Ag%3ANXIAAeSwkAJo7nzp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 703545,
+      "top_rated": false,
+      "seller_username": "nps",
+      "inserted_at": "2025-10-14T16:37:03.000Z",
+      "signals": 9.0,
+      "tags": [
+        "pickleball paddle"
+      ],
+      "caption": "VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle* \u2022 USD 87.99",
+      "headline": "\ud83d\udd25\u2728 VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle*",
+      "blurb": "USD 87.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
       "keyword": "cordless vacuum deals",
       "title": "DEWALT DCV501HBR 20V Cordless Dry Hand Vacuum (Tool Only) Certified Refurbished",
       "price": 119.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/jHkAAeSw7EFpNkWF/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/335374204122?_skw=cordless+vacuum+deals&hash=item4e15dc3cda%3Ag%3AjHkAAeSw7EFpNkWF&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 657398,
+      "image_url": "https://i.ebayimg.com/images/g/MToAAeSwKpxpNwQm/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/335374204122?_skw=cordless+vacuum+deals&hash=item4e15dc3cda%3Ag%3AMToAAeSwKpxpNwQm&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 657414,
       "top_rated": false,
       "seller_username": "cpo-outlets",
       "inserted_at": "2024-05-01T20:57:04.000Z",
@@ -74,9 +96,9 @@
       "title": "Shark QV201 WANDVAC Handheld Vacuum and Charging Dock, Black",
       "price": 54.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/lYgAAeSwiwdpNpul/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/335707876225?_skw=cordless+vacuum&hash=item4e29bfab81%3Ag%3AlYgAAeSwiwdpNpul&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 653799,
+      "image_url": "https://i.ebayimg.com/images/g/7mYAAeSwskhpNv9U/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/335707876225?_skw=cordless+vacuum&hash=item4e29bfab81%3Ag%3A7mYAAeSwskhpNv9U&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 653809,
       "top_rated": false,
       "seller_username": "buydig",
       "inserted_at": "2024-12-02T22:00:29.000Z",
@@ -92,46 +114,24 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
-      "price": 16.14,
+      "keyword": "mechanical keyboard",
+      "title": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
+      "price": 39.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 393889,
+      "image_url": "https://i.ebayimg.com/images/g/R9MAAOSwPAVmWOIN/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/355754892121?_skw=mechanical+keyboard&hash=item52d4a4db59%3Ag%3AR9MAAOSwPAVmWOIN&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ub0ZSwTuokAZtff%2FwIYUKk9I0SPQVfUOmQ4NxZ%2Fe3e2Pry9WWYBvm6VOl5TshuBPa5wWgdKDsZ%2FdD2K2yc8CSC4fsl1X0vLSJHV%2FVl7lAr57RxJ9u%2B8OvUHF0%2F2R7v5uQ3go1RKh3aKwuBgO1WSnODmzSvQJKf1tC4aojUaV94rJTdP%2BrevS9Zk5JpN%2BcYyQkBPE7P6QBatPuOD0nNswr3n8sHZFJVHqBuM2bF8PwdHx0C1yz%2B3HTdCTdCchnu64S63jx92uOTAkHOW2TX9eMaGpKoeMn0ydKigGpzvA%2BHCcw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 454099,
       "top_rated": false,
-      "seller_username": "hiparts",
-      "inserted_at": "2017-09-19T04:14:30.000Z",
+      "seller_username": "bigdeals",
+      "inserted_at": "2024-05-30T20:57:34.000Z",
       "signals": 9.0,
       "tags": [
-        "portable monitor"
+        "mechanical keyboard"
       ],
-      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.14",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
-      "blurb": "USD 16.14 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "price": 28.49,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 393889,
-      "top_rated": false,
-      "seller_username": "hiparts",
-      "inserted_at": "2017-03-10T15:42:19.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 28.49",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "blurb": "USD 28.49 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android \u2022 USD 39.99",
+      "headline": "\ud83d\udd79\ufe0f Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
     }
   ]
 }
