@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765168021,
+  "updated_at": 1765170943,
   "products": [
     {
       "source": "ebay",
@@ -9,7 +9,7 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGPyyP68uBU6RlJyYe5C%2BlxBN36jRph%2FnQd4%2Bjwrnv1R%2BH9WJzVVQEP6kN4E4ucFcKu1mqDI6AznfXLm1sWO74KOe7PUDXqo3Zo--fO30UCIDhSx033z84DytmfTQ06SeCHj7Sz51vikqFr0%2BQoRE1d2vy2%2FxJIB56RA7b4T9ab7Mg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNRYBkZdRszkqfq2mW6YbniFpNrQy%2BSqeJZtQeo%2FtFuKo8cP2kOB7mQ3mmlLGcjbh3x3axUpZEL23Z8e--5uLqHq35pxFhJEOTJoWg%2FFhWwopBtvMFK7XCk157OwruqzRLwIK%2B6Yatf3WmzSCRFIxGLFe62aWtwFV0lUytZkfDOdQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
       "seller_feedback": 1003513,
       "top_rated": false,
       "seller_username": "theperfectpart",
@@ -32,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/xX0AAeSwyt1pLDZN/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AxX0AAeSwyt1pLDZN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 786923,
+      "seller_feedback": 786934,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-06-24T19:19:53.000Z",
@@ -43,28 +43,6 @@
       "caption": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0 \u2022 USD 17.0",
       "headline": "\ud83d\udd25\u2728 GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
       "blurb": "USD 17.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Sharper Image Powerboost Sport Percussion Handheld Massager: Metal",
-      "price": 25.49,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/DRcAAeSwx2lpNlJL/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205721111842?_skw=massage+gun&hash=item2fe5ef0d22%3Ag%3ADRcAAeSwx2lpNlJL&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 786923,
-      "top_rated": false,
-      "seller_username": "bullseye_deals",
-      "inserted_at": "2025-09-11T16:31:16.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "Sharper Image Powerboost Sport Percussion Handheld Massager: Metal \u2022 USD 25.49",
-      "headline": "\ud83d\udd25\u2728 Sharper Image Powerboost Sport Percussion Handheld Massager: Metal",
-      "blurb": "USD 25.49 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
@@ -92,34 +70,12 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 16.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354306,
-      "top_rated": false,
-      "seller_username": "buildyourbike",
-      "inserted_at": "2015-08-27T20:27:44.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "massage gun",
       "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
       "price": 15.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVZQuypOuP3tAzPOTfuJCgAPpJ2AqaZCU%2BPGgHGD%2FYwzIfODNVueInr%2BWxkOLL2DhKrB9a6fE2sQ4mGqPyZQeNSP5DZlTtv%2FPN8JyR%2B0YmdPH%2FbAPnami8yVET%2BcXvdGVwtAaqjK%2FertHQ%2B3OpAHTq4c&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVb%2FIL%2Bitz%2BI6HeVz9Qg1dG7jY2AM2%2BaPe%2BParibGrzHvYRyxZe28Y6C1GHkLXcvUbYsaQJPV698gQ%2FkaqE18zQtY35lqzfKlhCbHUfsgkeQpn114jFW73Y1XDK524YOiXPPb0xcbF6XOS3XJqlgWPox&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
       "seller_feedback": 350895,
       "top_rated": false,
       "seller_username": "gameinfinity",
@@ -131,6 +87,50 @@
       "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
       "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
       "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
+      "price": 42.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/zdMAAeSwEcxpNkhs/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AzdMAAeSwEcxpNkhs&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvwbP03I15kH6JG%2FS6qtt4Z9zDtWrfjOeyJA1LiMYrh9tcf0DNc%2BOCsr%2FPLJwkWude56OpARSwAdSr8MXbrtVu8jqVmaLFWLCxZZ5%2BF5cew8hNQ0%2FaPIHgeQFeLoPdXJ5M%2FvJgmUtma%2F39NwlW7GHMU5deDkx1p8G036Qr%2BPClp1wg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 178042,
+      "top_rated": false,
+      "seller_username": "tradeportusa",
+      "inserted_at": "2025-08-26T14:30:59.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain- \u2022 USD 42.99",
+      "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
+      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 49.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/A34AAOSwni1eYDui/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/154312920526?_skw=massage+gun&hash=item23edc44dce%3Ag%3AA34AAOSwni1eYDui&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UakeAKfbg8RSp1ltZyzmZZnopfVZSbhTGU%2F1xKiAaZVpsY%2FNsfxYHJVlcAKC%2BPvLWARqf8oYvEgz655R9TZ7D5zl9Qu9BbnWhoj0SZzYqPR90HEV1DpPVUtTWfXDZwhoKxcYm9luiCk9WIupMwOmMT4Xeo2%2FlpzPT6bsdzCyvGFEMimVLBOa7XGZ5QeUoXGtpBNwMtv3NmNdNdbHn5sW28TjZsYAMfiONX%2FZzSZhIOUgtq18Zcj1oRac6voaGnAAAzoJiV5xdwm9FtYe512KUQR&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 65568,
+      "top_rated": false,
+      "seller_username": "epadronics",
+      "inserted_at": "2021-01-30T22:59:21.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 49.99",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 49.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
