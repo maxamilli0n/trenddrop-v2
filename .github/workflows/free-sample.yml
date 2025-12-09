@@ -27,7 +27,8 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: python -m trenddrop.reports.free_sample
 
-      - name: Upload to Supabase Storage
-        run: |
-          supabase storage upload trenddrop-reports/free/sample.pdf out/free_sample.pdf --replace
-          supabase storage upload trenddrop-reports/free/sample.csv out/free_sample.csv --replace
+      # Upload disabled because Supabase CLI is not available in GitHub Actions
+      # - name: Upload to Supabase Storage
+      #   run: |
+      #     supabase storage upload trenddrop-reports/free/sample.pdf out/free_sample.pdf --replace
+      #     supabase storage upload trenddrop-reports/free/sample.csv out/free_sample.csv --replace
