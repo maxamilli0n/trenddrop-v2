@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765268352,
+  "updated_at": 1765271803,
   "products": [
     {
       "source": "ebay",
@@ -9,8 +9,8 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGM8cMZ4n9HGYuwJpPjOhphqav3f8MpVMz7mdZ1ZRdhTxLsTCuK09Jk3fLLH5CefKgg5Fd4h%2B%2B0NmlxiHaav0gUmB%2FF%2B9OrCyUERcw3ruYogHfb6qVQA54dEsC7PqqZU2oDKHLCttt%2FEtVTB5C7Dc3etJtobkukQ6y30wGSlxjFKvg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1004604,
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNgIZ06dyOKxSpkCMXJnmLako6aqv6zqGoSxA7WGTB%2B5aAE0g1mJO%2BZlZmP2CbvudA3r8xEuEcxlg571ZBoUPTi9CtnLGkUXn93EmxG2UBSK6Fa%2BPEQm2f39ILOWYz5QUrLCAiJrX0BBA%2BdrRpjV2NsS3us1x%2Br6jAGkjJyxwIYoA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1004615,
       "top_rated": false,
       "seller_username": "theperfectpart",
       "inserted_at": "2022-11-18T00:58:24.000Z",
@@ -32,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/D1EAAeSwE3hpNngc/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205721111842?_skw=massage+gun&hash=item2fe5ef0d22%3Ag%3AD1EAAeSwE3hpNngc&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 790790,
+      "seller_feedback": 790848,
       "top_rated": false,
       "seller_username": "bullseye_deals",
       "inserted_at": "2025-09-11T16:31:16.000Z",
@@ -48,13 +48,57 @@
     {
       "source": "ebay",
       "provider": "ebay",
+      "keyword": "cordless vacuum",
+      "title": "Black+Decker dustbuster AdvancedClean Cordless Handheld Vacuum CHV1410L",
+      "price": 28.89,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/HAkAAeSwm~NpN-fe/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/187735317996?_skw=cordless+vacuum&hash=item2bb5e59dec%3Ag%3AHAkAAeSwm~NpN-fe&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 790820,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-11-12T19:02:04.000Z",
+      "signals": 9.0,
+      "tags": [
+        "cordless vacuum"
+      ],
+      "caption": "Black+Decker dustbuster AdvancedClean Cordless Handheld Vacuum CHV1410L \u2022 USD 28.89",
+      "headline": "\ud83c\udfe0\ud83d\udecb Black+Decker dustbuster AdvancedClean Cordless Handheld Vacuum CHV1410L",
+      "blurb": "USD 28.89 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "pet hair trimmer deals",
+      "title": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
+      "price": 17.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/JacAAOSwuIRdJg8G/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/352493815621?_skw=pet+hair+trimmer+deals&hash=item521244c745%3Ag%3AJacAAOSwuIRdJg8G&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbXLNVeDrBaHNcxVa3%2FkQwf9K%2Bd7Qx4gPD%2FhncG8zMkm6b5lKTSeOdFxCCxJYiDhYwqiqqt8TDJDgYv0Ab6lse8jhjIIsuFzDA7E22zAOJypQj%2F79YXxq29J9X0b2CpCkEqF5G0xnNoUR%2Bj4FdGvwOjjrKarU6ZqlNaYXhHOpzR4HtAnUK4MQN8eNvnpLJxDOCfmd%2FjqlSaNFog2NnZfILpLgpf0dZBiNa%2FiArfFg8ST1T5jOjiqTmjgkTcQ41QBXKDCUmKDUovMYd%2BikPQ5RC5UIXtL%2B7g2qQF7lvpfIe%2Bwg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pet_hair_trimmer&toolid=10001",
+      "seller_feedback": 708817,
+      "top_rated": false,
+      "seller_username": "inkcredibleprinting",
+      "inserted_at": "2018-10-22T19:20:49.000Z",
+      "signals": 9.0,
+      "tags": [
+        "pet hair trimmer"
+      ],
+      "caption": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper \u2022 USD 17.95",
+      "headline": "\ud83d\udd25\u2728 Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
+      "blurb": "USD 17.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
       "keyword": "best cordless vacuum",
       "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
       "price": 45.0,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZDA2CtDstVKDGjM9Ezl1GmZS%2FRQb1JWyo3IOp%2FZANet05FvCqENTj69yR9olEwJhrLQOKlibNDKRgDWlfbEGcPVKk60%2FxiT4IHQq1FDGohwyC8vvHI0WXTMbfIK38Z5qBuF6UftroPsnd57pH%2BePFQZgbGA13I2OIYmu4Pp%2FNh4tQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 558493,
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZDPke8u9SpIEDRpz6z4Shp9Upnb%2FPHCkP%2F6IiH8n%2BvsYDcTmGGqtxEWR9nNLwN082WvLXnlhXUqzy60rvUtudj%2FJRjbBTBiG1DQGsCMUpl34AYYvDDHQQohWFva2ny3fA67o84RFttbI5vW6yiUN8%2BZ58M5NveJ%2FaHc7AGTdcywzw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 558521,
       "top_rated": false,
       "seller_username": "vipoutlet",
       "inserted_at": "2025-07-30T20:28:05.000Z",
@@ -75,8 +119,8 @@
       "price": 15.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVb2GezyQdWhMfZNPiDIt0lIRtHGCf8MfO9j%2F5%2Fp%2BIpww7D%2B37%2FrCT%2BXY1265Nt4IVYQ%2FoZqlbseUW6k0kI64K9Z8rd9IzHF57dGGDkQzFjLPL8b8WOvcfgsQb%2Fao3IB8w9o5G7HUjp8DmpK6c%2FTC6%2Fw&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 350977,
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVbm1TTvon5RPzrLEV2152Wiz%2Br4ybI1RUKHw15XWjfhyeFbAAaJ49vy08wC6yc6C%2FAi33LV7u8vgzmHTwguQdyIdvKPlLvRYk2rMq%2Fox%2Fv1rnB%2FMOdZCSyBwalGAqh2%2BOm7DPRuUVZP%2BosVZxgS4%2BKM&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 350979,
       "top_rated": false,
       "seller_username": "gameinfinity",
       "inserted_at": "2023-04-13T18:58:49.000Z",
@@ -87,50 +131,6 @@
       "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
       "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
       "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "price": 150.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/aagAAeSw-8VpGzYC/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/167596829674?_skw=cordless+vacuum&hash=item27058cabea%3Ag%3AaagAAeSw-8VpGzYC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 180532,
-      "top_rated": false,
-      "seller_username": "guaranteecellular",
-      "inserted_at": "2025-06-18T17:13:39.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Shark Ip1251 Powerdetect Cordless Stick Vacuum \u2022 USD 150.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "blurb": "USD 150.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
-      "price": 42.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/zdMAAeSwEcxpNkhs/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AzdMAAeSwEcxpNkhs&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvy87jrZOsGJmni48Vo0NuRZPcImtBMpNhx1q91CzUxVMr099oYSYC3rjSBP1IC50PvIkny110iMakKT1f0ZEL7Kt4M5OGVTpRtkBV%2Fv3jJRxmOylBcp1DWfyqshbAI9GPcMuCLZI%2FXajaEsU%2FE6Mism12YeFfkjid3DQHwBSXJ7RQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 178123,
-      "top_rated": false,
-      "seller_username": "tradeportusa",
-      "inserted_at": "2025-08-26T14:30:59.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain- \u2022 USD 42.99",
-      "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
-      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
