@@ -1,6 +1,116 @@
 {
-  "updated_at": 1765252005,
+  "updated_at": 1765254115,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGMwHTr%2FnYOa5QrLt4coZ6XagDQCsFiFM5V7M4s573UnCU0SYierDWnru%2FZPh%2B%2BaJsvBQvzAvQ7lha3NlXVTQaf1eNyHs%2BET0TnJ40LE3AyS69zmPEkUAEsH3xjRCe0JMkf1fPg%2B0VvIOdsFnegfX%2BvZck2hMRSvXIEEJVhnwmdOQg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1004468,
+      "top_rated": false,
+      "seller_username": "theperfectpart",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 902686,
+      "top_rated": false,
+      "seller_username": "best_buy",
+      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Sharper Image Powerboost Sport Percussion Handheld Massager: Metal",
+      "price": 25.49,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/D1EAAeSwE3hpNngc/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205721111842?_skw=massage+gun&hash=item2fe5ef0d22%3Ag%3AD1EAAeSwE3hpNngc&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 790344,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-09-11T16:31:16.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Sharper Image Powerboost Sport Percussion Handheld Massager: Metal \u2022 USD 25.49",
+      "headline": "\ud83d\udd25\u2728 Sharper Image Powerboost Sport Percussion Handheld Massager: Metal",
+      "blurb": "USD 25.49 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 41.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/C8AAAeSwKpxpN4mj/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205849773567?_skw=air+fryer+deals&hash=item2fed9a45ff%3Ag%3AC8AAAeSwKpxpN4mj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 790344,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-11-15T08:25:42.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 41.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 41.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
+      "price": 50.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/foUAAeSwiWBpNoPv/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer&hash=item2fec6db215%3Ag%3AfoUAAeSwiWBpNoPv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 790344,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-11-06T13:43:46.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking \u2022 USD 50.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
+      "blurb": "USD 50.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +120,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
       "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 393946,
+      "seller_feedback": 393949,
       "top_rated": false,
       "seller_username": "hiparts",
       "inserted_at": "2017-09-19T04:14:30.000Z",
@@ -21,116 +131,6 @@
       "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.14",
       "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
       "blurb": "USD 16.14 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "price": 28.49,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 393946,
-      "top_rated": false,
-      "seller_username": "hiparts",
-      "inserted_at": "2017-03-10T15:42:19.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 28.49",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "blurb": "USD 28.49 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "NEW BWC2-H GasAlert Portable Gas Monitor Detector H2S Hydrogen Sulfide 24 Months",
-      "price": 112.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/BK4AAOSwWTRW2Et9/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/231492037314?_skw=portable+monitor+deals&hash=item35e6002ac2%3Ag%3ABK4AAOSwWTRW2Et9&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbaEvF8AEfo59XtWZcwYqJyKPwLhFkVmHyUpiYg9TSAWKq8QuvdBXzxZRCKtelPV76XkxQs9U6VaIJAZDSCXMr%2Fwjqk2ub%2BvPIXyGnnIYxzDzGMcCEMDl0G0giyb8McKooKc1TBWeoCKSpkNmfjmNvzvPhXVjrEtswvgraYIZAjH%2BWk%2BMcummJmJDduTSNunZ2ywl2joY16WSOLXCDWOgR9QG1KvsYbQdpPqlZKFNFOx17C8zJXrkfmDA9HeyK9zidwCnpsfpQbgr8NjiNCz5HKvz4KXtsOgfZl4WTJFLmpuw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 132032,
-      "top_rated": false,
-      "seller_username": "pro-safety2009",
-      "inserted_at": "2015-02-27T17:24:24.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "NEW BWC2-H GasAlert Portable Gas Monitor Detector H2S Hydrogen Sulfide 24 Months \u2022 USD 112.95",
-      "headline": "\ud83d\udd25\u2728 BWC2-H GasAlert Portable Gas Monitor Detector H2S Hydrogen Sulfide 24 Months",
-      "blurb": "USD 112.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "price": 35.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 107724,
-      "top_rated": false,
-      "seller_username": "dd707city",
-      "inserted_at": "2025-11-04T21:44:40.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 35.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Holiday Xmas Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "blurb": "USD 35.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor",
-      "title": "AOpen 16PM1Q 15.6\" FHD 1920x1080 60Hz IPS Portable Monitor HDMI Mini Refurbished",
-      "price": 38.21,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/p5EAAeSwEGlpE2-J/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/277061919110?_skw=portable+monitor&hash=item40822d6186%3Ag%3Ap5EAAeSwEGlpE2-J&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 90291,
-      "top_rated": false,
-      "seller_username": "acer",
-      "inserted_at": "2025-04-24T18:55:24.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "AOpen 16PM1Q 15.6\" FHD 1920x1080 60Hz IPS Portable Monitor HDMI Mini Refurbished \u2022 USD 38.21",
-      "headline": "\ud83d\udd25\u2728 AOpen 16PM1Q 15.6\" FHD 1920x1080 60Hz IPS Portable Monitor HDMI Mini Refurbished",
-      "blurb": "USD 38.21 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor",
-      "title": "Acer 15.6\" Portable Monitor FHD 1920x1080 60Hz Black PM161Q Refurbished",
-      "price": 40.03,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/5y8AAeSwUxho1cyI/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/277333168153?_skw=portable+monitor&hash=item4092585019%3Ag%3A5y8AAeSwUxho1cyI&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 90291,
-      "top_rated": false,
-      "seller_username": "acer",
-      "inserted_at": "2025-08-18T20:20:41.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "Acer 15.6\" Portable Monitor FHD 1920x1080 60Hz Black PM161Q Refurbished \u2022 USD 40.03",
-      "headline": "\ud83d\udd25\u2728 Acer 15.6\" Portable Monitor FHD 1920x1080 60Hz Black PM161Q Refurbished",
-      "blurb": "USD 40.03 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
