@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765354731,
+  "updated_at": 1765358219,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/rnYAAeSw9OlpNueR/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ArnYAAeSw9OlpNueR&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 905222,
+      "seller_feedback": 905248,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2024-08-13T15:00:21.000Z",
@@ -32,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/0YYAAeSwGGJpK2US/s-l225.jpg",
       "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3A0YYAAeSwGGJpK2US&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 860654,
+      "seller_feedback": 860659,
       "top_rated": false,
       "seller_username": "a4c",
       "inserted_at": "2024-06-07T11:43:55.000Z",
@@ -54,7 +54,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/vWEAAeSw30VpNtEM/s-l225.jpg",
       "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AvWEAAeSw30VpNtEM&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 860654,
+      "seller_feedback": 860659,
       "top_rated": false,
       "seller_username": "a4c",
       "inserted_at": "2025-02-12T17:52:17.000Z",
@@ -71,12 +71,56 @@
       "source": "ebay",
       "provider": "ebay",
       "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
+      "price": 24.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/OCsAAeSw8xZpMoqB/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AOCsAAeSw8xZpMoqB&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbPxKsi5KtFVj84VGxR2KkOj03Jy%2FxbVIGzhRAcFeRR92gpHHWkUgp4bL7lnOtr444YE9Q0K91rcRToJdXqxdksKFKEQxsOI29w3LZ2N%2BEpBt%2FEAreWhLv9dlIVi3bNhofy0iLIg66jwGiLmgfM0qjvCfQdJ7TIvVe5i%2Bs%2Fas5T4%2FCNvTZWw7y8Yjr9ATuB00jUduQ6bi09WPYbtOjBcKuGrKfwPCnHnPIZmhb4xPTj6qZ7N3xzUaWc%2BDi5bMiI%2F6gFYVh%2BCUrI1suYn5u2necpUcAFsJ8X3pyvgyP8D9eboQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 860659,
+      "top_rated": false,
+      "seller_username": "a4c",
+      "inserted_at": "2025-03-10T16:52:12.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black \u2022 USD 24.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
+      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard deals",
+      "title": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "price": 24.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/1sUAAeSwFm1pOGvd/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315781118209?_skw=mechanical+keyboard+deals&hash=item4986057901%3Ag%3A1sUAAeSwFm1pOGvd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbfyV2HfsZQuYuoIWfGa6uKwbCJuGpp7%2FYhQIDNNoKg3WAPzRbYw8ZPR62oPjFrhte8t02MmWNMj%2FJPALZPgK1bZWgLVzxdsd4LLs96o1ChHOTxvBpNEw3k2lEvJmu5BGYnv1S7cN2LNPA%2BUIBLcyjwVypy3Eg2ualAi%2BqjLLabcecGRQLhUt2gG6PKXoY6eOFCEpImxUBRjpXQ78FOC%2F6sTVesBNB7JCxlNl4BnQEhqFZmm%2FLCR7pe%2Fo4ge7kvxjxn%2F7keZV%2FxU0XUVW9Nwk8Ciddra%2Bv9OXOnZdoADkmWcg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 860659,
+      "top_rated": false,
+      "seller_username": "a4c",
+      "inserted_at": "2024-09-23T23:43:37.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray \u2022 USD 24.95",
+      "headline": "\ud83d\udd79\ufe0f Logitech MK470 Slim Wireless Keyboard and Mouse Combo - Black/Gray",
+      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "wireless charger deals",
       "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD%2FwshhXwgWy9B5BF%2FyRipI2VUU8L9TVWleLQTmjL%2FsjTsSvdiXmoIPYFuFqvy3dP7ujz4hFivMmh2Icqgvp9M3JEfhpkJbR8EAb4UWjxG5vL0orJrrGvs795jBDR4A5xZiFHvqOfoJuffjD2ZJ4erdOsfVFerwV4Z0iu6qKtXDVwA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 860654,
+      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD%2BKVl99MBmYURv1vp7mEeoCDM9RsdhwqIHuXkpHlOn49YcZOOSW0Scd4JHd7dbolq%2BjJPtUIKQJr6OnyL5TwjXcd5NoLhj7GlN%2BBdpIrbHosXXwaR7o%2FpmgZrbA7kvF2CZRH%2Bx87z4FxRfSEaqhC2%2BV0izhnEpM%2B7vys67O5RwtAQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 860659,
       "top_rated": false,
       "seller_username": "a4c",
       "inserted_at": "2025-04-08T17:10:09.000Z",
@@ -87,50 +131,6 @@
       "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
       "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
       "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Anker 623 MagGo Magnetic Wireless Charger - Black",
-      "price": 29.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/l9cAAeSwHbhpK4Nw/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365279502593?_skw=wireless+charger+deals&hash=item550c5ae101%3Ag%3Al9cAAeSwHbhpK4Nw&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZtMJLHHJjg0qHNMscLdzPfb7fuXa9z7aDwRv9%2Bd7ln01U1jGxOUCwQb%2F8Hbp0mX6qyFOjOZ%2BIu7ou2HYkPKh7DYCj73R0XHV8feJ36f8wrdZHhk08vWvS5%2FK4IAqv2kpNHKO0RUC2xT2V3PtrzkSTIOQK2lYleOtaPNknytsq8l6TaZgkdGXV%2BUVKlZw0An1hwHWCydtIzPObai%2BAjf3M5J0KuwSVMrzpP1hnTOwg2q1sgl8D6h%2FibfQPA%2FDYolRf5VVAIWU99BO%2FNZPFhbwRbVqMgocwiElGZuW9rElx2mg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 860654,
-      "top_rated": false,
-      "seller_username": "a4c",
-      "inserted_at": "2024-12-10T15:08:16.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Anker 623 MagGo Magnetic Wireless Charger - Black \u2022 USD 29.95",
-      "headline": "\ud83d\udd25\u2728 Anker 623 MagGo Magnetic Wireless Charger - Black",
-      "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Belkin BOOSTCHARGE\u202fPRO 3-in-1 Wireless Charging Stand with MagSafe - White",
-      "price": 79.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/VloAAeSwYNZpOQL3/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365575266716?_skw=wireless+charger+deals&hash=item551dfbe19c%3Ag%3AVloAAeSwYNZpOQL3&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbpYvIM1gULFZBIMbKI08CmMTpk%2BvTREoqPGIK4eY9MErMEK0vnHENCMkM8TWD9N2hy09hIbRmgqOofD689YpCvwTaqnsBtWi0woR1ikyMM5gTDpCBNjZ22%2Fz3GPI0kA%2Fty5rTTXD2em5iDHK7egTvqI0rTo%2B29pKOssFXP1h0vOzKSe6JJGdaY3s0Q2DU2sKq4%2F0KPAtr8Z%2Fj%2BjHhC3zGK8UpmoOt85vG7wJ%2FLLrZ17c0CYZb0Qhl6FJwkqkTttknleFbWogFtZ0mB1bABN5tqoDSl%2BtWCDN7hWbe65KeFhg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 860654,
-      "top_rated": false,
-      "seller_username": "a4c",
-      "inserted_at": "2025-05-01T15:51:54.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Belkin BOOSTCHARGE\u202fPRO 3-in-1 Wireless Charging Stand with MagSafe - White \u2022 USD 79.95",
-      "headline": "\ud83d\udd25\u2728 Belkin BOOSTCHARGE\u202fPRO 3-in-1 Wireless Charging Stand with MagSafe - White",
-      "blurb": "USD 79.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
