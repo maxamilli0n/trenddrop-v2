@@ -1,6 +1,28 @@
 {
-  "updated_at": 1765441177,
+  "updated_at": 1765444727,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "pickleball paddle deals",
+      "title": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
+      "price": 44.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/4hcAAeSwRfJpOcjY/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177237416336?_skw=pickleball+paddle+deals&hash=item29442c5990%3Ag%3A4hcAAeSwRfJpOcjY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 796081,
+      "top_rated": false,
+      "seller_username": "bullseye_deals",
+      "inserted_at": "2025-07-02T06:08:25.000Z",
+      "signals": 9.0,
+      "tags": [
+        "pickleball paddle"
+      ],
+      "caption": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle \u2022 USD 44.99",
+      "headline": "\ud83d\udd25\u2728 Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
+      "blurb": "USD 44.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/NXIAAeSwkAJo7nzp/s-l225.jpg",
       "url": "https://www.ebay.com/itm/236389360936?_skw=pickleball+paddle+deals&hash=item3709e76528%3Ag%3ANXIAAeSwkAJo7nzp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 703890,
+      "seller_feedback": 703891,
       "top_rated": false,
       "seller_username": "nps",
       "inserted_at": "2025-10-14T16:37:03.000Z",
@@ -26,46 +48,68 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "pickleball paddle deals",
-      "title": "CRBN 3X Series Hybrid Paddle for Pickleball 14MM",
-      "price": 118.99,
+      "keyword": "portable monitor",
+      "title": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "price": 59.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/YDIAAeSwp1ho7Wso/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/397153773953?_skw=pickleball+paddle+deals&hash=item5c7835a981%3Ag%3AYDIAAeSwp1ho7Wso&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 703890,
+      "image_url": "https://i.ebayimg.com/images/g/JNEAAOSwpIJnXbkp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365287320803?_skw=portable+monitor&hash=item550cd22ce3%3Ag%3AJNEAAOSwpIJnXbkp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 397844,
       "top_rated": false,
-      "seller_username": "nps",
-      "inserted_at": "2025-10-13T21:08:03.000Z",
+      "seller_username": "quickshipelectronics",
+      "inserted_at": "2024-12-14T16:58:20.000Z",
       "signals": 9.0,
       "tags": [
-        "pickleball paddle"
+        "portable monitor"
       ],
-      "caption": "CRBN 3X Series Hybrid Paddle for Pickleball 14MM \u2022 USD 118.99",
-      "headline": "\ud83d\udd25\u2728 CRBN 3X Series Hybrid Paddle for Pickleball 14MM",
-      "blurb": "USD 118.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J \u2022 USD 59.99",
+      "headline": "\ud83d\udd25\u2728 Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
+      "blurb": "USD 59.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best cordless vacuum",
-      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "price": 45.0,
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "price": 16.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZAcBG2ydIdTVdRE9toDPnndIreq6fKZnZ%2F1GINl1fs%2Biy8qbb0Mt4nKyPp%2BYcJUfa0DgPtPTImZ2TIgfKrpG493WOyrSy8iMGv8T8%2BcncZoepCGCMfhN5LnXYQN9IjGcg4BEIKSd7FG3%2FvqX1eZWufKQPUzB5enEMK2Z9avelaYPA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 560488,
+      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394071,
       "top_rated": false,
-      "seller_username": "vipoutlet",
-      "inserted_at": "2025-07-30T20:28:05.000Z",
+      "seller_username": "hiparts",
+      "inserted_at": "2017-09-19T04:14:30.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "portable monitor"
       ],
-      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "price": 29.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394071,
+      "top_rated": false,
+      "seller_username": "hiparts",
+      "inserted_at": "2017-03-10T15:42:19.000Z",
+      "signals": 9.0,
+      "tags": [
+        "portable monitor"
+      ],
+      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 29.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -75,7 +119,7 @@
       "price": 32.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2By28PwkJHjhgnnQxv4yWZAYk8DecagkOYND8clTpKHapjwwuCkkgv36H3bS7rQIgWV3qwZE75JnLcVDAP%2B1PPvo7vw%2FZJqGOULIQWyGqbukN%2Fpqu2qE2zR4DXTQgQUdNdGU3RlbiBj3pVbMC1771Wwd1Ektnd2dTfRyssUCs0PUYQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
+      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2BwBj9H8ADntmZxbjodJduZNfUwsMdS4epEcP9a3Kb6TsXA7KkFxX521z0BfU1ROs3liVqfP1UNfpbWbGk0b2efv%2FwV99fPqvEJGLUSY0OetobiQLnhJqY4jSqh5qpGWakQMxnzuaUjn3o22FLQw1MOGNmFWmnh15Bl514xamohdkA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
       "seller_feedback": 283250,
       "top_rated": false,
       "seller_username": "sale2015express",
@@ -87,50 +131,6 @@
       "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
       "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
       "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "price": 150.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/aagAAeSw-8VpGzYC/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/167596829674?_skw=cordless+vacuum&hash=item27058cabea%3Ag%3AaagAAeSw-8VpGzYC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 180753,
-      "top_rated": false,
-      "seller_username": "guaranteecellular",
-      "inserted_at": "2025-06-18T17:13:39.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Shark Ip1251 Powerdetect Cordless Stick Vacuum \u2022 USD 150.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "blurb": "USD 150.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "price": 35.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 107755,
-      "top_rated": false,
-      "seller_username": "dd707city",
-      "inserted_at": "2025-11-04T21:44:40.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 35.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Holiday Xmas Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "blurb": "USD 35.00 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
