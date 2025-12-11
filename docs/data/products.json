@@ -1,6 +1,28 @@
 {
-  "updated_at": 1765414770,
+  "updated_at": 1765421600,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNw62uH3w7%2BideI6ebP%2FkDqFhIScNYj3pF%2B2aJ%2FEfxjvkXEqX5LFCS97%2Bxv416zXi7krUTBfmF2R%2BjMaKpyoaeaaDmmdtlcSYa0CKiQaf%2Bir8lTMei6vJ4hz6gJhVvP%2F6KxYyZmigodVN5lF%2B7mbF0eS%2BdiMSEjm9d7EwLWFz09Ig%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1005652,
+      "top_rated": false,
+      "seller_username": "theperfectpart",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/G9QAAeSwJV9pOamg/s-l225.jpg",
       "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AG9QAAeSwJV9pOamg&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 905793,
+      "seller_feedback": 905961,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2024-11-21T02:09:27.000Z",
@@ -26,24 +48,24 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Craftsman CMCVH001BR V20 Handheld Vacuum (Tool Only) Certified Refurbished",
-      "price": 42.99,
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/ucgAAeSwwWFpJoEs/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/286299618154?_skw=cordless+vacuum+deals&hash=item42a8c97b6a%3Ag%3AucgAAeSwwWFpJoEs&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 658041,
+      "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 905961,
       "top_rated": false,
-      "seller_username": "cpo-outlets",
-      "inserted_at": "2025-02-03T19:01:04.000Z",
+      "seller_username": "best_buy",
+      "inserted_at": "2025-10-22T15:52:43.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "air fryer"
       ],
-      "caption": "Craftsman CMCVH001BR V20 Handheld Vacuum (Tool Only) Certified Refurbished \u2022 USD 42.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Craftsman CMCVH001BR V20 Handheld Vacuum (Tool Only) Certified Refurbished",
-      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -53,8 +75,8 @@
       "price": 45.0,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZAwOXL0E8BZpdpNUKSgEJxNPnXznZ9oFcT6XkNQzv%2ByggfGvCjfLwSkhbZKgdJ9gSLAmbzkyYi5dbbXAk5lTPRGVP5YfqZ7jAOPY%2BSLAvc5BoQfy7rwNDfzQzB6d10yvpGCzPQGRyIWwV8PXmieHMxpPje7MGZcyDZLujeb0va%2B%2Bg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 560235,
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZCK2xq6uDKLR7wUdFuMGhGN3%2F9LN7gq%2Bm2mp%2Be1o%2F6JDq7%2BpVoyV7JcaXBghM870EeVOfG6pfHABGhG5olQaEYAFNCsZMljVfs47iKn5reN2WSzU%2Fi3neQCy0EdNoPjtJU9cne%2FQROx1eMhftaB267b%2FRACVe%2FsinytoIAyyPdJhw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 560295,
       "top_rated": false,
       "seller_username": "vipoutlet",
       "inserted_at": "2025-07-30T20:28:05.000Z",
@@ -71,34 +93,12 @@
       "source": "ebay",
       "provider": "ebay",
       "keyword": "air fryer",
-      "title": "Bluebow 12QT Air Fryer Convection Oven With 10-in-1 Multi Function Visible",
-      "price": 55.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/RcIAAeSwDExpLz95/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/135549647450?_skw=air+fryer&hash=item1f8f637a5a%3Ag%3ARcIAAeSwDExpLz95&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 560235,
-      "top_rated": false,
-      "seller_username": "vipoutlet",
-      "inserted_at": "2025-02-12T15:10:29.000Z",
-      "signals": 9.0,
-      "tags": [
-        "air fryer"
-      ],
-      "caption": "Bluebow 12QT Air Fryer Convection Oven With 10-in-1 Multi Function Visible \u2022 USD 55.0",
-      "headline": "\ud83d\udd25\u2728 Bluebow 12QT Air Fryer Convection Oven With 10-in-1 Multi Function Visible",
-      "blurb": "USD 55.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "air fryer",
       "title": "Beautiful 19092 9QT TriZone Air Fryer, White Icing by Drew Barrymore",
       "price": 138.0,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Vc0AAeSwVqpoqD4B/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/116398187308?_skw=air+fryer&hash=item1b19df632c%3Ag%3AVc0AAeSwVqpoqD4B&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbaRfSk6BsMVUrYnEqlxHq1PjVhGpDNkPS6fJKuFqUEdEOPXQ%2FJCbcxZNUrynFcjrkp%2BaS%2FLJvmgGmKKDkTbDueY54soIdMy5Nx6kvLbFedIgvs3bSASyHocBleyyq%2BsQzP09UXde7dkhGgTOOW1dXnQL8Ld%2FCxmooh3X0y8ju4ldGt8R8qg5vnXGo5DdYojM6dymAFNHntlbmub5JKJLCYkhw1ipOlDCHp4J0RlJeIGVreNmFI%2B%2BEHPjc7X5leSf%2BKekgsXEr0iY6b5%2F70I6OX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 560235,
+      "url": "https://www.ebay.com/itm/116398187308?_skw=air+fryer&hash=item1b19df632c%3Ag%3AVc0AAeSwVqpoqD4B&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbaRfSk6BsMVUrYnEqlxHq1PjVhGpDNkPS6fJKuFqUEdEOPXQ%2FJCbcxZNUrynFcjrkp%2BaS%2FLJvmgGmKKDkTbDueY54soIdMy5Nx6kvLbFedIgvs3bSASyHocBleyyq%2BsQzIi4KaAJsts%2BXQV%2BPqkZECS9vu0TiI3tC4ozKaS4f7kGkZTkLCt9EQqJosfNlTSNCJe8dmClr2rX63oYJWmuSjQgbMB78eiUhmEbg%2BRuVZqgFDZ%2Bfx06Hq%2BgkiwcQnXofRjKxLkvudhmpF%2Bki5m5vj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 560295,
       "top_rated": false,
       "seller_username": "vipoutlet",
       "inserted_at": "2024-11-20T22:19:37.000Z",
@@ -114,24 +114,24 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "price": 150.0,
+      "keyword": "massage gun",
+      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "price": 15.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/aagAAeSw-8VpGzYC/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/167596829674?_skw=cordless+vacuum&hash=item27058cabea%3Ag%3AaagAAeSw-8VpGzYC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 180708,
+      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVb9nDf1M%2BeJGdOz9tmfff210nCzGG4neWn%2BuPhMtLVMlWrYcK4oElWIpjOWVA2D5Q9j%2Fbbql3NI0s3Ig2F7wG%2BVMcubtep70uQ6SLHPRbL7c9CeV0hBfFPglqX6c2V1XaM%2BERKwX3lQPss8Q2Dk12Hh&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 351110,
       "top_rated": false,
-      "seller_username": "guaranteecellular",
-      "inserted_at": "2025-06-18T17:13:39.000Z",
+      "seller_username": "gameinfinity",
+      "inserted_at": "2023-04-13T18:58:49.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "massage gun"
       ],
-      "caption": "Shark Ip1251 Powerdetect Cordless Stick Vacuum \u2022 USD 150.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "blurb": "USD 150.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
+      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
