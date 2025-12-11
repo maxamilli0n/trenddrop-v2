@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765408274,
+  "updated_at": 1765414770,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/G9QAAeSwJV9pOamg/s-l225.jpg",
       "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AG9QAAeSwJV9pOamg&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 905701,
+      "seller_feedback": 905793,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2024-11-21T02:09:27.000Z",
@@ -26,24 +26,46 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "pet hair trimmer deals",
-      "title": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
-      "price": 17.95,
+      "keyword": "cordless vacuum deals",
+      "title": "Craftsman CMCVH001BR V20 Handheld Vacuum (Tool Only) Certified Refurbished",
+      "price": 42.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/JacAAOSwuIRdJg8G/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/352493815621?_skw=pet+hair+trimmer+deals&hash=item521244c745%3Ag%3AJacAAOSwuIRdJg8G&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbXLNVeDrBaHNcxVa3%2FkQwf9K%2Bd7Qx4gPD%2FhncG8zMkm6b5lKTSeOdFxCCxJYiDhYwqiqqt8TDJDgYv0Ab6lse8jhjIIsuFzDA7E22zAOJypQj%2F79YXxq29J9X0b2CpCkGyf7I608XxiRej0yzSbJl93C57f69Ux0wJTHJbbl0%2FYGDBmwhyaiJUOiBN%2FKR%2FTUKmTdmXDAQl0AA%2Fp7x1Eh8Bqe9hz80652HuJBWLRnm4Xt58liydwWYMYudEDVVJ9QaCSCoIJenF%2BbJBCfOp1R9%2BA9jMENRe6DkiLOIk3f6oDw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pet_hair_trimmer&toolid=10001",
-      "seller_feedback": 708846,
+      "image_url": "https://i.ebayimg.com/images/g/ucgAAeSwwWFpJoEs/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/286299618154?_skw=cordless+vacuum+deals&hash=item42a8c97b6a%3Ag%3AucgAAeSwwWFpJoEs&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 658041,
       "top_rated": false,
-      "seller_username": "inkcredibleprinting",
-      "inserted_at": "2018-10-22T19:20:49.000Z",
+      "seller_username": "cpo-outlets",
+      "inserted_at": "2025-02-03T19:01:04.000Z",
       "signals": 9.0,
       "tags": [
-        "pet hair trimmer"
+        "cordless vacuum"
       ],
-      "caption": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper \u2022 USD 17.95",
-      "headline": "\ud83d\udd25\u2728 Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
-      "blurb": "USD 17.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Craftsman CMCVH001BR V20 Handheld Vacuum (Tool Only) Certified Refurbished \u2022 USD 42.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Craftsman CMCVH001BR V20 Handheld Vacuum (Tool Only) Certified Refurbished",
+      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "best cordless vacuum",
+      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "price": 45.0,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SoOTB5r1F9c8dNsL8DW2O5ICXZ1nz58t9gIvQB8QiahhZJS%2FNhKspo5kSVH%2FqG6wKt2Weco%2BQwZhsxPVdK%2BhdoeRrlcER2u0T8r59cwqoEZAwOXL0E8BZpdpNUKSgEJxNPnXznZ9oFcT6XkNQzv%2ByggfGvCjfLwSkhbZKgdJ9gSLAmbzkyYi5dbbXAk5lTPRGVP5YfqZ7jAOPY%2BSLAvc5BoQfy7rwNDfzQzB6d10yvpGCzPQGRyIWwV8PXmieHMxpPje7MGZcyDZLujeb0va%2B%2Bg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 560235,
+      "top_rated": false,
+      "seller_username": "vipoutlet",
+      "inserted_at": "2025-07-30T20:28:05.000Z",
+      "signals": 9.0,
+      "tags": [
+        "cordless vacuum"
+      ],
+      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
@@ -54,7 +76,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/RcIAAeSwDExpLz95/s-l225.jpg",
       "url": "https://www.ebay.com/itm/135549647450?_skw=air+fryer&hash=item1f8f637a5a%3Ag%3ARcIAAeSwDExpLz95&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 560148,
+      "seller_feedback": 560235,
       "top_rated": false,
       "seller_username": "vipoutlet",
       "inserted_at": "2025-02-12T15:10:29.000Z",
@@ -75,8 +97,8 @@
       "price": 138.0,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Vc0AAeSwVqpoqD4B/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/116398187308?_skw=air+fryer&hash=item1b19df632c%3Ag%3AVc0AAeSwVqpoqD4B&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbaRfSk6BsMVUrYnEqlxHq1PjVhGpDNkPS6fJKuFqUEdEOPXQ%2FJCbcxZNUrynFcjrkp%2BaS%2FLJvmgGmKKDkTbDueY54soIdMy5Nx6kvLbFedIgvs3bSASyHocBleyyq%2BsQzOUDrfzCrVswb9ZsEECoknXezLqVLEg%2BRe50FMhEWrtxPwr%2BcMXBGZ4CtBrpKSX0hWA7fbforAT2aXe7c8I4TyFPpn2%2F9FFvNpUVbQUX4YGLs83R1NeX0MofZMAlyhdDci8ShMOpFLg%2FobiuYE%2BZM9&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 560148,
+      "url": "https://www.ebay.com/itm/116398187308?_skw=air+fryer&hash=item1b19df632c%3Ag%3AVc0AAeSwVqpoqD4B&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbaRfSk6BsMVUrYnEqlxHq1PjVhGpDNkPS6fJKuFqUEdEOPXQ%2FJCbcxZNUrynFcjrkp%2BaS%2FLJvmgGmKKDkTbDueY54soIdMy5Nx6kvLbFedIgvs3bSASyHocBleyyq%2BsQzP09UXde7dkhGgTOOW1dXnQL8Ld%2FCxmooh3X0y8ju4ldGt8R8qg5vnXGo5DdYojM6dymAFNHntlbmub5JKJLCYkhw1ipOlDCHp4J0RlJeIGVreNmFI%2B%2BEHPjc7X5leSf%2BKekgsXEr0iY6b5%2F70I6OX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 560235,
       "top_rated": false,
       "seller_username": "vipoutlet",
       "inserted_at": "2024-11-20T22:19:37.000Z",
@@ -92,46 +114,24 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "portable monitor",
-      "title": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
-      "price": 59.99,
+      "keyword": "cordless vacuum",
+      "title": "Shark Ip1251 Powerdetect Cordless Stick Vacuum",
+      "price": 150.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/JNEAAOSwpIJnXbkp/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365287320803?_skw=portable+monitor&hash=item550cd22ce3%3Ag%3AJNEAAOSwpIJnXbkp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 397747,
+      "image_url": "https://i.ebayimg.com/images/g/aagAAeSw-8VpGzYC/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/167596829674?_skw=cordless+vacuum&hash=item27058cabea%3Ag%3AaagAAeSw-8VpGzYC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 180708,
       "top_rated": false,
-      "seller_username": "quickshipelectronics",
-      "inserted_at": "2024-12-14T16:58:20.000Z",
+      "seller_username": "guaranteecellular",
+      "inserted_at": "2025-06-18T17:13:39.000Z",
       "signals": 9.0,
       "tags": [
-        "portable monitor"
+        "cordless vacuum"
       ],
-      "caption": "Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J \u2022 USD 59.99",
-      "headline": "\ud83d\udd25\u2728 Acer PM1 15.6\" FHD IPS 1080p Portable Monitor 60Hz 5ms USB-C Mini-HDMI PM161Q J",
-      "blurb": "USD 59.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "price": 29.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 394055,
-      "top_rated": false,
-      "seller_username": "hiparts",
-      "inserted_at": "2017-03-10T15:42:19.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 29.99",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Shark Ip1251 Powerdetect Cordless Stick Vacuum \u2022 USD 150.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark Ip1251 Powerdetect Cordless Stick Vacuum",
+      "blurb": "USD 150.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
