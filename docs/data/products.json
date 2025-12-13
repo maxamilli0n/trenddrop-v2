@@ -1,6 +1,28 @@
 {
-  "updated_at": 1765645877,
+  "updated_at": 1765649779,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1007102,
+      "top_rated": false,
+      "seller_username": "theperfectpart",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +32,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/rnYAAeSw9OlpNueR/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ArnYAAeSw9OlpNueR&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 907564,
+      "seller_feedback": 907658,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2024-08-13T15:00:21.000Z",
@@ -32,7 +54,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/n-AAAeSwPfVpNufE/s-l225.jpg",
       "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3An-AAAeSwPfVpNufE&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 907564,
+      "seller_feedback": 907658,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2024-11-21T02:36:52.000Z",
@@ -54,7 +76,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/QSUAAeSwzltpO9to/s-l225.jpg",
       "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3AQSUAAeSwzltpO9to&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861037,
+      "seller_feedback": 861049,
       "top_rated": false,
       "seller_username": "a4c",
       "inserted_at": "2024-06-07T11:43:55.000Z",
@@ -75,8 +97,8 @@
       "price": 19.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/GikAAeSwx2lpPPdq/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGikAAeSwx2lpPPdq&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbShhTewSWRl3%2Fr4fqpBtn5UVHBeW8pC6IWO%2BejJzhnJk0ejROEjGQny0VGWOvUlvorZducp1fe4Azf9wjWB1eaudaW9UUOpjsFDx0dInZBWpTkAKtSqKok03bZaM4AoF%2BulqM%2BgE22DU61P5UfJIYMUiFQzOUXi7UWrXKpZgqoFrRNoMl%2BxYWThY8oyj9EFqIe8jHwZWvy2RgAkHE%2BZpE8Xs4CqYBoxERO5IbXuCS9BWdoFlpp8MXQPJhtCKw56sF7dp6A0irl7ySR0aRkMFniHznNziM7KkIMN2jrdRWvMw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861037,
+      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGikAAeSwx2lpPPdq&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbShhTewSWRl3%2Fr4fqpBtn5UVHBeW8pC6IWO%2BejJzhnJk0ejROEjGQny0VGWOvUlvorZducp1fe4Azf9wjWB1eaudaW9UUOpjsFDx0dInZBWpTkAKtSqKok03bZaM4AoF%2BhWM3RVsSNIgTRREbXnSfoSN9UuTqqa2t8KqiYL%2F1YiBxXbTTvCQ9Esg5xie94ChkRXEW1lUdYapGAh4W5kAzLvymSOtGVAgmkd062KsdCpnL3kWmhshiGDpc%2BGy%2B5n%2FqoXHx9uStVVniI4QMm%2FE9V%2B7rs98GFbUb4AcG0160%2FHg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861049,
       "top_rated": false,
       "seller_username": "a4c",
       "inserted_at": "2025-02-12T17:52:17.000Z",
@@ -97,8 +119,8 @@
       "price": 24.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/OCsAAeSw8xZpMoqB/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AOCsAAeSw8xZpMoqB&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbPxKsi5KtFVj84VGxR2KkOj03Jy%2FxbVIGzhRAcFeRR92gpHHWkUgp4bL7lnOtr444YE9Q0K91rcRToJdXqxdksKFKEQxsOI29w3LZ2N%2BEpBt%2FEAreWhLv9dlIVi3bNhod4q9RoKNSdwIDew4EeMxx2LnKSmtsIJI2qInRoAg0xsPzY7FPX%2FtM1LbdScHaVnxSQFejev3vhm315Dr8PWBARfzP%2BJIKZENwS3unqO5qtAJHb3gh%2BGbHXuKRfM82Gw9JmOpSYSg%2FtLC1hqy597Ho13OtRavQqylUW%2B6fRtSNVMw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861037,
+      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AOCsAAeSw8xZpMoqB&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861049,
       "top_rated": false,
       "seller_username": "a4c",
       "inserted_at": "2025-03-10T16:52:12.000Z",
@@ -109,28 +131,6 @@
       "caption": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black \u2022 USD 24.95",
       "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
       "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "price": 28.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD%2BrefyF2ODj0KQvIauyI15SgcaYBavljd6X18el3uTVMYXwsxa%2BYOGeIvKLqbRPILYjrjSXgMMM17jih2wDXjeqD7ftcQWFbm%2BuM7c8DunGlXd%2BAe62rDhjg7pH3FpaakJW4AUt0I4bvuAMu1i%2BXSqCYs1rwmWfjWz7QQegGL40Yg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861037,
-      "top_rated": false,
-      "seller_username": "a4c",
-      "inserted_at": "2025-04-08T17:10:09.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
