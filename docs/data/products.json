@@ -1,27 +1,71 @@
 {
-  "updated_at": 1765628516,
+  "updated_at": 1765632114,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "price": 142.99,
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/d20AAeSwWt1pKJ7p/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3Ad20AAeSwWt1pKJ7p&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2309792,
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1006923,
       "top_rated": false,
-      "seller_username": "spreetail",
-      "inserted_at": "2025-11-07T16:03:08.000Z",
+      "seller_username": "theperfectpart",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "massage gun"
       ],
-      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "best wireless charger",
+      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
+      "price": 24.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/rnYAAeSw9OlpNueR/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ArnYAAeSw9OlpNueR&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 907339,
+      "top_rated": false,
+      "seller_username": "best_buy",
+      "inserted_at": "2024-08-13T15:00:21.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 24.99",
+      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
+      "blurb": "USD 24.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "best wireless charger",
+      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
+      "price": 29.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/n-AAAeSwPfVpNufE/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3An-AAAeSwPfVpNufE&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 907339,
+      "top_rated": false,
+      "seller_username": "best_buy",
+      "inserted_at": "2024-11-21T02:36:52.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 29.99",
+      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
+      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -32,7 +76,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 907309,
+      "seller_feedback": 907339,
       "top_rated": false,
       "seller_username": "best_buy",
       "inserted_at": "2025-10-22T15:52:43.000Z",
@@ -48,90 +92,46 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Gourmia 3QT Air Fryer Window 8 Presets Guided Cooking 1500W Dishwasher-Safe",
-      "price": 20.39,
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "price": 18.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/X9oAAeSwR6BpPTS4/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205816613218?_skw=air+fryer&hash=item2feba04962%3Ag%3AX9oAAeSwR6BpPTS4&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 803185,
+      "image_url": "https://i.ebayimg.com/images/g/QSUAAeSwzltpO9to/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3AQSUAAeSwzltpO9to&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861023,
       "top_rated": false,
-      "seller_username": "bullseye_deals",
-      "inserted_at": "2025-10-30T17:43:50.000Z",
+      "seller_username": "a4c",
+      "inserted_at": "2024-06-07T11:43:55.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "wireless charger"
       ],
-      "caption": "Gourmia 3QT Air Fryer Window 8 Presets Guided Cooking 1500W Dishwasher-Safe \u2022 USD 20.39",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 3QT Air Fryer Window 8 Presets Guided Cooking 1500W Dishwasher-Safe",
-      "blurb": "USD 20.39 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer deals",
-      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
-      "price": 35.69,
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
+      "price": 19.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/OpYAAeSwA1BpPUR4/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3AOpYAAeSwA1BpPUR4&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 803185,
+      "image_url": "https://i.ebayimg.com/images/g/GikAAeSwx2lpPPdq/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGikAAeSwx2lpPPdq&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbShhTewSWRl3%2Fr4fqpBtn5UVHBeW8pC6IWO%2BejJzhnJk0ejROEjGQny0VGWOvUlvorZducp1fe4Azf9wjWB1eaudaW9UUOpjsFDx0dInZBWpTkAKtSqKok03bZaM4AoF%2FXdxjnPCdQoDQ2InW2bvUtlWXfn9WmPFycIfA6%2B%2Bpi%2B%2FIBeopclOlxcFYnOdFkwUbv1lMIdBiRkQrVY3zl7kUr06OcQLXwda5kLwNxUWjDsvD7Zn3TX%2FSbldgT2uNM214uQoYqR7w1fe5%2Fdk6WaSI%2BJZ5vuwTyx4HwhzioeOQs%2Bw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861023,
       "top_rated": false,
-      "seller_username": "bullseye_deals",
-      "inserted_at": "2025-11-17T13:49:44.000Z",
+      "seller_username": "a4c",
+      "inserted_at": "2025-02-12T17:52:17.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "wireless charger"
       ],
-      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
-      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
-      "price": 50.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/egYAAeSwvuppPSmL/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer&hash=item2fec6db215%3Ag%3AegYAAeSwvuppPSmL&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 803185,
-      "top_rated": false,
-      "seller_username": "bullseye_deals",
-      "inserted_at": "2025-11-06T13:43:46.000Z",
-      "signals": 9.0,
-      "tags": [
-        "air fryer"
-      ],
-      "caption": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking \u2022 USD 50.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
-      "blurb": "USD 50.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best cordless vacuum",
-      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "price": 45.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SCYdW4Jf18KbXIH4Lme74f4rVdWzP0qmpARE%2FSw2QPXG1kkecvwECFuXvqQv6FopUN6QWtWF%2BUnpouNH0g%2BobK7xOr5PODkV72mrPq2R1yr9DZdG8MLlqVvfpb8%2Fk10qPVmLtB1edV0nbhVRtU%2B2ZSSWxKJv2592lA7Of9BuZM0OVY5qDNjc9RQ0sic%2Fa3Q4v9WNtZeYGtEB7arLM5O32wBhDMri%2FJzevQ4txfoGVFEptuTdCrtg2vBlVGeRUfj9anT9EUqxmlsAqpD21goG59g%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 564733,
-      "top_rated": false,
-      "seller_username": "vipoutlet",
-      "inserted_at": "2025-07-30T20:28:05.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
+      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
