@@ -84,18 +84,38 @@ def log_report_run(
         print(f"[reports] warning: failed to log report run: {exc}")
 
 
-def save_run_summary(topic_count: int, item_count: int) -> Optional[str]:
+def save_run_summary(
+    topic_count: int,
+    item_count: int,
+    *,
+    run_type: str = "telegram",
+    success: Optional[bool] = None,
+    message: Optional[str] = None,
+) -> Optional[str]:
     try:
         client = sb()
     except RuntimeError:
         return None
+
     now = int(time.time())
+    now_iso = datetime.now(timezone.utc).isoformat()
+
+    payload = {
+        "ran_at": now,
+        "topics": int(topic_count),
+        "items": int(item_count),
+        "run_type": run_type,
+        "started_at": now_iso,
+        "finished_at": now_iso,
+        "success": success,
+        "message": message,
+    }
+
     try:
-        r = client.table("runs").insert({"ran_at": now, "topics": topic_count, "items": item_count}).execute()
+        r = client.table("runs").insert(payload).execute()
         return str((r.data or [{}])[0].get("id"))
     except Exception:
         return None
-
 
 _ALLOWED_PROVIDERS = {"ebay", "amazon", "aliexpress", "gumroad", "payhip", "manual"}
 
