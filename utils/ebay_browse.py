@@ -49,6 +49,13 @@ def _get_oauth_token() -> str:
 def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
     """
     Use Buy Browse API: /buy/browse/v1/item_summary/search
+
+    We enrich each row with fields that matter for conversion:
+      - buying_options (AUCTION / FIXED_PRICE / BEST_OFFER)
+      - condition / condition_id
+      - item_end_date (auction urgency)
+      - shipping_cost (people buy cheaper shipping)
+      - returns_accepted (trust)
     """
     token = _get_oauth_token()
     url = "https://api.ebay.com/buy/browse/v1/item_summary/search"
@@ -56,7 +63,7 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
         "q": keyword,
         "limit": str(limit),
         "filter": "priceCurrency:USD",
-        "sort": "BEST_MATCH"
+        "sort": "BEST_MATCH",
     }
     headers = {
         "Authorization": f"Bearer {token}",
@@ -65,15 +72,16 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
         "User-Agent": "TrendDropBot/1.0",
     }
 
-    # gentle retry (handles transient 5xx)
     backoffs = [0, 2, 4]
     r = None
     for i, b in enumerate(backoffs, start=1):
-        if b: time.sleep(b)
+        if b:
+            time.sleep(b)
         r = requests.get(url, headers=headers, params=params, timeout=25)
         if r.status_code == 200:
             break
         print(f"[browse] HTTP {r.status_code} for '{keyword}', attempt {i}/{len(backoffs)}: {r.text[:200]}")
+
     if r is None or r.status_code != 200:
         return []
 
@@ -81,20 +89,56 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
     items = data.get("itemSummaries", []) or []
     out: List[Dict] = []
     now_iso = datetime.now(timezone.utc).isoformat()
+
     for it in items:
         try:
-            title = it.get("title", "")
+            title = (it.get("title") or "")[:160]
+
             price_obj = (it.get("price") or {})
-            price = float(price_obj.get("value", 0.0))
-            currency = price_obj.get("currency", "USD")
-            image_url = (it.get("image") or {}).get("imageUrl", "")
+            price = float(price_obj.get("value") or 0.0)
+            currency = price_obj.get("currency") or "USD"
+
+            image_url = (it.get("image") or {}).get("imageUrl") or ""
             url2 = it.get("itemWebUrl") or it.get("itemAffiliateWebUrl") or ""
+
+            # Buying options (AUCTION is the urgency lever)
+            buying_options = it.get("buyingOptions") or []
+            if not isinstance(buying_options, list):
+                buying_options = []
+
+            # Condition
+            condition = it.get("condition") or ""
+            condition_id = it.get("conditionId") or None
+
+            # Auction end time (if present, huge ranking power)
+            item_end_date = it.get("itemEndDate") or ""
+
+            # Shipping cost (best-effort)
+            shipping_cost_val = None
+            try:
+                ship_opts = it.get("shippingOptions") or []
+                if isinstance(ship_opts, list) and ship_opts:
+                    ship_cost_obj = (ship_opts[0].get("shippingCost") or {})
+                    ship_val = ship_cost_obj.get("value")
+                    if ship_val is not None:
+                        shipping_cost_val = float(ship_val)
+            except Exception:
+                shipping_cost_val = None
+
+            # Returns (best-effort)
+            returns_accepted = None
+            try:
+                ra = it.get("returnsAccepted")
+                if isinstance(ra, bool):
+                    returns_accepted = ra
+            except Exception:
+                returns_accepted = None
+
             seller = (it.get("seller") or {})
             feedback = int(seller.get("feedbackScore") or 0)
             seller_username = seller.get("username") or seller.get("sellerId") or ""
-            
-            # Browse API doesn't reliably expose "Top Rated Seller" in item summaries.
-            # Keep this conservative to avoid false trust signals:
+
+            # Browse item summaries do NOT reliably provide "Top Rated Seller".
             top_rated = False
 
             inserted_raw = (
@@ -108,14 +152,25 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
                 "source": "ebay",
                 "provider": "ebay",
                 "keyword": keyword,
-                "title": title[:160],
+
+                "title": title,
                 "price": price,
                 "currency": currency,
                 "image_url": image_url,
                 "url": url2,
+
                 "seller_feedback": feedback,
-                "top_rated": top_rated,
                 "seller_username": seller_username,
+                "top_rated": top_rated,
+
+                # NEW conversion fields
+                "buying_options": buying_options,          # list[str]
+                "condition": condition,                    # str
+                "condition_id": condition_id,              # int|None
+                "item_end_date": item_end_date,            # ISO string or ""
+                "shipping_cost": shipping_cost_val,        # float|None
+                "returns_accepted": returns_accepted,      # bool|None
+
                 "inserted_at": inserted_at,
             })
         except Exception as e:
@@ -124,5 +179,3 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
 
     print(f"[browse] '{keyword}' -> {len(out)} items")
     return out
-
-
