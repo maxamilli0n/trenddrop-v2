@@ -29,6 +29,7 @@ except Exception:
     ImageDraw = None  # type: ignore
     ImageFont = None  # type: ignore
 
+
 def ensure_dirs():
     pathlib.Path(DOCS_DIR).mkdir(parents=True, exist_ok=True)
     pathlib.Path(DOCS_DATA).mkdir(parents=True, exist_ok=True)
@@ -108,10 +109,12 @@ def _generate_og_image(products: List[Dict]) -> None:
         # soft-fail; skip OG generation
         return
 
+
 def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] = None):
     raw_for_upsert = raw_products if raw_products else products
     print(f"[scraper] fetched {len(raw_for_upsert)} raw eBay products before filtering/dedup")
     upsert_products(raw_for_upsert)
+
     # enrich captions for site/telegram
     for p in products:
         try:
@@ -123,13 +126,15 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
             p["emojis"] = mc.get("emojis")
             # ensure affiliate params present
             try:
-                first_tag = (p.get("tags") or [p.get("keyword") or "trend"]) [0]
+                first_tag = (p.get("tags") or [p.get("keyword") or "trend"])[0]
                 p["url"] = affiliate_wrap(p.get("url", ""), custom_id=str(first_tag).replace(" ", "_")[:40])
             except Exception:
                 pass
         except Exception:
             p["caption"] = p.get("title", "")
+
     ensure_dirs()
+
     # compute click redirect URL if configured
     base = CLICK_REDIRECT_BASE
     if base:
@@ -141,13 +146,16 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
                     p["click_url"] = f"{base}?" + urlencode({"url": target})
         except Exception:
             pass
+
     with open(PRODUCTS_PATH, "w", encoding="utf-8") as f:
         json.dump({"updated_at": int(time.time()), "products": products}, f, indent=2)
+
     # Generate or refresh OG image banner (best-effort)
     try:
         _generate_og_image(products)
     except Exception:
         pass
+
 
 def post_telegram(products: List[Dict], limit=5):
     import random
@@ -199,7 +207,7 @@ def post_telegram(products: List[Dict], limit=5):
 
             img = p.get("image_url")
 
-            # Trust text
+            # Trust text (existing)
             fb = p.get("seller_feedback")
             top_rated = p.get("top_rated")
             trust_line = ""
@@ -207,6 +215,28 @@ def post_telegram(products: List[Dict], limit=5):
                 trust_line = f"⭐ Seller feedback: {fb}"
                 if top_rated:
                     trust_line += " · Top Rated"
+
+            # ==========================
+            # NEW trust hooks (condition/shipping/returns)
+            # ==========================
+            cond = str(p.get("condition") or "").strip()
+            ship = p.get("shipping_cost")
+            ra = p.get("returns_accepted")
+
+            trust_bits = []
+            if cond:
+                trust_bits.append(f"Condition: {html.escape(cond)}")
+
+            if ship is not None:
+                try:
+                    trust_bits.append(f"Shipping: {currency} {float(ship):.2f}")
+                except Exception:
+                    pass
+
+            if ra is True:
+                trust_bits.append("Returns: Accepted")
+            elif ra is False:
+                trust_bits.append("Returns: Not accepted")
 
             # Build a conversion-style caption (2 variants = light A/B)
             price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else f"{currency} {price}"
@@ -224,6 +254,8 @@ def post_telegram(products: List[Dict], limit=5):
                 ]
                 if trust_line:
                     body_lines.append(trust_line)
+                if trust_bits:
+                    body_lines.append("\n".join(trust_bits))
                 body_lines += [
                     "",
                     f"<a href=\"{final_url}\">{cta}</a>",
@@ -238,6 +270,8 @@ def post_telegram(products: List[Dict], limit=5):
                 ]
                 if trust_line:
                     body_lines.append(trust_line)
+                if trust_bits:
+                    body_lines.append("\n".join(trust_bits))
                 body_lines += [
                     "",
                     f"<a href=\"{final_url}\">{cta}</a>",
