@@ -92,7 +92,11 @@ def search_browse(keyword: str, limit: int = 12) -> List[Dict]:
             seller = (it.get("seller") or {})
             feedback = int(seller.get("feedbackScore") or 0)
             seller_username = seller.get("username") or seller.get("sellerId") or ""
-            top_rated = bool(seller.get("sellerAccountType") == "BUSINESS")
+            
+            # Browse API doesn't reliably expose "Top Rated Seller" in item summaries.
+            # Keep this conservative to avoid false trust signals:
+            top_rated = False
+
             inserted_raw = (
                 it.get("itemCreationDate")
                 or it.get("itemStartDate")
