@@ -1,7 +1,7 @@
 # TD-AUTO: BEGIN publish-products
 name: Publish TrendDrop Products
 on:
-  workflow_run:
+  workflow_dispatch:
     workflows: ["Generate Weekly"]
     types: [completed]
 jobs:
