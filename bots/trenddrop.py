@@ -44,25 +44,54 @@ def _get_float_env_between(name: str, default: float, min_value: float, max_valu
     return val
 
 def _synthetic_signal(p: Dict) -> float:
+    """
+    Synthetic signal for V1 when you don't have true velocity.
+    Goal: favor buyer-intent listings (trust + sane price) without over-weighting commodities.
+    """
     base = 0.0
+
+    # Trust (seller_feedback in your data is feedbackScore count)
     try:
-        if p.get("top_rated"):
+        fb_count = float(p.get("seller_feedback") or 0)
+        # log-ish scaling
+        if fb_count >= 5000:
             base += 5.0
-        fb = float(p.get("seller_feedback") or 0)
-        base += min(fb / 1000.0, 5.0)
-    except Exception:
-        pass
-    try:
-        price = float(p.get("price") or 0.0)
-        if 15 <= price <= 150:
+        elif fb_count >= 1000:
             base += 4.0
-        elif 5 <= price < 15:
+        elif fb_count >= 500:
+            base += 3.0
+        elif fb_count >= 200:
             base += 2.0
-        elif 150 < price <= 400:
+        elif fb_count >= 50:
             base += 1.0
     except Exception:
         pass
+
+    # Price fit
+    try:
+        price = float(p.get("price") or 0.0)
+        if 15 <= price <= 120:
+            base += 5.0
+        elif 120 < price <= 250:
+            base += 3.0
+        elif 6 <= price < 15:
+            base += 1.0
+        else:
+            base += 0.3
+    except Exception:
+        pass
+
+    # Penalize commodity titles that get clicks but no buys
+    try:
+        t = str(p.get("title") or "").lower()
+        bad = any(x in t for x in ["charger", "charging", "usb-c", "cable", "adapter", "screen protector"])
+        if bad:
+            base -= 2.5
+    except Exception:
+        pass
+
     return base
+
 
 def dedupe(products: List[Dict]) -> List[Dict]:
     seen, out = set(), []
