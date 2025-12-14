@@ -150,39 +150,100 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
         pass
 
 def post_telegram(products: List[Dict], limit=5):
+    import random
+    from trenddrop.conversion.ebay_conversion import conversion_score, passes_hard_filters
+
     token = BOT_TOKEN
     chat_id = CHAT_ID
     if not token or not chat_id or not products:
         return
 
     api = f"https://api.telegram.org/bot{token}"
+
+    # Deduplicate + sort by conversion score (not just signals)
     prepared = [ensure_rank_fields(dict(p)) for p in products]
     collapsed = dedupe_near_duplicates(prepared)
-    ranked = sorted(collapsed, key=rank_key, reverse=True)
-    pick = ranked[:limit]
+
+    scored = []
+    for p in collapsed:
+        ok, _ = passes_hard_filters(p)
+        if not ok:
+            continue
+        s = conversion_score(p)
+        if s <= -1e8:
+            continue
+        p["_conv_score"] = s
+        scored.append(p)
+
+    scored.sort(key=lambda x: float(x.get("_conv_score", 0.0)), reverse=True)
+    pick = scored[: max(1, int(limit))]
+
     for p in pick:
         try:
-            # prefer AI headline; fallback to title
-            title_raw = str(p.get("headline") or p.get("title") or "")
-            title = html.escape(title_raw)
+            title_raw = str(p.get("title") or "")
+            title = html.escape(title_raw[:170])
+
             price = p.get("price")
             currency = p.get("currency", "USD")
-            # ensure affiliate params present again for safety
+
+            # build url (affiliate + optional click redirect)
             try:
-                first_tag = (p.get("tags") or [p.get("keyword") or "trend"]) [0]
+                first_tag = (p.get("tags") or [p.get("keyword") or "trend"])[0]
                 url = affiliate_wrap(p.get("url", ""), custom_id=str(first_tag).replace(" ", "_")[:40])
             except Exception:
                 url = p.get("url", "")
+
+            # if click redirect is enabled, prefer it (keeps your tracking centralized)
+            click_url = p.get("click_url")
+            final_url = click_url or url
+
             img = p.get("image_url")
-            # combine AI blurb + old caption for redundancy
-            blurb = str(p.get("blurb") or "").strip()
-            caption_extra = blurb if blurb else (p.get("caption") or "")
+
+            # Trust text
+            fb = p.get("seller_feedback")
+            top_rated = p.get("top_rated")
+            trust_line = ""
+            if fb:
+                trust_line = f"⭐ Seller feedback: {fb}"
+                if top_rated:
+                    trust_line += " · Top Rated"
+
+            # Build a conversion-style caption (2 variants = light A/B)
             price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else f"{currency} {price}"
-            emoji_pack = p.get("emojis") or ""
-            cap_body = html.escape(caption_extra)
-            if emoji_pack:
-                cap_body = f"{emoji_pack} {cap_body}"
-            caption = f"✅ <b>{title}</b> — {price_text}\n{cap_body}\n<a href=\"{url}\">View</a>"
+
+            # Variant selection (stable-ish)
+            variant = (hash(title_raw) % 2)
+
+            if variant == 0:
+                headline = "🔥 DEAL WATCH"
+                cta = "👉 Tap to view"
+                body_lines = [
+                    headline,
+                    f"<b>{title}</b>",
+                    f"💰 {price_text}",
+                ]
+                if trust_line:
+                    body_lines.append(trust_line)
+                body_lines += [
+                    "",
+                    f"<a href=\"{final_url}\">{cta}</a>",
+                ]
+            else:
+                headline = "⚡ TRENDING + BUYER-READY"
+                cta = "🛒 Check it out"
+                body_lines = [
+                    headline,
+                    f"<b>{title}</b>",
+                    f"Price: {price_text}",
+                ]
+                if trust_line:
+                    body_lines.append(trust_line)
+                body_lines += [
+                    "",
+                    f"<a href=\"{final_url}\">{cta}</a>",
+                ]
+
+            caption = "\n".join(body_lines)
 
             if img:
                 requests.post(
@@ -202,18 +263,19 @@ def post_telegram(products: List[Dict], limit=5):
                         "chat_id": chat_id,
                         "text": caption,
                         "parse_mode": "HTML",
-                        "disable_web_page_preview": True,
+                        "disable_web_page_preview": False,
                     },
                     timeout=20,
                 )
+
             # After each product message, maybe trigger CTA based on batch + cooldown
             try:
                 maybe_send_cta()
             except Exception:
                 pass
-            time.sleep(0.4)
+
+            time.sleep(0.55 + random.uniform(0.0, 0.35))
         except Exception:
-            # best-effort; continue with next product
             continue
 
     # after posting, log a run summary
