@@ -22,6 +22,7 @@ _LOW_CONVERSION_PATTERNS = [
     r"\b(charger|charging|usb[- ]?c|cable|adapter|case|screen protector)\b",
 ]
 
+
 def _as_float(v: Any, default: float = 0.0) -> float:
     try:
         if v is None:
@@ -29,6 +30,7 @@ def _as_float(v: Any, default: float = 0.0) -> float:
         return float(v)
     except Exception:
         return default
+
 
 def _as_int(v: Any, default: int = 0) -> int:
     try:
@@ -38,36 +40,38 @@ def _as_int(v: Any, default: int = 0) -> int:
     except Exception:
         return default
 
+
 def _parse_end_time(p: Dict[str, Any]) -> float | None:
     """
-    Best-effort: if your eBay source provides end time, use it.
-    Supports:
-      - p["end_time"] as ISO string
-      - p["end_time_ts"] as epoch seconds
-      - p["itemEndDate"] as ISO
+    Prefer the real DB/API field if present:
+      - p["item_end_date"] (your new normalized field)
+    Fallbacks (older shapes):
+      - p["end_time"] as ISO/epoch
+      - p["itemEndDate"] as ISO/epoch
+    Returns epoch seconds (float) or None.
     """
-    if "end_time_ts" in p:
-        try:
-            return float(p["end_time_ts"])
-        except Exception:
-            pass
+    v = p.get("item_end_date") or p.get("end_time") or p.get("itemEndDate")
+    if not v:
+        return None
 
-    for key in ("end_time", "itemEndDate"):
-        v = p.get(key)
-        if not v:
-            continue
-        if isinstance(v, (int, float)):
+    if isinstance(v, (int, float)):
+        try:
             return float(v)
-        if isinstance(v, str):
-            try:
-                s = v.replace("Z", "+00:00")
-                dt = datetime.fromisoformat(s)
-                if dt.tzinfo is None:
-                    dt = dt.replace(tzinfo=timezone.utc)
-                return dt.timestamp()
-            except Exception:
-                continue
+        except Exception:
+            return None
+
+    if isinstance(v, str):
+        try:
+            s = v.strip().replace("Z", "+00:00")
+            dt = datetime.fromisoformat(s)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt.timestamp()
+        except Exception:
+            return None
+
     return None
+
 
 def passes_hard_filters(p: Dict[str, Any]) -> Tuple[bool, str]:
     title = str(p.get("title") or "").lower()
@@ -87,6 +91,7 @@ def passes_hard_filters(p: Dict[str, Any]) -> Tuple[bool, str]:
         return False, "too_cheap"
 
     return True, "ok"
+
 
 def conversion_score(p: Dict[str, Any]) -> float:
     """
@@ -129,6 +134,11 @@ def conversion_score(p: Dict[str, Any]) -> float:
     # Urgency: if we have end_time, favor ending soon (<=2h best)
     urgency = 0.0
     end_ts = _parse_end_time(p)
+
+    # If it's an AUCTION and has an end time, urgency matters more
+    buying_opts = p.get("buying_options") or []
+    is_auction = isinstance(buying_opts, list) and any(str(x).upper() == "AUCTION" for x in buying_opts)
+
     if end_ts:
         hrs_left = max(0.0, (end_ts - datetime.now(timezone.utc).timestamp()) / 3600.0)
         if hrs_left <= 2:
@@ -137,6 +147,9 @@ def conversion_score(p: Dict[str, Any]) -> float:
             urgency = 1.4
         elif hrs_left <= 24:
             urgency = 0.6
+
+        if is_auction:
+            urgency *= 1.25
 
     # Penalize commodity keywords that waste clicks
     low_conv_penalty = 0.0
