@@ -1,47 +1,17 @@
 {
-  "updated_at": 1765750877,
+  "updated_at": 1765751663,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
-      "price": 39.99,
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/R9MAAOSwPAVmWOIN/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/355754892121?_skw=mechanical+keyboard&hash=item52d4a4db59%3Ag%3AR9MAAOSwPAVmWOIN&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ub0ZSwTuokAZtff%2FwIYUKk9I0SPQVfUOmQ4NxZ%2Fe3e2Pry9WWYBvm6VOl5TshuBPa5wWgdKDsZ%2FdD2K2yc8CSC4fsl1X0vLSJHV%2FVl7lAr57RxJ9u%2B8OvUHF0%2F2R7v5uQ2PDK4CR9kmXI53SSKWc1Jd60tjxLIN5O68KJLVxNQwOUWrjE40K0s%2F1mOWcBSJqJK8NSLLFDXUNGB%2BCiusp3FyPoRMbPsZuSjBzXWbGdixAXorsE9R4tA4zBAY%2F5TrNvYjkWQdBievQZICV66jl41Zt8nkjwA0wf419F9vEg6nSQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 454312,
-      "seller_username": "bigdeals",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Open box",
-      "condition_id": "1500",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2024-05-30T20:57:34.000Z",
-      "signals": 9.0,
-      "tags": [
-        "mechanical keyboard"
-      ],
-      "caption": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android \u2022 USD 39.99",
-      "headline": "\ud83d\udd79\ufe0f Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
-      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 16.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354370,
-      "seller_username": "buildyourbike",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1007796,
+      "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -51,136 +21,165 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2015-08-27T20:27:44.000Z",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "massage gun"
       ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "price": 93.12,
+      "keyword": "best wireless charger",
+      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
+      "price": 17.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/BGIAAeSwA1BpPusG/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3ABGIAAeSwA1BpPusG&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9dNZhnXBgaJ7sdtI6bK3A8VhYnmgv0mfmqiVgQMCR%2BcoIN%2F32CtU%2BCq%2BMo1ikpJ9xmDpFwfEWPXcw6eR7ZwhrVmgmKRC1Cy1aJF9b%2FRB44ntMttiw%2Bdw96cMi%2BaHBRm70M5yVgGZ%2FIhzrkOVTp8W4FJyVnb46eok%2FXTgZMxA7b%2Ftw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 211817,
-      "seller_username": "cyclingdeal",
+      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 908906,
+      "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "Brand New",
+      "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 33.26,
+      "shipping_cost": 5.99,
       "returns_accepted": null,
-      "inserted_at": "2020-08-24T11:46:29.000Z",
+      "inserted_at": "2024-08-13T15:00:21.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "wireless charger"
       ],
-      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 93.12",
-      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "blurb": "USD 93.12 steal. Limited stock\u2014grab it now!",
+      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
+      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
+      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike",
-      "price": 40.75,
+      "keyword": "best wireless charger",
+      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
+      "price": 19.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/tt0AAOSwjBdgPa9D/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/162716006419?_skw=bike+light+deals&hash=item25e2a13813%3Ag%3Att0AAOSwjBdgPa9D&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UaEMFB%2BM65kho%2FcdAgDs0dzL2%2B0yHMPS44CYt2dItYWnOz9TCo7ylwxPWI0NkGFTuRVctDDRA%2FEnnUKT8cFSqpcYgRi1j7gTVYlhoPoFjkRpPVsc157MXD1gjyyWAcg4uZ3%2Fwn52609olQNQB04o%2BLU6AZwVJ2faYUfeVarM1YgUUxWg28YIyRyPikUYVDHRvSF06R6nWCRFTWuG76NMCIc59q18EOwaPqQCDNHz180AbPF%2Bf%2FUQfSjvBzsYphuNDzoEKVi%2BG9nf3Omv%2BcEL%2Bd2wHfrvuwZG9E599fBxaJgCw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 171262,
-      "seller_username": "formula-j87",
+      "image_url": "https://i.ebayimg.com/images/g/BC0AAeSw46lpPtcD/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3ABC0AAeSw46lpPtcD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 908906,
+      "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 5.99,
+      "returns_accepted": null,
+      "inserted_at": "2024-11-21T02:36:52.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 19.99",
+      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
+      "blurb": "USD 19.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "price": 18.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/QSUAAeSwzltpO9to/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3AQSUAAeSwzltpO9to&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861153,
+      "seller_username": "a4c",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
       ],
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2017-10-17T19:54:56.000Z",
+      "inserted_at": "2024-06-07T11:43:55.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "wireless charger"
       ],
-      "caption": "Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike \u2022 USD 40.75",
-      "headline": "\ud83d\udd25\u2728 Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike",
-      "blurb": "USD 40.75 steal. Limited stock\u2014grab it now!",
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "Garmin Edge Explore Touring Bike Computer with GPS Capabilities 010-02029-00",
-      "price": 149.99,
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
+      "price": 19.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/qagAAOSwc1NjGnDU/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/175409564364?_skw=bike+light+deals&hash=item28d7398acc%3Ag%3AqagAAOSwc1NjGnDU&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 129665,
-      "seller_username": "gpscity",
+      "image_url": "https://i.ebayimg.com/images/g/GikAAeSwx2lpPPdq/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGikAAeSwx2lpPPdq&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbShhTewSWRl3%2Fr4fqpBtn5UVHBeW8pC6IWO%2BejJzhnJk0ejROEjGQny0VGWOvUlvorZducp1fe4Azf9wjWB1eaudaW9UUOpjsFDx0dInZBWpTkAKtSqKok03bZaM4AoF%2BF8ToBLDtLDpxDFMLmjaBXMjsswQHttIGAc8mppMu3BNgsd%2FbecpFW7%2FlUbMHvkoit%2FrDpCUQhcKyJrhBO7TRUkmKpdkSaRICUsywR5L2vJ61uxxn1D81DiqiWeJwLEsVrTVEOVXp6G3x2oMsDozC35159%2FJQGRctbrhGMFojvQg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861153,
+      "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "Certified - Refurbished",
-      "condition_id": "2000",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2022-09-08T22:48:20.000Z",
+      "inserted_at": "2025-02-12T17:52:17.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "wireless charger"
       ],
-      "caption": "Garmin Edge Explore Touring Bike Computer with GPS Capabilities 010-02029-00 \u2022 USD 149.99",
-      "headline": "\ud83d\udd25\u2728 Garmin Edge Explore Touring Bike Computer with GPS Capabilities 010-02029-00",
-      "blurb": "USD 149.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
+      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
-      "price": 31.49,
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
+      "price": 24.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/MbYAAOSwXolnnFGN/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/306077311823?_skw=mechanical+keyboard&hash=item4743a1234f%3Ag%3AMbYAAOSwXolnnFGN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 114100,
-      "seller_username": "mobileshark",
+      "image_url": "https://i.ebayimg.com/images/g/OCsAAeSw8xZpMoqB/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AOCsAAeSw8xZpMoqB&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbPxKsi5KtFVj84VGxR2KkOj03Jy%2FxbVIGzhRAcFeRR92gpHHWkUgp4bL7lnOtr444YE9Q0K91rcRToJdXqxdksKFKEQxsOI29w3LZ2N%2BEpBt%2FEAreWhLv9dlIVi3bNhodlj46KqclqFcHbzYt9D9N%2FOmsRfKLli1SIivjELsoZ9Eyiuokm0HsjVN9tssIAwkvLQ3nUje%2F1xPn8%2FLjnny%2BSxcRa54Y43YtoGOwHi7C9YXn51Dc1Rbbr3uFiv7f0gDlyQKIaVG7om3SPEcdGMlN5%2Fc9s2wSI9NtuyVPq31kWjA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861153,
+      "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "Open box",
-      "condition_id": "1500",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-01-31T04:30:37.000Z",
+      "inserted_at": "2025-03-10T16:52:12.000Z",
       "signals": 9.0,
       "tags": [
-        "mechanical keyboard"
+        "wireless charger"
       ],
-      "caption": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX \u2022 USD 31.49",
-      "headline": "\ud83d\udd79\ufe0f OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
-      "blurb": "USD 31.49 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+      "caption": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black \u2022 USD 24.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
+      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
