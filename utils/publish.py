@@ -3,13 +3,13 @@ import hashlib
 from urllib.parse import urlparse
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
-from trenddrop.config import CLICK_REDIRECT_BASE, BOT_TOKEN, CHAT_ID
+from trenddrop.config import CLICK_REDIRECT_BASE, BOT_TOKEN, CHAT_ID, gumroad_cta_url
 from trenddrop.reports.product_quality import (
     dedupe_near_duplicates,
     ensure_rank_fields,
 )
 
-# Ensure root .env is loaded
+# Ensure root .env is loaded (safe even if you don't use .env; env vars can come from GitHub Secrets)
 ENV_PATH = load_env_once()
 
 from io import BytesIO
@@ -24,6 +24,9 @@ DOCS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "docs")
 DOCS_DATA = os.path.join(os.path.dirname(os.path.dirname(__file__)), "docs", "data")
 PRODUCTS_PATH = os.path.join(DOCS_DATA, "products.json")
 OG_PATH = os.path.join(DOCS_DIR, "og.png")
+
+# Your real free sample link (hard-coded as requested)
+FREE_SAMPLE_URL = "https://trenddropstudio.gumroad.com/l/free-sample"
 
 try:
     from PIL import Image, ImageDraw, ImageFont
@@ -393,6 +396,100 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
         pass
 
 
+def _build_reseller_cta_text() -> str:
+    """
+    CTA aimed at "anyone flipping products online" (your chosen framing).
+    Includes your real free sample URL always.
+    Includes paid pack URL if GUMROAD_CTA_URL is set in env/config.
+    """
+    paid_url = ""
+    try:
+        paid_url = gumroad_cta_url() or ""
+    except Exception:
+        paid_url = ""
+
+    lines = [
+        "📦 <b>Flip-ready product list</b>",
+        "If you resell on eBay / Facebook Marketplace / Amazon / TikTok Shop, grab the free sample pack (PDF + CSV).",
+        "",
+        f"✅ Free sample (5 items): <a href=\"{FREE_SAMPLE_URL}\">Download here</a>",
+    ]
+
+    if paid_url:
+        lines += [
+            f"🔥 Full Top 50 pack: <a href=\"{paid_url}\">Get it here</a>",
+        ]
+
+    lines += [
+        "",
+        "Tip: post the same-day items fast — speed is the edge.",
+    ]
+
+    return "\n".join(lines)
+
+
+def _send_reseller_cta(api_base: str, chat_id: str) -> None:
+    """
+    Posts the CTA message (HTML) to the Telegram target.
+    """
+    try:
+        text = _build_reseller_cta_text()
+        requests.post(
+            f"{api_base}/sendMessage",
+            data={
+                "chat_id": chat_id,
+                "text": text,
+                "parse_mode": "HTML",
+                "disable_web_page_preview": True,
+            },
+            timeout=20,
+        )
+    except Exception:
+        return
+
+
+def _pin_last_message(api_base: str, chat_id: str) -> None:
+    """
+    Optional: pin the most recent message in the chat/channel.
+    Requires the bot to have pin permissions in that chat/channel.
+    """
+    try:
+        # Get last update and pin it (best effort).
+        # NOTE: Telegram doesn't provide a direct "pin last message" without a message_id.
+        # We try by fetching getUpdates; if not possible (common in channels), we just skip.
+        r = requests.get(f"{api_base}/getUpdates", timeout=20)
+        if r.status_code != 200:
+            return
+        data = r.json() if r.content else {}
+        res = data.get("result") or []
+        if not res:
+            return
+
+        last = res[-1]
+        msg = last.get("message") or last.get("channel_post") or {}
+        mid = msg.get("message_id")
+        cid = msg.get("chat", {}).get("id")
+
+        # Ensure we pin only in the intended chat
+        if not mid or not cid:
+            return
+        if str(cid) != str(chat_id) and str(chat_id) not in (str(cid),):
+            # For channels, ids can be numeric; if mismatch, bail safely
+            pass
+
+        requests.post(
+            f"{api_base}/pinChatMessage",
+            data={
+                "chat_id": chat_id,
+                "message_id": mid,
+                "disable_notification": True,
+            },
+            timeout=20,
+        )
+    except Exception:
+        return
+
+
 def post_telegram(products: List[Dict], limit=5):
     import random
     from trenddrop.conversion.ebay_conversion import conversion_score, passes_hard_filters
@@ -401,6 +498,8 @@ def post_telegram(products: List[Dict], limit=5):
     chat_id = CHAT_ID
     if not token or not chat_id or not products:
         return
+
+    api = f"https://api.telegram.org/bot{token}"
 
     # Dedupe window (hours)
     dedupe_hours = 48
@@ -430,11 +529,35 @@ def post_telegram(products: List[Dict], limit=5):
     if max_per_seller < 1:
         max_per_seller = 1
 
+    # CTA Controls (Combination D)
+    # - After every N product posts
+    # - And at end of the batch
+    # - And optional pin (best effort)
+    cta_every_n_posts = 6
+    cta_cooldown_minutes = 180  # 3 hours by default; avoids hourly spam
+    try:
+        cta_every_n_posts = int(str(os.environ.get("TELEGRAM_CTA_EVERY_N_POSTS", "6")).strip())
+    except Exception:
+        cta_every_n_posts = 6
+    if cta_every_n_posts < 2:
+        cta_every_n_posts = 2
+
+    try:
+        cta_cooldown_minutes = int(str(os.environ.get("TELEGRAM_CTA_COOLDOWN_MINUTES", "180")).strip())
+    except Exception:
+        cta_cooldown_minutes = 180
+    if cta_cooldown_minutes < 15:
+        cta_cooldown_minutes = 15
+
+    pin_cta = False
+    try:
+        pin_cta = str(os.environ.get("TELEGRAM_PIN_CTA", "0")).strip().lower() in ("1", "true", "yes", "y")
+    except Exception:
+        pin_cta = False
+
     recent_keys = fetch_recent_posted_keys(dedupe_hours)
     if recent_keys:
         print(f"[telegram] dedupe active: {len(recent_keys)} items posted in last {dedupe_hours}h")
-
-    api = f"https://api.telegram.org/bot{token}"
 
     prepared = [ensure_rank_fields(dict(p)) for p in products]
     collapsed = dedupe_near_duplicates(prepared)
@@ -499,6 +622,24 @@ def post_telegram(products: List[Dict], limit=5):
     except Exception:
         pass
 
+    # CTA cooldown memory (per-run; avoids multiple CTAs inside the same job run)
+    last_cta_ts = 0.0
+
+    def can_send_cta_now() -> bool:
+        nonlocal last_cta_ts
+        now = time.time()
+        if last_cta_ts <= 0.0:
+            return True
+        mins = (now - last_cta_ts) / 60.0
+        return mins >= float(cta_cooldown_minutes)
+
+    def mark_cta_sent():
+        nonlocal last_cta_ts
+        last_cta_ts = time.time()
+
+    sent_count = 0
+    posted_any = False
+
     for p in pick:
         try:
             title_raw = str(p.get("title") or "")
@@ -527,11 +668,11 @@ def post_telegram(products: List[Dict], limit=5):
                     trust_line += " · Top Rated"
 
             # ==========================
-            # IMPROVED HOOK LINES (Step 3)
+            # IMPROVED HOOK LINES
             # ✅ Free returns
             # 🚚 Free shipping / Shipping: $X.XX
             # ⏳ Ends soon (within 6h)
-            # 🛒 type
+            # 🛒 Listing type
             # ==========================
             hook_lines = []
 
@@ -627,6 +768,9 @@ def post_telegram(products: List[Dict], limit=5):
             except Exception:
                 pass
 
+            posted_any = True
+            sent_count += 1
+
             try:
                 mark_posted_item(
                     url_key=str(p.get("_url_key") or ""),
@@ -639,15 +783,56 @@ def post_telegram(products: List[Dict], limit=5):
             except Exception:
                 pass
 
-            try:
-                maybe_send_cta()
-            except Exception:
-                pass
+            # --- CTA behavior (Combination D) ---
+            # 1) keep your existing CTA logic available (but don't spam it every product)
+            # 2) send our reseller CTA every N posts (cooldown-protected)
+            # 3) still allow maybe_send_cta() to run, but only at the same cadence
+            if sent_count % int(cta_every_n_posts) == 0:
+                if can_send_cta_now():
+                    try:
+                        _send_reseller_cta(api, chat_id)
+                        mark_cta_sent()
+                    except Exception:
+                        pass
+
+                    # Keep your existing CTA helper too (best-effort)
+                    try:
+                        maybe_send_cta()
+                    except Exception:
+                        pass
+
+                    # Optional pin (best effort; usually works in groups, may not in channels)
+                    if pin_cta:
+                        try:
+                            _pin_last_message(api, chat_id)
+                        except Exception:
+                            pass
 
             time.sleep(0.55 + random.uniform(0.0, 0.35))
         except Exception:
             continue
 
+    # End-of-batch CTA (cooldown protected)
+    if posted_any and can_send_cta_now():
+        try:
+            _send_reseller_cta(api, chat_id)
+            mark_cta_sent()
+        except Exception:
+            pass
+
+        # Keep your existing CTA helper too (best-effort)
+        try:
+            maybe_send_cta()
+        except Exception:
+            pass
+
+        if pin_cta:
+            try:
+                _pin_last_message(api, chat_id)
+            except Exception:
+                pass
+
+    # after posting, log a run summary
     try:
         uniq_topics = set()
         for p in products:
