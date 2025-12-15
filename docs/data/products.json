@@ -1,167 +1,47 @@
 {
-  "updated_at": 1765786839,
+  "updated_at": 1765790603,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 17.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 908976,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-08-13T15:00:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "price": 19.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/BC0AAeSw46lpPtcD/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3ABC0AAeSw46lpPtcD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 908976,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-11-21T02:36:52.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 19.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "blurb": "USD 19.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "price": 19.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/GikAAeSwx2lpPPdq/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGikAAeSwx2lpPPdq&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbShhTewSWRl3%2Fr4fqpBtn5UVHBeW8pC6IWO%2BejJzhnJk0ejROEjGQny0VGWOvUlvorZducp1fe4Azf9wjWB1eaudaW9UUOpjsFDx0dInZBWpTkAKtSqKok03bZaM4AoF92fDTSLd68llZTjKtWI05L6nmJTp%2Fwge82tHlFKmLnwjOjY1Yos89UyNQLb--ctSGal96njRgAAYsCSDyIoosUDY5GVPFJy2HLEDDLN4gjySskR7x%2Fjw82vQ8w5CjekzR4PXRmfaCXrLB2QzkwMmS90gXK%2BnJId6zgy85I4RBBFQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861158,
-      "seller_username": "a4c",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-02-12T17:52:17.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White",
-      "price": 24.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/2-sAAeSwyShpP5dR/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365808573514?_skw=wireless+charger+deals&hash=item552be3dc4a%3Ag%3A2-sAAeSwyShpP5dR&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZoVwCXI6UItbb06yubIAo6wkRHQsZ0KdLwI0k%2FHxzMqAMSck0XHaqusHTPaZxwgB%2F8jI49OI1x0cKUjnajRivmR%2Bml6XmqAzMMGdPQ9rD2DwXj%2BbvnjbSybwBj38bBHjyqajNbLND7LFM9IaUSSazqHuCYGlbaiCYx27YDJ0%2By02BxZsCgsdnF4uC6gpXeKZOmYZzGc2%2F4Mhrwwlrl3HmUoKkWQqjivOA%2B2Cquk5XFjFiXx5p9udk7nuwUkhQLSyg9p2TQy%2FZsbt%2F8QoXF2e%2FwGIRpS5B72T7QSbHfoUEp7g%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861158,
-      "seller_username": "a4c",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-08-19T15:16:00.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White \u2022 USD 24.95",
-      "headline": "\ud83d\udd25\u2728 LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White",
-      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
-      "price": 24.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/OCsAAeSw8xZpMoqB/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AOCsAAeSw8xZpMoqB&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861158,
-      "seller_username": "a4c",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-03-10T16:52:12.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black \u2022 USD 24.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
-      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
       "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD9VEUSJjsX8Gu4G8ShUXlhLZSUNjesagCf%2BO4S1c4LL8duYm%2FHW%2BUprJnh0aLZ91Vxfo66CJyAtfU51tTwLCgPFWXK5FIMy5uo927Yw%2FoQljy9xwhePhrcvc%2FpFfrA6s4fWSf8jUxyMxWBG0vmIYVMMQxT1AyongqbIO6ru1WG2sw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861158,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGOAoqTrX2FcNEdahHQXYwoJVXdFraWBKahJ9sGWr2WivFXUnzIPwK%2F6nGoUlwxEy%2BzHlb0L2pYrSZYyUJqBl8mqEqjIXBgcDt%2FXkq3bMDHsBrxY6jgilMySaVqhh4wRxI3B01X6QSNjRIaNIxMF%2BkcYdbtW2JKkUtdl2MkoxgvPyg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1007859,
+      "seller_username": "theperfectpart",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard",
+      "title": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
+      "price": 39.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/R9MAAOSwPAVmWOIN/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/355754892121?_skw=mechanical+keyboard&hash=item52d4a4db59%3Ag%3AR9MAAOSwPAVmWOIN&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ub0ZSwTuokAZtff%2FwIYUKk9I0SPQVfUOmQ4NxZ%2Fe3e2Pry9WWYBvm6VOl5TshuBPa5wWgdKDsZ%2FdD2K2yc8CSC4fsl1X0vLSJHV%2FVl7lAr57RxJ9u%2B8OvUHF0%2F2R7v5uQ1tOf%2FKGPRn1vWhUnYpC1l2cZuEfn3EK%2Fur98Pqczx3mxxcvfwQ9KJt3w%2FYdITro3mihiQoo90Ze8zTqLp5AwvK2U6yfzHNx1j1ogD%2FCgstKhE79IrTvhGCX741zoroxaMEhq3UUK2zoTjOBcIiKu6ydyc%2BqjuxiKXnMCnuGtZ7rg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 454315,
+      "seller_username": "bigdeals",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -171,15 +51,135 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-04-08T17:10:09.000Z",
+      "inserted_at": "2024-05-30T20:57:34.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "mechanical keyboard"
       ],
-      "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "caption": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android \u2022 USD 39.99",
+      "headline": "\ud83d\udd79\ufe0f Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "price": 16.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394246,
+      "seller_username": "hiparts",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2017-09-19T04:14:30.000Z",
+      "signals": 9.0,
+      "tags": [
+        "portable monitor"
+      ],
+      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "price": 29.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394246,
+      "seller_username": "hiparts",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2017-03-10T15:42:19.000Z",
+      "signals": 9.0,
+      "tags": [
+        "portable monitor"
+      ],
+      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 29.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "price": 15.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVahaW2yGxwJ89TsKWr5wqb1XnFEx3eufakByUBqgRu06y%2B%2FdTnAvyUvupQWpuLfCnIqPsJEnS1xmNROsCYje%2BwXgQVXcuSGmF1U73TaoVnHwzSPvzKi%2BS53ladI7I7m4XB0UeqxBa5MwvPVp9PKdjWm&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 351290,
+      "seller_username": "gameinfinity",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2023-04-13T18:58:49.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
+      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard deals",
+      "title": "8BitDo Retro Mechanical Keyboard N Edition New",
+      "price": 89.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/YSYAAOSwDAhmWk2e/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196420920607?_skw=mechanical+keyboard+deals&hash=item2dbb99651f%3Ag%3AYSYAAOSwDAhmWk2e&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZOmAWb6buoJh8IfBt14vcC%2FmgB%2Fwn%2FFlE2PWCT%2F%2BQ%2B%2BI4n4RhJFwPSRdTxxd4tVe2bDTXWJzcQv4pClo8kKdVBxY%2FVGnp6peFN%2BueeLXV8qVoxUoODKJWOiW4hYFF84%2FQDjQ1kRsME8Bc9eJRP2gKXHmkKM%2Fjnv3eAqczs78JsLEWQIYPyL6zo4v6rOSI%2BPf3Ct%2BXXf6ddxt8BDbOFffRpvIHUmt2NteidB16XoPZM2wJHqJRMJAtNLeGHgk%2F2O%2BN40ZGx5pdkz8Ey4hU8FQCTLzCmkqdZuPt5wzXejf1%2F5A%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 167651,
+      "seller_username": "qualitycellz",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2024-05-31T22:24:20.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "8BitDo Retro Mechanical Keyboard N Edition New \u2022 USD 89.99",
+      "headline": "\ud83d\udd79\ufe0f 8BitDo Retro Mechanical Keyboard N Edition",
+      "blurb": "USD 89.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
     }
   ]
 }
