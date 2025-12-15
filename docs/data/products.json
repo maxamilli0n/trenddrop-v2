@@ -1,107 +1,169 @@
 {
-  "updated_at": 1765771032,
+  "updated_at": 1765771416,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "price": 142.99,
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2309939,
-      "seller_username": "spreetail",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1007826,
+      "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "Certified - Refurbished",
-      "condition_id": "2000",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-11-07T16:03:08.000Z",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "massage gun"
       ],
-      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 908913,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "bella 2.0 4qt Air Fryer Oatmilk",
+      "price": 34.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/iNwAAeSwvgNpP1OW/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/187822981368?_skw=air+fryer+deals&hash=item2bbb1f40f8%3Ag%3AiNwAAeSwvgNpP1OW&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 806247,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-12-08T16:02:47.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "bella 2.0 4qt Air Fryer Oatmilk \u2022 USD 34.99",
+      "headline": "\ud83d\udd25\u2728 bella 2.0 4qt Air Fryer Oatmilk",
+      "blurb": "USD 34.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 35.69,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/zSIAAeSwyqlpPpvK/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3AzSIAAeSwyqlpPpvK&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 806247,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New \u2013 Open box",
+      "condition_id": "1500",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-11-17T13:49:44.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 17.99,
+      "keyword": "mechanical keyboard",
+      "title": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
+      "price": 39.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 908913,
-      "seller_username": "best_buy",
+      "image_url": "https://i.ebayimg.com/images/g/R9MAAOSwPAVmWOIN/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/355754892121?_skw=mechanical+keyboard&hash=item52d4a4db59%3Ag%3AR9MAAOSwPAVmWOIN&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ub0ZSwTuokAZtff%2FwIYUKk9I0SPQVfUOmQ4NxZ%2Fe3e2Pry9WWYBvm6VOl5TshuBPa5wWgdKDsZ%2FdD2K2yc8CSC4fsl1X0vLSJHV%2FVl7lAr57RxJ9u%2B8OvUHF0%2F2R7v5uQ122qgZVjiHemzEnHqzQvwF6D%2FZ5ZTjy9ps5RgPYdj3UvHqMMi7ed6jXe7c4nGM04l0Kf%2F8--fc41Gbnzc6vPKihS4Ocbbdf7mCBvdk6VP5EEqCQnDwjD%2FIl%2BVywza4nhxhmPrNNCD%2BfvI9ow9asTfhVfw5WRCpk62ad%2BLFF3SvWA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 454313,
+      "seller_username": "bigdeals",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "New",
-      "condition_id": "1000",
+      "condition": "Open box",
+      "condition_id": "1500",
       "item_end_date": "",
-      "shipping_cost": 5.99,
+      "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-08-13T15:00:21.000Z",
+      "inserted_at": "2024-05-30T20:57:34.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "mechanical keyboard"
       ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android \u2022 USD 39.99",
+      "headline": "\ud83d\udd79\ufe0f Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "price": 19.99,
+      "keyword": "massage gun",
+      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "price": 15.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/BC0AAeSw46lpPtcD/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3ABC0AAeSw46lpPtcD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 908913,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-11-21T02:36:52.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 19.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "blurb": "USD 19.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
-      "price": 16.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 394245,
-      "seller_username": "hiparts",
+      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVbyT9%2FsvcZ1v37FYWsmmygYmNgA28wX9aFE8mUMxq2elBX3z0xGRHwfYDJ5N7jz%2BfW0%2FEVFHAV7RJjwWrmsCAHa3FwRXo4o0XwQQk6zVPoA9EDqFnPGCTvMPaZTPiLUmGPiWXexOaq73%2F7YS3FiUILv&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 351287,
+      "seller_username": "gameinfinity",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -111,74 +173,14 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2017-09-19T04:14:30.000Z",
+      "inserted_at": "2023-04-13T18:58:49.000Z",
       "signals": 9.0,
       "tags": [
-        "portable monitor"
+        "massage gun"
       ],
-      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "price": 29.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 394245,
-      "seller_username": "hiparts",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2017-03-10T15:42:19.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 29.99",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 16.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354370,
-      "seller_username": "buildyourbike",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2015-08-27T20:27:44.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
+      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
