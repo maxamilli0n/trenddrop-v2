@@ -1,77 +1,17 @@
 {
-  "updated_at": 1765836806,
+  "updated_at": 1765840404,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 17.99,
+      "keyword": "air fryer",
+      "title": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "price": 39.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 911850,
+      "image_url": "https://i.ebayimg.com/images/g/iTsAAeSw34ppQHim/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AiTsAAeSw34ppQHim&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 912127,
       "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-08-13T15:00:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "price": 19.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/BC0AAeSw46lpPtcD/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3ABC0AAeSw46lpPtcD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 911850,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-11-21T02:36:52.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 19.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "blurb": "USD 19.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "price": 19.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/GikAAeSwx2lpPPdq/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGikAAeSwx2lpPPdq&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861312,
-      "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -81,27 +21,27 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-02-12T17:52:17.000Z",
+      "inserted_at": "2024-11-21T02:09:27.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "air fryer"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
+      "caption": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel \u2022 USD 39.99",
+      "headline": "\ud83d\udd25\u2728 bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
-      "price": 24.95,
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/OCsAAeSw8xZpMoqB/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AOCsAAeSw8xZpMoqB&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbPxKsi5KtFVj84VGxR2KkOj03Jy%2FxbVIGzhRAcFeRR92gpHHWkUgp4bL7lnOtr444YE9Q0K91rcRToJdXqxdksKFKEQxsOI29w3LZ2N%2BEpBt%2FEAreWhLv9dlIVi3bNhof3GG7uqPxb2xNczD6EF1BT7BIQd27W8tpkV%2BMbewOGtNzQGqYZeQDkNagHwY5JmcFJoUD5%2F9OLMl7k4wDeLaBsS3%2FxqCKIOgeQ8TaNVa0lkagBtfSMxL6UUyAx6npWhnEGPGs50Nz8fOhBR0JaGcZm3%2BQgqiMKJpBJRduFMwiD4A%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861312,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 912127,
+      "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -111,74 +51,137 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-03-10T16:52:12.000Z",
+      "inserted_at": "2025-10-22T15:52:43.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "air fryer"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black \u2022 USD 24.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
-      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "price": 28.95,
+      "keyword": "pickleball paddle deals",
+      "title": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "price": 17.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD%2FlDdQiKvlwSiNsf%2FtoxwUZ26hyMmdhpwy3Uay3hEJaQEZlfa3aNavB8UhhA0gQPSrF7CVAIrw3hmL%2F0oY9Acvy8jRPAws6yeJODTyfRzlbUiZHJF7fZOxXRjtZmZTAvM6JS8FePxMZTM6Y03uc1klGhh25Dj8uDibdxFgovIBXBA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861312,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/jJwAAeSwTDhpO9xf/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AjJwAAeSwTDhpO9xf&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 809389,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-06-24T19:19:53.000Z",
+      "signals": 9.0,
+      "tags": [
+        "pickleball paddle"
+      ],
+      "caption": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0 \u2022 USD 17.0",
+      "headline": "\ud83d\udd25\u2728 GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "blurb": "USD 17.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster",
+      "price": 76.49,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/1BkAAeSw5f9pP-cs/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177233742063?_skw=air+fryer&hash=item2943f448ef%3Ag%3A1BkAAeSw5f9pP-cs&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 809389,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "condition": "Open box",
       "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-04-08T17:10:09.000Z",
+      "inserted_at": "2025-06-30T15:02:25.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "air fryer"
       ],
-      "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "caption": "Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster \u2022 USD 76.49",
+      "headline": "\ud83d\udd25\u2728 Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster",
+      "blurb": "USD 76.49 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Mophie 15W Wireless Charging Stand - Black",
-      "price": 29.95,
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 35.69,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Up4AAeSw4QFpOwXt/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146305229222?_skw=wireless+charger+deals&hash=item221078a1a6%3Ag%3AUp4AAeSw4QFpOwXt&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861312,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/t5MAAeSw2FBpQF-e/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3At5MAAeSw2FBpQF-e&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 809388,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New \u2013 Open box",
+      "condition_id": "1500",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-11-17T13:49:44.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "pickleball paddle deals",
+      "title": "VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle*",
+      "price": 87.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/NXIAAeSwkAJo7nzp/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/236389360936?_skw=pickleball+paddle+deals&hash=item3709e76528%3Ag%3ANXIAAeSwkAJo7nzp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 704443,
+      "seller_username": "nps",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "New",
-      "condition_id": "1000",
+      "condition": "New other (see details)",
+      "condition_id": "1500",
       "item_end_date": "",
-      "shipping_cost": 0.0,
+      "shipping_cost": null,
       "returns_accepted": null,
-      "inserted_at": "2024-12-30T19:07:49.000Z",
+      "inserted_at": "2025-10-14T16:37:03.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "pickleball paddle"
       ],
-      "caption": "Mophie 15W Wireless Charging Stand - Black \u2022 USD 29.95",
-      "headline": "\ud83d\udd25\u2728 Mophie 15W Wireless Charging Stand - Black",
-      "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
+      "caption": "VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle* \u2022 USD 87.99",
+      "headline": "\ud83d\udd25\u2728 VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle*",
+      "blurb": "USD 87.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
