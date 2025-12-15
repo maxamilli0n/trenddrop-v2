@@ -31,6 +31,37 @@ except Exception:
     ImageDraw = None  # type: ignore
     ImageFont = None  # type: ignore
 
+def _canonicalize_url(raw_url: str) -> str:
+    """
+    Normalize URLs so the same item always maps to the same canonical URL,
+    even if affiliate params change.
+    We keep scheme + host + path only. (Drop all query params.)
+    """
+    try:
+        u = (raw_url or "").strip()
+        if not u:
+            return ""
+        parsed = urlparse(u)
+        scheme = parsed.scheme or "https"
+        netloc = parsed.netloc.lower()
+        path = parsed.path
+
+        # eBay URLs sometimes include extra stuff; path already contains the item identity.
+        # Example: /itm/355754892121 or /itm/Title/355754892121
+        canonical = f"{scheme}://{netloc}{path}"
+        return canonical
+    except Exception:
+        return (raw_url or "").strip()
+
+
+def _url_key(canonical_url: str) -> str:
+    """
+    Stable key stored in Supabase. Short + consistent.
+    """
+    try:
+        return hashlib.md5((canonical_url or "").encode("utf-8")).hexdigest()
+    except Exception:
+        return ""
 
 def ensure_dirs():
     pathlib.Path(DOCS_DIR).mkdir(parents=True, exist_ok=True)
