@@ -14,6 +14,7 @@ ENV_PATH = load_env_once()
 
 from io import BytesIO
 from typing import List, Dict, Optional
+from datetime import datetime, timezone
 from utils.db import save_run_summary, upsert_products, fetch_recent_posted_keys, mark_posted_item
 from trenddrop.utils.telegram_cta import maybe_send_cta
 from utils.epn import affiliate_wrap
@@ -223,6 +224,58 @@ def _enforce_seller_diversity(
         counts[sk] = counts.get(sk, 0) + 1
 
     return picked
+
+
+def _parse_end_time(p: Dict) -> float | None:
+    """
+    Best-effort: supports:
+      - p["end_time_ts"] epoch seconds
+      - p["end_time"] ISO string
+      - p["itemEndDate"] ISO string
+    """
+    if "end_time_ts" in p:
+        try:
+            return float(p["end_time_ts"])
+        except Exception:
+            pass
+
+    for key in ("end_time", "itemEndDate"):
+        v = p.get(key)
+        if not v:
+            continue
+        if isinstance(v, (int, float)):
+            return float(v)
+        if isinstance(v, str):
+            try:
+                s = v.replace("Z", "+00:00")
+                dt = datetime.fromisoformat(s)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                return dt.timestamp()
+            except Exception:
+                continue
+    return None
+
+
+def _listing_type(p: Dict) -> str:
+    """
+    Returns: "Auction" | "Buy It Now" | ""
+    Tries a few common fields; safe if missing.
+    """
+    lt = str(p.get("listing_type") or p.get("listingType") or p.get("buyingOptions") or "").lower()
+
+    if isinstance(p.get("buyingOptions"), list):
+        try:
+            bo = [str(x).lower() for x in (p.get("buyingOptions") or [])]
+            lt = ",".join(bo)
+        except Exception:
+            pass
+
+    if "auction" in lt:
+        return "Auction"
+    if "fixed" in lt or "buy_it_now" in lt or "buynow" in lt or "now" in lt:
+        return "Buy It Now"
+    return ""
 
 
 def ensure_dirs():
@@ -473,22 +526,45 @@ def post_telegram(products: List[Dict], limit=5):
                 if top_rated:
                     trust_line += " · Top Rated"
 
-            cond = str(p.get("condition") or "").strip()
-            ship = p.get("shipping_cost")
-            ra = p.get("returns_accepted")
+            # ==========================
+            # IMPROVED HOOK LINES (Step 3)
+            # ✅ Free returns
+            # 🚚 Free shipping / Shipping: $X.XX
+            # ⏳ Ends soon (within 6h)
+            # 🛒 type
+            # ==========================
+            hook_lines = []
 
-            trust_bits = []
-            if cond:
-                trust_bits.append(f"Condition: {html.escape(cond)}")
+            lt = _listing_type(p)
+            if lt:
+                hook_lines.append(f"🛒 {lt}")
+
+            ra = p.get("returns_accepted")
+            if ra is True:
+                hook_lines.append("✅ Free returns")
+
+            ship = p.get("shipping_cost")
             if ship is not None:
                 try:
-                    trust_bits.append(f"Shipping: {currency} {float(ship):.2f}")
+                    ship_f = float(ship)
+                    if ship_f <= 0.0001:
+                        hook_lines.append("🚚 Free shipping")
+                    else:
+                        hook_lines.append(f"🚚 Shipping: {currency} {ship_f:.2f}")
                 except Exception:
                     pass
-            if ra is True:
-                trust_bits.append("Returns: Accepted")
-            elif ra is False:
-                trust_bits.append("Returns: Not accepted")
+
+            end_ts = _parse_end_time(p)
+            if end_ts:
+                try:
+                    hrs_left = max(0.0, (end_ts - datetime.now(timezone.utc).timestamp()) / 3600.0)
+                    if hrs_left <= 6.0:
+                        hook_lines.append("⏳ Ends soon")
+                except Exception:
+                    pass
+
+            cond = str(p.get("condition") or "").strip()
+            cond_line = f"Condition: {html.escape(cond)}" if cond else ""
 
             price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else f"{currency} {price}"
             variant = (hash(title_raw) % 2)
@@ -512,8 +588,12 @@ def post_telegram(products: List[Dict], limit=5):
 
             if trust_line:
                 body_lines.append(trust_line)
-            if trust_bits:
-                body_lines.append("\n".join(trust_bits))
+
+            if hook_lines:
+                body_lines.append("\n".join(hook_lines))
+
+            if cond_line:
+                body_lines.append(cond_line)
 
             body_lines += ["", f"<a href=\"{final_url}\">{cta}</a>"]
             caption = "\n".join(body_lines)
