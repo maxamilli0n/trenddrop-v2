@@ -6,7 +6,6 @@ from trenddrop.utils.env_loader import load_env_once
 from trenddrop.config import CLICK_REDIRECT_BASE, BOT_TOKEN, CHAT_ID
 from trenddrop.reports.product_quality import (
     dedupe_near_duplicates,
-    rank_key,
     ensure_rank_fields,
 )
 
@@ -118,7 +117,6 @@ def _select_with_variety(
     if not picked:
         return []
 
-    # If we already have enough variety, return
     def uniq_count(items: List[Dict]) -> int:
         return len({_topic_key_for_product(x) for x in items})
 
@@ -126,7 +124,6 @@ def _select_with_variety(
         return picked
 
     # Pass 2: attempt swaps to increase unique keywords
-    # Find candidates with NEW keywords not already present
     existing = {_topic_key_for_product(x) for x in picked}
     new_keyword_candidates = []
     for p in scored:
@@ -134,14 +131,11 @@ def _select_with_variety(
         if k not in existing:
             new_keyword_candidates.append(p)
 
-    # Replace the lowest-ranked duplicates (from the end of picked) when possible
-    # Only replace an item if its keyword count would remain >=1 after removal.
     i = 0
     while uniq_count(picked) < target_unique and i < len(new_keyword_candidates):
         candidate = new_keyword_candidates[i]
         cand_k = _topic_key_for_product(candidate)
 
-        # Find a removable item from the end whose keyword currently has count > 1
         removable_idx = None
         for j in range(len(picked) - 1, -1, -1):
             pk = _topic_key_for_product(picked[j])
@@ -150,9 +144,8 @@ def _select_with_variety(
                 break
 
         if removable_idx is None:
-            break  # can't improve uniqueness further without going below 1 of an existing keyword
+            break
 
-        # Do swap
         removed = picked.pop(removable_idx)
         rem_k = _topic_key_for_product(removed)
         counts[rem_k] = max(0, counts.get(rem_k, 1) - 1)
@@ -162,7 +155,7 @@ def _select_with_variety(
         existing.add(cand_k)
         i += 1
 
-    # If we somehow fell short of limit (rare), fill again respecting caps
+    # Fill again if short
     if len(picked) < limit:
         existing_counts = {}
         for x in picked:
@@ -179,6 +172,55 @@ def _select_with_variety(
                 continue
             picked.append(p)
             existing_counts[k] = existing_counts.get(k, 0) + 1
+
+    return picked
+
+
+def _seller_key_for_product(p: Dict) -> str:
+    """
+    Stable seller identity for diversity control.
+    Priority:
+      1) seller_username (best)
+      2) domain of listing URL (fallback)
+      3) 'unknown'
+    """
+    try:
+        su = str(p.get("seller_username") or "").strip().lower()
+        if su:
+            return su
+    except Exception:
+        pass
+
+    try:
+        u = str(p.get("url") or "").strip()
+        if u:
+            parsed = urlparse(u)
+            if parsed.netloc:
+                return parsed.netloc.lower()
+    except Exception:
+        pass
+
+    return "unknown"
+
+
+def _enforce_seller_diversity(
+    items: List[Dict],
+    *,
+    max_per_seller: int,
+) -> List[Dict]:
+    """
+    Enforce max items per seller while preserving order (already score-sorted).
+    """
+    max_per_seller = max(1, int(max_per_seller))
+    picked: List[Dict] = []
+    counts: Dict[str, int] = {}
+
+    for p in items:
+        sk = _seller_key_for_product(p)
+        if counts.get(sk, 0) >= max_per_seller:
+            continue
+        picked.append(p)
+        counts[sk] = counts.get(sk, 0) + 1
 
     return picked
 
@@ -326,6 +368,15 @@ def post_telegram(products: List[Dict], limit=5):
     except Exception:
         min_unique_keywords = 4
 
+    # Seller diversity controls
+    max_per_seller = 1
+    try:
+        max_per_seller = int(str(os.environ.get("TELEGRAM_MAX_PER_SELLER", "1")).strip())
+    except Exception:
+        max_per_seller = 1
+    if max_per_seller < 1:
+        max_per_seller = 1
+
     recent_keys = fetch_recent_posted_keys(dedupe_hours)
     if recent_keys:
         print(f"[telegram] dedupe active: {len(recent_keys)} items posted in last {dedupe_hours}h")
@@ -360,18 +411,38 @@ def post_telegram(products: List[Dict], limit=5):
 
     scored.sort(key=lambda x: float(x.get("_conv_score", 0.0)), reverse=True)
 
-    # >>> FORCE VARIETY HERE <<<
-    pick = _select_with_variety(
+    # >>> FORCE VARIETY (KEYWORDS) <<<
+    varied = _select_with_variety(
         scored,
         max(1, int(limit)),
         max_per_keyword=max_per_keyword,
         min_unique_keywords=min_unique_keywords,
     )
 
+    # >>> FORCE DIVERSITY (SELLERS) <<<
+    pick = _enforce_seller_diversity(
+        varied,
+        max_per_seller=max_per_seller,
+    )
+
+    # If seller diversity trimmed too aggressively, refill
+    if len(pick) < int(limit):
+        for p in varied:
+            if p in pick:
+                continue
+            sk = _seller_key_for_product(p)
+            if sum(1 for x in pick if _seller_key_for_product(x) == sk) >= max_per_seller:
+                continue
+            pick.append(p)
+            if len(pick) >= int(limit):
+                break
+
     # Debug log so you can confirm variety in Actions logs
     try:
         kset = [_topic_key_for_product(x) for x in pick]
+        sset = [_seller_key_for_product(x) for x in pick]
         print(f"[telegram] pick keywords: {kset}")
+        print(f"[telegram] pick sellers:  {sset}")
     except Exception:
         pass
 
