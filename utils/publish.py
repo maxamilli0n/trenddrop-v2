@@ -12,7 +12,7 @@ from trenddrop.reports.product_quality import (
 ENV_PATH = load_env_once()
 from io import BytesIO
 from typing import List, Dict, Optional
-from utils.db import save_run_summary, upsert_products
+from utils.db import save_run_summary, upsert_products, fetch_recent_posted_keys, mark_posted_item
 from trenddrop.utils.telegram_cta import maybe_send_cta
 from utils.epn import affiliate_wrap
 from utils.ai import caption_for, marketing_copy_for
