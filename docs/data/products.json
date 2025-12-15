@@ -1,184 +1,187 @@
 {
-  "updated_at": 1765805736,
+  "updated_at": 1765808274,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "price": 142.99,
+      "keyword": "air fryer",
+      "title": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "price": 39.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2309943,
-      "seller_username": "spreetail",
+      "image_url": "https://i.ebayimg.com/images/g/I4IAAeSwL59pQBbd/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AI4IAAeSwL59pQBbd&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 909807,
+      "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "Certified - Refurbished",
-      "condition_id": "2000",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-11-07T16:03:08.000Z",
+      "inserted_at": "2024-11-21T02:09:27.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "air fryer"
       ],
-      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
+      "caption": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel \u2022 USD 39.99",
+      "headline": "\ud83d\udd25\u2728 bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 909807,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard",
+      "title": "CORSAIR - K70 RGB PRO Full-size Wired Mechanical Cherry MX Speed Linear Switc...",
+      "price": 99.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/qSIAAeSwe0ZpOnhV/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/326907871530?_skw=mechanical+keyboard&hash=item4c1d3a412a%3Ag%3AqSIAAeSwe0ZpOnhV&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 909688,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-12-10T16:47:54.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "CORSAIR - K70 RGB PRO Full-size Wired Mechanical Cherry MX Speed Linear Switc... \u2022 USD 99.99",
+      "headline": "\ud83d\udd79\ufe0f CORSAIR - K70 RGB PRO Full-size Wired Mechanical Cherry MX Speed Linear Switc...",
+      "blurb": "USD 99.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
+      "price": 23.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/1DoAAeSw7Z9pP-7n/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/187801803267?_skw=air+fryer+deals&hash=item2bb9dc1a03%3Ag%3A1DoAAeSw7Z9pP-7n&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 806904,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-12-02T15:20:49.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking: \u2022 USD 23.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
+      "blurb": "USD 23.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "price": 28.95,
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 35.69,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1007924,
-      "seller_username": "theperfectpart",
+      "image_url": "https://i.ebayimg.com/images/g/hGwAAeSwL75pP~3I/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3AhGwAAeSwL75pP~3I&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 806904,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
-      "condition": "New",
-      "condition_id": "1000",
+      "condition": "New \u2013 Open box",
+      "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "inserted_at": "2025-11-17T13:49:44.000Z",
       "signals": 9.0,
       "tags": [
-        "massage gun"
+        "air fryer"
       ],
-      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
-      "price": 39.99,
+      "keyword": "air fryer deals",
+      "title": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
+      "price": 50.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/R9MAAOSwPAVmWOIN/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/355754892121?_skw=mechanical+keyboard&hash=item52d4a4db59%3Ag%3AR9MAAOSwPAVmWOIN&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ub0ZSwTuokAZtff%2FwIYUKk9I0SPQVfUOmQ4NxZ%2Fe3e2Pry9WWYBvm6VOl5TshuBPa5wWgdKDsZ%2FdD2K2yc8CSC4fsl1X0vLSJHV%2FVl7lAr57RxJ9u%2B8OvUHF0%2F2R7v5uQ0r97NxleSyLi7aL9ELgwiTlxOPbsW5FAv%2FTRFpFA2Vf5%2Fg7IbpyikV4%2FpOHj12TQKBE6CvxIL1%2BBbEOr8e6LKcmfbHdFlYr5r4iD8Rbm8JUeaslcV0pW7q70nKdxGve7p0nZrfKIXqoIJ2ytp2mEesrwmJ6oumR0%2B0BKJG5IYa4A%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 454319,
-      "seller_username": "bigdeals",
+      "image_url": "https://i.ebayimg.com/images/g/NnAAAeSw1hxpP-0P/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer+deals&hash=item2fec6db215%3Ag%3ANnAAAeSw1hxpP-0P&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 806904,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "condition": "Open box",
       "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-05-30T20:57:34.000Z",
+      "inserted_at": "2025-11-06T13:43:46.000Z",
       "signals": 9.0,
       "tags": [
-        "mechanical keyboard"
+        "air fryer"
       ],
-      "caption": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android \u2022 USD 39.99",
-      "headline": "\ud83d\udd79\ufe0f Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
-      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "price": 15.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVZ%2FwhYEcgR0At9QwKo59MXaLJDW9YSdwZZQhm6IWB5EKMl8IcwFyNRUstyCC%2FbTvtpBIIuoaQA7crL5nzRa42VoTYaQCww6wGy4mzaocB8R3ypfg2UXBvXukSZ%2FOAVFF6AoE2rKeR6oMUPX3DIeFqBh&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 351300,
-      "seller_username": "gameinfinity",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2023-04-13T18:58:49.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
-      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
-      "price": 31.49,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/MbYAAOSwXolnnFGN/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/306077311823?_skw=mechanical+keyboard&hash=item4743a1234f%3Ag%3AMbYAAOSwXolnnFGN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 114103,
-      "seller_username": "mobileshark",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Open box",
-      "condition_id": "1500",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-01-31T04:30:37.000Z",
-      "signals": 9.0,
-      "tags": [
-        "mechanical keyboard"
-      ],
-      "caption": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX \u2022 USD 31.49",
-      "headline": "\ud83d\udd79\ufe0f OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
-      "blurb": "USD 31.49 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "price": 29.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 107793,
-      "seller_username": "dd707city",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 16.88,
-      "returns_accepted": null,
-      "inserted_at": "2025-11-04T21:44:40.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 29.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Holiday Xmas Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "blurb": "USD 29.00 steal. Limited stock\u2014grab it now!",
+      "caption": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking \u2022 USD 50.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
+      "blurb": "USD 50.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
