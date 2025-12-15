@@ -218,12 +218,26 @@ def post_telegram(products: List[Dict], limit=5):
 
     scored = []
     for p in collapsed:
+        # Build a stable canonical URL key BEFORE affiliate wrapping
+        raw_url = str(p.get("url") or "")
+        canonical = _canonicalize_url(raw_url)
+        key = _url_key(canonical)
+
+        if key and key in recent_keys:
+            # Skip items already posted within the dedupe window
+            continue
+
+        p["_canonical_url"] = canonical
+        p["_url_key"] = key
+
         ok, _ = passes_hard_filters(p)
         if not ok:
             continue
+
         s = conversion_score(p)
         if s <= -1e8:
             continue
+
         p["_conv_score"] = s
         scored.append(p)
 
