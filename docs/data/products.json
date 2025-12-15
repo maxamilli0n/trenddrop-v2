@@ -1,36 +1,6 @@
 {
-  "updated_at": 1765797191,
+  "updated_at": 1765801629,
   "products": [
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "price": 142.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2309940,
-      "seller_username": "spreetail",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Certified - Refurbished",
-      "condition_id": "2000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-11-07T16:03:08.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -40,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 909363,
+      "seller_feedback": 909559,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -65,12 +35,43 @@
       "source": "ebay",
       "provider": "ebay",
       "keyword": "air fryer deals",
+      "title": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
+      "price": 23.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/1DoAAeSw7Z9pP-7n/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/187801803267?_skw=air+fryer+deals&hash=item2bb9dc1a03%3Ag%3A1DoAAeSw7Z9pP-7n&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 806629,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-12-02T15:20:49.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking: \u2022 USD 23.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
+      "blurb": "USD 23.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
       "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
       "price": 35.69,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/v7kAAeSwSY9pP680/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3Av7kAAeSwSY9pP680&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 806475,
+      "seller_feedback": 806629,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -96,12 +97,43 @@
       "source": "ebay",
       "provider": "ebay",
       "keyword": "air fryer",
+      "title": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
+      "price": 50.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/NnAAAeSw1hxpP-0P/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer&hash=item2fec6db215%3Ag%3ANnAAAeSw1hxpP-0P&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 806629,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "Open box",
+      "condition_id": "1500",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-11-06T13:43:46.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking \u2022 USD 50.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
+      "blurb": "USD 50.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
       "title": "Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster",
       "price": 76.49,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/1BkAAeSw5f9pP-cs/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177233742063?_skw=air+fryer&hash=item2943f448ef%3Ag%3A1BkAAeSw5f9pP-cs&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 806475,
+      "seller_feedback": 806629,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -126,14 +158,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "price": 16.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2BzKD2hMstYs8CfEKg%2BRu7VscpcjXSmydA6hT52QUKV5Xjxo40o%2BKTY1wVuv2zzqxnAtcrc4bbZGK47HBjxRtv32VAWxEID2YhBldD37hvLmGAWCAmQe5pQvy5J1Vt1JOMBtJNkwwjjxRePYUX%2FJ65ZiSXMSUFDRl%2B2eIu7MCd4YKQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283301,
-      "seller_username": "sale2015express",
+      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394250,
+      "seller_username": "hiparts",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -143,44 +175,14 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2020-01-12T18:12:21.000Z",
+      "inserted_at": "2017-09-19T04:14:30.000Z",
       "signals": 9.0,
       "tags": [
-        "rgb lamp"
+        "portable monitor"
       ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer",
-      "price": 30.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/V3QAAeSwx~VpG0t2/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/227001642489?_skw=air+fryer&hash=item34da5a2df9%3Ag%3AV3QAAeSwx~VpG0t2&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 167355,
-      "seller_username": "on.xyz",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-10-01T02:59:25.000Z",
-      "signals": 9.0,
-      "tags": [
-        "air fryer"
-      ],
-      "caption": "Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer \u2022 USD 30.0",
-      "headline": "\ud83d\udd25\u2728 Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer",
-      "blurb": "USD 30.00 steal. Limited stock\u2014grab it now!",
+      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
