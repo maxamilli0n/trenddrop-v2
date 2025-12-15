@@ -1,6 +1,36 @@
 {
-  "updated_at": 1765829708,
+  "updated_at": 1765833179,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "price": 39.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/iTsAAeSw34ppQHim/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer+deals&hash=item2dd43772e9%3Ag%3AiTsAAeSw34ppQHim&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 911664,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2024-11-21T02:09:27.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel \u2022 USD 39.99",
+      "headline": "\ud83d\udd25\u2728 bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +40,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 911400,
+      "seller_feedback": 911663,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -34,44 +64,13 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "pickleball paddle deals",
-      "title": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
-      "price": 17.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/jJwAAeSwTDhpO9xf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AjJwAAeSwTDhpO9xf&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 808655,
-      "seller_username": "bullseye_deals",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-06-24T19:19:53.000Z",
-      "signals": 9.0,
-      "tags": [
-        "pickleball paddle"
-      ],
-      "caption": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0 \u2022 USD 17.0",
-      "headline": "\ud83d\udd25\u2728 GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
-      "blurb": "USD 17.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "air fryer deals",
       "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
       "price": 35.69,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/t5MAAeSw2FBpQF-e/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3At5MAAeSw2FBpQF-e&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 808655,
+      "seller_feedback": 808938,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -102,7 +101,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/1BkAAeSw5f9pP-cs/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177233742063?_skw=air+fryer&hash=item2943f448ef%3Ag%3A1BkAAeSw5f9pP-cs&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 808655,
+      "seller_feedback": 808938,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -127,14 +126,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
+      "keyword": "bike light deals",
+      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "price": 16.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2BwgFQ4ZWCa5VHr49C0qJnTuKB6FS%2FkM9zYvL6jto85EID9iB8ycdp79vs1puZm%2Bja8f0K3n19b6AkWecrsY7G1TrkaJOMZe4YUb2oexTp0kyUZRCt6dieVsLY5mXHqwUX6DohC%2BlzCFZNy0jrC1GUNMT6l5YsPhxq5NfEluoT5c7g%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283316,
-      "seller_username": "sale2015express",
+      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 354376,
+      "seller_username": "buildyourbike",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -144,44 +143,44 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2020-01-12T18:12:21.000Z",
+      "inserted_at": "2015-08-27T20:27:44.000Z",
       "signals": 9.0,
       "tags": [
-        "rgb lamp"
+        "bike light"
       ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
+      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer",
-      "price": 30.0,
+      "keyword": "bike light deals",
+      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "price": 93.12,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/V3QAAeSwx~VpG0t2/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/227001642489?_skw=air+fryer&hash=item34da5a2df9%3Ag%3AV3QAAeSwx~VpG0t2&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 167395,
-      "seller_username": "on.xyz",
+      "image_url": "https://i.ebayimg.com/images/g/iu8AAeSwOippQDuy/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3Aiu8AAeSwOippQDuy&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9eFuMHjLIVbTG1nWUpXLSO5Tli6bS5sT5sUbj%2FNe%2Bc9VvZJD3gHuE%2BMnpB8E8WToHdcxviOKPUrmTeg15xQB81dxqLQMEzMzsuzZXG6y50r9qbHt5SSWwi9zGrW6G6myQMxBOE4beHBG4qU%2FHfR3sX6%2BtIG8%2BBpqH7xIB5D72hOCQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 211823,
+      "seller_username": "cyclingdeal",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "New",
+      "condition": "Brand New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 0.0,
+      "shipping_cost": 33.26,
       "returns_accepted": null,
-      "inserted_at": "2025-10-01T02:59:25.000Z",
+      "inserted_at": "2020-08-24T11:46:29.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "bike light"
       ],
-      "caption": "Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer \u2022 USD 30.0",
-      "headline": "\ud83d\udd25\u2728 Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer",
-      "blurb": "USD 30.00 steal. Limited stock\u2014grab it now!",
+      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 93.12",
+      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "blurb": "USD 93.12 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
