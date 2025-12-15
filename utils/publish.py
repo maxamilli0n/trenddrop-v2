@@ -1,4 +1,6 @@
 import os, json, time, requests, pathlib, html
+import hashlib
+from urllib.parse import urlparse
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
 from trenddrop.config import CLICK_REDIRECT_BASE, BOT_TOKEN, CHAT_ID
