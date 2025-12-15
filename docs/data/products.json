@@ -1,36 +1,6 @@
 {
-  "updated_at": 1765764321,
+  "updated_at": 1765764444,
   "products": [
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "price": 142.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2309938,
-      "seller_username": "spreetail",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Certified - Refurbished",
-      "condition_id": "2000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-11-07T16:03:08.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -64,31 +34,61 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "pickleball paddle deals",
-      "title": "VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle*",
-      "price": 87.99,
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "price": 16.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/NXIAAeSwkAJo7nzp/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/236389360936?_skw=pickleball+paddle+deals&hash=item3709e76528%3Ag%3ANXIAAeSwkAJo7nzp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 704287,
-      "seller_username": "nps",
+      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394245,
+      "seller_username": "hiparts",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "New other (see details)",
-      "condition_id": "1500",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": null,
+      "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-10-14T16:37:03.000Z",
+      "inserted_at": "2017-09-19T04:14:30.000Z",
       "signals": 9.0,
       "tags": [
-        "pickleball paddle"
+        "portable monitor"
       ],
-      "caption": "VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle* \u2022 USD 87.99",
-      "headline": "\ud83d\udd25\u2728 VATIC PRO Flash Carbon Fiber 16 mm Pickleball Paddle*",
-      "blurb": "USD 87.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "price": 29.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394245,
+      "seller_username": "hiparts",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2017-03-10T15:42:19.000Z",
+      "signals": 9.0,
+      "tags": [
+        "portable monitor"
+      ],
+      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 29.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
@@ -99,7 +99,7 @@
       "price": 15.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVY2cdvyDEg81%2BLeOXEukrqHXPQrx%2BtMPDy1R0%2BiFHFiZxyOzhfTZXBughhBGzMbhYv5O5wGgsispinqMRSpZbDNCRsVxCFZ5XlHLX4CZCUKEiNVx8euFZsew9IPcHCuQ82qb3owEE2XS1UuJ9wlgGZV&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVaerHadLYoA6%2FhEjN%2F66zoMdaIeM9s%2B9%2Bl8%2F%2BCYmrB3V4gJPV%2FkBge9vbHhzXx9xV77bIrnz95SavOO3jj9%2BFGkDzcYmpbzrJwNFxRzZOqIpW%2FUHHgJ8oB6ulJywmorGKeoqkS7e1k3ovZR8r%2Fb6Jsn&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
       "seller_feedback": 351287,
       "seller_username": "gameinfinity",
       "top_rated": false,
@@ -129,7 +129,7 @@
       "price": 42.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/zdMAAeSwEcxpNkhs/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AzdMAAeSwEcxpNkhs&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvwCgFPPlE0SCBNdpMVonkPjc2Lgyb5T7%2FuJm3OwpAvK%2FSkX8hSDlkc9ZQ2kcZ%2BqgZySZnwbi0wzOQF99sLcj%2BvPGNmEghg0Av10nHJjyK5TbJAS4Pl7J%2FrVlkArkRiafd0B7n6f0xFR30MjAnLdWdeFuxJQD2dqhEYHLx1jW4vlyQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AzdMAAeSwEcxpNkhs&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvxrJcBw1b0Te0%2B0VXL9MRVsXIHs%2FhHCBAXDa5IVdSZ%2Fdff1rYoBxE1h01tWByU6wlDZ7VrDA1EmR%2FkYVg5mIPjOQUU1EBRfTUiBzV%2F6fOoLbNaDTZdNyz6%2F4hazKpIq5j%2Bm8UtXL1LnhplLhGhP069yt%2BI70xG0jSSGZQa4fPDc9g%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
       "seller_feedback": 178626,
       "seller_username": "tradeportusa",
       "top_rated": false,
@@ -154,14 +154,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "price": 29.0,
+      "keyword": "portable monitor",
+      "title": "Anyuse Portable Monitor PM1561P - 15.6 Inch 1080P USB-C HDMI Ultra-Slim",
+      "price": 29.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 107790,
-      "seller_username": "dd707city",
+      "image_url": "https://i.ebayimg.com/images/g/L9wAAeSwJXNo0xCr/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/358007536325?_skw=portable+monitor&hash=item535ae97ac5%3Ag%3AL9wAAeSwJXNo0xCr&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 142459,
+      "seller_username": "aceofparts10",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -169,17 +169,17 @@
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 16.88,
+      "shipping_cost": 10.0,
       "returns_accepted": null,
-      "inserted_at": "2025-11-04T21:44:40.000Z",
+      "inserted_at": "2025-12-11T14:59:43.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "portable monitor"
       ],
-      "caption": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 29.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Holiday Xmas Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "blurb": "USD 29.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Anyuse Portable Monitor PM1561P - 15.6 Inch 1080P USB-C HDMI Ultra-Slim \u2022 USD 29.95",
+      "headline": "\ud83d\udd25\u2728 Anyuse Portable Monitor PM1561P - 15.6 Inch 1080P USB-C HDMI Ultra-Slim",
+      "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
