@@ -199,6 +199,17 @@ def post_telegram(products: List[Dict], limit=5):
     if not token or not chat_id or not products:
         return
 
+        # Dedupe window (hours): don't repost items already posted recently
+    dedupe_hours = 48
+    try:
+        dedupe_hours = int(str(os.environ.get("TELEGRAM_DEDUPE_HOURS", "48")).strip())
+    except Exception:
+        dedupe_hours = 48
+
+    recent_keys = fetch_recent_posted_keys(dedupe_hours)
+    if recent_keys:
+        print(f"[telegram] dedupe active: {len(recent_keys)} items posted in last {dedupe_hours}h")
+
     api = f"https://api.telegram.org/bot{token}"
 
     # Deduplicate + sort by conversion score (not just signals)
