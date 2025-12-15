@@ -63,6 +63,126 @@ def _url_key(canonical_url: str) -> str:
         return ""
 
 
+def _topic_key_for_product(p: Dict) -> str:
+    """
+    Variety grouping key.
+    Prefer keyword (your scraper tags items with keyword like 'wireless_charger'),
+    fall back to first tag, else 'other'.
+    """
+    try:
+        k = str(p.get("keyword") or "").strip().lower()
+        if k:
+            return k
+        tags = p.get("tags") or []
+        if isinstance(tags, list) and tags:
+            return str(tags[0] or "").strip().lower() or "other"
+    except Exception:
+        pass
+    return "other"
+
+
+def _select_with_variety(
+    scored: List[Dict],
+    limit: int,
+    *,
+    max_per_keyword: int,
+    min_unique_keywords: int,
+) -> List[Dict]:
+    """
+    Enforce variety:
+      - At most `max_per_keyword` items for the same keyword per run.
+      - Try to reach at least `min_unique_keywords` unique keywords (when possible).
+
+    We do this in a deterministic greedy way over the already score-sorted list.
+    """
+    if limit <= 0:
+        return []
+
+    max_per_keyword = max(1, int(max_per_keyword))
+    min_unique_keywords = max(1, int(min_unique_keywords))
+    target_unique = min(min_unique_keywords, limit)
+
+    picked: List[Dict] = []
+    counts: Dict[str, int] = {}
+
+    # Pass 1: strict cap per keyword
+    for p in scored:
+        if len(picked) >= limit:
+            break
+        k = _topic_key_for_product(p)
+        if counts.get(k, 0) >= max_per_keyword:
+            continue
+        picked.append(p)
+        counts[k] = counts.get(k, 0) + 1
+
+    if not picked:
+        return []
+
+    # If we already have enough variety, return
+    def uniq_count(items: List[Dict]) -> int:
+        return len({_topic_key_for_product(x) for x in items})
+
+    if uniq_count(picked) >= target_unique:
+        return picked
+
+    # Pass 2: attempt swaps to increase unique keywords
+    # Find candidates with NEW keywords not already present
+    existing = {_topic_key_for_product(x) for x in picked}
+    new_keyword_candidates = []
+    for p in scored:
+        k = _topic_key_for_product(p)
+        if k not in existing:
+            new_keyword_candidates.append(p)
+
+    # Replace the lowest-ranked duplicates (from the end of picked) when possible
+    # Only replace an item if its keyword count would remain >=1 after removal.
+    i = 0
+    while uniq_count(picked) < target_unique and i < len(new_keyword_candidates):
+        candidate = new_keyword_candidates[i]
+        cand_k = _topic_key_for_product(candidate)
+
+        # Find a removable item from the end whose keyword currently has count > 1
+        removable_idx = None
+        for j in range(len(picked) - 1, -1, -1):
+            pk = _topic_key_for_product(picked[j])
+            if counts.get(pk, 0) > 1:
+                removable_idx = j
+                break
+
+        if removable_idx is None:
+            break  # can't improve uniqueness further without going below 1 of an existing keyword
+
+        # Do swap
+        removed = picked.pop(removable_idx)
+        rem_k = _topic_key_for_product(removed)
+        counts[rem_k] = max(0, counts.get(rem_k, 1) - 1)
+
+        picked.append(candidate)
+        counts[cand_k] = counts.get(cand_k, 0) + 1
+        existing.add(cand_k)
+        i += 1
+
+    # If we somehow fell short of limit (rare), fill again respecting caps
+    if len(picked) < limit:
+        existing_counts = {}
+        for x in picked:
+            k = _topic_key_for_product(x)
+            existing_counts[k] = existing_counts.get(k, 0) + 1
+
+        for p in scored:
+            if len(picked) >= limit:
+                break
+            if p in picked:
+                continue
+            k = _topic_key_for_product(p)
+            if existing_counts.get(k, 0) >= max_per_keyword:
+                continue
+            picked.append(p)
+            existing_counts[k] = existing_counts.get(k, 0) + 1
+
+    return picked
+
+
 def ensure_dirs():
     pathlib.Path(DOCS_DIR).mkdir(parents=True, exist_ok=True)
     pathlib.Path(DOCS_DATA).mkdir(parents=True, exist_ok=True)
@@ -81,7 +201,6 @@ def _generate_og_image(products: List[Dict]) -> None:
         img = Image.new("RGB", (width, height), bg_color)
         draw = ImageDraw.Draw(img)
 
-        # Try to load a clean sans font
         font_path_bold = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
         font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
         try:
@@ -93,16 +212,13 @@ def _generate_og_image(products: List[Dict]) -> None:
             f_sub = ImageFont.load_default()
             f_tag = ImageFont.load_default()
 
-        # Accent bar
         draw.rectangle([(0, 0), (width, 14)], fill=accent)
 
-        # Title and subtitle
         title = "TrendDrop"
         subtitle = "Today’s Trending Finds"
         draw.text((60, 140), title, fill=text_primary, font=f_title)
         draw.text((64, 240), subtitle, fill=text_secondary, font=f_sub)
 
-        # Optional: paste up to 3 product thumbnails on the right
         x = width - 60
         y = 110
         thumb_w, thumb_h = 260, 260
@@ -132,14 +248,11 @@ def _generate_og_image(products: List[Dict]) -> None:
             except Exception:
                 continue
 
-        # Tagline footer
         ts = time.strftime("Updated %b %d, %Y", time.gmtime())
         draw.text((60, height - 80), ts, fill=(148, 163, 184), font=f_tag)
 
-        # Save
         img.save(OG_PATH, format="PNG", optimize=True)
     except Exception:
-        # soft-fail; skip OG generation
         return
 
 
@@ -148,16 +261,13 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
     print(f"[scraper] fetched {len(raw_for_upsert)} raw eBay products before filtering/dedup")
     upsert_products(raw_for_upsert)
 
-    # enrich captions for site/telegram
     for p in products:
         try:
             p["caption"] = caption_for(p)
-            # add structured marketing copy
             mc = marketing_copy_for(p)
             p["headline"] = mc.get("headline")
             p["blurb"] = mc.get("blurb")
             p["emojis"] = mc.get("emojis")
-            # ensure affiliate params present
             try:
                 first_tag = (p.get("tags") or [p.get("keyword") or "trend"])[0]
                 p["url"] = affiliate_wrap(p.get("url", ""), custom_id=str(first_tag).replace(" ", "_")[:40])
@@ -168,7 +278,6 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
 
     ensure_dirs()
 
-    # compute click redirect URL if configured
     base = CLICK_REDIRECT_BASE
     if base:
         try:
@@ -183,7 +292,6 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
     with open(PRODUCTS_PATH, "w", encoding="utf-8") as f:
         json.dump({"updated_at": int(time.time()), "products": products}, f, indent=2)
 
-    # Generate or refresh OG image banner (best-effort)
     try:
         _generate_og_image(products)
     except Exception:
@@ -199,12 +307,24 @@ def post_telegram(products: List[Dict], limit=5):
     if not token or not chat_id or not products:
         return
 
-    # Dedupe window (hours): don't repost items already posted recently
+    # Dedupe window (hours)
     dedupe_hours = 48
     try:
         dedupe_hours = int(str(os.environ.get("TELEGRAM_DEDUPE_HOURS", "48")).strip())
     except Exception:
         dedupe_hours = 48
+
+    # Variety controls
+    max_per_keyword = 2
+    min_unique_keywords = 4
+    try:
+        max_per_keyword = int(str(os.environ.get("TELEGRAM_MAX_PER_KEYWORD", "2")).strip())
+    except Exception:
+        max_per_keyword = 2
+    try:
+        min_unique_keywords = int(str(os.environ.get("TELEGRAM_MIN_UNIQUE_KEYWORDS", "4")).strip())
+    except Exception:
+        min_unique_keywords = 4
 
     recent_keys = fetch_recent_posted_keys(dedupe_hours)
     if recent_keys:
@@ -212,19 +332,16 @@ def post_telegram(products: List[Dict], limit=5):
 
     api = f"https://api.telegram.org/bot{token}"
 
-    # Deduplicate + sort by conversion score (not just signals)
     prepared = [ensure_rank_fields(dict(p)) for p in products]
     collapsed = dedupe_near_duplicates(prepared)
 
     scored = []
     for p in collapsed:
-        # Build a stable canonical URL key BEFORE affiliate wrapping
         raw_url = str(p.get("url") or "")
         canonical = _canonicalize_url(raw_url)
         key = _url_key(canonical)
 
         if key and key in recent_keys:
-            # Skip items already posted within the dedupe window
             continue
 
         p["_canonical_url"] = canonical
@@ -242,7 +359,21 @@ def post_telegram(products: List[Dict], limit=5):
         scored.append(p)
 
     scored.sort(key=lambda x: float(x.get("_conv_score", 0.0)), reverse=True)
-    pick = scored[: max(1, int(limit))]
+
+    # >>> FORCE VARIETY HERE <<<
+    pick = _select_with_variety(
+        scored,
+        max(1, int(limit)),
+        max_per_keyword=max_per_keyword,
+        min_unique_keywords=min_unique_keywords,
+    )
+
+    # Debug log so you can confirm variety in Actions logs
+    try:
+        kset = [_topic_key_for_product(x) for x in pick]
+        print(f"[telegram] pick keywords: {kset}")
+    except Exception:
+        pass
 
     for p in pick:
         try:
@@ -252,20 +383,17 @@ def post_telegram(products: List[Dict], limit=5):
             price = p.get("price")
             currency = p.get("currency", "USD")
 
-            # build url (affiliate + optional click redirect)
             try:
                 first_tag = (p.get("tags") or [p.get("keyword") or "trend"])[0]
                 url = affiliate_wrap(p.get("url", ""), custom_id=str(first_tag).replace(" ", "_")[:40])
             except Exception:
                 url = p.get("url", "")
 
-            # if click redirect is enabled, prefer it (keeps your tracking centralized)
             click_url = p.get("click_url")
             final_url = click_url or url
 
             img = p.get("image_url")
 
-            # Trust text
             fb = p.get("seller_feedback")
             top_rated = p.get("top_rated")
             trust_line = ""
@@ -274,7 +402,6 @@ def post_telegram(products: List[Dict], limit=5):
                 if top_rated:
                     trust_line += " · Top Rated"
 
-            # NEW trust hooks (condition/shipping/returns)
             cond = str(p.get("condition") or "").strip()
             ship = p.get("shipping_cost")
             ra = p.get("returns_accepted")
@@ -282,21 +409,17 @@ def post_telegram(products: List[Dict], limit=5):
             trust_bits = []
             if cond:
                 trust_bits.append(f"Condition: {html.escape(cond)}")
-
             if ship is not None:
                 try:
                     trust_bits.append(f"Shipping: {currency} {float(ship):.2f}")
                 except Exception:
                     pass
-
             if ra is True:
                 trust_bits.append("Returns: Accepted")
             elif ra is False:
                 trust_bits.append("Returns: Not accepted")
 
-            # Build a conversion-style caption (2 variants = light A/B)
             price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else f"{currency} {price}"
-
             variant = (hash(title_raw) % 2)
 
             if variant == 0:
@@ -307,14 +430,6 @@ def post_telegram(products: List[Dict], limit=5):
                     f"<b>{title}</b>",
                     f"💰 {price_text}",
                 ]
-                if trust_line:
-                    body_lines.append(trust_line)
-                if trust_bits:
-                    body_lines.append("\n".join(trust_bits))
-                body_lines += [
-                    "",
-                    f"<a href=\"{final_url}\">{cta}</a>",
-                ]
             else:
                 headline = "⚡ TRENDING + BUYER-READY"
                 cta = "🛒 Check it out"
@@ -323,15 +438,13 @@ def post_telegram(products: List[Dict], limit=5):
                     f"<b>{title}</b>",
                     f"Price: {price_text}",
                 ]
-                if trust_line:
-                    body_lines.append(trust_line)
-                if trust_bits:
-                    body_lines.append("\n".join(trust_bits))
-                body_lines += [
-                    "",
-                    f"<a href=\"{final_url}\">{cta}</a>",
-                ]
 
+            if trust_line:
+                body_lines.append(trust_line)
+            if trust_bits:
+                body_lines.append("\n".join(trust_bits))
+
+            body_lines += ["", f"<a href=\"{final_url}\">{cta}</a>"]
             caption = "\n".join(body_lines)
 
             if img:
@@ -357,14 +470,12 @@ def post_telegram(products: List[Dict], limit=5):
                     timeout=20,
                 )
 
-            # If Telegram rejects, don't mark as posted
             try:
                 if getattr(resp, "status_code", 0) >= 400:
                     continue
             except Exception:
                 pass
 
-            # Mark as posted (so we don't repost it next run)
             try:
                 mark_posted_item(
                     url_key=str(p.get("_url_key") or ""),
@@ -377,7 +488,6 @@ def post_telegram(products: List[Dict], limit=5):
             except Exception:
                 pass
 
-            # After each product message, maybe trigger CTA based on batch + cooldown
             try:
                 maybe_send_cta()
             except Exception:
@@ -387,7 +497,6 @@ def post_telegram(products: List[Dict], limit=5):
         except Exception:
             continue
 
-    # after posting, log a run summary
     try:
         uniq_topics = set()
         for p in products:
