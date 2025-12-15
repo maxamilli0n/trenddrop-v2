@@ -12,6 +12,7 @@ from trenddrop.reports.product_quality import (
 
 # Ensure root .env is loaded
 ENV_PATH = load_env_once()
+
 from io import BytesIO
 from typing import List, Dict, Optional
 from utils.db import save_run_summary, upsert_products, fetch_recent_posted_keys, mark_posted_item
@@ -31,6 +32,7 @@ except Exception:
     ImageDraw = None  # type: ignore
     ImageFont = None  # type: ignore
 
+
 def _canonicalize_url(raw_url: str) -> str:
     """
     Normalize URLs so the same item always maps to the same canonical URL,
@@ -43,11 +45,8 @@ def _canonicalize_url(raw_url: str) -> str:
             return ""
         parsed = urlparse(u)
         scheme = parsed.scheme or "https"
-        netloc = parsed.netloc.lower()
-        path = parsed.path
-
-        # eBay URLs sometimes include extra stuff; path already contains the item identity.
-        # Example: /itm/355754892121 or /itm/Title/355754892121
+        netloc = (parsed.netloc or "").lower()
+        path = parsed.path or ""
         canonical = f"{scheme}://{netloc}{path}"
         return canonical
     except Exception:
@@ -62,6 +61,7 @@ def _url_key(canonical_url: str) -> str:
         return hashlib.md5((canonical_url or "").encode("utf-8")).hexdigest()
     except Exception:
         return ""
+
 
 def ensure_dirs():
     pathlib.Path(DOCS_DIR).mkdir(parents=True, exist_ok=True)
@@ -199,7 +199,7 @@ def post_telegram(products: List[Dict], limit=5):
     if not token or not chat_id or not products:
         return
 
-        # Dedupe window (hours): don't repost items already posted recently
+    # Dedupe window (hours): don't repost items already posted recently
     dedupe_hours = 48
     try:
         dedupe_hours = int(str(os.environ.get("TELEGRAM_DEDUPE_HOURS", "48")).strip())
@@ -265,7 +265,7 @@ def post_telegram(products: List[Dict], limit=5):
 
             img = p.get("image_url")
 
-            # Trust text (existing)
+            # Trust text
             fb = p.get("seller_feedback")
             top_rated = p.get("top_rated")
             trust_line = ""
@@ -274,9 +274,7 @@ def post_telegram(products: List[Dict], limit=5):
                 if top_rated:
                     trust_line += " · Top Rated"
 
-            # ==========================
             # NEW trust hooks (condition/shipping/returns)
-            # ==========================
             cond = str(p.get("condition") or "").strip()
             ship = p.get("shipping_cost")
             ra = p.get("returns_accepted")
@@ -299,7 +297,6 @@ def post_telegram(products: List[Dict], limit=5):
             # Build a conversion-style caption (2 variants = light A/B)
             price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else f"{currency} {price}"
 
-            # Variant selection (stable-ish)
             variant = (hash(title_raw) % 2)
 
             if variant == 0:
@@ -338,7 +335,7 @@ def post_telegram(products: List[Dict], limit=5):
             caption = "\n".join(body_lines)
 
             if img:
-                requests.post(
+                resp = requests.post(
                     f"{api}/sendPhoto",
                     data={
                         "chat_id": chat_id,
@@ -349,7 +346,7 @@ def post_telegram(products: List[Dict], limit=5):
                     timeout=20,
                 )
             else:
-                requests.post(
+                resp = requests.post(
                     f"{api}/sendMessage",
                     data={
                         "chat_id": chat_id,
@@ -359,6 +356,26 @@ def post_telegram(products: List[Dict], limit=5):
                     },
                     timeout=20,
                 )
+
+            # If Telegram rejects, don't mark as posted
+            try:
+                if getattr(resp, "status_code", 0) >= 400:
+                    continue
+            except Exception:
+                pass
+
+            # Mark as posted (so we don't repost it next run)
+            try:
+                mark_posted_item(
+                    url_key=str(p.get("_url_key") or ""),
+                    canonical_url=str(p.get("_canonical_url") or ""),
+                    keyword=str(p.get("keyword") or ""),
+                    title=title_raw,
+                    provider=str(p.get("provider") or ""),
+                    source=str(p.get("source") or ""),
+                )
+            except Exception:
+                pass
 
             # After each product message, maybe trigger CTA based on batch + cooldown
             try:
