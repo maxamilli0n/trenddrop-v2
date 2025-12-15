@@ -36,6 +36,47 @@ except Exception:
     ImageFont = None  # type: ignore
 
 
+# ==========================
+# NEW: Human-friendly seller feedback formatting (e.g., 2.3M, 454k)
+# ==========================
+def format_feedback_number(feedback) -> str:
+    """
+    Converts large numbers to human-readable format.
+    Examples:
+      2300000 -> '2.3M'
+      454000  -> '454k' (or '454.0k' depending on decimals)
+    Accepts int/float/str; best-effort.
+    """
+    try:
+        if feedback is None:
+            return ""
+        if isinstance(feedback, str):
+            s = feedback.strip().replace(",", "")
+            if not s:
+                return ""
+            n = float(s)
+        elif isinstance(feedback, (int, float)):
+            n = float(feedback)
+        else:
+            n = float(str(feedback).strip().replace(",", ""))
+    except Exception:
+        return str(feedback)
+
+    if n >= 1_000_000:
+        val = n / 1_000_000.0
+        txt = f"{val:.1f}".rstrip("0").rstrip(".")
+        return f"{txt}M"
+    if n >= 1_000:
+        val = n / 1_000.0
+        txt = f"{val:.1f}".rstrip("0").rstrip(".")
+        return f"{txt}k"
+    # no decimals for small values
+    try:
+        return str(int(n)) if n.is_integer() else str(n)
+    except Exception:
+        return str(n)
+
+
 def _canonicalize_url(raw_url: str) -> str:
     """
     Normalize URLs so the same item always maps to the same canonical URL,
@@ -454,9 +495,6 @@ def _pin_last_message(api_base: str, chat_id: str) -> None:
     Requires the bot to have pin permissions in that chat/channel.
     """
     try:
-        # Get last update and pin it (best effort).
-        # NOTE: Telegram doesn't provide a direct "pin last message" without a message_id.
-        # We try by fetching getUpdates; if not possible (common in channels), we just skip.
         r = requests.get(f"{api_base}/getUpdates", timeout=20)
         if r.status_code != 200:
             return
@@ -470,12 +508,8 @@ def _pin_last_message(api_base: str, chat_id: str) -> None:
         mid = msg.get("message_id")
         cid = msg.get("chat", {}).get("id")
 
-        # Ensure we pin only in the intended chat
         if not mid or not cid:
             return
-        if str(cid) != str(chat_id) and str(chat_id) not in (str(cid),):
-            # For channels, ids can be numeric; if mismatch, bail safely
-            pass
 
         requests.post(
             f"{api_base}/pinChatMessage",
@@ -530,9 +564,6 @@ def post_telegram(products: List[Dict], limit=5):
         max_per_seller = 1
 
     # CTA Controls (Combination D)
-    # - After every N product posts
-    # - And at end of the batch
-    # - And optional pin (best effort)
     cta_every_n_posts = 6
     cta_cooldown_minutes = 180  # 3 hours by default; avoids hourly spam
     try:
@@ -663,16 +694,13 @@ def post_telegram(products: List[Dict], limit=5):
             top_rated = p.get("top_rated")
             trust_line = ""
             if fb:
-                trust_line = f"⭐ Seller feedback: {fb}"
+                # NEW: format feedback like 2.3M / 454k
+                trust_line = f"⭐ Seller feedback: {format_feedback_number(fb)}"
                 if top_rated:
                     trust_line += " · Top Rated"
 
             # ==========================
             # IMPROVED HOOK LINES
-            # ✅ Free returns
-            # 🚚 Free shipping / Shipping: $X.XX
-            # ⏳ Ends soon (within 6h)
-            # 🛒 Listing type
             # ==========================
             hook_lines = []
 
@@ -783,10 +811,6 @@ def post_telegram(products: List[Dict], limit=5):
             except Exception:
                 pass
 
-            # --- CTA behavior (Combination D) ---
-            # 1) keep your existing CTA logic available (but don't spam it every product)
-            # 2) send our reseller CTA every N posts (cooldown-protected)
-            # 3) still allow maybe_send_cta() to run, but only at the same cadence
             if sent_count % int(cta_every_n_posts) == 0:
                 if can_send_cta_now():
                     try:
@@ -795,13 +819,11 @@ def post_telegram(products: List[Dict], limit=5):
                     except Exception:
                         pass
 
-                    # Keep your existing CTA helper too (best-effort)
                     try:
                         maybe_send_cta()
                     except Exception:
                         pass
 
-                    # Optional pin (best effort; usually works in groups, may not in channels)
                     if pin_cta:
                         try:
                             _pin_last_message(api, chat_id)
@@ -820,7 +842,6 @@ def post_telegram(products: List[Dict], limit=5):
         except Exception:
             pass
 
-        # Keep your existing CTA helper too (best-effort)
         try:
             maybe_send_cta()
         except Exception:
