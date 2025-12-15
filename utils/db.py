@@ -335,3 +335,68 @@ def load_clean_products_for_providers(providers: List[str], limit: int = 500) ->
     except Exception as exc:
         print(f"[reports] error loading providers {providers}: {exc}")
         return []
+
+from datetime import timedelta
+
+def fetch_recent_posted_keys(hours: int = 48) -> set:
+    """
+    Return a set of url_key values that were posted within the last `hours`.
+    Uses service-role client, so it works in GitHub Actions.
+    """
+    if hours <= 0:
+        return set()
+    try:
+        client = _get_supabase_admin()
+    except Exception as exc:
+        print(f"[telegram] unable to fetch posted_items keys: {exc}")
+        return set()
+
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=hours)).isoformat()
+    try:
+        res = (
+            client.table("posted_items")
+            .select("url_key")
+            .gte("posted_at", cutoff)
+            .limit(10000)
+            .execute()
+        )
+        rows = res.data or []
+        return set(str(r.get("url_key")) for r in rows if r.get("url_key"))
+    except Exception as exc:
+        print(f"[telegram] error fetching posted_items keys: {exc}")
+        return set()
+
+
+def mark_posted_item(
+    *,
+    url_key: str,
+    canonical_url: str,
+    keyword: str = "",
+    title: str = "",
+    provider: str = "",
+    source: str = "",
+) -> None:
+    """
+    Upsert one posted item row (idempotent) so future runs skip it.
+    """
+    if not url_key or not canonical_url:
+        return
+    try:
+        client = _get_supabase_admin()
+    except Exception as exc:
+        print(f"[telegram] unable to mark posted item: {exc}")
+        return
+
+    payload = {
+        "url_key": url_key,
+        "canonical_url": canonical_url,
+        "posted_at": datetime.now(timezone.utc).isoformat(),
+        "keyword": keyword or "",
+        "title": title or "",
+        "provider": provider or "",
+        "source": source or "",
+    }
+    try:
+        client.table("posted_items").upsert(payload, on_conflict="url_key").execute()
+    except Exception as exc:
+        print(f"[telegram] failed to upsert posted_items: {exc}")
