@@ -1,16 +1,16 @@
 {
-  "updated_at": 1765808274,
+  "updated_at": 1765811883,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer",
+      "keyword": "air fryer deals",
       "title": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
       "price": 39.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/I4IAAeSwL59pQBbd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AI4IAAeSwL59pQBbd&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 909807,
+      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer+deals&hash=item2dd43772e9%3Ag%3AI4IAAeSwL59pQBbd&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 910057,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -40,7 +40,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 909807,
+      "seller_feedback": 909916,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -64,43 +64,44 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "CORSAIR - K70 RGB PRO Full-size Wired Mechanical Cherry MX Speed Linear Switc...",
-      "price": 99.99,
+      "keyword": "air fryer",
+      "title": "Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster",
+      "price": 76.49,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/qSIAAeSwe0ZpOnhV/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/326907871530?_skw=mechanical+keyboard&hash=item4c1d3a412a%3Ag%3AqSIAAeSwe0ZpOnhV&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 909688,
-      "seller_username": "best_buy",
+      "image_url": "https://i.ebayimg.com/images/g/1BkAAeSw5f9pP-cs/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177233742063?_skw=air+fryer&hash=item2943f448ef%3Ag%3A1BkAAeSw5f9pP-cs&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 807163,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
-      "condition": "New",
-      "condition_id": "1000",
+      "condition": "Open box",
+      "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-12-10T16:47:54.000Z",
+      "inserted_at": "2025-06-30T15:02:25.000Z",
       "signals": 9.0,
       "tags": [
-        "mechanical keyboard"
+        "air fryer"
       ],
-      "caption": "CORSAIR - K70 RGB PRO Full-size Wired Mechanical Cherry MX Speed Linear Switc... \u2022 USD 99.99",
-      "headline": "\ud83d\udd79\ufe0f CORSAIR - K70 RGB PRO Full-size Wired Mechanical Cherry MX Speed Linear Switc...",
-      "blurb": "USD 99.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+      "caption": "Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster \u2022 USD 76.49",
+      "headline": "\ud83d\udd25\u2728 Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster",
+      "blurb": "USD 76.49 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
       "keyword": "air fryer deals",
-      "title": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
-      "price": 23.99,
+      "title": "bella 2.0 4qt Air Fryer Oatmilk",
+      "price": 34.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/1DoAAeSw7Z9pP-7n/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/187801803267?_skw=air+fryer+deals&hash=item2bb9dc1a03%3Ag%3A1DoAAeSw7Z9pP-7n&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 806904,
+      "image_url": "https://i.ebayimg.com/images/g/iNwAAeSwvgNpP1OW/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/187822981368?_skw=air+fryer+deals&hash=item2bbb1f40f8%3Ag%3AiNwAAeSwvgNpP1OW&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 807162,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -112,15 +113,15 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-12-02T15:20:49.000Z",
+      "inserted_at": "2025-12-08T16:02:47.000Z",
       "signals": 9.0,
       "tags": [
         "air fryer"
       ],
-      "caption": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking: \u2022 USD 23.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
-      "blurb": "USD 23.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "bella 2.0 4qt Air Fryer Oatmilk \u2022 USD 34.99",
+      "headline": "\ud83d\udd25\u2728 bella 2.0 4qt Air Fryer Oatmilk",
+      "blurb": "USD 34.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -131,7 +132,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/hGwAAeSwL75pP~3I/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3AhGwAAeSwL75pP~3I&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 806904,
+      "seller_feedback": 807162,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -156,33 +157,32 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer deals",
-      "title": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
-      "price": 50.99,
+      "keyword": "air fryer",
+      "title": "Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer",
+      "price": 30.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/NnAAAeSw1hxpP-0P/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer+deals&hash=item2fec6db215%3Ag%3ANnAAAeSw1hxpP-0P&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 806904,
-      "seller_username": "bullseye_deals",
+      "image_url": "https://i.ebayimg.com/images/g/V3QAAeSwx~VpG0t2/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/227001642489?_skw=air+fryer&hash=item34da5a2df9%3Ag%3AV3QAAeSwx~VpG0t2&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 167363,
+      "seller_username": "on.xyz",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
-      "condition": "Open box",
-      "condition_id": "1500",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-11-06T13:43:46.000Z",
+      "inserted_at": "2025-10-01T02:59:25.000Z",
       "signals": 9.0,
       "tags": [
         "air fryer"
       ],
-      "caption": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking \u2022 USD 50.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
-      "blurb": "USD 50.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer \u2022 USD 30.0",
+      "headline": "\ud83d\udd25\u2728 Dash Tasti-Crisp 2.6 Quart Black Ceramic Express Air Fryer",
+      "blurb": "USD 30.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
