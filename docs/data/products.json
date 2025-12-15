@@ -1,6 +1,36 @@
 {
-  "updated_at": 1765772186,
+  "updated_at": 1765775938,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "cordless vacuum deals",
+      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
+      "price": 142.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 2309939,
+      "seller_username": "spreetail",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "Certified - Refurbished",
+      "condition_id": "2000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-11-07T16:03:08.000Z",
+      "signals": 9.0,
+      "tags": [
+        "cordless vacuum"
+      ],
+      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
+      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +40,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1007826,
+      "seller_feedback": 1007831,
       "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
@@ -64,43 +94,13 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 16.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354370,
-      "seller_username": "buildyourbike",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2015-08-27T20:27:44.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "massage gun",
       "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
       "price": 15.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVarF2dGTmj8uj2RTLDZwDAIUWIZPWwYo%2FCVJW41xI2iUQzDYh9NXjnAB1329%2BBjQUZmWLiIi29JdsOikFKSjV47SvO%2BajRC5rp6oz4WOF%2FyLsZBfwJwaG53k8%2FYtyQyMpWes0llPLUJGvRfDk6NbRS4&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 351287,
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVbwt0UbCmkqvJ92kLXO%2FXoU%2B8VuIxk%2Bq9SE3wDv4nSp6Uns4j50MHCq0hapF5snNHzbFpcRS5U1Wd4phVJaPstc6IPGcFBMcZPqFdLU2po%2BBhmWnBUV5qKCD5yXlY6XR%2BzpIZ26KiQIT5vvALRbl1tp&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 351288,
       "seller_username": "gameinfinity",
       "top_rated": false,
       "buying_options": [
@@ -124,63 +124,62 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "price": 93.12,
+      "keyword": "cordless vacuum deals",
+      "title": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
+      "price": 29.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/BGIAAeSwA1BpPusG/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3ABGIAAeSwA1BpPusG&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9eLGtPvTfndROsVjDt5ECVgbbKmyWgxBV2A4zRnkAWclY0hWBohyJHa6n4NlrHN2r%2F2iuLpuUVc1uWCiqW5m5cGFq35ZNEj5NKpW%2FII9hJmW8dcAzAorR2KM%2F3iun79jSa6d9UqeuMSWhzYoh1RtwtVgDWJ03yEvsBc83ug%2B8sU9g%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 211821,
-      "seller_username": "cyclingdeal",
+      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 107791,
+      "seller_username": "dd707city",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "Brand New",
+      "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 33.26,
+      "shipping_cost": 16.88,
       "returns_accepted": null,
-      "inserted_at": "2020-08-24T11:46:29.000Z",
+      "inserted_at": "2025-11-04T21:44:40.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "cordless vacuum"
       ],
-      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 93.12",
-      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "blurb": "USD 93.12 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 29.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Holiday Xmas Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
+      "blurb": "USD 29.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike",
-      "price": 40.75,
+      "keyword": "cordless vacuum",
+      "title": "Shark IZ340H Pet Pro Cordless Stick Vacuum (Certified Refurbished)",
+      "price": 123.49,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/tt0AAOSwjBdgPa9D/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/162716006419?_skw=bike+light+deals&hash=item25e2a13813%3Ag%3Att0AAOSwjBdgPa9D&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UaEMFB%2BM65kho%2FcdAgDs0dzL2%2B0yHMPS44CYt2dItYWnOz9TCo7ylwxPWI0NkGFTuRVctDDRA%2FEnnUKT8cFSqpcYgRi1j7gTVYlhoPoFjkRpPVsc157MXD1gjyyWAcg4ubHs4l0jqFyIo2l1%2FRuQoJOimepkrJTf5%2FJGHXfzjspFzoR6wtlgbgP1IRqiMMpHDZLwXQQ6S99BOLYfTfL%2Bp2WBBLsiGmIfobtfKaehfFmyKIfKttrUp%2BxlcCuBn6K2hJR7Ve9yO79qaMJOpEuov7PVaZX5DImcJT5KLhtXuMk9g%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 171266,
-      "seller_username": "formula-j87",
+      "image_url": "https://i.ebayimg.com/images/g/~PYAAOSwFqVjfpck/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/275552007289?_skw=cordless+vacuum&hash=item40282df479%3Ag%3A~PYAAOSwFqVjfpck&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 96806,
+      "seller_username": "goodasnewelectronics",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
-      "condition": "New",
-      "condition_id": "1000",
+      "condition": "Certified - Refurbished",
+      "condition_id": "2000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2017-10-17T19:54:56.000Z",
+      "inserted_at": "2022-11-23T22:00:17.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "cordless vacuum"
       ],
-      "caption": "Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike \u2022 USD 40.75",
-      "headline": "\ud83d\udd25\u2728 Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike",
-      "blurb": "USD 40.75 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Shark IZ340H Pet Pro Cordless Stick Vacuum (Certified Refurbished) \u2022 USD 123.49",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark IZ340H Pet Pro Cordless Stick Vacuum (Certified Refurbished)",
+      "blurb": "USD 123.49 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
