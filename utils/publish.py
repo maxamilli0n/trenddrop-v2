@@ -469,13 +469,17 @@ def _build_reseller_cta_text() -> str:
     return "\n".join(lines)
 
 
-def _send_reseller_cta(api_base: str, chat_id: str) -> None:
+# ==========================
+# CHANGE: return bool so we only mark CTA cooldown when Telegram accepts it
+# ==========================
+def _send_reseller_cta(api_base: str, chat_id: str) -> bool:
     """
     Posts the CTA message (HTML) to the Telegram target.
+    Returns True if Telegram accepted it (best-effort).
     """
     try:
         text = _build_reseller_cta_text()
-        requests.post(
+        r = requests.post(
             f"{api_base}/sendMessage",
             data={
                 "chat_id": chat_id,
@@ -485,8 +489,9 @@ def _send_reseller_cta(api_base: str, chat_id: str) -> None:
             },
             timeout=20,
         )
+        return bool(getattr(r, "status_code", 0) and r.status_code < 400)
     except Exception:
-        return
+        return False
 
 
 def _pin_last_message(api_base: str, chat_id: str) -> None:
@@ -522,6 +527,13 @@ def _pin_last_message(api_base: str, chat_id: str) -> None:
         )
     except Exception:
         return
+
+
+# ==========================
+# NEW: persistent CTA cooldown key per chat (stored using your existing DB table)
+# ==========================
+def _cta_key(chat_id: str) -> str:
+    return f"CTA::{str(chat_id)}"
 
 
 def post_telegram(products: List[Dict], limit=5):
@@ -668,6 +680,19 @@ def post_telegram(products: List[Dict], limit=5):
         nonlocal last_cta_ts
         last_cta_ts = time.time()
 
+    # ==========================
+    # NEW: persistent cooldown across runs (uses your DB keys)
+    # We convert minutes -> hours for fetch_recent_posted_keys()
+    # ==========================
+    cta_cooldown_hours = max(1, int((int(cta_cooldown_minutes) + 59) // 60))
+    cta_recent_keys = fetch_recent_posted_keys(cta_cooldown_hours) or []
+    cta_recently_sent = (_cta_key(chat_id) in set(cta_recent_keys))
+
+    try:
+        print(f"[telegram] cta_recently_sent={cta_recently_sent} cooldown_minutes={cta_cooldown_minutes}")
+    except Exception:
+        pass
+
     sent_count = 0
     posted_any = False
 
@@ -812,9 +837,24 @@ def post_telegram(products: List[Dict], limit=5):
                 pass
 
             if sent_count % int(cta_every_n_posts) == 0:
-                if can_send_cta_now():
+                if (not cta_recently_sent) and can_send_cta_now():
                     try:
-                        _send_reseller_cta(api, chat_id)
+                        ok = _send_reseller_cta(api, chat_id)
+                        if ok:
+                            # NEW: persist cooldown across runs
+                            try:
+                                mark_posted_item(
+                                    url_key=_cta_key(chat_id),
+                                    canonical_url="cta",
+                                    keyword="cta",
+                                    title="telegram_cta",
+                                    provider="telegram",
+                                    source="telegram",
+                                )
+                            except Exception:
+                                pass
+                            cta_recently_sent = True
+
                         mark_cta_sent()
                     except Exception:
                         pass
@@ -834,10 +874,24 @@ def post_telegram(products: List[Dict], limit=5):
         except Exception:
             continue
 
-    # End-of-batch CTA (cooldown protected)
-    if posted_any and can_send_cta_now():
+    # End-of-batch CTA (cooldown protected + persistent)
+    if posted_any and (not cta_recently_sent) and can_send_cta_now():
         try:
-            _send_reseller_cta(api, chat_id)
+            ok = _send_reseller_cta(api, chat_id)
+            if ok:
+                try:
+                    mark_posted_item(
+                        url_key=_cta_key(chat_id),
+                        canonical_url="cta",
+                        keyword="cta",
+                        title="telegram_cta",
+                        provider="telegram",
+                        source="telegram",
+                    )
+                except Exception:
+                    pass
+                cta_recently_sent = True
+
             mark_cta_sent()
         except Exception:
             pass
