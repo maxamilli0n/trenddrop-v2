@@ -1,36 +1,6 @@
 {
-  "updated_at": 1765887985,
+  "updated_at": 1765892025,
   "products": [
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "price": 142.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2310070,
-      "seller_username": "spreetail",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Certified - Refurbished",
-      "condition_id": "2000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-11-07T16:03:08.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -40,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Is8AAeSwkR5pNxql/s-l225.jpg",
       "url": "https://www.ebay.com/itm/326829859786?_skw=mechanical+keyboard&hash=item4c1893e3ca%3Ag%3AIs8AAeSwkR5pNxql&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 914172,
+      "seller_feedback": 914185,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -64,12 +34,42 @@
     {
       "source": "ebay",
       "provider": "ebay",
+      "keyword": "smart light strip deals",
+      "title": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "price": 28.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/SBIAAOSw~ztbLPfb/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/312169544455?_skw=smart+light+strip+deals&hash=item48aec13b07%3Ag%3ASBIAAOSw~ztbLPfb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uac%2BgwIQR8eulJ%2FXMnE%2FMJOsPduhAc8A4Tpyf0j4S7h%2BBjV1aB03BU9Zh72jLb%2F6Q2f1l3Td0N6Z4IbR6I6aCF5oGzmjFO8xyOcrrsbhndFAsPC5zggnTnUfIsFoSkKgQ1US%2FDzpaSuhFFd1EW3a6xw0l8X%2Fh7kc7vkpIGoKi2u6wsj7mfYPNP8IX2aAv0ERFsbrxgG--qxitoSyVb0g97uQ8a0z6mT2YCsB75LwzPXCyRHLFf3nxZC%2BRb8t292VP9v31L0TGurg6vU%2FLzFkhLqhr2W%2FypdkjYlNQ%2F51pB8Hw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
+      "seller_feedback": 859506,
+      "seller_username": "valuebuybattery",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2018-06-22T13:25:28.000Z",
+      "signals": 9.0,
+      "tags": [
+        "smart light strip"
+      ],
+      "caption": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit \u2022 USD 28.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "blurb": "USD 28.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
       "keyword": "mechanical keyboard",
       "title": "Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
       "price": 39.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/R9MAAOSwPAVmWOIN/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/355754892121?_skw=mechanical+keyboard&hash=item52d4a4db59%3Ag%3AR9MAAOSwPAVmWOIN&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ub0ZSwTuokAZtff%2FwIYUKk9I0SPQVfUOmQ4NxZ%2Fe3e2Pry9WWYBvm6VOl5TshuBPa5wWgdKDsZ%2FdD2K2yc8CSC4fsl1X0vLSJHV%2FVl7lAr57RxJ9u%2B8OvUHF0%2F2R7v5uQ3IHc1PLymZbfKYfdZR49TJLnVSlruC8VgqXWpTv9TyM4hpC394OrF%2BXVmvUimzZc9w5qakUbvkW7qIAT8q6WP%2B8JeljBIKrgJQejBjGNiyM1Y77%2BGnHs76Ym%2FGRKFH2vMuHvEdZ9cMURUc%2FSxElMx64j%2BroW2YmpHLZxCdQmTrSA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "url": "https://www.ebay.com/itm/355754892121?_skw=mechanical+keyboard&hash=item52d4a4db59%3Ag%3AR9MAAOSwPAVmWOIN&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ub0ZSwTuokAZtff%2FwIYUKk9I0SPQVfUOmQ4NxZ%2Fe3e2Pry9WWYBvm6VOl5TshuBPa5wWgdKDsZ%2FdD2K2yc8CSC4fsl1X0vLSJHV%2FVl7lAr57RxJ9u%2B8OvUHF0%2F2R7v5uQ2EWlA1%2BtOQa0t8n%2F3AVuNBNp4yPy0HKjddv5AaECeFKa1Ujm3G4fKtJXJphGkmr5LEs93hlbr7o3wHyy32jqllB3wmEMhGgnF52RuH0IYA%2FFBah%2Fdj7FZYyMzhtElRUtRo%2BC%2FWpK5HZX7%2FOuNQQC86MwNWI2DKWqClaxG6inJMsg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
       "seller_feedback": 454372,
       "seller_username": "bigdeals",
       "top_rated": false,
@@ -90,6 +90,67 @@
       "headline": "\ud83d\udd79\ufe0f Logitech POP Keys Wireless Mechanical Keyboard for Windows/macOS/iPadOS/Android",
       "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "bike light deals",
+      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "price": 16.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 354381,
+      "seller_username": "buildyourbike",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2015-08-27T20:27:44.000Z",
+      "signals": 9.0,
+      "tags": [
+        "bike light"
+      ],
+      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
+      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "bike light deals",
+      "title": "Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike",
+      "price": 40.75,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/tt0AAOSwjBdgPa9D/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/162716006419?_skw=bike+light+deals&hash=item25e2a13813%3Ag%3Att0AAOSwjBdgPa9D&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UaEMFB%2BM65kho%2FcdAgDs0dzL2%2B0yHMPS44CYt2dItYWnOz9TCo7ylwxPWI0NkGFTuRVctDDRA%2FEnnUKT8cFSqpcYgRi1j7gTVYlhoPoFjkRpPVsc157MXD1gjyyWAcg4uZdT47auorNnygJ34W%2B8T2kgfrzZZsyie1YFZXoa92Y%2FO0KKdUSivehLLpCdYxUZDY9Ifrdh3iUKyIsH6BCAbuCIQiL0XSMCIup3WWRgksILzzCYQSvxZSzGB5HCZvSPRuWtc54gvMCMgoXq2FEoa3x44UhXpI%2BrhLaPALFh%2Bek9Q%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 171390,
+      "seller_username": "formula-j87",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2017-10-17T19:54:56.000Z",
+      "signals": 9.0,
+      "tags": [
+        "bike light"
+      ],
+      "caption": "Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike \u2022 USD 40.75",
+      "headline": "\ud83d\udd25\u2728 Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike",
+      "blurb": "USD 40.75 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -120,66 +181,6 @@
       "headline": "\ud83d\udd79\ufe0f LED Mechanical Gaming Keyboard Red Switches 104 Backlit Keys Pro Series",
       "blurb": "USD 23.06 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
-      "price": 31.49,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/MbYAAOSwXolnnFGN/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/306077311823?_skw=mechanical+keyboard&hash=item4743a1234f%3Ag%3AMbYAAOSwXolnnFGN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 114119,
-      "seller_username": "mobileshark",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Open box",
-      "condition_id": "1500",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-01-31T04:30:37.000Z",
-      "signals": 9.0,
-      "tags": [
-        "mechanical keyboard"
-      ],
-      "caption": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX \u2022 USD 31.49",
-      "headline": "\ud83d\udd79\ufe0f OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
-      "blurb": "USD 31.49 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "price": 29.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 107804,
-      "seller_username": "dd707city",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 16.88,
-      "returns_accepted": null,
-      "inserted_at": "2025-11-04T21:44:40.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 29.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Holiday Xmas Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "blurb": "USD 29.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
