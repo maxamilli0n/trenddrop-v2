@@ -1,5 +1,5 @@
 {
-  "updated_at": 1765880126,
+  "updated_at": 1765883569,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1008920,
+      "seller_feedback": 1008935,
       "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
@@ -34,13 +34,103 @@
     {
       "source": "ebay",
       "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black",
+      "price": 49.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/qLAAAeSwvuppPtFE/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205118420012?_skw=air+fryer+deals&hash=item2fc202b42c%3Ag%3AqLAAAeSwvuppPtFE&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 914157,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2024-11-21T02:09:32.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black \u2022 USD 49.99",
+      "headline": "\ud83d\udd25\u2728 bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black",
+      "blurb": "USD 49.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 914156,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "smart light strip deals",
+      "title": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "price": 28.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/SBIAAOSw~ztbLPfb/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/312169544455?_skw=smart+light+strip+deals&hash=item48aec13b07%3Ag%3ASBIAAOSw~ztbLPfb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uac%2BgwIQR8eulJ%2FXMnE%2FMJOsPduhAc8A4Tpyf0j4S7h%2BBjV1aB03BU9Zh72jLb%2F6Q2f1l3Td0N6Z4IbR6I6aCF5oGzmjFO8xyOcrrsbhndFAsPC5zggnTnUfIsFoSkKgQ1rIHVM2HxfXBhINgoBPdoIYgWyIh9AED8tGW%2BOaDQVtT8ImszaEk%2BhG0H3dFPGzydx%2BrRKhFeCW2p8xi%2Fwj%2FyIA2FeZpEHEWW%2BMqyFJ40FNYI%2FoeGokAwhBV%2BeaXF0z9Pf1wxCcs%2F5nBE6vKclSvlRKFS5pXiXq5XqHUQRg3BRwg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
+      "seller_feedback": 859506,
+      "seller_username": "valuebuybattery",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2018-06-22T13:25:28.000Z",
+      "signals": 9.0,
+      "tags": [
+        "smart light strip"
+      ],
+      "caption": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit \u2022 USD 28.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "blurb": "USD 28.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
       "keyword": "pickleball paddle deals",
       "title": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
       "price": 17.0,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/jJwAAeSwTDhpO9xf/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AjJwAAeSwTDhpO9xf&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 810968,
+      "seller_feedback": 811035,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -65,122 +155,33 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
-      "price": 16.99,
+      "keyword": "air fryer deals",
+      "title": "bella 2.0 4qt Air Fryer Oatmilk",
+      "price": 34.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 394343,
-      "seller_username": "hiparts",
+      "image_url": "https://i.ebayimg.com/images/g/~nEAAeSw1HhpQM5u/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/187822981368?_skw=air+fryer+deals&hash=item2bbb1f40f8%3Ag%3A~nEAAeSw1HhpQM5u&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 811035,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2017-09-19T04:14:30.000Z",
+      "inserted_at": "2025-12-08T16:02:47.000Z",
       "signals": 9.0,
       "tags": [
-        "portable monitor"
+        "air fryer"
       ],
-      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "caption": "bella 2.0 4qt Air Fryer Oatmilk \u2022 USD 34.99",
+      "headline": "\ud83d\udd25\u2728 bella 2.0 4qt Air Fryer Oatmilk",
+      "blurb": "USD 34.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "price": 29.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 394343,
-      "seller_username": "hiparts",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2017-03-10T15:42:19.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 29.99",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "price": 15.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVbdx0Ec1QFwPMtarqqBfho1%2BS3v2LXZRW3AjynKetHb3XXj21LmxOzlt9o%2BJt6%2BQQ9O0E08viJs6h68Gphn2%2F7KKBideYNW6CbZusVjFWKHKQDMOvzfTnZmY8z4VYb8a1zN8e9BXSpYK%2B5JHSF63geA&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 351397,
-      "seller_username": "gameinfinity",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2023-04-13T18:58:49.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
-      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2BxurzqVod3JAVLCjyDBjlhadlctSDcLZ9bK2KDoS1v2FNtYsEpS0lJC8vLyr9ee4golFyT6TWb%2B9FBVzvgjH5J8SVcSIdzGvkfh3u1jzCOF8mt%2FpmtzV7UxGjvjvnnrW%2B3iiqUrpi%2BZeA5Dvc7p6QWGNSVpto8U1%2BsAvF69nJ9CYA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283329,
-      "seller_username": "sale2015express",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2020-01-12T18:12:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "rgb lamp"
-      ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
