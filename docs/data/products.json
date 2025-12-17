@@ -1,47 +1,78 @@
 {
-  "updated_at": 1765943425,
+  "updated_at": 1765944916,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "price": 28.95,
+      "keyword": "cordless vacuum deals",
+      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
+      "price": 142.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGO6WdGSfcwaaFBOdnooeM4YUmyQ%2B8Y6b9tz1seoDVJ7SgGUUDyZbsekYuuMZ9KSsK5UEMFfbYgqYW%2FBwhTM6rTOpwLRj59GGMfuW3wY11mmhmRueTtVwKgmzONPDgHNmsvUCsbA1oPu4NU62KM%2BFqN40a%2FYJjtTmu3bB9wpVjh8rA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1009621,
-      "seller_username": "theperfectpart",
+      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 2310149,
+      "seller_username": "spreetail",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
+      ],
+      "condition": "Certified - Refurbished",
+      "condition_id": "2000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-11-07T16:03:08.000Z",
+      "signals": 9.0,
+      "tags": [
+        "cordless vacuum"
+      ],
+      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
+      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "pickleball paddle deals",
+      "title": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "price": 17.0,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/jJwAAeSwTDhpO9xf/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AjJwAAeSwTDhpO9xf&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 813782,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "inserted_at": "2025-06-24T19:19:53.000Z",
       "signals": 9.0,
       "tags": [
-        "massage gun"
+        "pickleball paddle"
       ],
-      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "caption": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0 \u2022 USD 17.0",
+      "headline": "\ud83d\udd25\u2728 GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "blurb": "USD 17.00 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
-      "price": 115.99,
+      "keyword": "best cordless vacuum",
+      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "price": 45.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Is8AAeSwkR5pNxql/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/326829859786?_skw=mechanical+keyboard&hash=item4c1893e3ca%3Ag%3AIs8AAeSwkR5pNxql&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 915390,
-      "seller_username": "best_buy",
+      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 571763,
+      "seller_username": "vipoutlet",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -51,27 +82,27 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-10-22T15:51:38.000Z",
+      "inserted_at": "2025-07-30T20:28:05.000Z",
       "signals": 9.0,
       "tags": [
-        "mechanical keyboard"
+        "cordless vacuum"
       ],
-      "caption": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro... \u2022 USD 115.99",
-      "headline": "\ud83d\udd79\ufe0f Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
-      "blurb": "USD 115.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "pet hair trimmer deals",
-      "title": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
-      "price": 17.95,
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "price": 16.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/JacAAOSwuIRdJg8G/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/352493815621?_skw=pet+hair+trimmer+deals&hash=item521244c745%3Ag%3AJacAAOSwuIRdJg8G&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbXLNVeDrBaHNcxVa3%2FkQwf9K%2Bd7Qx4gPD%2FhncG8zMkm6b5lKTSeOdFxCCxJYiDhYwqiqqt8TDJDgYv0Ab6lse8jhjIIsuFzDA7E22zAOJypQj%2F79YXxq29J9X0b2CpCkF3brSfVc7eGo83oAZWtJktq4yrhm57n9ZCswfztTbeW2ypokyKkkJkkdKeTLXw2Aksu4bK5kAe4dlmuqEq4SGSLVuZXV0Uu28Pi7uZt%2FPrR3ZtvwA0YTNgFXXx--kcB3ipzknR6MOPcABLsLXJsdNENd2kX8FggV%2FWVl181i8MAA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pet_hair_trimmer&toolid=10001",
-      "seller_feedback": 708939,
-      "seller_username": "inkcredibleprinting",
+      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394400,
+      "seller_username": "hiparts",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -81,14 +112,44 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2018-10-22T19:20:49.000Z",
+      "inserted_at": "2017-09-19T04:14:30.000Z",
       "signals": 9.0,
       "tags": [
-        "pet hair trimmer"
+        "portable monitor"
       ],
-      "caption": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper \u2022 USD 17.95",
-      "headline": "\ud83d\udd25\u2728 Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
-      "blurb": "USD 17.95 steal. Limited stock\u2014grab it now!",
+      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "price": 29.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394400,
+      "seller_username": "hiparts",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2017-03-10T15:42:19.000Z",
+      "signals": 9.0,
+      "tags": [
+        "portable monitor"
+      ],
+      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 29.99",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "blurb": "USD 29.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
@@ -100,7 +161,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
       "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354397,
+      "seller_feedback": 354398,
       "seller_username": "buildyourbike",
       "top_rated": false,
       "buying_options": [
@@ -119,66 +180,6 @@
       "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
       "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
       "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "price": 15.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVYBlxf1GdguYKY2W%2FNcdJ%2BpSjnlp9KdVGv3%2BXG2jCiaBwgiHA5zFf3raXWiyywO9O1dcCLbHiP%2FOzAwx%2BRumFGIIlVP%2FQQOXu%2BDSxb%2BN2x%2BWVDWXnRWLFLZtWg9FcFOCpbG%2B1iZ8oLTjcsYRhAOon2z&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 351487,
-      "seller_username": "gameinfinity",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2023-04-13T18:58:49.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
-      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
-      "price": 42.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/qxUAAeSwwuJpQXZo/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136370676506?_skw=massage+gun&hash=item1fc053631a%3Ag%3AqxUAAeSwwuJpQXZo&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZD6IRZPJf08ZM0R3YpeSU7d7kZY0IwpGIyTF5zvh1CPPh%2FZdOBQKFoQyynljyZIHrxkv0V2Dbmjg6w0RcncRZ3Ld3NfubAha0QrGaZEBz6BwWbZ6PQzyD1ku2wGvPSYvxjdnat1DspB9HmcYuneHJXh2URVrfThlwZzvlDlmtVrotIiywnRbJfnknnjf2C%2BYMOJ1B04pKnM%2FT4o%2Bd1KDrzQe7iVIe1lcqT7WcUHvK1TXNUSd%2FzQVVoGuuWwBCNi2b18B5rmCwHZQJfZvfUCWALbOFd6Kiz9oUAEHD5s4xyoQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 178863,
-      "seller_username": "tradeportusa",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-08-26T14:30:59.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain- \u2022 USD 42.99",
-      "headline": "\ud83d\udd25\u2728 Exerscribe Vybe Pro Muscle Massage Gun for Athletes for Body,Back,Shoulder Pain-",
-      "blurb": "USD 42.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
