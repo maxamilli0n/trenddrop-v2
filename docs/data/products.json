@@ -1,6 +1,66 @@
 {
-  "updated_at": 1765963210,
+  "updated_at": 1765966546,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "best wireless charger",
+      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
+      "price": 17.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 915744,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 5.99,
+      "returns_accepted": null,
+      "inserted_at": "2024-08-13T15:00:21.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
+      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
+      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "mechanical keyboard",
+      "title": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
+      "price": 115.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/Is8AAeSwkR5pNxql/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/326829859786?_skw=mechanical+keyboard&hash=item4c1893e3ca%3Ag%3AIs8AAeSwkR5pNxql&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 915744,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-10-22T15:51:38.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro... \u2022 USD 115.99",
+      "headline": "\ud83d\udd79\ufe0f Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
+      "blurb": "USD 115.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +70,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 915743,
+      "seller_feedback": 915744,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -34,76 +94,74 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer deals",
-      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
-      "price": 35.69,
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
+      "price": 19.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/fvQAAeSwSIRpQljs/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3AfvQAAeSwSIRpQljs&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 814300,
-      "seller_username": "bullseye_deals",
+      "image_url": "https://i.ebayimg.com/images/g/GA8AAeSw1PVpQcCg/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGA8AAeSw1PVpQcCg&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861688,
+      "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
-      "condition": "New \u2013 Open box",
-      "condition_id": "1500",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-11-17T13:49:44.000Z",
+      "inserted_at": "2025-02-12T17:52:17.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "wireless charger"
       ],
-      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
-      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
+      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
-      "price": 50.99,
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
+      "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/aNIAAeSwv3JpQaED/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer&hash=item2fec6db215%3Ag%3AaNIAAeSwv3JpQaED&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 814300,
-      "seller_username": "bullseye_deals",
+      "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD9Tdi1pN2RrH0XaEfUtNIlzftTtxz65ngkP2oVwAHqqnWUNZUfJyssAS702BZzkIT9GgpAAvL8Hi2y5JopjcQQXdm4Se5rO3vw%2BX9KYQe4ld915ymWQdA9khF0Nfj7SLuOap%2BSVukOPKD0NEJ24VHkJSWX62Tp1JS4LOzYaQThCsg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861688,
+      "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
       "condition": "Open box",
       "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-11-06T13:43:46.000Z",
+      "inserted_at": "2025-04-08T17:10:09.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "wireless charger"
       ],
-      "caption": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking \u2022 USD 50.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
-      "blurb": "USD 50.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 16.99,
+      "keyword": "wireless charger deals",
+      "title": "Mophie 15W Wireless Charging Stand - Black",
+      "price": 29.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354403,
-      "seller_username": "buildyourbike",
+      "image_url": "https://i.ebayimg.com/images/g/1G4AAeSwy4ppQKyy/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/146305229222?_skw=wireless+charger+deals&hash=item221078a1a6%3Ag%3A1G4AAeSwy4ppQKyy&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYT6u9Me%2Fr0u9W8OsJxqX%2FPkkO7abK7hqHzyNj%2Fh6TWN0VDsEkZjoOhD0uAa1F4b9rXX9chPv3reFxo6Dg0P3c7C7qJNVJe4Hcy6LmpLPgWtSkA%2FVPY2bk6XD5ohKbOXna%2FAz7NMFPAjCZcNRo46u%2Bz%2B5mGsH9MV65%2FQKKTb3S%2F27tFQ%2BH2ZOBnMMJShz2q%2Bxo6yhI1LY3%2F27L6tcMLSLQ%2FC9czRendX7lMAhy0LAan%2F44griYx0WUo1OW9JJf4MnAiIwy3pJrVw%2FI2tso9ur1zbq5cgp2yEsvPtNS2YkhViA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861688,
+      "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -113,75 +171,14 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2015-08-27T20:27:44.000Z",
+      "inserted_at": "2024-12-30T19:07:49.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "wireless charger"
       ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 16.99",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 16.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "price": 92.84,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/7pkAAeSwnv1pQYu3/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3A7pkAAeSwnv1pQYu3&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9cQXQIwpfhfFtlwCCcMV0CE2p0LGEE8LLQbl5D4PGzP9C%2FIjtpFJIKMMzQrDVErO35LAcIj2dnMXacBtxecP9aOBW8uiiUdH%2BIQM%2BF2ppHwyD%2F4iVYQKUUU5deLqrC%2Ba6UJODpt0UMqwJ0%2Fcj5dHDUvRKRx0NXSV8BqpKgAoUjSRw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 211828,
-      "seller_username": "cyclingdeal",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Brand New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 33.16,
-      "returns_accepted": null,
-      "inserted_at": "2020-08-24T11:46:29.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 92.84",
-      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "blurb": "USD 92.84 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike",
-      "price": 40.75,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/tt0AAOSwjBdgPa9D/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/162716006419?_skw=bike+light+deals&hash=item25e2a13813%3Ag%3Att0AAOSwjBdgPa9D&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UaEMFB%2BM65kho%2FcdAgDs0dzL2%2B0yHMPS44CYt2dItYWnOz9TCo7ylwxPWI0NkGFTuRVctDDRA%2FEnnUKT8cFSqpcYgRi1j7gTVYlhoPoFjkRpPVsc157MXD1gjyyWAcg4uZ3%2FVuafEI6eS%2BPvwbWbYJvnzmvkQHV1ZgxSzbmjrpVJTz7MXTaKRGvjD7JK%2FnQHwL8I81LRJ%2BL2FX9Fdm7kWwSsX1nwN9kPpgGlwB%2FJxXzBHsE3vwUJPaJf8njuR1PfIwi40%2BDhO6p77N7jMBch%2FaVmfW8pMhrvWIBkg2FKICjew%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 171501,
-      "seller_username": "formula-j87",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2017-10-17T19:54:56.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike \u2022 USD 40.75",
-      "headline": "\ud83d\udd25\u2728 Sylvania Silverstar 9005 HB3 65W Two Bulbs Head Light Replacement ATV UTV Bike",
-      "blurb": "USD 40.75 steal. Limited stock\u2014grab it now!",
+      "caption": "Mophie 15W Wireless Charging Stand - Black \u2022 USD 29.95",
+      "headline": "\ud83d\udd25\u2728 Mophie 15W Wireless Charging Stand - Black",
+      "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
