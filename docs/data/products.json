@@ -1,16 +1,46 @@
 {
-  "updated_at": 1766002516,
+  "updated_at": 1766005975,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 17.99,
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 915941,
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNtKmxY55JL4dQ1V7gGUav63mFh6cveR90X7eXs89s%2Bw4QAZfr%2FHBoCy60jaKBtjv5h8JybfP89ON2Tw%2B6cjSlwppmgrQYstycPT4nuHZiWCuleQpoH1ZhXsVokwa2zpEoTKwDvcwLWLU0FLdOjMcvfFfmbCdbvHwr4r9fj4UYQug%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1010112,
+      "seller_username": "theperfectpart",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "price": 39.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/AVAAAeSwVERpQp1~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AAVAAAeSwVERpQp1~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 915989,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -19,16 +49,46 @@
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 5.99,
+      "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-08-13T15:00:21.000Z",
+      "inserted_at": "2024-11-21T02:09:27.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "air fryer"
       ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
+      "caption": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel \u2022 USD 39.99",
+      "headline": "\ud83d\udd25\u2728 bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black",
+      "price": 49.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/qLAAAeSwvuppPtFE/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205118420012?_skw=air+fryer&hash=item2fc202b42c%3Ag%3AqLAAAeSwvuppPtFE&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 915989,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2024-11-21T02:09:32.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black \u2022 USD 49.99",
+      "headline": "\ud83d\udd25\u2728 bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black",
+      "blurb": "USD 49.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
@@ -40,7 +100,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Is8AAeSwkR5pNxql/s-l225.jpg",
       "url": "https://www.ebay.com/itm/326829859786?_skw=mechanical+keyboard&hash=item4c1893e3ca%3Ag%3AIs8AAeSwkR5pNxql&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 915941,
+      "seller_feedback": 915989,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -64,14 +124,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "price": 18.95,
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/QSUAAeSwzltpO9to/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3AQSUAAeSwzltpO9to&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjQ%2BuTiG8jDSObUPSPza%2B6QDWWn9giWlTRuLd1KPMogqShxSwf1IJ6etuxytCBOATqrzZCcia4O6Ki2VevrylQ%2B2ilAp4z3d4euhG7c4TH5Q1O93jzL73J8IsYfZ37zIJ3KgL1yFO9nBcxFSVg9GxO3uv48P8VEOFefQvpBw1O5nekYqwHEkpSsupXKctB83gPmB%2BRz%2FJdj0JtLn5rRsBQSCFLhXPovbD7QN2Dyasxuz5%2FlYqC4oXnOJiapUF4CZaBnNP25bWB7iZiMogyFzFScpYunYHCjhV2zob1a7CzkA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861734,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 915989,
+      "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -81,105 +141,46 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-06-07T11:43:55.000Z",
+      "inserted_at": "2025-10-22T15:52:43.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "air fryer"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "price": 19.95,
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 35.69,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/GA8AAeSw1PVpQcCg/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGA8AAeSw1PVpQcCg&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861734,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/P~YAAeSwKrJpQvKo/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177585383645?_skw=air+fryer+deals&hash=item2958e9e8dd%3Ag%3AP~YAAeSwKrJpQvKo&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 817075,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-02-12T17:52:17.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "price": 28.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD81NaKKCEUMOW5%2FDIdD%2FOmwDKS4BjjBm7njh18%2BG7zhhxjD6BhxW7N5bXbb8uNt8TuSgAw2%2Fqf%2FQ40449wv7N4qogz2Qgx940VqLGCA7JNExpDNPt5ZpCLCfnP%2BoxsPREnXOo2KpTY9oVZlku6LQ9fU2zd6RvqWfSJufDTQgNnZaQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861734,
-      "seller_username": "a4c",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Open box",
+      "condition": "New \u2013 Open box",
       "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-04-08T17:10:09.000Z",
+      "inserted_at": "2025-11-17T13:49:44.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "air fryer"
       ],
-      "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Mophie 15W Wireless Charging Stand - Black",
-      "price": 29.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/1G4AAeSwy4ppQKyy/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146305229222?_skw=wireless+charger+deals&hash=item221078a1a6%3Ag%3A1G4AAeSwy4ppQKyy&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYT6u9Me%2Fr0u9W8OsJxqX%2FPkkO7abK7hqHzyNj%2Fh6TWN0VDsEkZjoOhD0uAa1F4b9rXX9chPv3reFxo6Dg0P3c7C7qJNVJe4Hcy6LmpLPgWtSkA%2FVPY2bk6XD5ohKbOXnYVFfTa49AQsinZr9j8IlTogD8w5w%2FcZj9AcBpk9lyx6BNf259L5Ey%2BZN8266FGbQ1POsbjiNKVznUulXY52FxhrtJuLMKzpsQZzAMQ3Ft%2FPNdSA0N0hjP2bQiyEQcIn8%2FDkBKfD%2FbICQQFdcn%2FSsKVIXpV37OwgTA2A9cqcFYpZw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861734,
-      "seller_username": "a4c",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2024-12-30T19:07:49.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Mophie 15W Wireless Charging Stand - Black \u2022 USD 29.95",
-      "headline": "\ud83d\udd25\u2728 Mophie 15W Wireless Charging Stand - Black",
-      "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 35.69",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 35.69 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
