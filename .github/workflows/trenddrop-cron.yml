@@ -30,6 +30,15 @@ jobs:
       TELEGRAM_BOT_TOKEN:        ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID:          ${{ secrets.TELEGRAM_CHAT_ID }}
 
+      # ==== ADD: Gumroad + redirect (so CTA + click_url works in Actions) ====
+      GUMROAD_CTA_URL:          ${{ secrets.GUMROAD_CTA_URL }}
+      CLICK_REDIRECT_BASE:      ${{ secrets.CLICK_REDIRECT_BASE }}
+
+      # ==== ADD: CTA throttle (so the Gumroad CTA stops spamming) ====
+      TELEGRAM_CTA_COOLDOWN_MINUTES: "720"   # 12 hours
+      TELEGRAM_CTA_EVERY_N_POSTS:    "999"   # basically disables “every N posts”
+      TELEGRAM_PIN_CTA:              "0"
+
       # ==== OPTIONAL REPO VARIABLES (Settings → Secrets and variables → Variables) ====
       TREND_TOPICS_LIMIT:     ${{ vars.TREND_TOPICS_LIMIT }}
       TREND_PER_PAGE:         ${{ vars.TREND_PER_PAGE }}
