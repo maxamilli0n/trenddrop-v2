@@ -1,6 +1,36 @@
 {
-  "updated_at": 1766078248,
+  "updated_at": 1766081991,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "cordless vacuum deals",
+      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
+      "price": 142.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 2310469,
+      "seller_username": "spreetail",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "Certified - Refurbished",
+      "condition_id": "2000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-11-07T16:03:08.000Z",
+      "signals": 9.0,
+      "tags": [
+        "cordless vacuum"
+      ],
+      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
+      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -9,8 +39,8 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGOUrXM1Kzhw2wb5dlPCCc6XxLcNnhM3l8FJXyENP6Xl2pv4SC2LwGjmHfZEXvNC8kSBvl2ROkKm2ehQcUGTXEoxSH63pDPn4z9qBQfzLo9K4Ag%2Fjs%2FYRHn6OrKK6WZtpIi2FZ6PEJ%2F5PUetEd9IEyAWLK%2BvN4ky1eeRLdAN6REbLQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1010605,
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGP0cFjVGyjXB0uYfcDoUL3ZgmcyaNrBgIq7Uz%2B82hCYKmAQWj%2FPFqP%2BcjrqO%2Bshg5nYFfDGtDU4BoFRnH4tY22s90BoQWrqFnCjqZaG3%2BhbogLc64BrK%2BE%2F%2B62h237TaKN%2BNTaKIKD2ufjG8Unq21uJQ7rzq5PvwtlPGqjGxqMMfQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1010626,
       "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
@@ -34,43 +64,13 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 17.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 916435,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-08-13T15:00:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "mechanical keyboard",
       "title": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
       "price": 115.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/Is8AAeSwkR5pNxql/s-l225.jpg",
       "url": "https://www.ebay.com/itm/326829859786?_skw=mechanical+keyboard&hash=item4c1893e3ca%3Ag%3AIs8AAeSwkR5pNxql&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 916435,
+      "seller_feedback": 916501,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -94,14 +94,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "price": 18.95,
+      "keyword": "smart light strip deals",
+      "title": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "price": 28.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/QSUAAeSwzltpO9to/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3AQSUAAeSwzltpO9to&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861838,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/SBIAAOSw~ztbLPfb/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/312169544455?_skw=smart+light+strip+deals&hash=item48aec13b07%3Ag%3ASBIAAOSw~ztbLPfb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uac%2BgwIQR8eulJ%2FXMnE%2FMJOsPduhAc8A4Tpyf0j4S7h%2BBjV1aB03BU9Zh72jLb%2F6Q2f1l3Td0N6Z4IbR6I6aCF5oGzmjFO8xyOcrrsbhndFAsPC5zggnTnUfIsFoSkKgQ2DmBcMAsUw9Q2mU5agKbrM%2FqULpBDMZU5YaWe%2FDjsAQJQS1ICHT0FJmSynSSDeknD8HUCrt43rQTKJlGK5P5AKd%2Ffw93G8jlYgrcwX7%2FGHNl1M7RiGGMwOlbCj9wC%2BRZDCN0m0%2BRf7uu8c%2BREfPYHqyN8gu9V7ZcWZdAoVidPMaA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
+      "seller_feedback": 859609,
+      "seller_username": "valuebuybattery",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -111,27 +111,27 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-06-07T11:43:55.000Z",
+      "inserted_at": "2018-06-22T13:25:28.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "smart light strip"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit \u2022 USD 28.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "blurb": "USD 28.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "price": 19.95,
+      "keyword": "best cordless vacuum",
+      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "price": 45.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/GA8AAeSw1PVpQcCg/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGA8AAeSw1PVpQcCg&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861838,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SCYdW4Jf18KbXIH4Lme74f4rVdWzP0qmpARE%2FSw2QPXG1kkecvwECFuXvqQv6FopUN6QWtWF%2BUnpouNH0g%2BobK7xOr5PODkV72mrPq2R1yr8m18FtnGpJV2SmbfWmJvRTw3I9v%2FWUujw--yiqZGWdIZ%2FHCCfB8vQJLUzA%2FO8RvZzsRSEgwFjs3WXFfeogVag8hLz5Xn8B6wNkT0G9o23wV5oXpkiZ%2BBZW37r1bMAz3SQ8XfhU5V3bvvVWiPg%2FFc1q8xI60jh%2Fuz98pG6Bk9Q%2Frw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 574039,
+      "seller_username": "vipoutlet",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -141,27 +141,27 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-02-12T17:52:17.000Z",
+      "inserted_at": "2025-07-30T20:28:05.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "cordless vacuum"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White",
-      "price": 24.95,
+      "keyword": "massage gun",
+      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "price": 15.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/CGIAAeSw5-ZpQuah/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365808573514?_skw=wireless+charger+deals&hash=item552be3dc4a%3Ag%3ACGIAAeSw5-ZpQuah&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZoVwCXI6UItbb06yubIAo6wkRHQsZ0KdLwI0k%2FHxzMqAMSck0XHaqusHTPaZxwgB%2F8jI49OI1x0cKUjnajRivmR%2Bml6XmqAzMMGdPQ9rD2DwXj%2BbvnjbSybwBj38bBHjxEjMYWVH6CCkWWxzoNu2JccVvmwjEnU62xvB2jwVlVsZQyVQ9dh2GU6q%2FgR7K9yN3jzfCxc%2FcZNsY1H%2FghUipL%2Fzm0hawaNmttPXtLZNEZM%2FqhXqxwqmhfLrkhotgv28LM7WEDuCUgq2VW%2Bq2pCTWcCkhQRa06dMa3iK1oqh36kg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861838,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 351613,
+      "seller_username": "gameinfinity",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -171,14 +171,14 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-08-19T15:16:00.000Z",
+      "inserted_at": "2023-04-13T18:58:49.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "massage gun"
       ],
-      "caption": "LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White \u2022 USD 24.95",
-      "headline": "\ud83d\udd25\u2728 LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White",
-      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
+      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
