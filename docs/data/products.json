@@ -1,5 +1,5 @@
 {
-  "updated_at": 1766095977,
+  "updated_at": 1766099585,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
       "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2310482,
+      "seller_feedback": 2310485,
       "seller_username": "spreetail",
       "top_rated": false,
       "buying_options": [
@@ -34,14 +34,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
-      "price": 39.99,
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/EvoAAeSwhftpRCB-/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AEvoAAeSwhftpRCB-&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 916666,
-      "seller_username": "best_buy",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGPudB%2Fvc0VGb19D%2B7ZBjT6ucnQaE14vYdd0Nq4w%2B16659te8DxTzoSgfrHKol2exGyPF4loAV1cZvuLqYrmlwUoH61qf4eWZVY8Wbr9d21rQ7zXCa2pWGqVyJKUo4nmuHlb%2FpHglrfvDBWadisGME3wFvU4j9pFnFkHLW0JZBwsnA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1010745,
+      "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -51,106 +51,46 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-11-21T02:09:27.000Z",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "massage gun"
       ],
-      "caption": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel \u2022 USD 39.99",
-      "headline": "\ud83d\udd25\u2728 bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
-      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "air fryer deals",
-      "title": "bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black",
-      "price": 49.99,
+      "keyword": "pickleball paddle deals",
+      "title": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "price": 17.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/qLAAAeSwvuppPtFE/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205118420012?_skw=air+fryer+deals&hash=item2fc202b42c%3Ag%3AqLAAAeSwvuppPtFE&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 916666,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2024-11-21T02:09:32.000Z",
-      "signals": 9.0,
-      "tags": [
-        "air fryer"
-      ],
-      "caption": "bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black \u2022 USD 49.99",
-      "headline": "\ud83d\udd25\u2728 bella PRO - 8-qt. Touchscreen Air Fryer with Divided Basket - Matte Black",
-      "blurb": "USD 49.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "price": 129.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/fS8AAeSw~GdpN5kJ/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AfS8AAeSw~GdpN5kJ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 916666,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-10-22T15:52:43.000Z",
-      "signals": 9.0,
-      "tags": [
-        "air fryer"
-      ],
-      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
-      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
-      "price": 50.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/z8YAAeSwqGxpRE1C/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer&hash=item2fec6db215%3Ag%3Az8YAAeSwqGxpRE1C&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 820758,
+      "image_url": "https://i.ebayimg.com/images/g/T88AAeSwehlpQvzN/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AT88AAeSwehlpQvzN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 820901,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE",
         "BEST_OFFER"
       ],
-      "condition": "Open box",
-      "condition_id": "1500",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-11-06T13:43:46.000Z",
+      "inserted_at": "2025-06-24T19:19:53.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "pickleball paddle"
       ],
-      "caption": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking \u2022 USD 50.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
-      "blurb": "USD 50.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0 \u2022 USD 17.0",
+      "headline": "\ud83d\udd25\u2728 GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "blurb": "USD 17.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -160,8 +100,8 @@
       "price": 45.0,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SCYdW4Jf18KbXIH4Lme74f4rVdWzP0qmpARE%2FSw2QPXG1kkecvwECFuXvqQv6FopUN6QWtWF%2BUnpouNH0g%2BobK7xOr5PODkV72mrPq2R1yr93DwE%2BFM8pR9e1xJkwmXxNSxy5bvzOen6LThp0pnlGdB2DYejXIA54D7sub4Ru7wwNldHlBCG0eP3PInqR7pZj2bwWtUERFnQz0I79esmA8KiOzouEMbYDRgen6sibXElrb0Ww3MWM7HrnKD7m5%2B7bM%2BjWaTrSZ6RC8oQdM9xPZQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 574322,
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SCYdW4Jf18KbXIH4Lme74f4rVdWzP0qmpARE%2FSw2QPXG1kkecvwECFuXvqQv6FopUN6QWtWF%2BUnpouNH0g%2BobK7xOr5PODkV72mrPq2R1yr8vBLvsozNHG88EC%2BhjwtIOxcFth32ceksXbniE3yOzshhc%2FbECqv2E7T%2Fq6VpZdP6AIxBhElB%2B131y9HJTSKe2bNuZn39xbzYkDSrhUWMx7oyd%2FQa0iIDNfPNpoyfhPsYjbnZVpHuKchKb8iWqlghlc3nuIGW0AFNsMwFEw1veKg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 574394,
       "seller_username": "vipoutlet",
       "top_rated": false,
       "buying_options": [
@@ -180,6 +120,66 @@
       "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
       "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
       "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "price": 15.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 351623,
+      "seller_username": "gameinfinity",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2023-04-13T18:58:49.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
+      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "rgb lamp deals",
+      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
+      "price": 32.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2By14cEapgRY5y%2FwY%2BpJf4eWCV6HN%2BF1Bx4gnGFHf0l4dysz%2Busz%2BJcu%2BLTvMVpchHT7l54KZPEifP%2BCuXnikcsrAYNwPxBIcnqq5IxYGGj8NMgW1RefIgDc1LHDJYk%2F187yxnM%2B0MyTtn%2BMpVxkJHuGMZg1aNy%2BaeilKErJlbyR8A%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
+      "seller_feedback": 283385,
+      "seller_username": "sale2015express",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2020-01-12T18:12:21.000Z",
+      "signals": 9.0,
+      "tags": [
+        "rgb lamp"
+      ],
+      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
+      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
