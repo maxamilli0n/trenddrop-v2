@@ -1,6 +1,36 @@
 {
-  "updated_at": 1766074690,
+  "updated_at": 1766078248,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGOUrXM1Kzhw2wb5dlPCCc6XxLcNnhM3l8FJXyENP6Xl2pv4SC2LwGjmHfZEXvNC8kSBvl2ROkKm2ehQcUGTXEoxSH63pDPn4z9qBQfzLo9K4Ag%2Fjs%2FYRHn6OrKK6WZtpIi2FZ6PEJ%2F5PUetEd9IEyAWLK%2BvN4ky1eeRLdAN6REbLQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1010605,
+      "seller_username": "theperfectpart",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +40,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
       "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 916404,
+      "seller_feedback": 916435,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -34,13 +64,13 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "price": 19.99,
+      "keyword": "mechanical keyboard",
+      "title": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
+      "price": 115.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/BC0AAeSw46lpPtcD/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3ABC0AAeSw46lpPtcD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 916404,
+      "image_url": "https://i.ebayimg.com/images/g/Is8AAeSwkR5pNxql/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/326829859786?_skw=mechanical+keyboard&hash=item4c1893e3ca%3Ag%3AIs8AAeSwkR5pNxql&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
+      "seller_feedback": 916435,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -49,16 +79,46 @@
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 5.99,
+      "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-11-21T02:36:52.000Z",
+      "inserted_at": "2025-10-22T15:51:38.000Z",
+      "signals": 9.0,
+      "tags": [
+        "mechanical keyboard"
+      ],
+      "caption": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro... \u2022 USD 115.99",
+      "headline": "\ud83d\udd79\ufe0f Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
+      "blurb": "USD 115.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "price": 18.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/QSUAAeSwzltpO9to/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3AQSUAAeSwzltpO9to&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861838,
+      "seller_username": "a4c",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2024-06-07T11:43:55.000Z",
       "signals": 9.0,
       "tags": [
         "wireless charger"
       ],
-      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 19.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "blurb": "USD 19.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
@@ -70,7 +130,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/GA8AAeSw1PVpQcCg/s-l225.jpg",
       "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AGA8AAeSw1PVpQcCg&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861830,
+      "seller_feedback": 861838,
       "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
@@ -95,12 +155,12 @@
       "source": "ebay",
       "provider": "ebay",
       "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
+      "title": "LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White",
       "price": 24.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/OCsAAeSw8xZpMoqB/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AOCsAAeSw8xZpMoqB&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbPxKsi5KtFVj84VGxR2KkOj03Jy%2FxbVIGzhRAcFeRR92gpHHWkUgp4bL7lnOtr444YE9Q0K91rcRToJdXqxdksKFKEQxsOI29w3LZ2N%2BEpBt%2FEAreWhLv9dlIVi3bNhofg9FcdXmBhiTDzWMllJnM1sJLr5mSbXvHiMbnL4kADxH4wsDdzZN9tFK6PztGuxTcgbt%2FPoJlus%2BRriL3h7RSf8QW%2BuI3n9Gppb88jRl9zb%2F9alDbjNb03LMJLUI0Re%2FbE%2Fzn3gH2F5X5QEiBqhwJwebkuOdatWophaVIk3%2BqHnw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861830,
+      "image_url": "https://i.ebayimg.com/images/g/CGIAAeSw5-ZpQuah/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365808573514?_skw=wireless+charger+deals&hash=item552be3dc4a%3Ag%3ACGIAAeSw5-ZpQuah&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZoVwCXI6UItbb06yubIAo6wkRHQsZ0KdLwI0k%2FHxzMqAMSck0XHaqusHTPaZxwgB%2F8jI49OI1x0cKUjnajRivmR%2Bml6XmqAzMMGdPQ9rD2DwXj%2BbvnjbSybwBj38bBHjxEjMYWVH6CCkWWxzoNu2JccVvmwjEnU62xvB2jwVlVsZQyVQ9dh2GU6q%2FgR7K9yN3jzfCxc%2FcZNsY1H%2FghUipL%2Fzm0hawaNmttPXtLZNEZM%2FqhXqxwqmhfLrkhotgv28LM7WEDuCUgq2VW%2Bq2pCTWcCkhQRa06dMa3iK1oqh36kg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861838,
       "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
@@ -111,74 +171,14 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-03-10T16:52:12.000Z",
+      "inserted_at": "2025-08-19T15:16:00.000Z",
       "signals": 9.0,
       "tags": [
         "wireless charger"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black \u2022 USD 24.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
+      "caption": "LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White \u2022 USD 24.95",
+      "headline": "\ud83d\udd25\u2728 LEXON Oblio 10W Qi Certified Wireless Charger with Built-In UV-Sanitizer - White",
       "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "price": 28.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD8mGY%2BxnOFtYptp4WmYHh6RWrjo%2FGfWAkrPyNiGGmSeVtaih2nxFinzs6esd%2FXkVeGBbc9KhItyTZwq2CmCupGBJuA%2FD3ZhyrLlpRIqNZTdV9sA1Az%2BkSb%2FEy4iaE16pwU9ergkLYSk7XnAhBds9i3PC9m4bMfefohrjW9ssqaM6g%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861830,
-      "seller_username": "a4c",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Open box",
-      "condition_id": "1500",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-04-08T17:10:09.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Anker 623 MagGo Magnetic Wireless Charger - Black",
-      "price": 29.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/b1YAAeSwPMtpQGdb/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365279502593?_skw=wireless+charger+deals&hash=item550c5ae101%3Ag%3Ab1YAAeSwPMtpQGdb&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861830,
-      "seller_username": "a4c",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2024-12-10T15:08:16.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Anker 623 MagGo Magnetic Wireless Charger - Black \u2022 USD 29.95",
-      "headline": "\ud83d\udd25\u2728 Anker 623 MagGo Magnetic Wireless Charger - Black",
-      "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
