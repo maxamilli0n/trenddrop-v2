@@ -1,5 +1,5 @@
 {
-  "updated_at": 1766178732,
+  "updated_at": 1766182408,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
       "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2310646,
+      "seller_feedback": 2310649,
       "seller_username": "spreetail",
       "top_rated": false,
       "buying_options": [
@@ -34,44 +34,76 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 17.99,
+      "keyword": "pickleball paddle deals",
+      "title": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "price": 17.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 917017,
-      "seller_username": "best_buy",
+      "image_url": "https://i.ebayimg.com/images/g/T88AAeSwehlpQvzN/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AT88AAeSwehlpQvzN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 824431,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 5.99,
+      "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-08-13T15:00:21.000Z",
+      "inserted_at": "2025-06-24T19:19:53.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "pickleball paddle"
       ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
+      "caption": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0 \u2022 USD 17.0",
+      "headline": "\ud83d\udd25\u2728 GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
+      "blurb": "USD 17.00 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "price": 18.95,
+      "keyword": "pickleball paddle deals",
+      "title": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
+      "price": 44.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/-NQAAeSwd01pRPGu/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3A-NQAAeSwd01pRPGu&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861966,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/hmIAAeSw34ppRXGj/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177682846157?_skw=pickleball+paddle+deals&hash=item295eb911cd%3Ag%3AhmIAAeSw34ppRXGj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 824431,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-12-17T13:44:34.000Z",
+      "signals": 9.0,
+      "tags": [
+        "pickleball paddle"
+      ],
+      "caption": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle \u2022 USD 44.99",
+      "headline": "\ud83d\udd25\u2728 Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
+      "blurb": "USD 44.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "best cordless vacuum",
+      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "price": 45.0,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SCYdW4Jf18KbXIH4Lme74f4rVdWzP0qmpARE%2FSw2QPXG1kkecvwECFuXvqQv6FopUN6QWtWF%2BUnpouNH0g%2BobK7xOr5PODkV72mrPq2R1yr%2BjkvqBkqn8eqKEL2wB2Tz38rF1a6vLcNyQoEbvR3sTM%2B5uGuKzmWsh0gapxuYscVaG0m%2FhcUxdTfFqAk9DC1zV5X0Rji%2Fvla0ysOWz%2FWS0s6%2Fz9Oy0rRMxXqxLsNPLAl10FkoxyDHuEpXXf1EEJyxM7wbEhvQeMukA59aW9m1c1A%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 575570,
+      "seller_username": "vipoutlet",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -81,27 +113,27 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-06-07T11:43:55.000Z",
+      "inserted_at": "2025-07-30T20:28:05.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "cordless vacuum"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "price": 19.95,
+      "keyword": "cordless vacuum deals",
+      "title": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
+      "price": 28.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/p7wAAeSwKxJpRZ~H/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3Ap7wAAeSwKxJpRZ~H&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861966,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 107842,
+      "seller_username": "dd707city",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -109,59 +141,29 @@
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 0.0,
+      "shipping_cost": 16.88,
       "returns_accepted": null,
-      "inserted_at": "2025-02-12T17:52:17.000Z",
+      "inserted_at": "2025-11-04T21:44:40.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "cordless vacuum"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 28.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Holiday Xmas Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
+      "blurb": "USD 28.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "price": 28.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD%2B61yZey6d6oiXWqpSpgYDmrqwipV%2BOk2C6CVRWNBBwKtnUnMrYN6WdEFDfGb4O2ksbqQ9xKrLWpn9zUjMoYAvZ%2FJYn4Pr551KiYqyZMwTAzAFjrIeHqAxQO1y%2Bj5HsiRi%2BQosMrxRD36Gik4VOXF1iwhM%2Bg9czXIyaCImfCbB8Iw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861966,
-      "seller_username": "a4c",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Open box",
-      "condition_id": "1500",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-04-08T17:10:09.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Anker 623 MagGo Magnetic Wireless Charger - Black",
+      "keyword": "pet hair trimmer deals",
+      "title": "Professional Mute Pet Cat Dog Hair Clipper Trimmer Shaver Cordless Scissors Set",
       "price": 29.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/b1YAAeSwPMtpQGdb/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365279502593?_skw=wireless+charger+deals&hash=item550c5ae101%3Ag%3Ab1YAAeSwPMtpQGdb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZtMJLHHJjg0qHNMscLdzPfb7fuXa9z7aDwRv9%2Bd7ln01U1jGxOUCwQb%2F8Hbp0mX6qyFOjOZ%2BIu7ou2HYkPKh7DYCj73R0XHV8feJ36f8wrdZHhk08vWvS5%2FK4IAqv2kpNknkqbDcrVefYl%2BejggqNeDWbHiQrpsxUFVlVXPvBXdADKf8SNMe5PeaNvTc5f0POd9AbJRnjpa0nbvGUojfWGrVCwmGOqo5JGq7OodA4L4AF80m3qqtFC9Ibrt2%2BSJQx%2FiUuLDp2pza3qZGbxDKumH9Ac0rFq73KWuyDLvCcXow%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 861966,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/H3sAAOSwKiResX~6/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/233243073234?_skw=pet+hair+trimmer+deals&hash=item364e5edad2%3Ag%3AH3sAAOSwKiResX~6&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ubr%2FGWbdRf65pOYahNYOB12uhUwlKM0Hg%2BtPbTLCQA8Ik5pRJx5ldQkMiWSV3MghC9ZzIsbYdiR4qob52myPhfAJutbtoREJLwNoqsBqxuFsf0sKqtbYO9lHcHIg1xJT4%2B%2B%2FwnSWh9EkoCHhEdyh9cW4407PBhSd%2Fv3fPprIxavW1h%2Bp7EGkehYVGNfZ3bR4TtCmsFwTA%2B1Sxw386TRKOFfUVyJ%2F%2BZEPkWSrD0lqeQwXgmIbQGoUAUBXIEQfg4hIcjBeLcBeI1iJb3XC51eGOPDlryYlEqOb7cJzxkcik1WAw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pet_hair_trimmer&toolid=10001",
+      "seller_feedback": 100961,
+      "seller_username": "premiumwire",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -171,13 +173,13 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-12-10T15:08:16.000Z",
+      "inserted_at": "2019-05-30T22:53:06.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "pet hair trimmer"
       ],
-      "caption": "Anker 623 MagGo Magnetic Wireless Charger - Black \u2022 USD 29.95",
-      "headline": "\ud83d\udd25\u2728 Anker 623 MagGo Magnetic Wireless Charger - Black",
+      "caption": "Professional Mute Pet Cat Dog Hair Clipper Trimmer Shaver Cordless Scissors Set \u2022 USD 29.95",
+      "headline": "\ud83d\udd25\u2728 Professional Mute Pet Cat Dog Hair Clipper Trimmer Shaver Cordless Scissors Set",
       "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
