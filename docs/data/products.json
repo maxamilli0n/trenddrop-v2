@@ -1,5 +1,5 @@
 {
-  "updated_at": 1766182408,
+  "updated_at": 1766185973,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
       "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2310649,
+      "seller_feedback": 2310650,
       "seller_username": "spreetail",
       "top_rated": false,
       "buying_options": [
@@ -34,63 +34,31 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "pickleball paddle deals",
-      "title": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
-      "price": 17.0,
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/T88AAeSwehlpQvzN/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/177220766044?_skw=pickleball+paddle+deals&hash=item29432e495c%3Ag%3AT88AAeSwehlpQvzN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 824431,
-      "seller_username": "bullseye_deals",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1011187,
+      "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
+        "FIXED_PRICE"
       ],
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-06-24T19:19:53.000Z",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
       "signals": 9.0,
       "tags": [
-        "pickleball paddle"
+        "massage gun"
       ],
-      "caption": "GAMMA Sports Adults Pickleball Paddle Neutron 5.0 \u2022 USD 17.0",
-      "headline": "\ud83d\udd25\u2728 GAMMA Sports Adults Pickleball Paddle Neutron 5.0",
-      "blurb": "USD 17.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "pickleball paddle deals",
-      "title": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
-      "price": 44.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/hmIAAeSw34ppRXGj/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/177682846157?_skw=pickleball+paddle+deals&hash=item295eb911cd%3Ag%3AhmIAAeSw34ppRXGj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 824431,
-      "seller_username": "bullseye_deals",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-12-17T13:44:34.000Z",
-      "signals": 9.0,
-      "tags": [
-        "pickleball paddle"
-      ],
-      "caption": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle \u2022 USD 44.99",
-      "headline": "\ud83d\udd25\u2728 Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
-      "blurb": "USD 44.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
@@ -101,8 +69,8 @@
       "price": 45.0,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SCYdW4Jf18KbXIH4Lme74f4rVdWzP0qmpARE%2FSw2QPXG1kkecvwECFuXvqQv6FopUN6QWtWF%2BUnpouNH0g%2BobK7xOr5PODkV72mrPq2R1yr%2BjkvqBkqn8eqKEL2wB2Tz38rF1a6vLcNyQoEbvR3sTM%2B5uGuKzmWsh0gapxuYscVaG0m%2FhcUxdTfFqAk9DC1zV5X0Rji%2Fvla0ysOWz%2FWS0s6%2Fz9Oy0rRMxXqxLsNPLAl10FkoxyDHuEpXXf1EEJyxM7wbEhvQeMukA59aW9m1c1A%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 575570,
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 575681,
       "seller_username": "vipoutlet",
       "top_rated": false,
       "buying_options": [
@@ -126,44 +94,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "price": 28.0,
+      "keyword": "bike light deals",
+      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "price": 18.59,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/YaIAAeSwHahpCmBi/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/257192174437?_skw=cordless+vacuum+deals&hash=item3be1d92365%3Ag%3AYaIAAeSwHahpCmBi&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 107842,
-      "seller_username": "dd707city",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 16.88,
-      "returns_accepted": null,
-      "inserted_at": "2025-11-04T21:44:40.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Holiday Xmas Hot Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction \u2022 USD 28.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Holiday Xmas Deals 4 in 1 Lightweight Cordless Vacuum Cleaner 38KPA Suction",
-      "blurb": "USD 28.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "pet hair trimmer deals",
-      "title": "Professional Mute Pet Cat Dog Hair Clipper Trimmer Shaver Cordless Scissors Set",
-      "price": 29.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/H3sAAOSwKiResX~6/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/233243073234?_skw=pet+hair+trimmer+deals&hash=item364e5edad2%3Ag%3AH3sAAOSwKiResX~6&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Ubr%2FGWbdRf65pOYahNYOB12uhUwlKM0Hg%2BtPbTLCQA8Ik5pRJx5ldQkMiWSV3MghC9ZzIsbYdiR4qob52myPhfAJutbtoREJLwNoqsBqxuFsf0sKqtbYO9lHcHIg1xJT4%2B%2B%2FwnSWh9EkoCHhEdyh9cW4407PBhSd%2Fv3fPprIxavW1h%2Bp7EGkehYVGNfZ3bR4TtCmsFwTA%2B1Sxw386TRKOFfUVyJ%2F%2BZEPkWSrD0lqeQwXgmIbQGoUAUBXIEQfg4hIcjBeLcBeI1iJb3XC51eGOPDlryYlEqOb7cJzxkcik1WAw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pet_hair_trimmer&toolid=10001",
-      "seller_feedback": 100961,
-      "seller_username": "premiumwire",
+      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 354455,
+      "seller_username": "buildyourbike",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -173,14 +111,74 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2019-05-30T22:53:06.000Z",
+      "inserted_at": "2015-08-27T20:27:44.000Z",
       "signals": 9.0,
       "tags": [
-        "pet hair trimmer"
+        "bike light"
       ],
-      "caption": "Professional Mute Pet Cat Dog Hair Clipper Trimmer Shaver Cordless Scissors Set \u2022 USD 29.95",
-      "headline": "\ud83d\udd25\u2728 Professional Mute Pet Cat Dog Hair Clipper Trimmer Shaver Cordless Scissors Set",
-      "blurb": "USD 29.95 steal. Limited stock\u2014grab it now!",
+      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 18.59",
+      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "blurb": "USD 18.59 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "price": 15.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVYJjR0nrZdUq8%2BJYAkVVg2QZgTNMwetBm9qO1YjAlRgEqv4x1PKAvaB0UdNHLW01URp0YHjfWQi8cEk%2F63m4OeqGYGLZe7FBfJfn0VaeN%2B02v9ATKAje28r7%2FVs%2FHNFZErLGMtRpBhXfg8Ax5Eauc%2FZ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 351676,
+      "seller_username": "gameinfinity",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2023-04-13T18:58:49.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
+      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
+      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "bike light deals",
+      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "price": 92.58,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/8UkAAeSw7Z9pRYC7/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3A8UkAAeSw7Z9pRYC7&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9d3kfyIafZdyp%2FTd%2BGcbhmJKw8yG6nHD5pM3tmbBQCmRYpMaG1oZRk0VFUoAOTvD32hqWTkR8LrkTXnCRRCDTjd08nDBzUEWRV8zUMao6ZRs9ezEAg%2Fc1dsgeJxYRD5nvuh2KRGy%2BF2kfyEDSnQeGQkbSmdDB62GHnW%2F2tiqb1LTw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 211840,
+      "seller_username": "cyclingdeal",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "Brand New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 33.07,
+      "returns_accepted": null,
+      "inserted_at": "2020-08-24T11:46:29.000Z",
+      "signals": 9.0,
+      "tags": [
+        "bike light"
+      ],
+      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 92.58",
+      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "blurb": "USD 92.58 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
