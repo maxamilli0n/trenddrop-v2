@@ -1,5 +1,5 @@
 {
-  "updated_at": 1766185973,
+  "updated_at": 1766192134,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
       "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2310650,
+      "seller_feedback": 2310663,
       "seller_username": "spreetail",
       "top_rated": false,
       "buying_options": [
@@ -34,151 +34,151 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "keyword": "best wireless charger",
+      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
+      "price": 17.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/pWIAAeSw9iJpPtZY/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3ApWIAAeSw9iJpPtZY&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 917038,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 5.99,
+      "returns_accepted": null,
+      "inserted_at": "2024-08-13T15:00:21.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
+      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
+      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "price": 18.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/-NQAAeSwd01pRPGu/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3A-NQAAeSwd01pRPGu&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861989,
+      "seller_username": "a4c",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2024-06-07T11:43:55.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
+      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
+      "price": 19.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/p7wAAeSwKxJpRZ~H/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3Ap7wAAeSwKxJpRZ~H&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861989,
+      "seller_username": "a4c",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-02-12T17:52:17.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
+      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
+      "price": 24.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/Yr4AAeSwHj1pRHDx/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/316474761372?_skw=wireless+charger+deals&hash=item49af5da09c%3Ag%3AYr4AAeSwHj1pRHDx&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbPxKsi5KtFVj84VGxR2KkOj03Jy%2FxbVIGzhRAcFeRR92gpHHWkUgp4bL7lnOtr444YE9Q0K91rcRToJdXqxdksKFKEQxsOI29w3LZ2N%2BEpBt%2FEAreWhLv9dlIVi3bNhodMRj8Ej0e3yf6jkvSlviVe%2BmjARsMKZ6bMD5sa%2FNnIZp4e%2BMxsR3u68AAQ3oe04dd55wsqHpNuxCdnZ3jTrQIDr7%2FCnQYQ8mmqOUvobhmcdBO5WVKv5kdl3uvj6bmmOaFPF2AFzX01jk%2FltgnL1yk7I%2FcUbUduXyuDeJxD9i5Usg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861989,
+      "seller_username": "a4c",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-03-10T16:52:12.000Z",
+      "signals": 9.0,
+      "tags": [
+        "wireless charger"
+      ],
+      "caption": "Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black \u2022 USD 24.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge 15W Pad (2022) EP-P2400CBE - Black",
+      "blurb": "USD 24.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "wireless charger deals",
+      "title": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
       "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1011187,
-      "seller_username": "theperfectpart",
+      "image_url": "https://i.ebayimg.com/images/g/sCUAAeSwh-VpLXVf/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/146504893885?_skw=wireless+charger+deals&hash=item221c5f45bd%3Ag%3AsCUAAeSwh-VpLXVf&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYdsAHegoMQydftgaHwyL5K29RrkRXyZYgzuUbe0WxFUqj6ok2xU71CKW1Ajwpzmn0wTvL9XSVDHiqjLWuOe3UqlnHtkrWyEGBwYVVWTOSa0Jjhroy%2B3ubmrmA39q3CHD%2BPUbvLv%2BBUIR6%2F3W3zFTHykO3Ye%2F18KKkzl4VjVd8OE6p5BzfnvjhNoA2z2uzQz5hrK46E0h4fUzs8ndROekwIBEVxIwzy1%2F2UDBfVz60liBVBHKBbBiHVTfXS%2FOR3fIw7KUkxXLOS1E4k%2Bij866TVeyDqKscYi806tCK8Xvzp%2BA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
+      "seller_feedback": 861989,
+      "seller_username": "a4c",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "New",
-      "condition_id": "1000",
+      "condition": "Open box",
+      "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "inserted_at": "2025-04-08T17:10:09.000Z",
       "signals": 9.0,
       "tags": [
-        "massage gun"
+        "wireless charger"
       ],
-      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "caption": "Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Samsung Wireless Qi Charger Trio - Charge up to 3 Devices at Once - Black",
       "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best cordless vacuum",
-      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "price": 45.0,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 575681,
-      "seller_username": "vipoutlet",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-07-30T20:28:05.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 18.59,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354455,
-      "seller_username": "buildyourbike",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2015-08-27T20:27:44.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 18.59",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 18.59 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "price": 15.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVYJjR0nrZdUq8%2BJYAkVVg2QZgTNMwetBm9qO1YjAlRgEqv4x1PKAvaB0UdNHLW01URp0YHjfWQi8cEk%2F63m4OeqGYGLZe7FBfJfn0VaeN%2B02v9ATKAje28r7%2FVs%2FHNFZErLGMtRpBhXfg8Ax5Eauc%2FZ&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 351676,
-      "seller_username": "gameinfinity",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2023-04-13T18:58:49.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
-      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "price": 92.58,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/8UkAAeSw7Z9pRYC7/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3A8UkAAeSw7Z9pRYC7&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9d3kfyIafZdyp%2FTd%2BGcbhmJKw8yG6nHD5pM3tmbBQCmRYpMaG1oZRk0VFUoAOTvD32hqWTkR8LrkTXnCRRCDTjd08nDBzUEWRV8zUMao6ZRs9ezEAg%2Fc1dsgeJxYRD5nvuh2KRGy%2BF2kfyEDSnQeGQkbSmdDB62GHnW%2F2tiqb1LTw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 211840,
-      "seller_username": "cyclingdeal",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Brand New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 33.07,
-      "returns_accepted": null,
-      "inserted_at": "2020-08-24T11:46:29.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 92.58",
-      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "blurb": "USD 92.58 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
