@@ -3,29 +3,32 @@ import hashlib
 from urllib.parse import urlparse
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
-from trenddrop.config import CLICK_REDIRECT_BASE, BOT_TOKEN, CHAT_ID, gumroad_cta_url
+from trenddrop.config import (
+    CLICK_REDIRECT_BASE,
+    gumroad_cta_url,
+)
 from trenddrop.reports.product_quality import (
     dedupe_near_duplicates,
     ensure_rank_fields,
 )
 
-# Ensure root .env is loaded (safe even if you don't use .env; env vars can come from GitHub Secrets)
 ENV_PATH = load_env_once()
 
 from io import BytesIO
 from typing import List, Dict, Optional
 from datetime import datetime, timezone
+
 from utils.db import save_run_summary, upsert_products, fetch_recent_posted_keys, mark_posted_item
-from trenddrop.utils.telegram_cta import maybe_send_cta
 from utils.epn import affiliate_wrap
-from utils.ai import caption_for, marketing_copy_for
+from utils.ai import marketing_copy_for
+
+from trenddrop.telegram_utils import send_text, send_photo
 
 DOCS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "docs")
 DOCS_DATA = os.path.join(os.path.dirname(os.path.dirname(__file__)), "docs", "data")
 PRODUCTS_PATH = os.path.join(DOCS_DATA, "products.json")
 OG_PATH = os.path.join(DOCS_DIR, "og.png")
 
-# Your real free sample link (hard-coded as requested)
 FREE_SAMPLE_URL = "https://trenddropstudio.gumroad.com/l/free-sample"
 
 try:
@@ -36,17 +39,7 @@ except Exception:
     ImageFont = None  # type: ignore
 
 
-# ==========================
-# NEW: Human-friendly seller feedback formatting (e.g., 2.3M, 454k)
-# ==========================
 def format_feedback_number(feedback) -> str:
-    """
-    Converts large numbers to human-readable format.
-    Examples:
-      2300000 -> '2.3M'
-      454000  -> '454k' (or '454.0k' depending on decimals)
-    Accepts int/float/str; best-effort.
-    """
     try:
         if feedback is None:
             return ""
@@ -70,7 +63,6 @@ def format_feedback_number(feedback) -> str:
         val = n / 1_000.0
         txt = f"{val:.1f}".rstrip("0").rstrip(".")
         return f"{txt}k"
-    # no decimals for small values
     try:
         return str(int(n)) if n.is_integer() else str(n)
     except Exception:
@@ -78,11 +70,6 @@ def format_feedback_number(feedback) -> str:
 
 
 def _canonicalize_url(raw_url: str) -> str:
-    """
-    Normalize URLs so the same item always maps to the same canonical URL,
-    even if affiliate params change.
-    We keep scheme + host + path only. (Drop all query params.)
-    """
     try:
         u = (raw_url or "").strip()
         if not u:
@@ -98,9 +85,6 @@ def _canonicalize_url(raw_url: str) -> str:
 
 
 def _url_key(canonical_url: str) -> str:
-    """
-    Stable key stored in Supabase. Short + consistent.
-    """
     try:
         return hashlib.md5((canonical_url or "").encode("utf-8")).hexdigest()
     except Exception:
@@ -108,11 +92,6 @@ def _url_key(canonical_url: str) -> str:
 
 
 def _topic_key_for_product(p: Dict) -> str:
-    """
-    Variety grouping key.
-    Prefer keyword (your scraper tags items with keyword like 'wireless_charger'),
-    fall back to first tag, else 'other'.
-    """
     try:
         k = str(p.get("keyword") or "").strip().lower()
         if k:
@@ -132,13 +111,6 @@ def _select_with_variety(
     max_per_keyword: int,
     min_unique_keywords: int,
 ) -> List[Dict]:
-    """
-    Enforce variety:
-      - At most `max_per_keyword` items for the same keyword per run.
-      - Try to reach at least `min_unique_keywords` unique keywords (when possible).
-
-    We do this in a deterministic greedy way over the already score-sorted list.
-    """
     if limit <= 0:
         return []
 
@@ -149,7 +121,6 @@ def _select_with_variety(
     picked: List[Dict] = []
     counts: Dict[str, int] = {}
 
-    # Pass 1: strict cap per keyword
     for p in scored:
         if len(picked) >= limit:
             break
@@ -168,7 +139,6 @@ def _select_with_variety(
     if uniq_count(picked) >= target_unique:
         return picked
 
-    # Pass 2: attempt swaps to increase unique keywords
     existing = {_topic_key_for_product(x) for x in picked}
     new_keyword_candidates = []
     for p in scored:
@@ -200,7 +170,6 @@ def _select_with_variety(
         existing.add(cand_k)
         i += 1
 
-    # Fill again if short
     if len(picked) < limit:
         existing_counts = {}
         for x in picked:
@@ -222,13 +191,6 @@ def _select_with_variety(
 
 
 def _seller_key_for_product(p: Dict) -> str:
-    """
-    Stable seller identity for diversity control.
-    Priority:
-      1) seller_username (best)
-      2) domain of listing URL (fallback)
-      3) 'unknown'
-    """
     try:
         su = str(p.get("seller_username") or "").strip().lower()
         if su:
@@ -248,14 +210,7 @@ def _seller_key_for_product(p: Dict) -> str:
     return "unknown"
 
 
-def _enforce_seller_diversity(
-    items: List[Dict],
-    *,
-    max_per_seller: int,
-) -> List[Dict]:
-    """
-    Enforce max items per seller while preserving order (already score-sorted).
-    """
+def _enforce_seller_diversity(items: List[Dict], *, max_per_seller: int) -> List[Dict]:
     max_per_seller = max(1, int(max_per_seller))
     picked: List[Dict] = []
     counts: Dict[str, int] = {}
@@ -271,12 +226,6 @@ def _enforce_seller_diversity(
 
 
 def _parse_end_time(p: Dict) -> float | None:
-    """
-    Best-effort: supports:
-      - p["end_time_ts"] epoch seconds
-      - p["end_time"] ISO string
-      - p["itemEndDate"] ISO string
-    """
     if "end_time_ts" in p:
         try:
             return float(p["end_time_ts"])
@@ -302,10 +251,6 @@ def _parse_end_time(p: Dict) -> float | None:
 
 
 def _listing_type(p: Dict) -> str:
-    """
-    Returns: "Auction" | "Buy It Now" | ""
-    Tries a few common fields; safe if missing.
-    """
     lt = str(p.get("listing_type") or p.get("listingType") or p.get("buyingOptions") or "").lower()
 
     if isinstance(p.get("buyingOptions"), list):
@@ -332,10 +277,10 @@ def _generate_og_image(products: List[Dict]) -> None:
         return
     try:
         width, height = 1200, 630
-        bg_color = (15, 23, 42)  # slate-900
-        accent = (99, 102, 241)  # indigo-500
+        bg_color = (15, 23, 42)
+        accent = (99, 102, 241)
         text_primary = (255, 255, 255)
-        text_secondary = (226, 232, 240)  # slate-200
+        text_secondary = (226, 232, 240)
 
         img = Image.new("RGB", (width, height), bg_color)
         draw = ImageDraw.Draw(img)
@@ -402,18 +347,20 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
 
     for p in products:
         try:
-            p["caption"] = caption_for(p)
             mc = marketing_copy_for(p)
             p["headline"] = mc.get("headline")
             p["blurb"] = mc.get("blurb")
             p["emojis"] = mc.get("emojis")
+
             try:
                 first_tag = (p.get("tags") or [p.get("keyword") or "trend"])[0]
                 p["url"] = affiliate_wrap(p.get("url", ""), custom_id=str(first_tag).replace(" ", "_")[:40])
             except Exception:
                 pass
         except Exception:
-            p["caption"] = p.get("title", "")
+            p["headline"] = None
+            p["blurb"] = None
+            p["emojis"] = ""
 
     ensure_dirs()
 
@@ -437,115 +384,153 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
         pass
 
 
-def _build_reseller_cta_text() -> str:
-    """
-    CTA aimed at "anyone flipping products online" (your chosen framing).
-    Includes your real free sample URL always.
-    Includes paid pack URL if GUMROAD_CTA_URL is set in env/config.
-    """
+def _build_cta_text(*, premium: bool) -> str:
     paid_url = ""
     try:
         paid_url = gumroad_cta_url() or ""
     except Exception:
         paid_url = ""
 
+    if premium:
+        lines = [
+            "💎 <b>Premium: weekly drops + higher-signal picks</b>",
+            "You’re in the paid channel — here’s the latest free sample + full pack link.",
+            "",
+            f"✅ Free sample (5 items): <a href=\"{FREE_SAMPLE_URL}\">Download here</a>",
+        ]
+        if paid_url:
+            lines += [f"🔥 Full Top 50 pack: <a href=\"{paid_url}\">Get it here</a>"]
+        lines += ["", "Tip: move fast — same-day listings convert best."]
+        return "\n".join(lines)
+
     lines = [
         "📦 <b>Flip-ready product list</b>",
-        "If you resell on eBay / Facebook Marketplace / Amazon / TikTok Shop, grab the free sample pack (PDF + CSV).",
+        "Want the full weekly pack (PDF + CSV) with the best picks?",
         "",
         f"✅ Free sample (5 items): <a href=\"{FREE_SAMPLE_URL}\">Download here</a>",
     ]
-
     if paid_url:
-        lines += [
-            f"🔥 Full Top 50 pack: <a href=\"{paid_url}\">Get it here</a>",
-        ]
-
-    lines += [
-        "",
-        "Tip: post the same-day items fast — speed is the edge.",
-    ]
-
+        lines += [f"🔥 Full Top 50 pack: <a href=\"{paid_url}\">Get it here</a>"]
     return "\n".join(lines)
 
 
-# ==========================
-# CHANGE: return bool so we only mark CTA cooldown when Telegram accepts it
-# ==========================
-def _send_reseller_cta(api_base: str, chat_id: str) -> bool:
-    """
-    Posts the CTA message (HTML) to the Telegram target.
-    Returns True if Telegram accepted it (best-effort).
-    """
-    try:
-        text = _build_reseller_cta_text()
-        r = requests.post(
-            f"{api_base}/sendMessage",
-            data={
-                "chat_id": chat_id,
-                "text": text,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": True,
-            },
-            timeout=20,
-        )
-        return bool(getattr(r, "status_code", 0) and r.status_code < 400)
-    except Exception:
-        return False
-
-
-def _pin_last_message(api_base: str, chat_id: str) -> None:
-    """
-    Optional: pin the most recent message in the chat/channel.
-    Requires the bot to have pin permissions in that chat/channel.
-    """
-    try:
-        r = requests.get(f"{api_base}/getUpdates", timeout=20)
-        if r.status_code != 200:
-            return
-        data = r.json() if r.content else {}
-        res = data.get("result") or []
-        if not res:
-            return
-
-        last = res[-1]
-        msg = last.get("message") or last.get("channel_post") or {}
-        mid = msg.get("message_id")
-        cid = msg.get("chat", {}).get("id")
-
-        if not mid or not cid:
-            return
-
-        requests.post(
-            f"{api_base}/pinChatMessage",
-            data={
-                "chat_id": chat_id,
-                "message_id": mid,
-                "disable_notification": True,
-            },
-            timeout=20,
-        )
-    except Exception:
-        return
-
-
-# ==========================
-# NEW: persistent CTA cooldown key per chat (stored using your existing DB table)
-# ==========================
 def _cta_key(chat_id: str) -> str:
     return f"CTA::{str(chat_id)}"
 
 
+def _price_text(currency: str, price) -> str:
+    try:
+        if isinstance(price, (int, float)):
+            return f"{currency} {price:.2f}"
+        return f"{currency} {price}"
+    except Exception:
+        return f"{currency} {price}"
+
+
+def _build_post(
+    p: Dict,
+    *,
+    premium: bool,
+) -> str:
+    title_raw = str(p.get("title") or "").strip()
+    title = html.escape(title_raw[:170])
+
+    currency = str(p.get("currency") or "USD")
+    price = p.get("price")
+    price_text = _price_text(currency, price)
+
+    click_url = p.get("click_url")
+    url = p.get("url") or ""
+    final_url = click_url or url
+
+    fb = p.get("seller_feedback")
+    top_rated = p.get("top_rated")
+    trust = ""
+    if fb:
+        trust = f"⭐ {format_feedback_number(fb)} feedback"
+        if top_rated:
+            trust += " · Top Rated"
+
+    # hooks
+    hooks = []
+    lt = _listing_type(p)
+    if lt:
+        hooks.append(f"🛒 {lt}")
+
+    ship = p.get("shipping_cost")
+    if ship is not None:
+        try:
+            ship_f = float(ship)
+            hooks.append("🚚 Free shipping" if ship_f <= 0.0001 else f"🚚 Shipping: {currency} {ship_f:.2f}")
+        except Exception:
+            pass
+
+    ra = p.get("returns_accepted")
+    if ra is True and premium:
+        hooks.append("✅ Returns accepted")
+
+    end_ts = _parse_end_time(p)
+    if end_ts:
+        try:
+            hrs_left = max(0.0, (end_ts - datetime.now(timezone.utc).timestamp()) / 3600.0)
+            if hrs_left <= 6.0:
+                hooks.append("⏳ Ends soon (≤6h)")
+        except Exception:
+            pass
+
+    # copy
+    headline = str(p.get("headline") or "").strip()
+    blurb = str(p.get("blurb") or "").strip()
+
+    # if ai copy missing, use a clean default
+    if not headline:
+        headline = "🔥 Trending pick"
+    if not blurb:
+        blurb = "Worth a quick look — listings like this can move fast."
+
+    lines = []
+    lines.append(f"{'💎' if premium else '⚡'} <b>{html.escape(headline[:80])}</b>")
+    lines.append(f"<b>{title}</b>")
+    lines.append(f"💰 {price_text}")
+    if trust:
+        lines.append(trust)
+
+    if hooks:
+        lines.append("\n".join(hooks))
+
+    if premium:
+        # premium value: keyword + quick flip note
+        kw = str(p.get("keyword") or "")
+        tags = p.get("tags") or []
+        topic = kw or (tags[0] if isinstance(tags, list) and tags else "")
+        if topic:
+            lines.append(f"🏷️ Topic: <i>{html.escape(str(topic)[:60])}</i>")
+
+        # simple flip suggestion (safe heuristic)
+        if isinstance(price, (int, float)) and 15 <= float(price) <= 120:
+            lines.append("💡 Flip idea: list on FB Marketplace / TikTok Shop w/ fast shipping + clear photos.")
+
+        lines.append(f"🧭 {html.escape(blurb[:220])}")
+    else:
+        # public: shorter
+        lines.append(html.escape(blurb[:160]))
+
+    lines += ["", f"<a href=\"{final_url}\">{'View listing' if premium else 'Tap to view'}</a>"]
+    return "\n".join([x for x in lines if x])
+
+
 def post_telegram(products: List[Dict], limit=5):
+    """
+    Posts:
+      - PUBLIC channel: clean shorter posts
+      - PAID channel: richer “reseller notes” version
+      - ADMIN: optional summary (no product spam)
+    """
     import random
     from trenddrop.conversion.ebay_conversion import conversion_score, passes_hard_filters
 
-    token = BOT_TOKEN
-    chat_id = CHAT_ID
-    if not token or not chat_id or not products:
+    if not products:
         return
-
-    api = f"https://api.telegram.org/bot{token}"
 
     # Dedupe window (hours)
     dedupe_hours = 48
@@ -553,6 +538,11 @@ def post_telegram(products: List[Dict], limit=5):
         dedupe_hours = int(str(os.environ.get("TELEGRAM_DEDUPE_HOURS", "48")).strip())
     except Exception:
         dedupe_hours = 48
+
+    # per-channel limits (defaults)
+    public_limit = int(str(os.environ.get("TELEGRAM_PUBLIC_LIMIT", str(max(1, int(limit))))).strip())
+    paid_limit = int(str(os.environ.get("TELEGRAM_PAID_LIMIT", str(max(2, int(limit) + 2)))).strip())
+    admin_summary = str(os.environ.get("TELEGRAM_ADMIN_SUMMARY", "1")).strip().lower() in ("1", "true", "yes", "y")
 
     # Variety controls
     max_per_keyword = 2
@@ -575,43 +565,25 @@ def post_telegram(products: List[Dict], limit=5):
     if max_per_seller < 1:
         max_per_seller = 1
 
-    # CTA Controls (Combination D)
-    cta_every_n_posts = 6
-    cta_cooldown_minutes = 180  # 3 hours by default; avoids hourly spam
-    try:
-        cta_every_n_posts = int(str(os.environ.get("TELEGRAM_CTA_EVERY_N_POSTS", "6")).strip())
-    except Exception:
-        cta_every_n_posts = 6
-    if cta_every_n_posts < 2:
-        cta_every_n_posts = 2
+    # CTA controls (separate)
+    public_cta_every = int(str(os.environ.get("TELEGRAM_PUBLIC_CTA_EVERY_N_POSTS", "12")).strip())
+    paid_cta_every = int(str(os.environ.get("TELEGRAM_PAID_CTA_EVERY_N_POSTS", "8")).strip())
+    cta_cooldown_minutes = int(str(os.environ.get("TELEGRAM_CTA_COOLDOWN_MINUTES", "360")).strip())  # 6h default
 
-    try:
-        cta_cooldown_minutes = int(str(os.environ.get("TELEGRAM_CTA_COOLDOWN_MINUTES", "180")).strip())
-    except Exception:
-        cta_cooldown_minutes = 180
-    if cta_cooldown_minutes < 15:
-        cta_cooldown_minutes = 15
-
-    pin_cta = False
-    try:
-        pin_cta = str(os.environ.get("TELEGRAM_PIN_CTA", "0")).strip().lower() in ("1", "true", "yes", "y")
-    except Exception:
-        pin_cta = False
-
-    recent_keys = fetch_recent_posted_keys(dedupe_hours)
+    recent_keys = fetch_recent_posted_keys(dedupe_hours) or []
     if recent_keys:
         print(f"[telegram] dedupe active: {len(recent_keys)} items posted in last {dedupe_hours}h")
 
     prepared = [ensure_rank_fields(dict(p)) for p in products]
     collapsed = dedupe_near_duplicates(prepared)
 
-    scored = []
+    scored: List[Dict] = []
     for p in collapsed:
         raw_url = str(p.get("url") or "")
         canonical = _canonicalize_url(raw_url)
         key = _url_key(canonical)
 
-        if key and key in recent_keys:
+        if key and key in set(recent_keys):
             continue
 
         p["_canonical_url"] = canonical
@@ -625,27 +597,22 @@ def post_telegram(products: List[Dict], limit=5):
         if s <= -1e8:
             continue
 
-        p["_conv_score"] = s
+        p["_conv_score"] = float(s)
         scored.append(p)
 
     scored.sort(key=lambda x: float(x.get("_conv_score", 0.0)), reverse=True)
 
-    # >>> FORCE VARIETY (KEYWORDS) <<<
     varied = _select_with_variety(
         scored,
-        max(1, int(limit)),
+        max(public_limit, paid_limit, 1),
         max_per_keyword=max_per_keyword,
         min_unique_keywords=min_unique_keywords,
     )
 
-    # >>> FORCE DIVERSITY (SELLERS) <<<
-    pick = _enforce_seller_diversity(
-        varied,
-        max_per_seller=max_per_seller,
-    )
+    pick = _enforce_seller_diversity(varied, max_per_seller=max_per_seller)
 
-    # If seller diversity trimmed too aggressively, refill
-    if len(pick) < int(limit):
+    # refill if trimmed
+    if len(pick) < max(public_limit, paid_limit):
         for p in varied:
             if p in pick:
                 continue
@@ -653,261 +620,107 @@ def post_telegram(products: List[Dict], limit=5):
             if sum(1 for x in pick if _seller_key_for_product(x) == sk) >= max_per_seller:
                 continue
             pick.append(p)
-            if len(pick) >= int(limit):
+            if len(pick) >= max(public_limit, paid_limit):
                 break
 
-    # Debug log so you can confirm variety in Actions logs
-    try:
-        kset = [_topic_key_for_product(x) for x in pick]
-        sset = [_seller_key_for_product(x) for x in pick]
-        print(f"[telegram] pick keywords: {kset}")
-        print(f"[telegram] pick sellers:  {sset}")
-    except Exception:
-        pass
+    # split: public gets top N, paid gets top M (usually more)
+    public_pick = pick[: max(0, public_limit)]
+    paid_pick = pick[: max(0, paid_limit)]
 
-    # CTA cooldown memory (per-run; avoids multiple CTAs inside the same job run)
-    last_cta_ts = 0.0
-
-    def can_send_cta_now() -> bool:
-        nonlocal last_cta_ts
-        now = time.time()
-        if last_cta_ts <= 0.0:
-            return True
-        mins = (now - last_cta_ts) / 60.0
-        return mins >= float(cta_cooldown_minutes)
-
-    def mark_cta_sent():
-        nonlocal last_cta_ts
-        last_cta_ts = time.time()
-
-    # ==========================
-    # NEW: persistent cooldown across runs (uses your DB keys)
-    # We convert minutes -> hours for fetch_recent_posted_keys()
-    # ==========================
+    # CTA persistent cooldown keys
     cta_cooldown_hours = max(1, int((int(cta_cooldown_minutes) + 59) // 60))
-    cta_recent_keys = fetch_recent_posted_keys(cta_cooldown_hours) or []
-    cta_recently_sent = (_cta_key(chat_id) in set(cta_recent_keys))
+    cta_recent_keys = set(fetch_recent_posted_keys(cta_cooldown_hours) or [])
 
-    try:
-        print(f"[telegram] cta_recently_sent={cta_recently_sent} cooldown_minutes={cta_cooldown_minutes}")
-    except Exception:
-        pass
+    def should_send_cta(chat_key: str) -> bool:
+        return _cta_key(chat_key) not in cta_recent_keys
 
-    sent_count = 0
-    posted_any = False
-
-    for p in pick:
+    def mark_cta(chat_key: str):
         try:
-            title_raw = str(p.get("title") or "")
-            title = html.escape(title_raw[:170])
+            mark_posted_item(
+                url_key=_cta_key(chat_key),
+                canonical_url="cta",
+                keyword="cta",
+                title="telegram_cta",
+                provider="telegram",
+                source="telegram",
+            )
+        except Exception:
+            pass
 
-            price = p.get("price")
-            currency = p.get("currency", "USD")
+    posted_public = 0
+    posted_paid = 0
 
-            try:
-                first_tag = (p.get("tags") or [p.get("keyword") or "trend"])[0]
-                url = affiliate_wrap(p.get("url", ""), custom_id=str(first_tag).replace(" ", "_")[:40])
-            except Exception:
-                url = p.get("url", "")
-
-            click_url = p.get("click_url")
-            final_url = click_url or url
-
+    # PUBLIC
+    for p in public_pick:
+        try:
+            msg = _build_post(p, premium=False)
             img = p.get("image_url")
-
-            fb = p.get("seller_feedback")
-            top_rated = p.get("top_rated")
-            trust_line = ""
-            if fb:
-                # NEW: format feedback like 2.3M / 454k
-                trust_line = f"⭐ Seller feedback: {format_feedback_number(fb)}"
-                if top_rated:
-                    trust_line += " · Top Rated"
-
-            # ==========================
-            # IMPROVED HOOK LINES
-            # ==========================
-            hook_lines = []
-
-            lt = _listing_type(p)
-            if lt:
-                hook_lines.append(f"🛒 {lt}")
-
-            ra = p.get("returns_accepted")
-            if ra is True:
-                hook_lines.append("✅ Free returns")
-
-            ship = p.get("shipping_cost")
-            if ship is not None:
-                try:
-                    ship_f = float(ship)
-                    if ship_f <= 0.0001:
-                        hook_lines.append("🚚 Free shipping")
-                    else:
-                        hook_lines.append(f"🚚 Shipping: {currency} {ship_f:.2f}")
-                except Exception:
-                    pass
-
-            end_ts = _parse_end_time(p)
-            if end_ts:
-                try:
-                    hrs_left = max(0.0, (end_ts - datetime.now(timezone.utc).timestamp()) / 3600.0)
-                    if hrs_left <= 6.0:
-                        hook_lines.append("⏳ Ends soon")
-                except Exception:
-                    pass
-
-            cond = str(p.get("condition") or "").strip()
-            cond_line = f"Condition: {html.escape(cond)}" if cond else ""
-
-            price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else f"{currency} {price}"
-            variant = (hash(title_raw) % 2)
-
-            if variant == 0:
-                headline = "🔥 DEAL WATCH"
-                cta = "👉 Tap to view"
-                body_lines = [
-                    headline,
-                    f"<b>{title}</b>",
-                    f"💰 {price_text}",
-                ]
-            else:
-                headline = "⚡ TRENDING + BUYER-READY"
-                cta = "🛒 Check it out"
-                body_lines = [
-                    headline,
-                    f"<b>{title}</b>",
-                    f"Price: {price_text}",
-                ]
-
-            if trust_line:
-                body_lines.append(trust_line)
-
-            if hook_lines:
-                body_lines.append("\n".join(hook_lines))
-
-            if cond_line:
-                body_lines.append(cond_line)
-
-            body_lines += ["", f"<a href=\"{final_url}\">{cta}</a>"]
-            caption = "\n".join(body_lines)
-
             if img:
-                resp = requests.post(
-                    f"{api}/sendPhoto",
-                    data={
-                        "chat_id": chat_id,
-                        "photo": img,
-                        "caption": caption,
-                        "parse_mode": "HTML",
-                    },
-                    timeout=20,
-                )
+                send_photo(str(img), msg, target="public", parse_mode="HTML")
             else:
-                resp = requests.post(
-                    f"{api}/sendMessage",
-                    data={
-                        "chat_id": chat_id,
-                        "text": caption,
-                        "parse_mode": "HTML",
-                        "disable_web_page_preview": False,
-                    },
-                    timeout=20,
-                )
-
-            try:
-                if getattr(resp, "status_code", 0) >= 400:
-                    continue
-            except Exception:
-                pass
-
-            posted_any = True
-            sent_count += 1
+                send_text(msg, target="public", parse_mode="HTML", disable_web_page_preview=False)
+            posted_public += 1
 
             try:
                 mark_posted_item(
                     url_key=str(p.get("_url_key") or ""),
                     canonical_url=str(p.get("_canonical_url") or ""),
                     keyword=str(p.get("keyword") or ""),
-                    title=title_raw,
+                    title=str(p.get("title") or ""),
                     provider=str(p.get("provider") or ""),
                     source=str(p.get("source") or ""),
                 )
             except Exception:
                 pass
 
-            if sent_count % int(cta_every_n_posts) == 0:
-                if (not cta_recently_sent) and can_send_cta_now():
-                    try:
-                        ok = _send_reseller_cta(api, chat_id)
-                        if ok:
-                            # NEW: persist cooldown across runs
-                            try:
-                                mark_posted_item(
-                                    url_key=_cta_key(chat_id),
-                                    canonical_url="cta",
-                                    keyword="cta",
-                                    title="telegram_cta",
-                                    provider="telegram",
-                                    source="telegram",
-                                )
-                            except Exception:
-                                pass
-                            cta_recently_sent = True
-
-                        mark_cta_sent()
-                    except Exception:
-                        pass
-
-                    try:
-                        maybe_send_cta()
-                    except Exception:
-                        pass
-
-                    if pin_cta:
-                        try:
-                            _pin_last_message(api, chat_id)
-                        except Exception:
-                            pass
+            # CTA
+            if posted_public > 0 and public_cta_every > 0 and posted_public % public_cta_every == 0:
+                # use "public" as CTA key since channel IDs can be @handle
+                if should_send_cta("public"):
+                    send_text(_build_cta_text(premium=False), target="public", parse_mode="HTML", disable_web_page_preview=True)
+                    mark_cta("public")
 
             time.sleep(0.55 + random.uniform(0.0, 0.35))
         except Exception:
             continue
 
-    # End-of-batch CTA (cooldown protected + persistent)
-    if posted_any and (not cta_recently_sent) and can_send_cta_now():
+    # PAID
+    for p in paid_pick:
         try:
-            ok = _send_reseller_cta(api, chat_id)
-            if ok:
-                try:
-                    mark_posted_item(
-                        url_key=_cta_key(chat_id),
-                        canonical_url="cta",
-                        keyword="cta",
-                        title="telegram_cta",
-                        provider="telegram",
-                        source="telegram",
-                    )
-                except Exception:
-                    pass
-                cta_recently_sent = True
+            msg = _build_post(p, premium=True)
+            img = p.get("image_url")
+            if img:
+                send_photo(str(img), msg, target="paid", parse_mode="HTML")
+            else:
+                send_text(msg, target="paid", parse_mode="HTML", disable_web_page_preview=False)
+            posted_paid += 1
 
-            mark_cta_sent()
+            # CTA
+            if posted_paid > 0 and paid_cta_every > 0 and posted_paid % paid_cta_every == 0:
+                if should_send_cta("paid"):
+                    send_text(_build_cta_text(premium=True), target="paid", parse_mode="HTML", disable_web_page_preview=True)
+                    mark_cta("paid")
+
+            time.sleep(0.55 + random.uniform(0.0, 0.35))
+        except Exception:
+            continue
+
+    # ADMIN summary (no spam)
+    if admin_summary:
+        try:
+            topics = sorted({_topic_key_for_product(x) for x in pick})
+            send_text(
+                "🧠 TrendDrop run summary\n"
+                f"- Picked: {len(pick)}\n"
+                f"- Posted public: {posted_public}\n"
+                f"- Posted paid: {posted_paid}\n"
+                f"- Topics: {', '.join(topics[:12])}{'…' if len(topics) > 12 else ''}",
+                target="admin",
+                disable_web_page_preview=True,
+            )
         except Exception:
             pass
 
-        try:
-            maybe_send_cta()
-        except Exception:
-            pass
-
-        if pin_cta:
-            try:
-                _pin_last_message(api, chat_id)
-            except Exception:
-                pass
-
-    # after posting, log a run summary
     try:
         uniq_topics = set()
         for p in products:
