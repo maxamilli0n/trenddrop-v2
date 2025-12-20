@@ -2,27 +2,30 @@ import os, json, time, requests, pathlib, html
 import hashlib
 from urllib.parse import urlparse
 from pathlib import Path
+from datetime import datetime, timezone
+from io import BytesIO
+from typing import List, Dict, Optional
+
 from trenddrop.utils.env_loader import load_env_once
 from trenddrop.config import (
     CLICK_REDIRECT_BASE,
+    BOT_TOKEN,
     gumroad_cta_url,
+    TELEGRAM_DEDUPE_HOURS,
+    TELEGRAM_MAX_PER_KEYWORD,
+    TELEGRAM_MIN_UNIQUE_KEYWORDS,
+    TELEGRAM_MAX_PER_SELLER,
+    TELEGRAM_CTA_EVERY_N_POSTS,
+    TELEGRAM_CTA_COOLDOWN_MINUTES,
+    TELEGRAM_PIN_CTA,
 )
-from trenddrop.reports.product_quality import (
-    dedupe_near_duplicates,
-    ensure_rank_fields,
-)
-
-ENV_PATH = load_env_once()
-
-from io import BytesIO
-from typing import List, Dict, Optional
-from datetime import datetime, timezone
-
+from trenddrop.telegram_utils import send_text, send_photo
 from utils.db import save_run_summary, upsert_products, fetch_recent_posted_keys, mark_posted_item
 from utils.epn import affiliate_wrap
-from utils.ai import marketing_copy_for
+from utils.ai import caption_for, marketing_copy_for
+from trenddrop.reports.product_quality import dedupe_near_duplicates, ensure_rank_fields
 
-from trenddrop.telegram_utils import send_text, send_photo
+ENV_PATH = load_env_once()
 
 DOCS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "docs")
 DOCS_DATA = os.path.join(os.path.dirname(os.path.dirname(__file__)), "docs", "data")
@@ -37,6 +40,29 @@ except Exception:
     Image = None  # type: ignore
     ImageDraw = None  # type: ignore
     ImageFont = None  # type: ignore
+
+
+def env_int(name: str, default: int) -> int:
+    raw = os.environ.get(name, None)
+    if raw is None:
+        return default
+    raw = str(raw).strip()
+    if raw == "":
+        return default
+    try:
+        return int(raw)
+    except Exception:
+        return default
+
+
+def env_bool(name: str, default: bool = False) -> bool:
+    raw = os.environ.get(name, None)
+    if raw is None:
+        return default
+    raw = str(raw).strip().lower()
+    if raw == "":
+        return default
+    return raw in ("1", "true", "yes", "y", "on")
 
 
 def format_feedback_number(feedback) -> str:
@@ -78,8 +104,7 @@ def _canonicalize_url(raw_url: str) -> str:
         scheme = parsed.scheme or "https"
         netloc = (parsed.netloc or "").lower()
         path = parsed.path or ""
-        canonical = f"{scheme}://{netloc}{path}"
-        return canonical
+        return f"{scheme}://{netloc}{path}"
     except Exception:
         return (raw_url or "").strip()
 
@@ -104,13 +129,7 @@ def _topic_key_for_product(p: Dict) -> str:
     return "other"
 
 
-def _select_with_variety(
-    scored: List[Dict],
-    limit: int,
-    *,
-    max_per_keyword: int,
-    min_unique_keywords: int,
-) -> List[Dict]:
+def _select_with_variety(scored: List[Dict], limit: int, *, max_per_keyword: int, min_unique_keywords: int) -> List[Dict]:
     if limit <= 0:
         return []
 
@@ -130,21 +149,14 @@ def _select_with_variety(
         picked.append(p)
         counts[k] = counts.get(k, 0) + 1
 
-    if not picked:
-        return []
-
     def uniq_count(items: List[Dict]) -> int:
         return len({_topic_key_for_product(x) for x in items})
 
-    if uniq_count(picked) >= target_unique:
+    if not picked or uniq_count(picked) >= target_unique:
         return picked
 
     existing = {_topic_key_for_product(x) for x in picked}
-    new_keyword_candidates = []
-    for p in scored:
-        k = _topic_key_for_product(p)
-        if k not in existing:
-            new_keyword_candidates.append(p)
+    new_keyword_candidates = [p for p in scored if _topic_key_for_product(p) not in existing]
 
     i = 0
     while uniq_count(picked) < target_unique and i < len(new_keyword_candidates):
@@ -157,7 +169,6 @@ def _select_with_variety(
             if counts.get(pk, 0) > 1:
                 removable_idx = j
                 break
-
         if removable_idx is None:
             break
 
@@ -170,24 +181,7 @@ def _select_with_variety(
         existing.add(cand_k)
         i += 1
 
-    if len(picked) < limit:
-        existing_counts = {}
-        for x in picked:
-            k = _topic_key_for_product(x)
-            existing_counts[k] = existing_counts.get(k, 0) + 1
-
-        for p in scored:
-            if len(picked) >= limit:
-                break
-            if p in picked:
-                continue
-            k = _topic_key_for_product(p)
-            if existing_counts.get(k, 0) >= max_per_keyword:
-                continue
-            picked.append(p)
-            existing_counts[k] = existing_counts.get(k, 0) + 1
-
-    return picked
+    return picked[:limit]
 
 
 def _seller_key_for_product(p: Dict) -> str:
@@ -225,119 +219,9 @@ def _enforce_seller_diversity(items: List[Dict], *, max_per_seller: int) -> List
     return picked
 
 
-def _parse_end_time(p: Dict) -> float | None:
-    if "end_time_ts" in p:
-        try:
-            return float(p["end_time_ts"])
-        except Exception:
-            pass
-
-    for key in ("end_time", "itemEndDate"):
-        v = p.get(key)
-        if not v:
-            continue
-        if isinstance(v, (int, float)):
-            return float(v)
-        if isinstance(v, str):
-            try:
-                s = v.replace("Z", "+00:00")
-                dt = datetime.fromisoformat(s)
-                if dt.tzinfo is None:
-                    dt = dt.replace(tzinfo=timezone.utc)
-                return dt.timestamp()
-            except Exception:
-                continue
-    return None
-
-
-def _listing_type(p: Dict) -> str:
-    lt = str(p.get("listing_type") or p.get("listingType") or p.get("buyingOptions") or "").lower()
-
-    if isinstance(p.get("buyingOptions"), list):
-        try:
-            bo = [str(x).lower() for x in (p.get("buyingOptions") or [])]
-            lt = ",".join(bo)
-        except Exception:
-            pass
-
-    if "auction" in lt:
-        return "Auction"
-    if "fixed" in lt or "buy_it_now" in lt or "buynow" in lt or "now" in lt:
-        return "Buy It Now"
-    return ""
-
-
 def ensure_dirs():
     pathlib.Path(DOCS_DIR).mkdir(parents=True, exist_ok=True)
     pathlib.Path(DOCS_DATA).mkdir(parents=True, exist_ok=True)
-
-
-def _generate_og_image(products: List[Dict]) -> None:
-    if Image is None:
-        return
-    try:
-        width, height = 1200, 630
-        bg_color = (15, 23, 42)
-        accent = (99, 102, 241)
-        text_primary = (255, 255, 255)
-        text_secondary = (226, 232, 240)
-
-        img = Image.new("RGB", (width, height), bg_color)
-        draw = ImageDraw.Draw(img)
-
-        font_path_bold = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-        font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
-        try:
-            f_title = ImageFont.truetype(font_path_bold, 88)
-            f_sub = ImageFont.truetype(font_path, 40)
-            f_tag = ImageFont.truetype(font_path_bold, 28)
-        except Exception:
-            f_title = ImageFont.load_default()
-            f_sub = ImageFont.load_default()
-            f_tag = ImageFont.load_default()
-
-        draw.rectangle([(0, 0), (width, 14)], fill=accent)
-
-        title = "TrendDrop"
-        subtitle = "Today’s Trending Finds"
-        draw.text((60, 140), title, fill=text_primary, font=f_title)
-        draw.text((64, 240), subtitle, fill=text_secondary, font=f_sub)
-
-        x = width - 60
-        y = 110
-        thumb_w, thumb_h = 260, 260
-        spacing = 12
-        pasted = 0
-        for p in products:
-            if pasted >= 3:
-                break
-            url = p.get("image_url")
-            if not url:
-                continue
-            try:
-                r = requests.get(url, timeout=10)
-                if r.status_code != 200:
-                    continue
-                t = Image.open(BytesIO(r.content))  # type: ignore
-            except Exception:
-                continue
-            try:
-                t = t.convert("RGB")
-                t.thumbnail((thumb_w, thumb_h))
-                x_pos = x - t.width
-                draw.rectangle([(x_pos - 6, y - 6), (x_pos + t.width + 6, y + t.height + 6)], fill=(30, 41, 59))
-                img.paste(t, (x_pos, y))
-                y += t.height + spacing
-                pasted += 1
-            except Exception:
-                continue
-
-        ts = time.strftime("Updated %b %d, %Y", time.gmtime())
-        draw.text((60, height - 80), ts, fill=(148, 163, 184), font=f_tag)
-
-        img.save(OG_PATH, format="PNG", optimize=True)
-    except Exception:
-        return
 
 
 def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] = None):
@@ -347,20 +231,18 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
 
     for p in products:
         try:
+            p["caption"] = caption_for(p)
             mc = marketing_copy_for(p)
             p["headline"] = mc.get("headline")
             p["blurb"] = mc.get("blurb")
             p["emojis"] = mc.get("emojis")
-
             try:
                 first_tag = (p.get("tags") or [p.get("keyword") or "trend"])[0]
                 p["url"] = affiliate_wrap(p.get("url", ""), custom_id=str(first_tag).replace(" ", "_")[:40])
             except Exception:
                 pass
         except Exception:
-            p["headline"] = None
-            p["blurb"] = None
-            p["emojis"] = ""
+            p["caption"] = p.get("title", "")
 
     ensure_dirs()
 
@@ -378,197 +260,110 @@ def update_storefront(products: List[Dict], raw_products: Optional[List[Dict]] =
     with open(PRODUCTS_PATH, "w", encoding="utf-8") as f:
         json.dump({"updated_at": int(time.time()), "products": products}, f, indent=2)
 
-    try:
-        _generate_og_image(products)
-    except Exception:
-        pass
+
+def _cta_key(scope: str) -> str:
+    return f"CTA::{scope}"
 
 
-def _build_cta_text(*, premium: bool) -> str:
-    paid_url = ""
-    try:
-        paid_url = gumroad_cta_url() or ""
-    except Exception:
-        paid_url = ""
-
-    if premium:
-        lines = [
-            "💎 <b>Premium: weekly drops + higher-signal picks</b>",
-            "You’re in the paid channel — here’s the latest free sample + full pack link.",
-            "",
-            f"✅ Free sample (5 items): <a href=\"{FREE_SAMPLE_URL}\">Download here</a>",
-        ]
-        if paid_url:
-            lines += [f"🔥 Full Top 50 pack: <a href=\"{paid_url}\">Get it here</a>"]
-        lines += ["", "Tip: move fast — same-day listings convert best."]
-        return "\n".join(lines)
-
+def _build_public_cta() -> str:
+    paid_url = gumroad_cta_url() or ""
     lines = [
         "📦 <b>Flip-ready product list</b>",
-        "Want the full weekly pack (PDF + CSV) with the best picks?",
+        "If you resell on eBay / Marketplace / Amazon / TikTok Shop — grab the free sample (PDF + CSV).",
         "",
-        f"✅ Free sample (5 items): <a href=\"{FREE_SAMPLE_URL}\">Download here</a>",
+        f"✅ Free sample (5 items): {FREE_SAMPLE_URL}",
     ]
     if paid_url:
-        lines += [f"🔥 Full Top 50 pack: <a href=\"{paid_url}\">Get it here</a>"]
+        lines += [f"🔥 Full Top 50 pack: {paid_url}"]
+    lines += ["", "Tip: same-day posting wins."]
     return "\n".join(lines)
 
 
-def _cta_key(chat_id: str) -> str:
-    return f"CTA::{str(chat_id)}"
-
-
-def _price_text(currency: str, price) -> str:
-    try:
-        if isinstance(price, (int, float)):
-            return f"{currency} {price:.2f}"
-        return f"{currency} {price}"
-    except Exception:
-        return f"{currency} {price}"
-
-
-def _build_post(
-    p: Dict,
-    *,
-    premium: bool,
-) -> str:
-    title_raw = str(p.get("title") or "").strip()
+def _public_caption(p: Dict, final_url: str) -> str:
+    title_raw = str(p.get("title") or "")
     title = html.escape(title_raw[:170])
 
-    currency = str(p.get("currency") or "USD")
     price = p.get("price")
-    price_text = _price_text(currency, price)
+    currency = p.get("currency", "USD")
+    price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else f"{currency} {price}"
 
-    click_url = p.get("click_url")
-    url = p.get("url") or ""
-    final_url = click_url or url
+    headline = "⚡ TRENDING NOW"
+    cta = "🛒 View deal"
+
+    return "\n".join([
+        headline,
+        f"<b>{title}</b>",
+        f"💰 {price_text}",
+        "",
+        f"<a href=\"{final_url}\">{cta}</a>",
+    ])
+
+
+def _paid_caption(p: Dict, final_url: str) -> str:
+    title_raw = str(p.get("title") or "")
+    title = html.escape(title_raw[:170])
+
+    price = p.get("price")
+    currency = p.get("currency", "USD")
+    price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else f"{currency} {price}"
 
     fb = p.get("seller_feedback")
     top_rated = p.get("top_rated")
     trust = ""
     if fb:
-        trust = f"⭐ {format_feedback_number(fb)} feedback"
+        trust = f"⭐ Seller feedback: {format_feedback_number(fb)}"
         if top_rated:
             trust += " · Top Rated"
 
-    # hooks
-    hooks = []
-    lt = _listing_type(p)
-    if lt:
-        hooks.append(f"🛒 {lt}")
-
+    extras = []
+    ra = p.get("returns_accepted")
+    if ra is True:
+        extras.append("✅ Returns accepted")
     ship = p.get("shipping_cost")
     if ship is not None:
         try:
             ship_f = float(ship)
-            hooks.append("🚚 Free shipping" if ship_f <= 0.0001 else f"🚚 Shipping: {currency} {ship_f:.2f}")
+            extras.append("🚚 Free shipping" if ship_f <= 0.0001 else f"🚚 Shipping: {currency} {ship_f:.2f}")
         except Exception:
             pass
 
-    ra = p.get("returns_accepted")
-    if ra is True and premium:
-        hooks.append("✅ Returns accepted")
+    headline = "💎 TrendDrop+ Member Pick"
+    cta = "🔗 Open listing"
 
-    end_ts = _parse_end_time(p)
-    if end_ts:
-        try:
-            hrs_left = max(0.0, (end_ts - datetime.now(timezone.utc).timestamp()) / 3600.0)
-            if hrs_left <= 6.0:
-                hooks.append("⏳ Ends soon (≤6h)")
-        except Exception:
-            pass
-
-    # copy
-    headline = str(p.get("headline") or "").strip()
-    blurb = str(p.get("blurb") or "").strip()
-
-    # if ai copy missing, use a clean default
-    if not headline:
-        headline = "🔥 Trending pick"
-    if not blurb:
-        blurb = "Worth a quick look — listings like this can move fast."
-
-    lines = []
-    lines.append(f"{'💎' if premium else '⚡'} <b>{html.escape(headline[:80])}</b>")
-    lines.append(f"<b>{title}</b>")
-    lines.append(f"💰 {price_text}")
+    parts = [
+        headline,
+        f"<b>{title}</b>",
+        f"💰 {price_text}",
+    ]
     if trust:
-        lines.append(trust)
-
-    if hooks:
-        lines.append("\n".join(hooks))
-
-    if premium:
-        # premium value: keyword + quick flip note
-        kw = str(p.get("keyword") or "")
-        tags = p.get("tags") or []
-        topic = kw or (tags[0] if isinstance(tags, list) and tags else "")
-        if topic:
-            lines.append(f"🏷️ Topic: <i>{html.escape(str(topic)[:60])}</i>")
-
-        # simple flip suggestion (safe heuristic)
-        if isinstance(price, (int, float)) and 15 <= float(price) <= 120:
-            lines.append("💡 Flip idea: list on FB Marketplace / TikTok Shop w/ fast shipping + clear photos.")
-
-        lines.append(f"🧭 {html.escape(blurb[:220])}")
-    else:
-        # public: shorter
-        lines.append(html.escape(blurb[:160]))
-
-    lines += ["", f"<a href=\"{final_url}\">{'View listing' if premium else 'Tap to view'}</a>"]
-    return "\n".join([x for x in lines if x])
+        parts.append(trust)
+    if extras:
+        parts.append("\n".join(extras))
+    parts += ["", f"<a href=\"{final_url}\">{cta}</a>"]
+    return "\n".join(parts)
 
 
-def post_telegram(products: List[Dict], limit=5):
+def post_telegram(products: List[Dict], limit=5, scope: str = "broadcast"):
     """
-    Posts:
-      - PUBLIC channel: clean shorter posts
-      - PAID channel: richer “reseller notes” version
-      - ADMIN: optional summary (no product spam)
+    scope:
+      - admin / public / paid / broadcast / legacy
+    broadcast posts products to public+paid if those are configured.
     """
+    if not BOT_TOKEN or not products or limit <= 0:
+        return
+
     import random
     from trenddrop.conversion.ebay_conversion import conversion_score, passes_hard_filters
 
-    if not products:
-        return
+    # Tunables (safe even if Actions sets blank)
+    dedupe_hours = env_int("TELEGRAM_DEDUPE_HOURS", TELEGRAM_DEDUPE_HOURS)
+    max_per_keyword = env_int("TELEGRAM_MAX_PER_KEYWORD", TELEGRAM_MAX_PER_KEYWORD)
+    min_unique_keywords = env_int("TELEGRAM_MIN_UNIQUE_KEYWORDS", TELEGRAM_MIN_UNIQUE_KEYWORDS)
+    max_per_seller = env_int("TELEGRAM_MAX_PER_SELLER", TELEGRAM_MAX_PER_SELLER)
 
-    # Dedupe window (hours)
-    dedupe_hours = 48
-    try:
-        dedupe_hours = int(str(os.environ.get("TELEGRAM_DEDUPE_HOURS", "48")).strip())
-    except Exception:
-        dedupe_hours = 48
-
-    # per-channel limits (defaults)
-    public_limit = int(str(os.environ.get("TELEGRAM_PUBLIC_LIMIT", str(max(1, int(limit))))).strip())
-    paid_limit = int(str(os.environ.get("TELEGRAM_PAID_LIMIT", str(max(2, int(limit) + 2)))).strip())
-    admin_summary = str(os.environ.get("TELEGRAM_ADMIN_SUMMARY", "1")).strip().lower() in ("1", "true", "yes", "y")
-
-    # Variety controls
-    max_per_keyword = 2
-    min_unique_keywords = 4
-    try:
-        max_per_keyword = int(str(os.environ.get("TELEGRAM_MAX_PER_KEYWORD", "2")).strip())
-    except Exception:
-        max_per_keyword = 2
-    try:
-        min_unique_keywords = int(str(os.environ.get("TELEGRAM_MIN_UNIQUE_KEYWORDS", "4")).strip())
-    except Exception:
-        min_unique_keywords = 4
-
-    # Seller diversity controls
-    max_per_seller = 1
-    try:
-        max_per_seller = int(str(os.environ.get("TELEGRAM_MAX_PER_SELLER", "1")).strip())
-    except Exception:
-        max_per_seller = 1
-    if max_per_seller < 1:
-        max_per_seller = 1
-
-    # CTA controls (separate)
-    public_cta_every = int(str(os.environ.get("TELEGRAM_PUBLIC_CTA_EVERY_N_POSTS", "12")).strip())
-    paid_cta_every = int(str(os.environ.get("TELEGRAM_PAID_CTA_EVERY_N_POSTS", "8")).strip())
-    cta_cooldown_minutes = int(str(os.environ.get("TELEGRAM_CTA_COOLDOWN_MINUTES", "360")).strip())  # 6h default
+    cta_every_n_posts = env_int("TELEGRAM_CTA_EVERY_N_POSTS", TELEGRAM_CTA_EVERY_N_POSTS)
+    cta_cooldown_minutes = env_int("TELEGRAM_CTA_COOLDOWN_MINUTES", TELEGRAM_CTA_COOLDOWN_MINUTES)
+    pin_cta = env_bool("TELEGRAM_PIN_CTA", TELEGRAM_PIN_CTA)
 
     recent_keys = fetch_recent_posted_keys(dedupe_hours) or []
     if recent_keys:
@@ -577,7 +372,7 @@ def post_telegram(products: List[Dict], limit=5):
     prepared = [ensure_rank_fields(dict(p)) for p in products]
     collapsed = dedupe_near_duplicates(prepared)
 
-    scored: List[Dict] = []
+    scored = []
     for p in collapsed:
         raw_url = str(p.get("url") or "")
         canonical = _canonicalize_url(raw_url)
@@ -597,71 +392,61 @@ def post_telegram(products: List[Dict], limit=5):
         if s <= -1e8:
             continue
 
-        p["_conv_score"] = float(s)
+        p["_conv_score"] = s
         scored.append(p)
 
     scored.sort(key=lambda x: float(x.get("_conv_score", 0.0)), reverse=True)
 
     varied = _select_with_variety(
         scored,
-        max(public_limit, paid_limit, 1),
+        max(1, int(limit)),
         max_per_keyword=max_per_keyword,
         min_unique_keywords=min_unique_keywords,
     )
 
     pick = _enforce_seller_diversity(varied, max_per_seller=max_per_seller)
 
-    # refill if trimmed
-    if len(pick) < max(public_limit, paid_limit):
-        for p in varied:
-            if p in pick:
-                continue
-            sk = _seller_key_for_product(p)
-            if sum(1 for x in pick if _seller_key_for_product(x) == sk) >= max_per_seller:
-                continue
-            pick.append(p)
-            if len(pick) >= max(public_limit, paid_limit):
-                break
+    posted = 0
 
-    # split: public gets top N, paid gets top M (usually more)
-    public_pick = pick[: max(0, public_limit)]
-    paid_pick = pick[: max(0, paid_limit)]
-
-    # CTA persistent cooldown keys
+    # Persistent CTA cooldown (per scope)
     cta_cooldown_hours = max(1, int((int(cta_cooldown_minutes) + 59) // 60))
-    cta_recent_keys = set(fetch_recent_posted_keys(cta_cooldown_hours) or [])
+    cta_recent_keys = fetch_recent_posted_keys(cta_cooldown_hours) or []
+    cta_recently_sent = (_cta_key(scope) in set(cta_recent_keys))
 
-    def should_send_cta(chat_key: str) -> bool:
-        return _cta_key(chat_key) not in cta_recent_keys
+    # Only do CTA on PUBLIC/BROADCAST (not paid, not admin)
+    allow_cta = scope in ("public", "broadcast", "legacy")
 
-    def mark_cta(chat_key: str):
+    for p in pick:
         try:
-            mark_posted_item(
-                url_key=_cta_key(chat_key),
-                canonical_url="cta",
-                keyword="cta",
-                title="telegram_cta",
-                provider="telegram",
-                source="telegram",
-            )
-        except Exception:
-            pass
-
-    posted_public = 0
-    posted_paid = 0
-
-    # PUBLIC
-    for p in public_pick:
-        try:
-            msg = _build_post(p, premium=False)
-            img = p.get("image_url")
-            if img:
-                send_photo(str(img), msg, target="public", parse_mode="HTML")
-            else:
-                send_text(msg, target="public", parse_mode="HTML", disable_web_page_preview=False)
-            posted_public += 1
-
             try:
+                first_tag = (p.get("tags") or [p.get("keyword") or "trend"])[0]
+                url = affiliate_wrap(p.get("url", ""), custom_id=str(first_tag).replace(" ", "_")[:40])
+            except Exception:
+                url = p.get("url", "")
+
+            final_url = p.get("click_url") or url
+            img = p.get("image_url")
+
+            # Build caption per scope
+            if scope == "paid":
+                caption = _paid_caption(p, final_url)
+                send_scope = "paid"
+            elif scope == "public":
+                caption = _public_caption(p, final_url)
+                send_scope = "public"
+            elif scope == "admin":
+                caption = f"🛠️ Admin debug post\n<b>{html.escape(str(p.get('title') or '')[:170])}</b>\n{final_url}"
+                send_scope = "admin"
+            elif scope == "broadcast":
+                # Post public style to public + paid style to paid
+                if img:
+                    send_photo(img, caption=_public_caption(p, final_url), scope="public", parse_mode="HTML")
+                    send_photo(img, caption=_paid_caption(p, final_url), scope="paid", parse_mode="HTML")
+                else:
+                    send_text(_public_caption(p, final_url), scope="public", parse_mode="HTML", disable_web_page_preview=False)
+                    send_text(_paid_caption(p, final_url), scope="paid", parse_mode="HTML", disable_web_page_preview=False)
+
+                posted += 1
                 mark_posted_item(
                     url_key=str(p.get("_url_key") or ""),
                     canonical_url=str(p.get("_canonical_url") or ""),
@@ -670,62 +455,53 @@ def post_telegram(products: List[Dict], limit=5):
                     provider=str(p.get("provider") or ""),
                     source=str(p.get("source") or ""),
                 )
-            except Exception:
-                pass
-
-            # CTA
-            if posted_public > 0 and public_cta_every > 0 and posted_public % public_cta_every == 0:
-                # use "public" as CTA key since channel IDs can be @handle
-                if should_send_cta("public"):
-                    send_text(_build_cta_text(premium=False), target="public", parse_mode="HTML", disable_web_page_preview=True)
-                    mark_cta("public")
-
-            time.sleep(0.55 + random.uniform(0.0, 0.35))
-        except Exception:
-            continue
-
-    # PAID
-    for p in paid_pick:
-        try:
-            msg = _build_post(p, premium=True)
-            img = p.get("image_url")
-            if img:
-                send_photo(str(img), msg, target="paid", parse_mode="HTML")
+                time.sleep(0.55 + random.uniform(0.0, 0.35))
+                continue
             else:
-                send_text(msg, target="paid", parse_mode="HTML", disable_web_page_preview=False)
-            posted_paid += 1
+                # legacy
+                caption = _public_caption(p, final_url)
+                send_scope = "legacy"
 
-            # CTA
-            if posted_paid > 0 and paid_cta_every > 0 and posted_paid % paid_cta_every == 0:
-                if should_send_cta("paid"):
-                    send_text(_build_cta_text(premium=True), target="paid", parse_mode="HTML", disable_web_page_preview=True)
-                    mark_cta("paid")
+            # Single-scope send
+            if img:
+                send_photo(img, caption=caption, scope=send_scope, parse_mode="HTML")
+            else:
+                send_text(caption, scope=send_scope, parse_mode="HTML", disable_web_page_preview=False)
+
+            posted += 1
+
+            mark_posted_item(
+                url_key=str(p.get("_url_key") or ""),
+                canonical_url=str(p.get("_canonical_url") or ""),
+                keyword=str(p.get("keyword") or ""),
+                title=str(p.get("title") or ""),
+                provider=str(p.get("provider") or ""),
+                source=str(p.get("source") or ""),
+            )
+
+            # CTA logic (only for public/broadcast/legacy)
+            if allow_cta and (posted % max(2, int(cta_every_n_posts)) == 0) and (not cta_recently_sent):
+                send_text(_build_public_cta(), scope="public" if scope != "legacy" else "legacy", parse_mode="HTML", disable_web_page_preview=True)
+                mark_posted_item(
+                    url_key=_cta_key(scope),
+                    canonical_url="cta",
+                    keyword="cta",
+                    title="telegram_cta",
+                    provider="telegram",
+                    source="telegram",
+                )
+                cta_recently_sent = True
 
             time.sleep(0.55 + random.uniform(0.0, 0.35))
         except Exception:
             continue
 
-    # ADMIN summary (no spam)
-    if admin_summary:
-        try:
-            topics = sorted({_topic_key_for_product(x) for x in pick})
-            send_text(
-                "🧠 TrendDrop run summary\n"
-                f"- Picked: {len(pick)}\n"
-                f"- Posted public: {posted_public}\n"
-                f"- Posted paid: {posted_paid}\n"
-                f"- Topics: {', '.join(topics[:12])}{'…' if len(topics) > 12 else ''}",
-                target="admin",
-                disable_web_page_preview=True,
-            )
-        except Exception:
-            pass
-
+    # run summary
     try:
         uniq_topics = set()
         for p in products:
             for t in p.get("tags", []) or []:
                 uniq_topics.add(t)
-        save_run_summary(topic_count=len(uniq_topics) or 1, item_count=len(pick))
+        save_run_summary(topic_count=len(uniq_topics) or 1, item_count=posted)
     except Exception:
         pass
