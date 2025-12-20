@@ -1,19 +1,13 @@
 #!/usr/bin/env python3
 import argparse
-import json
 import os
-import sys
 import time
-from pathlib import Path
 from typing import Dict, List, Sequence
 
 import requests
 
 from trenddrop.utils.env_loader import load_env_once
 from trenddrop.config import (
-    BOT_TOKEN,
-    CHAT_ID,
-    CHANNEL_ID,
     SUPABASE_URL,
     SUPABASE_SERVICE_ROLE_KEY,
 )
@@ -28,7 +22,6 @@ from trenddrop.reports.product_quality import (
     ensure_rank_fields,
 )
 
-# Ensure .env is loaded once for all commands
 ENV_PATH = load_env_once()
 
 
@@ -83,9 +76,7 @@ def cmd_scrape(args: argparse.Namespace) -> int:
     raw_candidates: List[Dict] = []
     variant_cap = max(1, args.variants_per_topic)
     for topic in topics:
-        queries = topic_query_variants(topic, max_variants=variant_cap)
-        if not queries:
-            queries = [topic]
+        queries = topic_query_variants(topic, max_variants=variant_cap) or [topic]
         for query in queries:
             try:
                 found = search_ebay(query, per_page=args.per_page)
@@ -123,28 +114,11 @@ def cmd_scrape(args: argparse.Namespace) -> int:
     log("Storefront + Supabase updated.")
 
     if not args.no_telegram and args.telegram_limit > 0:
-        log("Posting to Telegram…")
+        log("Posting to Telegram (public + paid)…")
         post_telegram(picks, limit=args.telegram_limit)
         log("Telegram broadcast complete.")
     else:
         log("Telegram broadcast skipped.")
-    return 0
-
-
-def cmd_generate_weekly(args: argparse.Namespace) -> int:
-    from trenddrop.reports import generate_reports, build_manifest
-
-    log("Generating weekly pack…")
-    generate_reports.main()
-    build_manifest.main()
-    log("Pack + manifest generated.")
-
-    if args.verify:
-        log("Running smoke test…")
-        from scripts import smoke_test
-
-        smoke_test.main()
-        log("Smoke test passed.")
     return 0
 
 
@@ -187,10 +161,23 @@ def cmd_post_weekly(args: argparse.Namespace) -> int:
     template = args.message or (
         "📦 TrendDrop Weekly Pack is live!\n"
         f"Download the latest {args.format.upper()}: {{link}}\n"
-        "Check your inbox for the invite + instructions."
+        "If you’re premium, check the channel pins for onboarding."
     )
     message = template.replace("{link}", link)
-    send_text(message, disable_web_page_preview=False)
+
+    # Paid by default
+    send_text(message, target="paid", disable_web_page_preview=False)
+
+    # Optional: also announce in public (lighter marketing)
+    if args.also_public:
+        send_text(
+            "📦 Weekly pack dropped (premium gets full access).\n"
+            f"Free sample here: https://trenddropstudio.gumroad.com/l/free-sample\n"
+            f"Full pack: {link}",
+            target="public",
+            disable_web_page_preview=False,
+        )
+
     log("Telegram announcement sent.")
     return 0
 
@@ -204,12 +191,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_scrape = sub.add_parser("scrape-ebay", help="Fetch trending products and update storefront/Supabase.")
     p_scrape.add_argument("--topics", type=int, default=4, help="Number of Google Trends topics to explore.")
     p_scrape.add_argument("--per-page", type=int, default=20, help="Listings per keyword query to fetch from eBay.")
-    p_scrape.add_argument(
-        "--variants-per-topic",
-        type=int,
-        default=3,
-        help="Keyword variants to try per topic to widen the eBay search.",
-    )
+    p_scrape.add_argument("--variants-per-topic", type=int, default=3, help="Keyword variants per topic.")
     p_scrape.add_argument("--picks", type=int, default=6, help="How many final products to publish.")
     p_scrape.add_argument("--sleep-secs", type=float, default=3.0, help="Base delay between eBay API calls.")
     p_scrape.add_argument("--sleep-jitter", type=float, default=2.0, help="Random jitter added to sleep seconds.")
@@ -217,15 +199,12 @@ def build_parser() -> argparse.ArgumentParser:
     p_scrape.add_argument("--no-telegram", action="store_true", help="Skip Telegram posting.")
     p_scrape.set_defaults(func=cmd_scrape)
 
-    p_weekly = sub.add_parser("generate-weekly-pack", help="Generate weekly PDF/CSV and upload to Supabase.")
-    p_weekly.add_argument("--verify", action="store_true", help="Run scripts.smoke_test after generation.")
-    p_weekly.set_defaults(func=cmd_generate_weekly)
-
     p_post = sub.add_parser("post-weekly-pack-telegram", help="Send latest pack link to Telegram.")
-    p_post.add_argument("--mode", default="weekly", help="Report mode to request via report-links (default: weekly).")
-    p_post.add_argument("--format", default="pdf", choices=("pdf", "csv"), help="Report format for signed link.")
+    p_post.add_argument("--mode", default="weekly", help="Report mode (default: weekly).")
+    p_post.add_argument("--format", default="pdf", choices=("pdf", "csv"), help="Report format.")
     p_post.add_argument("--link", help="Override the link instead of generating via Supabase.")
     p_post.add_argument("--message", help="Custom Telegram message (include {link} if desired).")
+    p_post.add_argument("--also-public", action="store_true", help="Also announce in public channel.")
     p_post.set_defaults(func=cmd_post_weekly)
 
     return parser
@@ -239,5 +218,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
-
