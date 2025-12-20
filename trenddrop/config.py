@@ -1,9 +1,9 @@
 import os
+from datetime import datetime
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
 
 ENV_PATH = load_env_once()
-from datetime import datetime
 
 
 def env(name: str, default: str | None = None) -> str | None:
@@ -18,6 +18,7 @@ def env(name: str, default: str | None = None) -> str | None:
 MODE = (env("MODE", "live") or "live").lower()
 IS_LIVE = MODE == "live"
 
+
 def require(name: str) -> str:
     v = env(name)
     if v:
@@ -28,6 +29,7 @@ def require(name: str) -> str:
         print(msg)
         return ""
     raise RuntimeError(msg)
+
 
 # Supabase
 SUPABASE_URL = env("SUPABASE_URL") or ("" if IS_LIVE else require("SUPABASE_URL"))
@@ -48,26 +50,61 @@ STRIPE_WEBHOOK_SECRET = (STRIPE_WEBHOOK_SECRET_LIVE if IS_LIVE else STRIPE_WEBHO
 BREVO_API_KEY = env("BREVO_API_KEY")
 EMAIL_FROM = env("EMAIL_FROM")
 
-# Telegram
+# ==========================
+# Telegram (NEW CLEAN ROUTING)
+# ==========================
 BOT_TOKEN = env("TELEGRAM_BOT_TOKEN")
-CHAT_ID = env("TELEGRAM_CHAT_ID")                # DM / test chat
-CHANNEL_ID = env("TELEGRAM_CHANNEL_ID")          # @TrendDropStudio or numeric
+
+# Legacy envs (still supported)
+CHAT_ID = env("TELEGRAM_CHAT_ID")                # legacy "DM / test chat"
+CHANNEL_ID = env("TELEGRAM_CHANNEL_ID")          # legacy "public channel"
+
+# New envs (preferred)
+ADMIN_CHAT_ID = env("TELEGRAM_ADMIN_CHAT_ID") or CHAT_ID
+PUBLIC_CHANNEL_ID = env("TELEGRAM_PUBLIC_CHANNEL_ID") or CHANNEL_ID
+PAID_CHANNEL_ID = env("TELEGRAM_PAID_CHANNEL_ID")
 COMMUNITY_CHAT_ID = env("TELEGRAM_COMMUNITY_CHAT_ID")
-ALERT_CHAT_ID = env("TELEGRAM_ALERT_CHAT_ID") or CHAT_ID
+ALERT_CHAT_ID = env("TELEGRAM_ALERT_CHAT_ID") or ADMIN_CHAT_ID or CHAT_ID
 INVITE_URL = env("TELEGRAM_INVITE_URL")
 
-def tg_targets() -> list[str]:
+# Optional toggles (safe defaults)
+TELEGRAM_PUBLIC_ENABLED = str(env("TELEGRAM_PUBLIC_ENABLED", "1") or "1").lower() in ("1", "true", "yes", "y")
+TELEGRAM_PAID_ENABLED = str(env("TELEGRAM_PAID_ENABLED", "1") or "1").lower() in ("1", "true", "yes", "y")
+TELEGRAM_ADMIN_ENABLED = str(env("TELEGRAM_ADMIN_ENABLED", "1") or "1").lower() in ("1", "true", "yes", "y")
+
+
+def tg_targets(role: str = "all") -> list[str]:
+    """
+    Routing targets by role.
+    roles: admin | public | paid | alerts | all
+    """
+    role = (role or "all").strip().lower()
     targets: list[str] = []
-    if CHAT_ID:
-        targets.append(CHAT_ID)
-    if CHANNEL_ID:
-        targets.append(CHANNEL_ID)
-    # de-dupe just in case
-    return list(dict.fromkeys(targets))
+
+    if role in ("admin", "all"):
+        if TELEGRAM_ADMIN_ENABLED and ADMIN_CHAT_ID:
+            targets.append(ADMIN_CHAT_ID)
+
+    if role in ("public", "all"):
+        if TELEGRAM_PUBLIC_ENABLED and PUBLIC_CHANNEL_ID:
+            targets.append(PUBLIC_CHANNEL_ID)
+
+    if role in ("paid", "all"):
+        if TELEGRAM_PAID_ENABLED and PAID_CHANNEL_ID:
+            targets.append(PAID_CHANNEL_ID)
+
+    if role in ("alerts",):
+        if ALERT_CHAT_ID:
+            targets.append(ALERT_CHAT_ID)
+
+    # de-dupe in order
+    return list(dict.fromkeys([t for t in targets if t]))
+
 
 # Misc / storefront
 GUMROAD_CTA_URL = env("GUMROAD_CTA_URL", "")
 CLICK_REDIRECT_BASE = env("CLICK_REDIRECT_BASE", "")
+
 
 def gumroad_cta_url() -> str:
     raw = GUMROAD_CTA_URL or ""
@@ -75,4 +112,3 @@ def gumroad_cta_url() -> str:
         return ""
     # allow {date} token
     return raw.replace("{date}", datetime.utcnow().strftime("%Y-%m-%d"))
-
