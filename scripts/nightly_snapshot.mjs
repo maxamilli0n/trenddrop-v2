@@ -13,11 +13,11 @@ const {
   REPORTS_BUCKET = "trenddrop-reports",
 
   TELEGRAM_BOT_TOKEN,
-  TELEGRAM_ADMIN_CHAT_ID,   // ✅ NEW (admin-only)
-  TELEGRAM_CHAT_ID,         // legacy fallback
+  TELEGRAM_ADMIN_CHAT_ID,  // ✅ admin-only destination
+  TELEGRAM_CHAT_ID,        // fallback
 } = process.env;
 
-const ADMIN_CHAT = (TELEGRAM_ADMIN_CHAT_ID || TELEGRAM_CHAT_ID || "").trim();
+const ADMIN_TARGET = TELEGRAM_ADMIN_CHAT_ID || TELEGRAM_CHAT_ID;
 
 if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY || !SUPABASE_PROJECT_REF || !SUPABASE_ANON_KEY) {
   console.error("Missing required env vars. Need SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_PROJECT_REF, SUPABASE_ANON_KEY.");
@@ -27,16 +27,16 @@ if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY || !SUPABASE_PROJECT_REF || !SUP
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outDir = path.join(__dirname, "..", "snapshots");
 
-// 1) Pull CSV from products-report function
+// 1) Pull CSV from products-report
 const today = new Date();
 const yyyy = today.getUTCFullYear();
 const mm = String(today.getUTCMonth() + 1).padStart(2, "0");
 const dd = String(today.getUTCDate()).padStart(2, "0");
 const stamp = `${yyyy}-${mm}-${dd}`;
 
-const limit = Number(process.env.SNAPSHOT_LIMIT || 1000);
-const days = Number(process.env.SNAPSHOT_DAYS || 7);
-const type = (process.env.SNAPSHOT_TYPE || "recent").trim(); // "top" | "recent" | "search"
+const limit = 1000;
+const days = 7;
+const type = "recent";
 
 const url = `https://${SUPABASE_PROJECT_REF}.functions.supabase.co/products-report?type=${type}&days=${days}&format=csv&limit=${limit}`;
 const headers = { Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
@@ -63,7 +63,7 @@ try {
   await supa.storage.createBucket(REPORTS_BUCKET, { public: false });
   console.log(`[snapshot] Created bucket '${REPORTS_BUCKET}'`);
 } catch (e) {
-  console.log(`[snapshot] Bucket '${REPORTS_BUCKET}' already exists or create failed: ${e?.message ?? e}`);
+  console.log(`[snapshot] Bucket '${REPORTS_BUCKET}' exists (or create failed): ${e?.message ?? e}`);
 }
 
 const storagePath = `snapshots/${yyyy}/${mm}/products-${type}-${stamp}.csv`;
@@ -73,31 +73,30 @@ const upload = await supa.storage.from(REPORTS_BUCKET).upload(
   { upsert: true, contentType: "text/csv" }
 );
 if (upload.error) throw upload.error;
-
 console.log(`[snapshot] Uploaded -> ${REPORTS_BUCKET}/${storagePath}`);
 
-// 4) Signed URL (30 days)
+// 4) Signed URL
 const { data: sig, error: sigErr } = await supa.storage
   .from(REPORTS_BUCKET)
   .createSignedUrl(storagePath, 60 * 60 * 24 * 30);
-
 if (sigErr) throw sigErr;
+
 const signedUrl = sig.signedUrl;
 console.log(`[snapshot] Signed URL -> ${signedUrl}`);
 
-// 5) Telegram ping (ADMIN ONLY)
-if (TELEGRAM_BOT_TOKEN && ADMIN_CHAT) {
+// 5) Telegram admin-only ping
+if (TELEGRAM_BOT_TOKEN && ADMIN_TARGET) {
   const text =
-    `🛠️ TrendDrop admin snapshot (${stamp})\n` +
+    `📊 Nightly TrendDrop snapshot (${stamp})\n` +
     `• Window: last ${days} days\n` +
     `• Rows: up to ${limit}\n` +
-    `• CSV (signed): ${signedUrl}`;
+    `• Download CSV: ${signedUrl}`;
 
   const tgRes = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify({
-      chat_id: ADMIN_CHAT,
+      chat_id: ADMIN_TARGET,
       text,
       disable_web_page_preview: true,
     }),
@@ -107,10 +106,10 @@ if (TELEGRAM_BOT_TOKEN && ADMIN_CHAT) {
     const b = await tgRes.text().catch(() => "");
     console.warn(`[snapshot] Telegram failed ${tgRes.status}: ${b}`);
   } else {
-    console.log(`[snapshot] Telegram (admin) pinged ✅`);
+    console.log(`[snapshot] Telegram admin ping ✅ (${ADMIN_TARGET})`);
   }
 } else {
-  console.log(`[snapshot] Telegram disabled (missing TELEGRAM_BOT_TOKEN or TELEGRAM_ADMIN_CHAT_ID/TELEGRAM_CHAT_ID)`);
+  console.log(`[snapshot] Telegram disabled (missing bot token or admin target)`);  
 }
 
 console.log("[snapshot] Done.");
