@@ -1,6 +1,36 @@
 {
-  "updated_at": 1766351476,
+  "updated_at": 1766355161,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "smart light strip deals",
+      "title": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "price": 28.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/SBIAAOSw~ztbLPfb/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/312169544455?_skw=smart+light+strip+deals&hash=item48aec13b07%3Ag%3ASBIAAOSw~ztbLPfb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uac%2BgwIQR8eulJ%2FXMnE%2FMJOsPduhAc8A4Tpyf0j4S7h%2BBjV1aB03BU9Zh72jLb%2F6Q2f1l3Td0N6Z4IbR6I6aCF5oGzmjFO8xyOcrrsbhndFAsPC5zggnTnUfIsFoSkKgQ0sTF23Hyi9wXpJYMr65ts89zyah7lOnhLgY2G2NBj%2BSpj7GZJ74p9Pnmqf7UBeTe7gv4tPRay%2FQLICiai%2FY95WqFOdQooPc7kaiDGEMPPARGL7o%2FMcyZOWCYX7VAPLKyWrcxqKhbYl%2B7c6TocX0H22kv%2BOIPNjvQin8gBnWpYKkA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
+      "seller_feedback": 859741,
+      "seller_username": "valuebuybattery",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2018-06-22T13:25:28.000Z",
+      "signals": 9.0,
+      "tags": [
+        "smart light strip"
+      ],
+      "caption": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit \u2022 USD 28.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "blurb": "USD 28.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +40,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/hmIAAeSw34ppRXGj/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177682846157?_skw=pickleball+paddle+deals&hash=item295eb911cd%3Ag%3AhmIAAeSw34ppRXGj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 829833,
+      "seller_feedback": 829851,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -31,36 +61,6 @@
       "headline": "\ud83d\udd25\u2728 Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
       "blurb": "USD 44.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best cordless vacuum",
-      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "price": 40.5,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 578344,
-      "seller_username": "vipoutlet",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2025-07-30T20:28:05.000Z",
-      "signals": 9.0,
-      "tags": [
-        "cordless vacuum"
-      ],
-      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 40.5",
-      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "blurb": "USD 40.50 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
@@ -95,42 +95,12 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2ByRd58XXjRYMhJT%2B28Qiv3pbyTlv%2FJiSE4Yw7kJA2P5%2FSR1LlWB3Horw15XBmlwMcLILZCa4nC5%2BkbuLDrmUo%2F40IyF9OWX8UTbcGMWuNNQc38%2BkMG9qvthpY%2Br7S6dFnftfibUz7HOm5ZHjmncS6P%2BS9m%2BJlHdK1R8bx15t5DnXA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283420,
-      "seller_username": "sale2015express",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2020-01-12T18:12:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "rgb lamp"
-      ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
       "keyword": "bike light deals",
       "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
       "price": 92.56,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/JkMAAeSwZyppSCQr/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3AJkMAAeSwZyppSCQr&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9cvZf72uYKRM0Fav0UmOGG1zVWdl%2FK7ibon5e4ZSU8gpFCGQmPKXcTIEObW2K%2BFnUQ5V6W2DRwsV4ul0KHdolIMlBIsLaUOJJUr6eEDdky7Ic2Un4ZPrMxJ%2By6w55zvDEuImyHp%2BC8Frf5H7Kw1jXbZGahUqjyxGlfUJxBAteBYZg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3AJkMAAeSwZyppSCQr&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9dq02KRlmNyn7HDgLIoCH2krmzawgjyyo66vB11jhB92ptCQP2tDoFCIZCdfoa3kywlJUlog0ur%2FiljAsVH94NcUD%2BrJdQcerVWwslgZr4Xvuz1IJlCZzpLDS8UFV1uTMl49jZ%2B%2Buu%2FyWuTSLFSzUODQb8tqutA98fs0VpxBAR9uA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
       "seller_feedback": 211845,
       "seller_username": "cyclingdeal",
       "top_rated": false,
@@ -155,14 +125,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum",
-      "title": "Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "price": 150.0,
+      "keyword": "bike light deals",
+      "title": "Garmin Edge Explore Touring Bike Computer with GPS Capabilities 010-02029-00",
+      "price": 149.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/aagAAeSw-8VpGzYC/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/167596829674?_skw=cordless+vacuum&hash=item27058cabea%3Ag%3AaagAAeSw-8VpGzYC&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 181575,
-      "seller_username": "guaranteecellular",
+      "image_url": "https://i.ebayimg.com/images/g/qagAAOSwc1NjGnDU/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/175409564364?_skw=bike+light+deals&hash=item28d7398acc%3Ag%3AqagAAOSwc1NjGnDU&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 130033,
+      "seller_username": "gpscity",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -172,14 +142,44 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-06-18T17:13:39.000Z",
+      "inserted_at": "2022-09-08T22:48:20.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "bike light"
       ],
-      "caption": "Shark Ip1251 Powerdetect Cordless Stick Vacuum \u2022 USD 150.0",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Ip1251 Powerdetect Cordless Stick Vacuum",
-      "blurb": "USD 150.00 steal. Limited stock\u2014grab it now!",
+      "caption": "Garmin Edge Explore Touring Bike Computer with GPS Capabilities 010-02029-00 \u2022 USD 149.99",
+      "headline": "\ud83d\udd25\u2728 Garmin Edge Explore Touring Bike Computer with GPS Capabilities 010-02029-00",
+      "blurb": "USD 149.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "bike light",
+      "title": "10000mAh LED Bicycle Bike Lights Rechargeable Headlight Front Rear Tail Lamp Set",
+      "price": 24.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/zS4AAOSw2XZnVsSX/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/145997704978?_skw=bike+light&hash=item21fe242f12%3Ag%3AzS4AAOSw2XZnVsSX&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UalJzMPa1JooPXF5xNeBjB8q5Iq%2FCtnuv7CiKHNhliPoIVOVvLvlK7NugDmRuMoqz8TNLsQES9%2BLKasySSMgMGVQWoUntLKlvwFQJDAr86bpRJnoarp7YHRzBiGWnGH0pRZHIwEXCe6nbf19%2BUbbEPrD5%2FEpYWqjdSmaovsT3NRvieY%2FZPOZx6Z2ZmyYnt3u%2BEpZ42uK%2Bh78j6jgDstn7rS99kvl8qlETGts5liwn0GQ5QHqv5mdnRRoItRqBY3EJIPmn4u2YaBLH%2FpbBBVGqV3&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 97490,
+      "seller_username": "mkstudio",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2024-09-02T20:20:26.000Z",
+      "signals": 9.0,
+      "tags": [
+        "bike light"
+      ],
+      "caption": "10000mAh LED Bicycle Bike Lights Rechargeable Headlight Front Rear Tail Lamp Set \u2022 USD 24.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 10000mAh LED Bicycle Bike Lights Rechargeable Headlight Front Rear Tail Lamp Set",
+      "blurb": "USD 24.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
