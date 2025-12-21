@@ -1,7 +1,7 @@
 import os
-from datetime import datetime
 from pathlib import Path
 from trenddrop.utils.env_loader import load_env_once
+from datetime import datetime
 
 ENV_PATH = load_env_once()
 
@@ -11,30 +11,8 @@ def env(name: str, default: str | None = None) -> str | None:
     if v is None:
         return None
     v = v.strip()
+    # treat empty string as "missing"
     return v if v != "" else default
-
-
-def env_int(name: str, default: int) -> int:
-    raw = os.getenv(name, None)
-    if raw is None:
-        return default
-    raw = str(raw).strip()
-    if raw == "":
-        return default
-    try:
-        return int(raw)
-    except Exception:
-        return default
-
-
-def env_bool(name: str, default: bool = False) -> bool:
-    raw = os.getenv(name, None)
-    if raw is None:
-        return default
-    raw = str(raw).strip().lower()
-    if raw == "":
-        return default
-    return raw in ("1", "true", "yes", "y", "on")
 
 
 # Mode
@@ -48,7 +26,6 @@ def require(name: str) -> str:
         return v
     msg = f"[config.py] missing required env {name}"
     if IS_LIVE:
-        # Production: warn but do not crash long-running jobs.
         print(msg)
         return ""
     raise RuntimeError(msg)
@@ -73,37 +50,28 @@ STRIPE_WEBHOOK_SECRET = (STRIPE_WEBHOOK_SECRET_LIVE if IS_LIVE else STRIPE_WEBHO
 BREVO_API_KEY = env("BREVO_API_KEY")
 EMAIL_FROM = env("EMAIL_FROM")
 
-# Telegram (backward compatible)
+# Telegram base
 BOT_TOKEN = env("TELEGRAM_BOT_TOKEN")
 
-# Legacy single target (DM/test)
-CHAT_ID = env("TELEGRAM_CHAT_ID")
+# Legacy variables (kept for backwards compatibility)
+CHAT_ID = env("TELEGRAM_CHAT_ID")                # DM / legacy fallback
+CHANNEL_ID = env("TELEGRAM_CHANNEL_ID")          # legacy channel id (single)
 
-# Legacy single channel target (public)
-CHANNEL_ID = env("TELEGRAM_CHANNEL_ID")
-
-# New: explicit routing IDs
-ADMIN_CHAT_ID = env("TELEGRAM_ADMIN_CHAT_ID") or CHAT_ID
+# New routing variables
 PUBLIC_CHANNEL_ID = env("TELEGRAM_PUBLIC_CHANNEL_ID") or CHANNEL_ID
-PAID_CHANNEL_ID = env("TELEGRAM_PAID_CHANNEL_ID") or env("TELEGRAM_PREMIUM_CHANNEL_ID")  # alias support
+PAID_CHANNEL_ID = env("TELEGRAM_PAID_CHANNEL_ID")
+ADMIN_CHAT_ID = env("TELEGRAM_ADMIN_CHAT_ID") or CHAT_ID
 
 COMMUNITY_CHAT_ID = env("TELEGRAM_COMMUNITY_CHAT_ID")
-ALERT_CHAT_ID = env("TELEGRAM_ALERT_CHAT_ID") or ADMIN_CHAT_ID
+ALERT_CHAT_ID = env("TELEGRAM_ALERT_CHAT_ID") or ADMIN_CHAT_ID or CHAT_ID
 INVITE_URL = env("TELEGRAM_INVITE_URL")
 
-# CTA / misc
+# Default posting behavior (used by CLI)
+DEFAULT_POST_SCOPE = (env("TELEGRAM_POST_SCOPE", "broadcast") or "broadcast").lower()
+
+# Misc / storefront
 GUMROAD_CTA_URL = env("GUMROAD_CTA_URL", "")
 CLICK_REDIRECT_BASE = env("CLICK_REDIRECT_BASE", "")
-
-# Telegram tuning (safe even if blank in Actions)
-TELEGRAM_DEDUPE_HOURS = env_int("TELEGRAM_DEDUPE_HOURS", 48)
-TELEGRAM_MAX_PER_KEYWORD = env_int("TELEGRAM_MAX_PER_KEYWORD", 2)
-TELEGRAM_MIN_UNIQUE_KEYWORDS = env_int("TELEGRAM_MIN_UNIQUE_KEYWORDS", 4)
-TELEGRAM_MAX_PER_SELLER = env_int("TELEGRAM_MAX_PER_SELLER", 1)
-
-TELEGRAM_CTA_EVERY_N_POSTS = env_int("TELEGRAM_CTA_EVERY_N_POSTS", 6)
-TELEGRAM_CTA_COOLDOWN_MINUTES = env_int("TELEGRAM_CTA_COOLDOWN_MINUTES", 180)
-TELEGRAM_PIN_CTA = env_bool("TELEGRAM_PIN_CTA", False)
 
 
 def gumroad_cta_url() -> str:
@@ -115,38 +83,39 @@ def gumroad_cta_url() -> str:
 
 def tg_targets(scope: str = "broadcast") -> list[str]:
     """
-    scope:
-      - 'admin'     -> ADMIN_CHAT_ID only
-      - 'public'    -> PUBLIC channel only
-      - 'paid'      -> PAID channel only
-      - 'broadcast' -> public + paid (if configured)
-      - 'legacy'    -> (CHAT_ID + CHANNEL_ID) old behavior
+    Returns a list of chat/channel targets based on scope.
+    Supported scopes:
+      - broadcast: public + paid (if configured)
+      - public: public only
+      - paid: paid only
+      - admin: admin only
+      - dm: TELEGRAM_CHAT_ID only
+      - all: admin + dm + public + paid (rare; mostly for debugging)
     """
+    s = (scope or "broadcast").lower().strip()
     targets: list[str] = []
 
-    if scope == "admin":
-        if ADMIN_CHAT_ID:
-            targets.append(ADMIN_CHAT_ID)
+    def add(x: str | None):
+        if x:
+            targets.append(x)
 
-    elif scope == "public":
-        if PUBLIC_CHANNEL_ID:
-            targets.append(PUBLIC_CHANNEL_ID)
-
-    elif scope == "paid":
-        if PAID_CHANNEL_ID:
-            targets.append(PAID_CHANNEL_ID)
-
-    elif scope == "broadcast":
-        if PUBLIC_CHANNEL_ID:
-            targets.append(PUBLIC_CHANNEL_ID)
-        if PAID_CHANNEL_ID:
-            targets.append(PAID_CHANNEL_ID)
-
-    elif scope == "legacy":
-        if CHAT_ID:
-            targets.append(CHAT_ID)
-        if CHANNEL_ID:
-            targets.append(CHANNEL_ID)
+    if s == "public":
+        add(PUBLIC_CHANNEL_ID)
+    elif s == "paid":
+        add(PAID_CHANNEL_ID)
+    elif s == "admin":
+        add(ADMIN_CHAT_ID)
+    elif s == "dm":
+        add(CHAT_ID)
+    elif s == "all":
+        add(ADMIN_CHAT_ID)
+        add(CHAT_ID)
+        add(PUBLIC_CHANNEL_ID)
+        add(PAID_CHANNEL_ID)
+    else:
+        # broadcast default
+        add(PUBLIC_CHANNEL_ID)
+        add(PAID_CHANNEL_ID)
 
     # de-dupe
-    return list(dict.fromkeys([t for t in targets if t]))
+    return list(dict.fromkeys([t for t in targets if str(t).strip() != ""]))
