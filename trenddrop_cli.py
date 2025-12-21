@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 import argparse
-import os
 import time
 from typing import Dict, List, Sequence
 
 import requests
 
 from trenddrop.utils.env_loader import load_env_once
-from trenddrop.config import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+from trenddrop.config import (
+    SUPABASE_URL,
+    SUPABASE_SERVICE_ROLE_KEY,
+    DEFAULT_POST_SCOPE,
+)
+
 from utils.trends import top_topics, topic_query_variants
 from utils.sources import search_ebay
 from utils.epn import affiliate_wrap
 from utils.publish import update_storefront, post_telegram
 from trenddrop.telegram_utils import send_text
-from trenddrop.reports.product_quality import (
-    dedupe_near_duplicates,
-    rank_key,
-    ensure_rank_fields,
-)
+from trenddrop.reports.product_quality import dedupe_near_duplicates, rank_key, ensure_rank_fields
 
 ENV_PATH = load_env_once()
 
@@ -119,7 +119,22 @@ def cmd_scrape(args: argparse.Namespace) -> int:
         log("Telegram broadcast complete.")
     else:
         log("Telegram broadcast skipped.")
+    return 0
 
+
+def cmd_generate_weekly(args: argparse.Namespace) -> int:
+    from trenddrop.reports import generate_reports, build_manifest
+
+    log("Generating weekly pack…")
+    generate_reports.main()
+    build_manifest.main()
+    log("Pack + manifest generated.")
+
+    if args.verify:
+        log("Running smoke test…")
+        from scripts import smoke_test
+        smoke_test.main()
+        log("Smoke test passed.")
     return 0
 
 
@@ -137,10 +152,12 @@ def _signed_report_url(mode: str, fmt: str) -> str | None:
             timeout=20,
         )
         if not response.ok:
+            log(f"report-links error {response.status_code}: {response.text}")
             return None
         data = response.json()
         return data.get("url")
-    except Exception:
+    except Exception as exc:
+        log(f"report-links request failed: {exc}")
         return None
 
 
@@ -153,11 +170,14 @@ def cmd_post_weekly(args: argparse.Namespace) -> int:
     template = args.message or (
         "📦 TrendDrop Weekly Pack is live!\n"
         f"Download the latest {args.format.upper()}: {{link}}\n"
+        "Check your inbox for the invite + instructions."
     )
     message = template.replace("{link}", link)
 
-    send_text(message, scope=args.telegram_scope, disable_web_page_preview=False)
-    log("Telegram announcement sent.")
+    # Weekly pack announcement should go to PAID by default
+    scope = args.telegram_scope or "paid"
+    send_text(message, scope=scope, disable_web_page_preview=False)
+    log(f"Telegram announcement sent to scope='{scope}'.")
     return 0
 
 
@@ -166,23 +186,27 @@ def build_parser() -> argparse.ArgumentParser:
     sub = parser.add_subparsers(dest="command", required=True)
 
     p_scrape = sub.add_parser("scrape-ebay", help="Fetch trending products and update storefront/Supabase.")
-    p_scrape.add_argument("--topics", type=int, default=4)
-    p_scrape.add_argument("--per-page", type=int, default=20)
-    p_scrape.add_argument("--variants-per-topic", type=int, default=3)
-    p_scrape.add_argument("--picks", type=int, default=6)
-    p_scrape.add_argument("--sleep-secs", type=float, default=3.0)
-    p_scrape.add_argument("--sleep-jitter", type=float, default=2.0)
-    p_scrape.add_argument("--telegram-limit", type=int, default=5)
-    p_scrape.add_argument("--telegram-scope", default="broadcast", choices=("admin", "public", "paid", "broadcast", "legacy"))
-    p_scrape.add_argument("--no-telegram", action="store_true")
+    p_scrape.add_argument("--topics", type=int, default=4, help="Number of Google Trends topics to explore.")
+    p_scrape.add_argument("--per-page", type=int, default=20, help="Listings per keyword query to fetch from eBay.")
+    p_scrape.add_argument("--variants-per-topic", type=int, default=3, help="Keyword variants to try per topic.")
+    p_scrape.add_argument("--picks", type=int, default=6, help="How many final products to publish.")
+    p_scrape.add_argument("--sleep-secs", type=float, default=3.0, help="Base delay between eBay API calls.")
+    p_scrape.add_argument("--sleep-jitter", type=float, default=2.0, help="Random jitter added to sleep seconds.")
+    p_scrape.add_argument("--telegram-limit", type=int, default=5, help="Max Telegram posts per run.")
+    p_scrape.add_argument("--telegram-scope", type=str, default=DEFAULT_POST_SCOPE, help="Telegram scope: public|paid|broadcast|admin|dm|all")
+    p_scrape.add_argument("--no-telegram", action="store_true", help="Skip Telegram posting.")
     p_scrape.set_defaults(func=cmd_scrape)
 
+    p_weekly = sub.add_parser("generate-weekly-pack", help="Generate weekly PDF/CSV and upload to Supabase.")
+    p_weekly.add_argument("--verify", action="store_true", help="Run scripts.smoke_test after generation.")
+    p_weekly.set_defaults(func=cmd_generate_weekly)
+
     p_post = sub.add_parser("post-weekly-pack-telegram", help="Send latest pack link to Telegram.")
-    p_post.add_argument("--mode", default="weekly")
-    p_post.add_argument("--format", default="pdf", choices=("pdf", "csv"))
-    p_post.add_argument("--link")
-    p_post.add_argument("--message")
-    p_post.add_argument("--telegram-scope", default="broadcast", choices=("admin", "public", "paid", "broadcast", "legacy"))
+    p_post.add_argument("--mode", default="weekly", help="Report mode for report-links (default: weekly).")
+    p_post.add_argument("--format", default="pdf", choices=("pdf", "csv"), help="Report format.")
+    p_post.add_argument("--link", help="Override the link instead of generating via Supabase.")
+    p_post.add_argument("--message", help="Custom Telegram message (include {link} if desired).")
+    p_post.add_argument("--telegram-scope", type=str, default="paid", help="Where to post the weekly pack by default.")
     p_post.set_defaults(func=cmd_post_weekly)
 
     return parser
