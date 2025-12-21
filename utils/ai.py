@@ -1,15 +1,18 @@
-import os, json, re
+import os
+import json
+import re
 from typing import Dict
 from trenddrop.utils.env_loader import load_env_once
 
 ENV_PATH = load_env_once()
+
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "").strip()
 
 try:
     import openai  # type: ignore
 except Exception:
     openai = None  # type: ignore
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY") or ""
 
 PROMPT = """You write short hypey product captions (<180 chars) with an emoji and a CTA.
 Return just the sentence, no extra quotes.
@@ -20,12 +23,13 @@ Price: {currency} {price}
 
 def caption_for(p: Dict) -> str:
     """
-    Short caption. Safe fallback if OpenAI missing.
+    Short caption (single line).
+    Used for fallbacks / storefront.
     """
-    title = str(p.get("title", ""))[:120]
-    currency = p.get("currency", "USD")
+    title = str(p.get("title", "")).strip()[:120]
+    currency = str(p.get("currency", "USD"))
     price = p.get("price", "")
-    fallback = f"{title} • {currency} {price}"
+    fallback = f"{title} • {currency} {price}".strip()
 
     if not OPENAI_API_KEY or not openai:
         return fallback
@@ -33,6 +37,7 @@ def caption_for(p: Dict) -> str:
     try:
         if hasattr(openai, "api_key"):
             openai.api_key = OPENAI_API_KEY
+
         text = PROMPT.format(title=p.get("title", ""), currency=currency, price=price)
         resp = openai.chat.completions.create(
             model="gpt-4o-mini",
@@ -48,7 +53,7 @@ def caption_for(p: Dict) -> str:
 
 def _fallback_marketing_copy(p: Dict) -> Dict:
     raw_title = str(p.get("title", "")).strip()
-    currency = p.get("currency", "USD")
+    currency = str(p.get("currency", "USD"))
     price = p.get("price")
     price_text = f"{currency} {price:.2f}" if isinstance(price, (int, float)) else (f"{currency} {price}" if price else "")
 
@@ -72,7 +77,7 @@ def _fallback_marketing_copy(p: Dict) -> Dict:
         blurb_bits.insert(0, f"{price_text} steal.")
     blurb = " ".join(blurb_bits)
 
-    lead = emojis[:2]
+    lead = emojis[:2] if emojis else ""
     if lead:
         headline = f"{lead} {headline}"
 
@@ -80,11 +85,14 @@ def _fallback_marketing_copy(p: Dict) -> Dict:
 
 
 def marketing_copy_for(p: Dict) -> Dict:
+    """
+    Returns: {headline, blurb, emojis}
+    """
     if not OPENAI_API_KEY or not openai:
         return _fallback_marketing_copy(p)
 
     raw_title = str(p.get("title", ""))
-    currency = p.get("currency", "USD")
+    currency = str(p.get("currency", "USD"))
     price = p.get("price", "")
     topic = ", ".join(p.get("tags", []) or ([p.get("keyword")] if p.get("keyword") else []))
 
@@ -93,7 +101,7 @@ def marketing_copy_for(p: Dict) -> Dict:
         "Create concise marketing copy with this structure and return ONLY compact JSON.\n"
         "Rules:\n"
         "- headline: short, punchy, <= 90 chars; can include a leading emoji.\n"
-        "- blurb: 1–2 sentences, urgency (limited time/stock), clear benefit + CTA.\n"
+        "- blurb: 1–2 sentences, urgency, clear benefit + CTA.\n"
         "- emojis: optional 2–3 emojis relevant to category.\n"
         "- Keep it clean, no quotes or markdown.\n"
         "Product:\n"
@@ -106,26 +114,25 @@ def marketing_copy_for(p: Dict) -> Dict:
     try:
         if hasattr(openai, "api_key"):
             openai.api_key = OPENAI_API_KEY
+
         resp = openai.chat.completions.create(
             model="gpt-4o-mini",
-            messages=[
-                {"role": "system", "content": sys_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
+            messages=[{"role": "system", "content": sys_prompt}, {"role": "user", "content": user_prompt}],
             temperature=0.8,
             max_tokens=200,
         )
         content = (resp.choices[0].message.content or "").strip()
+
         match = re.search(r"\{[\s\S]*\}$", content)
         json_text = match.group(0) if match else content
-        data = json.loads(json_text)
 
+        data = json.loads(json_text)
         headline = str(data.get("headline", "")).strip()
         blurb = str(data.get("blurb", "")).strip()
         emojis = str(data.get("emojis", "")).strip()
 
         if not headline or not blurb:
-            return _fallback_marketing_copy(p)
+            raise ValueError("incomplete ai response")
 
         return {"headline": headline[:90], "blurb": blurb[:240], "emojis": emojis[:16]}
     except Exception:
