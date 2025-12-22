@@ -1,6 +1,36 @@
 {
-  "updated_at": 1766378009,
+  "updated_at": 1766380704,
   "products": [
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1012382,
+      "seller_username": "theperfectpart",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "signals": 9.0,
+      "tags": [
+        "massage gun"
+      ],
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
     {
       "source": "ebay",
       "provider": "ebay",
@@ -10,7 +40,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/ZlUAAeSwygtpRz1v/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AZlUAAeSwygtpRz1v&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 917833,
+      "seller_feedback": 917835,
       "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
@@ -34,13 +64,43 @@
     {
       "source": "ebay",
       "provider": "ebay",
+      "keyword": "smart light strip deals",
+      "title": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "price": 28.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/SBIAAOSw~ztbLPfb/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/312169544455?_skw=smart+light+strip+deals&hash=item48aec13b07%3Ag%3ASBIAAOSw~ztbLPfb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uac%2BgwIQR8eulJ%2FXMnE%2FMJOsPduhAc8A4Tpyf0j4S7h%2BBjV1aB03BU9Zh72jLb%2F6Q2f1l3Td0N6Z4IbR6I6aCF5oGzmjFO8xyOcrrsbhndFAsPC5zggnTnUfIsFoSkKgQ0yUpUgwGBfeb2EeFib4aeH83da8iBEbTdogQ4AXggixIeSheIeeCUx4qAXcvEFJPsWpwVKR2dFdvEAp39wGLCqDFnP6JGSY6nOfH4sE%2BHJGS%2FG6cA6WA2Gk1E4IWD8Qx5apjNbdPscJS6wcZ2tMfQcvb%2FiZjCZ2Kp0AncLabX0bg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
+      "seller_feedback": 859743,
+      "seller_username": "valuebuybattery",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2018-06-22T13:25:28.000Z",
+      "signals": 9.0,
+      "tags": [
+        "smart light strip"
+      ],
+      "caption": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit \u2022 USD 28.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "blurb": "USD 28.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
       "keyword": "air fryer deals",
       "title": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
       "price": 23.99,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/VwUAAeSwQBBpR7rb/s-l225.jpg",
       "url": "https://www.ebay.com/itm/187801803267?_skw=air+fryer+deals&hash=item2bb9dc1a03%3Ag%3AVwUAAeSwQBBpR7rb&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 829958,
+      "seller_feedback": 829977,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -71,7 +131,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/DEYAAeSwXzppR8Tj/s-l225.jpg",
       "url": "https://www.ebay.com/itm/205922307623?_skw=air+fryer+deals&hash=item2ff1ed0e27%3Ag%3ADEYAAeSwXzppR8Tj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 829958,
+      "seller_feedback": 829977,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -122,66 +182,6 @@
       "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
       "blurb": "USD 16.14 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "price": 28.49,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 394608,
-      "seller_username": "hiparts",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2017-03-10T15:42:19.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 28.49",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "blurb": "USD 28.49 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2Bw9eDJiq1OBKzkKZqSVcxMWE3PJdvDFEkU95e7KmskvbP2pXZMa2jOHo6isImLX41kxqlhqW5%2BeJs1uMkKZuwRsk3MmU%2Fndr8ugUJO3RE2sEehTmqWqs5lVCLY0TkMQMZ38OgyrVg%2BF%2FjUvIccWP2bwyZD0NFY%2BgTD9BJSHuqAwpg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283420,
-      "seller_username": "sale2015express",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2020-01-12T18:12:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "rgb lamp"
-      ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
