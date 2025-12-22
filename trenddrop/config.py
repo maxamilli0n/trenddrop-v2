@@ -1,8 +1,7 @@
-# trenddrop/config.py
 import os
 from pathlib import Path
-from datetime import datetime
 from trenddrop.utils.env_loader import load_env_once
+from datetime import datetime
 
 ENV_PATH = load_env_once()
 
@@ -17,37 +16,26 @@ def env(name: str, default: str | None = None) -> str | None:
 
 
 def env_int(name: str, default: int) -> int:
-    """
-    Safe int env reader:
-    - missing -> default
-    - empty string -> default
-    - invalid -> default
-    """
     raw = os.getenv(name)
     if raw is None:
         return int(default)
-    s = str(raw).strip()
-    if s == "":
+    raw = str(raw).strip()
+    if raw == "":
         return int(default)
     try:
-        return int(s)
+        return int(float(raw))
     except Exception:
         return int(default)
 
 
 def env_bool(name: str, default: bool = False) -> bool:
-    """
-    Safe bool env reader.
-    True values: 1, true, yes, y, on
-    False values: 0, false, no, n, off, "" (falls back to default if missing)
-    """
     raw = os.getenv(name)
     if raw is None:
         return bool(default)
-    s = str(raw).strip().lower()
-    if s == "":
+    raw = str(raw).strip().lower()
+    if raw == "":
         return bool(default)
-    return s in ("1", "true", "yes", "y", "on")
+    return raw in ("1", "true", "yes", "y", "on")
 
 
 # Mode
@@ -61,7 +49,6 @@ def require(name: str) -> str:
         return v
     msg = f"[config.py] missing required env {name}"
     if IS_LIVE:
-        # Production: warn but do not crash long-running jobs.
         print(msg)
         return ""
     raise RuntimeError(msg)
@@ -69,9 +56,7 @@ def require(name: str) -> str:
 
 # Supabase
 SUPABASE_URL = env("SUPABASE_URL") or ("" if IS_LIVE else require("SUPABASE_URL"))
-SUPABASE_SERVICE_ROLE_KEY = env("SUPABASE_SERVICE_ROLE_KEY") or (
-    "" if IS_LIVE else require("SUPABASE_SERVICE_ROLE_KEY")
-)
+SUPABASE_SERVICE_ROLE_KEY = env("SUPABASE_SERVICE_ROLE_KEY") or ("" if IS_LIVE else require("SUPABASE_SERVICE_ROLE_KEY"))
 SUPABASE_ANON_KEY = env("SUPABASE_ANON_KEY")
 SUPABASE_BUCKET = env("SUPABASE_BUCKET")
 REPORTS_BUCKET = env("REPORTS_BUCKET") or SUPABASE_BUCKET or "trenddrop-reports"
@@ -82,9 +67,7 @@ STRIPE_SECRET_KEY_TEST = env("STRIPE_SECRET_KEY_TEST")
 STRIPE_SECRET_KEY = (STRIPE_SECRET_KEY_LIVE if IS_LIVE else STRIPE_SECRET_KEY_TEST) or env("STRIPE_SECRET_KEY")
 STRIPE_WEBHOOK_SECRET_LIVE = env("STRIPE_WEBHOOK_SECRET_LIVE")
 STRIPE_WEBHOOK_SECRET_TEST = env("STRIPE_WEBHOOK_SECRET_TEST")
-STRIPE_WEBHOOK_SECRET = (STRIPE_WEBHOOK_SECRET_LIVE if IS_LIVE else STRIPE_WEBHOOK_SECRET_TEST) or env(
-    "STRIPE_WEBHOOK_SECRET"
-)
+STRIPE_WEBHOOK_SECRET = (STRIPE_WEBHOOK_SECRET_LIVE if IS_LIVE else STRIPE_WEBHOOK_SECRET_TEST) or env("STRIPE_WEBHOOK_SECRET")
 
 # Brevo
 BREVO_API_KEY = env("BREVO_API_KEY")
@@ -94,8 +77,8 @@ EMAIL_FROM = env("EMAIL_FROM")
 BOT_TOKEN = env("TELEGRAM_BOT_TOKEN")
 
 # Legacy variables (kept for backwards compatibility)
-CHAT_ID = env("TELEGRAM_CHAT_ID")  # DM / legacy fallback
-CHANNEL_ID = env("TELEGRAM_CHANNEL_ID")  # legacy channel id (single)
+CHAT_ID = env("TELEGRAM_CHAT_ID")                # DM / legacy fallback
+CHANNEL_ID = env("TELEGRAM_CHANNEL_ID")          # legacy channel id (single)
 
 # New routing variables
 PUBLIC_CHANNEL_ID = env("TELEGRAM_PUBLIC_CHANNEL_ID") or CHANNEL_ID
@@ -109,7 +92,7 @@ INVITE_URL = env("TELEGRAM_INVITE_URL")
 # Default posting behavior (used by CLI)
 DEFAULT_POST_SCOPE = (env("TELEGRAM_POST_SCOPE", "broadcast") or "broadcast").lower()
 
-# Telegram tuning knobs (these fix your ImportError issue and prevent empty env crashes)
+# Common knobs (exported so imports never fail)
 TELEGRAM_DEDUPE_HOURS = env_int("TELEGRAM_DEDUPE_HOURS", 48)
 TELEGRAM_MAX_PER_KEYWORD = env_int("TELEGRAM_MAX_PER_KEYWORD", 2)
 TELEGRAM_MIN_UNIQUE_KEYWORDS = env_int("TELEGRAM_MIN_UNIQUE_KEYWORDS", 4)
@@ -139,7 +122,7 @@ def tg_targets(scope: str = "broadcast") -> list[str]:
       - paid: paid only
       - admin: admin only
       - dm: TELEGRAM_CHAT_ID only
-      - all: admin + dm + public + paid (rare; mostly for debugging)
+      - all: admin + dm + public + paid (debug)
     """
     s = (scope or "broadcast").lower().strip()
     targets: list[str] = []
