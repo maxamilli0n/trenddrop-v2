@@ -1,5 +1,5 @@
 {
-  "updated_at": 1766384513,
+  "updated_at": 1766387920,
   "products": [
     {
       "source": "ebay",
@@ -10,7 +10,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
       "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2310921,
+      "seller_feedback": 2310922,
       "seller_username": "spreetail",
       "top_rated": false,
       "buying_options": [
@@ -34,74 +34,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 17.99,
+      "keyword": "best cordless vacuum",
+      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "price": 40.5,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/tJwAAeSwxMFpRsu9/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3AtJwAAeSwxMFpRsu9&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 917837,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-08-13T15:00:21.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "price": 19.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/gjoAAeSwURlpRsvD/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3AgjoAAeSwURlpRsvD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 917837,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-11-21T02:36:52.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 19.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "blurb": "USD 19.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "air fryer",
-      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "price": 129.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/ZlUAAeSwygtpRz1v/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AZlUAAeSwygtpRz1v&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
-      "seller_feedback": 917837,
-      "seller_username": "best_buy",
+      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 578415,
+      "seller_username": "vipoutlet",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -111,27 +51,27 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "inserted_at": "2025-07-30T20:28:05.000Z",
       "signals": 9.0,
       "tags": [
-        "air fryer"
+        "cordless vacuum"
       ],
-      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
-      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
-      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 40.5",
+      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "blurb": "USD 40.50 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "price": 18.95,
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "price": 16.14,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/taMAAeSwFDlpRxt3/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3AtaMAAeSwFDlpRxt3&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 862193,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394608,
+      "seller_username": "hiparts",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -141,27 +81,27 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-06-07T11:43:55.000Z",
+      "inserted_at": "2017-09-19T04:14:30.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "portable monitor"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
+      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.14",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
+      "blurb": "USD 16.14 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "price": 19.95,
+      "keyword": "portable monitor deals",
+      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "price": 28.49,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/yU8AAeSwzkRpRpsa/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AyU8AAeSwzkRpRpsa&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbShhTewSWRl3%2Fr4fqpBtn5UVHBeW8pC6IWO%2BejJzhnJk0ejROEjGQny0VGWOvUlvorZducp1fe4Azf9wjWB1eaudaW9UUOpjsFDx0dInZBWpTkAKtSqKok03bZaM4AoF%2FpxPKrfna9yPK9OewOe%2B0DpPnQgJIzYxWIB795N181TvBgzfhODAvDVkkH39heN31M5OBL%2FMSC1I9PUtUV3kx20ZugS9tqslU9WmhklfVWDqJumaGbXGOyODtuCQYaCDM51RmYMXYM%2BsErzHkLe0NbrbcqTB%2FjvXIcW1mgKLW1Cg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 862193,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
+      "seller_feedback": 394608,
+      "seller_username": "hiparts",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -171,15 +111,75 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-02-12T17:52:17.000Z",
+      "inserted_at": "2017-03-10T15:42:19.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "portable monitor"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
+      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 28.49",
+      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
+      "blurb": "USD 28.49 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "bike light deals",
+      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "price": 18.59,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 354475,
+      "seller_username": "buildyourbike",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2015-08-27T20:27:44.000Z",
+      "signals": 9.0,
+      "tags": [
+        "bike light"
+      ],
+      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 18.59",
+      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "blurb": "USD 18.59 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "rgb lamp deals",
+      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
+      "price": 32.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2BygU3jNRMiLqzcAzavvqO%2FYkgRRMTXUO9gMnB4pjXWZc0uMtwPHQuNhpwTPSyNwViBNf2ITPLrw%2B3JiVJDTiFXPysdkgHFv4hNksrm9K9JAqcpF5rsGGgXCtd4%2BSVbp16fBrK1UEtvn03%2B%2FKtDEcmRBep8rFDW9Gobfgz3ek8Xhow%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
+      "seller_feedback": 283420,
+      "seller_username": "sale2015express",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2020-01-12T18:12:21.000Z",
+      "signals": 9.0,
+      "tags": [
+        "rgb lamp"
+      ],
+      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
+      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     }
   ]
 }
