@@ -1,5 +1,5 @@
 {
-  "updated_at": 1766423557,
+  "updated_at": 1766427553,
   "products": [
     {
       "source": "ebay",
@@ -9,8 +9,8 @@
       "price": 28.95,
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGPmRInpZ4e6nLZsp56Dg4ImHH%2FPGuXOzcxD7TZQZx%2B%2FggETuiSlszbCYUCg22vvnJGqKYMhBVYxjmx5HjNNJ1wyWmBIFfhlNchmvh2QhU88TJJMobnIoS73XcKgC9w4M3VoFHlSAYnWyz8EFY4bmI7p71Mg9JeufM6M2E%2FsFb6aWA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1012584,
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGM5oYXlxLNCCkuE3AhA0KjZJFhtm8MNcPN1zRQU2Rx%2FN4Wi24otGBdylt6m0pIpyHvtyyaJ%2BQCr7%2FnTCKwFKx5qyPAq32GeAGmagevOQQz%2BBEXaJ51JSra%2BkPjIOl0cjKei9TbQFMslPdF4mXYvzjNs%2FGVWqDMtdDtdiBsjehkqTg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1012634,
       "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
@@ -34,14 +34,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "smart light strip deals",
-      "title": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
-      "price": 28.99,
+      "keyword": "air fryer",
+      "title": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "price": 39.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/SBIAAOSw~ztbLPfb/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/312169544455?_skw=smart+light+strip+deals&hash=item48aec13b07%3Ag%3ASBIAAOSw~ztbLPfb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uac%2BgwIQR8eulJ%2FXMnE%2FMJOsPduhAc8A4Tpyf0j4S7h%2BBjV1aB03BU9Zh72jLb%2F6Q2f1l3Td0N6Z4IbR6I6aCF5oGzmjFO8xyOcrrsbhndFAsPC5zggnTnUfIsFoSkKgQ2wRnUjT5UzZ8P%2BucH5vPGgCP82hXQ7uKp2eT2U%2BqbaNnGNOzAX7cuHfS%2Bhw%2BPJLXK0ORZsHtnpItvtsSmCWlZ6z%2FFqOh%2BdSd0Lr8U8YHf5e0W41j5%2FLm4NSZo1ZjnMrgEAgktflfFh0rKFw9rZaz8GIeAigapGjSI1vxxywTQbig%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
-      "seller_feedback": 859755,
-      "seller_username": "valuebuybattery",
+      "image_url": "https://i.ebayimg.com/images/g/K8sAAeSwexRpSX1P/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/196833932009?_skw=air+fryer&hash=item2dd43772e9%3Ag%3AK8sAAeSwexRpSX1P&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 918134,
+      "seller_username": "best_buy",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -51,14 +51,75 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2018-06-22T13:25:28.000Z",
+      "inserted_at": "2024-11-21T02:09:27.000Z",
       "signals": 9.0,
       "tags": [
-        "smart light strip"
+        "air fryer"
       ],
-      "caption": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit \u2022 USD 28.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
-      "blurb": "USD 28.99 steal. Limited stock\u2014grab it now!",
+      "caption": "bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel \u2022 USD 39.99",
+      "headline": "\ud83d\udd25\u2728 bella PRO - 6-qt. Touchscreen Air Fryer - Stainless Steel",
+      "blurb": "USD 39.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "price": 129.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/ZlUAAeSwygtpRz1v/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205800943363?_skw=air+fryer&hash=item2feab12f03%3Ag%3AZlUAAeSwygtpRz1v&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 918134,
+      "seller_username": "best_buy",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-10-22T15:52:43.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ... \u2022 USD 129.99",
+      "headline": "\ud83d\udd25\u2728 Ninja - Foodi 6-in-1 10-qt. XL 2-Basket Air Fryer with DualZone Technology & ...",
+      "blurb": "USD 129.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 41.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/we4AAeSwaU9pSQ3I/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205922307623?_skw=air+fryer+deals&hash=item2ff1ed0e27%3Ag%3Awe4AAeSwaU9pSQ3I&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 831698,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-12-15T13:44:26.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 41.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 41.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
@@ -70,7 +131,7 @@
       "currency": "USD",
       "image_url": "https://i.ebayimg.com/images/g/hmIAAeSw34ppRXGj/s-l225.jpg",
       "url": "https://www.ebay.com/itm/177682846157?_skw=pickleball+paddle+deals&hash=item295eb911cd%3Ag%3AhmIAAeSw34ppRXGj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 831167,
+      "seller_feedback": 831698,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -95,91 +156,32 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "price": 18.59,
+      "keyword": "air fryer",
+      "title": "Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster",
+      "price": 76.49,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 354477,
-      "seller_username": "buildyourbike",
+      "image_url": "https://i.ebayimg.com/images/g/hV0AAeSw-Z5pSQIz/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177233742063?_skw=air+fryer&hash=item2943f448ef%3Ag%3AhV0AAeSw-Z5pSQIz&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 831696,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
-      "condition": "New",
-      "condition_id": "1000",
+      "condition": "Open box",
+      "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2015-08-27T20:27:44.000Z",
+      "inserted_at": "2025-06-30T15:02:25.000Z",
       "signals": 9.0,
       "tags": [
-        "bike light"
+        "air fryer"
       ],
-      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 18.59",
-      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
-      "blurb": "USD 18.59 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "price": 15.99,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/Ve4AAOSwMchnBn-Z/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/404244449960?_skw=massage+gun&hash=item5e1ed8caa8%3Ag%3AVe4AAOSwMchnBn-Z&amdata=enc%3AAQAKAAAA4PeG5RIuIyokJHJy903%2F5UbmX1kK8fE53JdAe%2FQAcT2kRybGjo3v3NhUyUHazhOPxsxmUJGHRnCX1K8SymAIutaq0L37uomjDIhZmKMuh8OLfqbnZZC9Oa1t%2FdlCIgE2pFn57%2BZxRC2QU3ln0dFdlVYepoMKOTK5ZEPcOLeUu398nCEoW7gzxEnPFQpyIcuZNsUghwebn4iN07FDw2oOwAwIkIx%2B5Bj7zxT%2FWEPjMYnHzal0HQJA%2BhtsJ7Xm76IZeBlb9TuGVAQbsoyHbJIPSGv9XHPxa8fdd8kCLwXhaj2s&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 351806,
-      "seller_username": "gameinfinity",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2023-04-13T18:58:49.000Z",
-      "signals": 9.0,
-      "tags": [
-        "massage gun"
-      ],
-      "caption": "6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax \u2022 USD 15.99",
-      "headline": "\ud83d\udd25\u2728 6 speeds Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relax",
-      "blurb": "USD 15.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "bike light deals",
-      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "price": 92.56,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/7n8AAeSwogdpSXYp/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3A7n8AAeSwogdpSXYp&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9dqtWgfjg5aF6b%2FAiGoiNwAlMU1k0MjlW7CvGNprxEkCEwDQsWqPivjqjs4jugG7pX9yW8DFmj49FQL2MVnMrIQVOcJcYtqy4hErAo49JPbSm8Yknl9xph1tw5pQgZovGPcRrzKHUsZGhow%2FLziL7DPwwxUpG1jZ8vdLfvR1R68bg%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
-      "seller_feedback": 211847,
-      "seller_username": "cyclingdeal",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Brand New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 33.06,
-      "returns_accepted": null,
-      "inserted_at": "2020-08-24T11:46:29.000Z",
-      "signals": 9.0,
-      "tags": [
-        "bike light"
-      ],
-      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 92.56",
-      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
-      "blurb": "USD 92.56 steal. Limited stock\u2014grab it now!",
+      "caption": "Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster \u2022 USD 76.49",
+      "headline": "\ud83d\udd25\u2728 Gourmia 10QT Air Fryer 9-Slice Oven 14 One-Touch Functions Convection Toaster",
+      "blurb": "USD 76.49 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
