@@ -11,22 +11,19 @@ const {
   SUPABASE_PROJECT_REF,
   SUPABASE_ANON_KEY,
   REPORTS_BUCKET = "trenddrop-reports",
+
   TELEGRAM_BOT_TOKEN,
-  TELEGRAM_CHAT_ID,
-  TELEGRAM_ADMIN_CHAT_ID,
+  TELEGRAM_ADMIN_CHAT_ID, // ✅ admin-only
 } = process.env;
 
 if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY || !SUPABASE_PROJECT_REF || !SUPABASE_ANON_KEY) {
-  console.error(
-    "Missing required env vars. Need SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_PROJECT_REF, SUPABASE_ANON_KEY."
-  );
+  console.error("Missing required env vars. Need SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_PROJECT_REF, SUPABASE_ANON_KEY.");
   process.exit(1);
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outDir = path.join(__dirname, "..", "snapshots");
 
-// 1) Pull CSV from private products-report function
 const today = new Date();
 const yyyy = today.getUTCFullYear();
 const mm = String(today.getUTCMonth() + 1).padStart(2, "0");
@@ -37,7 +34,6 @@ const limit = 1000;
 const days = 7;
 const type = "recent";
 const url = `https://${SUPABASE_PROJECT_REF}.functions.supabase.co/products-report?type=${type}&days=${days}&format=csv&limit=${limit}`;
-
 const headers = { Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
 
 console.log(`[snapshot] Fetching CSV from ${url}`);
@@ -48,14 +44,12 @@ if (!res.ok) {
 }
 const csv = await res.text();
 
-// 2) Save locally (artifact in Actions run)
 await fs.mkdir(outDir, { recursive: true });
 const localName = `products-${type}-${stamp}.csv`;
 const localPath = path.join(outDir, localName);
 await fs.writeFile(localPath, csv, "utf8");
 console.log(`[snapshot] Saved -> ${localPath} (${csv.length} bytes)`);
 
-// 3) Upload to Supabase Storage
 const supa = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { auth: { persistSession: false } });
 
 try {
@@ -74,18 +68,18 @@ const upload = await supa.storage.from(REPORTS_BUCKET).upload(
 if (upload.error) throw upload.error;
 console.log(`[snapshot] Uploaded -> ${REPORTS_BUCKET}/${storagePath}`);
 
-// 4) Signed URL (30 days)
-const { data: sig, error: sigErr } = await supa.storage.from(REPORTS_BUCKET).createSignedUrl(storagePath, 60 * 60 * 24 * 30);
+const { data: sig, error: sigErr } = await supa.storage
+  .from(REPORTS_BUCKET)
+  .createSignedUrl(storagePath, 60 * 60 * 24 * 30);
 if (sigErr) throw sigErr;
+
 const signedUrl = sig.signedUrl;
 console.log(`[snapshot] Signed URL -> ${signedUrl}`);
 
-// 5) Telegram ping (ADMIN ONLY)
-const adminTarget = (TELEGRAM_ADMIN_CHAT_ID && TELEGRAM_ADMIN_CHAT_ID.trim()) || (TELEGRAM_CHAT_ID && TELEGRAM_CHAT_ID.trim()) || "";
-
-if (TELEGRAM_BOT_TOKEN && adminTarget) {
+// ✅ Admin-only Telegram ping
+if (TELEGRAM_BOT_TOKEN && TELEGRAM_ADMIN_CHAT_ID) {
   const text =
-    `🛠️ TrendDrop Admin Snapshot (${stamp})\n` +
+    `📊 Nightly TrendDrop snapshot (${stamp})\n` +
     `• Window: last ${days} days\n` +
     `• Rows: up to ${limit}\n` +
     `• Download CSV: ${signedUrl}`;
@@ -93,17 +87,21 @@ if (TELEGRAM_BOT_TOKEN && adminTarget) {
   const tgRes = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ chat_id: adminTarget, text }),
+    body: JSON.stringify({
+      chat_id: TELEGRAM_ADMIN_CHAT_ID,
+      text,
+      disable_web_page_preview: true,
+    }),
   });
 
   if (!tgRes.ok) {
     const b = await tgRes.text().catch(() => "");
     console.warn(`[snapshot] Telegram failed ${tgRes.status}: ${b}`);
   } else {
-    console.log(`[snapshot] Telegram pinged ADMIN ✅`);
+    console.log(`[snapshot] Telegram pinged (admin) ✅`);
   }
 } else {
-  console.log(`[snapshot] Telegram disabled (missing TELEGRAM_BOT_TOKEN or admin target chat id)`);
+  console.log(`[snapshot] Telegram disabled (missing TELEGRAM_BOT_TOKEN or TELEGRAM_ADMIN_CHAT_ID)`);
 }
 
 console.log("[snapshot] Done.");
