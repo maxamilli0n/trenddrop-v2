@@ -1,46 +1,77 @@
 {
-  "updated_at": 1766387920,
+  "updated_at": 1766391608,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "cordless vacuum deals",
-      "title": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "price": 142.99,
+      "keyword": "smart light strip deals",
+      "title": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "price": 28.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/HOIAAeSw34ppP0ny/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/236443177510?_skw=cordless+vacuum+deals&hash=item370d1c9226%3Ag%3AHOIAAeSw34ppP0ny&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 2310922,
-      "seller_username": "spreetail",
+      "image_url": "https://i.ebayimg.com/images/g/SBIAAOSw~ztbLPfb/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/312169544455?_skw=smart+light+strip+deals&hash=item48aec13b07%3Ag%3ASBIAAOSw~ztbLPfb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uac%2BgwIQR8eulJ%2FXMnE%2FMJOsPduhAc8A4Tpyf0j4S7h%2BBjV1aB03BU9Zh72jLb%2F6Q2f1l3Td0N6Z4IbR6I6aCF5oGzmjFO8xyOcrrsbhndFAsPC5zggnTnUfIsFoSkKgQ1sBK%2BUOwcRoya8qDu6%2FZghFGTgWvSfC%2B4iXCzlAH1ngpKhZcW3cXVQVP9IgEpf899wDH0nBxPWrcU75ku6MhAgVqJgiOpPTFM8IQ0BXFxGf6kSkE5VCjQQ%2BqnYghYGpizltqXM%2BEs8kzq2bg9Onm8gOhNkySTMguVLEsD9UMrEHA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
+      "seller_feedback": 859743,
+      "seller_username": "valuebuybattery",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "Certified - Refurbished",
-      "condition_id": "2000",
+      "condition": "New",
+      "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-11-07T16:03:08.000Z",
+      "inserted_at": "2018-06-22T13:25:28.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "smart light strip"
       ],
-      "caption": "Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished) \u2022 USD 142.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb Shark Stratos Cordless Vacuum, Clean Sense IQ & DuoClean PowerFins (Refurbished)",
-      "blurb": "USD 142.99 steal. Limited stock\u2014grab it now!",
+      "caption": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit \u2022 USD 28.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "blurb": "USD 28.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best cordless vacuum",
-      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "price": 40.5,
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 41.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
-      "seller_feedback": 578415,
+      "image_url": "https://i.ebayimg.com/images/g/oVEAAeSwVktpSPrH/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205922307623?_skw=air+fryer+deals&hash=item2ff1ed0e27%3Ag%3AoVEAAeSwVktpSPrH&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 830003,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-12-15T13:44:26.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 41.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 41.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer",
+      "title": "Gourmia GAF1290S All-in-One 14-Quart Air Fryer, Oven, Rotisserie, Dehydrator",
+      "price": 53.1,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/LtIAAeSwyKdpLrIj/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/116908753074?_skw=air+fryer&hash=item1b384e00b2%3Ag%3ALtIAAeSwyKdpLrIj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 578416,
       "seller_username": "vipoutlet",
       "top_rated": false,
       "buying_options": [
@@ -51,15 +82,15 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-07-30T20:28:05.000Z",
+      "inserted_at": "2025-12-02T09:30:10.000Z",
       "signals": 9.0,
       "tags": [
-        "cordless vacuum"
+        "air fryer"
       ],
-      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 40.5",
-      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
-      "blurb": "USD 40.50 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "Gourmia GAF1290S All-in-One 14-Quart Air Fryer, Oven, Rotisserie, Dehydrator \u2022 USD 53.1",
+      "headline": "\ud83d\udd25\u2728 Gourmia GAF1290S All-in-One 14-Quart Air Fryer, Oven, Rotisserie, Dehydrator",
+      "blurb": "USD 53.10 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
@@ -89,36 +120,6 @@
       "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.14",
       "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
       "blurb": "USD 16.14 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "price": 28.49,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/vjoAAOSw41lfZIGX/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/401288893368?_skw=portable+monitor+deals&hash=item5d6eae93b8%3Ag%3AvjoAAOSw41lfZIGX&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 394608,
-      "seller_username": "hiparts",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2017-03-10T15:42:19.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter \u2022 USD 28.49",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Arm Blood Pressure Monitor Large BP Cuff Gauge Machine Meter",
-      "blurb": "USD 28.49 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
@@ -154,32 +155,32 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "rgb lamp deals",
-      "title": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "price": 32.99,
+      "keyword": "bike light deals",
+      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "price": 92.56,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/0RMAAOSwRlRoSQPd/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/402034719644?_skw=rgb+lamp+deals&hash=item5d9b22fb9c%3Ag%3A0RMAAOSwRlRoSQPd&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZbAXod4%2FFjtK0ZG1LInLDDzUhwB%2FvC1gEQqlXwScz3VV5OP2H7SpXieAnYMYERfsmvUL47kyGmy20jVga3aol23%2FDoiv%2FYyRaaKqK0SSh1cOVMbJ8kpLvV%2B1sUjDzeL%2BygU3jNRMiLqzcAzavvqO%2FYkgRRMTXUO9gMnB4pjXWZc0uMtwPHQuNhpwTPSyNwViBNf2ITPLrw%2B3JiVJDTiFXPysdkgHFv4hNksrm9K9JAqcpF5rsGGgXCtd4%2BSVbp16fBrK1UEtvn03%2B%2FKtDEcmRBep8rFDW9Gobfgz3ek8Xhow%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=rgb_lamp&toolid=10001",
-      "seller_feedback": 283420,
-      "seller_username": "sale2015express",
+      "image_url": "https://i.ebayimg.com/images/g/JkMAAeSwZyppSCQr/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3AJkMAAeSwZyppSCQr&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9cWEHE%2FdNbok%2F9kpRsgNbj8j4HcVzvUI9hjuBIq5mapn0ZK5qpT0bb04RpFG%2BUg0m%2BOyR2cvFLorev%2BTQ%2BM4vNJNiRM4%2Fd0cz8cffGGgcNTc7YzX06c8JTdle3aypUh3ZkZ4yo%2B0mflsFSjimSPDMe%2BKDK8A7zcjluj3JmEexckag%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 211846,
+      "seller_username": "cyclingdeal",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
       ],
-      "condition": "New",
+      "condition": "Brand New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 0.0,
+      "shipping_cost": 33.06,
       "returns_accepted": null,
-      "inserted_at": "2020-01-12T18:12:21.000Z",
+      "inserted_at": "2020-08-24T11:46:29.000Z",
       "signals": 9.0,
       "tags": [
-        "rgb lamp"
+        "bike light"
       ],
-      "caption": "99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole \u2022 USD 32.99",
-      "headline": "\ud83c\udfe0\ud83d\udecb 99000000LM 11000W LED Solar Power LED Street Light Radar PIR+Remote Control+Pole",
-      "blurb": "USD 32.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 92.56",
+      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "blurb": "USD 92.56 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
