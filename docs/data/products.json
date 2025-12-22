@@ -1,17 +1,17 @@
 {
-  "updated_at": 1766406332,
+  "updated_at": 1766410166,
   "products": [
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
-      "price": 115.99,
+      "keyword": "massage gun",
+      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "price": 28.95,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/44IAAeSwZEppSIZV/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/326829859786?_skw=mechanical+keyboard&hash=item4c1893e3ca%3Ag%3A44IAAeSwZEppSIZV&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 917897,
-      "seller_username": "best_buy",
+      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UY97Szuxy6Da4nuVez36O4Qn%2BiFfzFWLpasyvmWBhClQnRtCPDD5ESc2Y1um7Q6SilgiwBERsRPTtrcPQcQyCSb9bvodvQxbc%2BxETE6AxLRdafDI5xMJjwzTrd2WaxznGNPbYjMoQEjcV5KAQYFP6BPloU5liHzxzSj%2BGgbDNkWqvGMiFGJcspSqjeDJD7PMMX5D7wwS1Jsg4WQBfnkbCnfeuietLyCgXqfUgC8Ilc%2B9by6ioF4l7X4Cuvqw9iWfPbs2S9DIIZfOgXOFdlRzWlwzIVmMzB8b%2FSc40D%2BOtYJNQ%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
+      "seller_feedback": 1012453,
+      "seller_username": "theperfectpart",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -21,26 +21,57 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-10-22T15:51:38.000Z",
+      "inserted_at": "2022-11-18T00:58:24.000Z",
       "signals": 9.0,
       "tags": [
-        "mechanical keyboard"
+        "massage gun"
       ],
-      "caption": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro... \u2022 USD 115.99",
-      "headline": "\ud83d\udd79\ufe0f Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Pro...",
-      "blurb": "USD 115.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
+      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
+      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "pickleball paddle deals",
-      "title": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
-      "price": 44.99,
+      "keyword": "air fryer",
+      "title": "Gourmia 3QT Air Fryer Window 8 Presets Guided Cooking 1500W Dishwasher-Safe",
+      "price": 20.39,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/hmIAAeSw34ppRXGj/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/177682846157?_skw=pickleball+paddle+deals&hash=item295eb911cd%3Ag%3AhmIAAeSw34ppRXGj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
-      "seller_feedback": 830261,
+      "image_url": "https://i.ebayimg.com/images/g/~jkAAeSw6odpSSj9/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205816613218?_skw=air+fryer&hash=item2feba04962%3Ag%3A~jkAAeSw6odpSSj9&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 830399,
+      "seller_username": "bullseye_deals",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "condition": "Open box",
+      "condition_id": "1500",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2025-10-30T17:43:50.000Z",
+      "signals": 9.0,
+      "tags": [
+        "air fryer"
+      ],
+      "caption": "Gourmia 3QT Air Fryer Window 8 Presets Guided Cooking 1500W Dishwasher-Safe \u2022 USD 20.39",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 3QT Air Fryer Window 8 Presets Guided Cooking 1500W Dishwasher-Safe",
+      "blurb": "USD 20.39 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "air fryer deals",
+      "title": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
+      "price": 23.99,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/2Y4AAeSw~jhpSSQw/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/187801803267?_skw=air+fryer+deals&hash=item2bb9dc1a03%3Ag%3A2Y4AAeSw~jhpSSQw&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 830399,
       "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
@@ -52,135 +83,107 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-12-17T13:44:34.000Z",
+      "inserted_at": "2025-12-02T15:20:49.000Z",
       "signals": 9.0,
       "tags": [
-        "pickleball paddle"
+        "air fryer"
       ],
-      "caption": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle \u2022 USD 44.99",
-      "headline": "\ud83d\udd25\u2728 Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
-      "blurb": "USD 44.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking: \u2022 USD 23.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 3qt Digital Window Air Fryer with 8 Presets & Guided Cooking:",
+      "blurb": "USD 23.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
-      "price": 16.14,
+      "keyword": "air fryer deals",
+      "title": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "price": 41.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/KUcAAOSwMWZiBDk6/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/202059208258?_skw=portable+monitor+deals&hash=item2f0baad642%3Ag%3AKUcAAOSwMWZiBDk6&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 394613,
-      "seller_username": "hiparts",
+      "image_url": "https://i.ebayimg.com/images/g/we4AAeSwaU9pSQ3I/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205922307623?_skw=air+fryer+deals&hash=item2ff1ed0e27%3Ag%3Awe4AAeSwaU9pSQ3I&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 830399,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2017-09-19T04:14:30.000Z",
+      "inserted_at": "2025-12-15T13:44:26.000Z",
       "signals": 9.0,
       "tags": [
-        "portable monitor"
+        "air fryer"
       ],
-      "caption": "Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement \u2022 USD 16.14",
-      "headline": "\ud83d\udd25\u2728 Automatic Digital Wrist Cuff Blood Pressure Monitor BP Machine Gauge Measurement",
-      "blurb": "USD 16.14 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking \u2022 USD 41.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 6-Qt Digital Window Air Fryer with 12 Presets & Guided Cooking",
+      "blurb": "USD 41.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "portable monitor deals",
-      "title": "NEW BWC2-H GasAlert Portable Gas Monitor Detector H2S Hydrogen Sulfide 24 Months",
-      "price": 112.95,
+      "keyword": "air fryer",
+      "title": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
+      "price": 50.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/BK4AAOSwWTRW2Et9/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/231492037314?_skw=portable+monitor+deals&hash=item35e6002ac2%3Ag%3ABK4AAOSwWTRW2Et9&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbaEvF8AEfo59XtWZcwYqJyKPwLhFkVmHyUpiYg9TSAWKq8QuvdBXzxZRCKtelPV76XkxQs9U6VaIJAZDSCXMr%2Fwjqk2ub%2BvPIXyGnnIYxzDzGMcCEMDl0G0giyb8McKopqyzFsnawqGrlkCWbbZufXjMTaVI9MGTsjh9JrEg1BtH%2FdTp9JjN%2FrpnNkBpuvsF2x8RzE83UTN2BSM%2BpdqLbelAVl1R4wfBXFWFjLLH2dnCFIrPHsH%2BALrdKz%2BobcuQjbOEaeAaYwMzk4KJi4q3bBq85I6%2B6NakCEvR9NPusWCA%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=portable_monitor&toolid=10001",
-      "seller_feedback": 133816,
-      "seller_username": "pro-safety2009",
+      "image_url": "https://i.ebayimg.com/images/g/AxEAAeSwoSdpSRoS/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/205830074901?_skw=air+fryer&hash=item2fec6db215%3Ag%3AAxEAAeSwoSdpSRoS&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=air_fryer&toolid=10001",
+      "seller_feedback": 830399,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2015-02-27T17:24:24.000Z",
-      "signals": 9.0,
-      "tags": [
-        "portable monitor"
-      ],
-      "caption": "NEW BWC2-H GasAlert Portable Gas Monitor Detector H2S Hydrogen Sulfide 24 Months \u2022 USD 112.95",
-      "headline": "\ud83d\udd25\u2728 BWC2-H GasAlert Portable Gas Monitor Detector H2S Hydrogen Sulfide 24 Months",
-      "blurb": "USD 112.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "Logitech G915 TKL LIGHTSPEED Wireless RGB Gaming Keyboard GL Tactile, 920-009495",
-      "price": 56.65,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/EZIAAOSwb79iKG1P/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/373967958301?_skw=mechanical+keyboard&hash=item57123a311d%3Ag%3AEZIAAOSwb79iKG1P&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 132730,
-      "seller_username": "grassroots-computers",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "Used",
-      "condition_id": "3000",
-      "item_end_date": "",
-      "shipping_cost": 0.0,
-      "returns_accepted": null,
-      "inserted_at": "2022-03-09T09:13:36.000Z",
-      "signals": 9.0,
-      "tags": [
-        "mechanical keyboard"
-      ],
-      "caption": "Logitech G915 TKL LIGHTSPEED Wireless RGB Gaming Keyboard GL Tactile, 920-009495 \u2022 USD 56.65",
-      "headline": "\ud83d\udd79\ufe0f Logitech G915 TKL LIGHTSPEED Wireless RGB Gaming Keyboard GL Tactile, 920-009495",
-      "blurb": "USD 56.65 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "mechanical keyboard",
-      "title": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
-      "price": 31.49,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/MbYAAOSwXolnnFGN/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/306077311823?_skw=mechanical+keyboard&hash=item4743a1234f%3Ag%3AMbYAAOSwXolnnFGN&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=mechanical_keyboard&toolid=10001",
-      "seller_feedback": 114210,
-      "seller_username": "mobileshark",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "condition": "Open box",
       "condition_id": "1500",
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-01-31T04:30:37.000Z",
+      "inserted_at": "2025-11-06T13:43:46.000Z",
       "signals": 9.0,
       "tags": [
-        "mechanical keyboard"
+        "air fryer"
       ],
-      "caption": "OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX \u2022 USD 31.49",
-      "headline": "\ud83d\udd79\ufe0f OB Glorious - GMMK 2 Prebuilt 65% Wired Gaming Keyboard - White GLO-GMMK2-65-FOX",
-      "blurb": "USD 31.49 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd79\ufe0f\ud83c\udfae\u2728"
+      "caption": "Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking \u2022 USD 50.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb Gourmia 8QT Air Fryer - 12 One-Touch Functions, Guided Cooking",
+      "blurb": "USD 50.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "pet hair trimmer deals",
+      "title": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
+      "price": 17.95,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/JacAAOSwuIRdJg8G/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/352493815621?_skw=pet+hair+trimmer+deals&hash=item521244c745%3Ag%3AJacAAOSwuIRdJg8G&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pet_hair_trimmer&toolid=10001",
+      "seller_feedback": 709006,
+      "seller_username": "inkcredibleprinting",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 0.0,
+      "returns_accepted": null,
+      "inserted_at": "2018-10-22T19:20:49.000Z",
+      "signals": 9.0,
+      "tags": [
+        "pet hair trimmer"
+      ],
+      "caption": "NEW Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper \u2022 USD 17.95",
+      "headline": "\ud83d\udd25\u2728 Electric Animal Pet Dog Cat Hair Trimmer Shaver Razor Grooming Quiet Clipper",
+      "blurb": "USD 17.95 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
     }
   ]
 }
