@@ -1,5 +1,5 @@
 {
-  "updated_at": 1766398486,
+  "updated_at": 1766401992,
   "products": [
     {
       "source": "ebay",
@@ -34,14 +34,14 @@
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "massage gun",
-      "title": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "price": 28.95,
+      "keyword": "smart light strip deals",
+      "title": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "price": 28.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/TPsAAOSwxlJfKza~/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204156698596?_skw=massage+gun&hash=item2f88afffe4%3Ag%3ATPsAAOSwxlJfKza~&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=massage_gun&toolid=10001",
-      "seller_feedback": 1012413,
-      "seller_username": "theperfectpart",
+      "image_url": "https://i.ebayimg.com/images/g/SBIAAOSw~ztbLPfb/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/312169544455?_skw=smart+light+strip+deals&hash=item48aec13b07%3Ag%3ASBIAAOSw~ztbLPfb&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5Uac%2BgwIQR8eulJ%2FXMnE%2FMJOsPduhAc8A4Tpyf0j4S7h%2BBjV1aB03BU9Zh72jLb%2F6Q2f1l3Td0N6Z4IbR6I6aCF5oGzmjFO8xyOcrrsbhndFAsPC5zggnTnUfIsFoSkKgQ1Aqk91vl%2FjmqAf0myBJEZKMMi3TCI2lnaWYIKXI446Ep2ZzXmkh5YATTwrcvOvVmUNA3Sr1r2RcHu9uAjgps6MyuTLyiTs1ufsb9jkh%2BYFh1QlRS5RhjaTKr1V2onHhUthQM1%2FepvBEtgCXoQXwCOyOFTWpjXSbB%2F6rNZw281npw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=smart_light_strip&toolid=10001",
+      "seller_feedback": 859743,
+      "seller_username": "valuebuybattery",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -51,87 +51,58 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2022-11-18T00:58:24.000Z",
+      "inserted_at": "2018-06-22T13:25:28.000Z",
       "signals": 9.0,
       "tags": [
-        "massage gun"
+        "smart light strip"
       ],
-      "caption": "Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads \u2022 USD 28.95",
-      "headline": "\ud83d\udd25\u2728 Massage Gun Percussion Massager Deep Tissue Muscle Vibrating Relaxing + 4 Heads",
-      "blurb": "USD 28.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit \u2022 USD 28.99",
+      "headline": "\ud83c\udfe0\ud83d\udecb 16.4ft 150LED Alexa Smart Home WIFI Wireless RGB Waterproof Strip Neon Light Kit",
+      "blurb": "USD 28.99 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "price": 17.99,
+      "keyword": "pickleball paddle deals",
+      "title": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
+      "price": 44.99,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/tJwAAeSwxMFpRsu9/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/204939196472?_skw=best+wireless+charger&hash=item2fb753f838%3Ag%3AtJwAAeSwxMFpRsu9&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 917873,
-      "seller_username": "best_buy",
+      "image_url": "https://i.ebayimg.com/images/g/hmIAAeSw34ppRXGj/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/177682846157?_skw=pickleball+paddle+deals&hash=item295eb911cd%3Ag%3AhmIAAeSw34ppRXGj&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=pickleball_paddle&toolid=10001",
+      "seller_feedback": 830160,
+      "seller_username": "bullseye_deals",
       "top_rated": false,
       "buying_options": [
-        "FIXED_PRICE"
+        "FIXED_PRICE",
+        "BEST_OFFER"
       ],
       "condition": "New",
       "condition_id": "1000",
       "item_end_date": "",
-      "shipping_cost": 5.99,
+      "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-08-13T15:00:21.000Z",
+      "inserted_at": "2025-12-17T13:44:34.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "pickleball paddle"
       ],
-      "caption": "Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air... \u2022 USD 17.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 2-in-1 7.5W Magnetic Wireless Charger for iPhone + Air...",
-      "blurb": "USD 17.99 steal. Limited stock\u2014grab it now!",
+      "caption": "Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle \u2022 USD 44.99",
+      "headline": "\ud83d\udd25\u2728 Oasis Selkirk Sport 16\" Evo Control Max Pickleball Paddle",
+      "blurb": "USD 44.99 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "best wireless charger",
-      "title": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "price": 19.99,
+      "keyword": "best cordless vacuum",
+      "title": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "price": 45.0,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/gjoAAeSwURlpRsvD/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/196833978437?_skw=best+wireless+charger&hash=item2dd4382845%3Ag%3AgjoAAeSwURlpRsvD&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 917873,
-      "seller_username": "best_buy",
-      "top_rated": false,
-      "buying_options": [
-        "FIXED_PRICE"
-      ],
-      "condition": "New",
-      "condition_id": "1000",
-      "item_end_date": "",
-      "shipping_cost": 5.99,
-      "returns_accepted": null,
-      "inserted_at": "2024-11-21T02:36:52.000Z",
-      "signals": 9.0,
-      "tags": [
-        "wireless charger"
-      ],
-      "caption": "Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch... \u2022 USD 19.99",
-      "headline": "\ud83d\udd25\u2728 Best Buy essentials- 3-in-1 7.5W Magnetic Wireless Charger with Apple Watch...",
-      "blurb": "USD 19.99 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
-    },
-    {
-      "source": "ebay",
-      "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "price": 18.95,
-      "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/taMAAeSwFDlpRxt3/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/315422687302?_skw=wireless+charger+deals&hash=item4970a84046%3Ag%3AtaMAAeSwFDlpRxt3&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 862199,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/KIQAAOSw7yBj3Gdk/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/136245179883?_skw=best+cordless+vacuum&hash=item1fb8d875eb%3Ag%3AKIQAAOSw7yBj3Gdk&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UYjo7oIW%2BZZ5VJtpXgno36SCYdW4Jf18KbXIH4Lme74f4rVdWzP0qmpARE%2FSw2QPXG1kkecvwECFuXvqQv6FopUN6QWtWF%2BUnpouNH0g%2BobK7xOr5PODkV72mrPq2R1yr8NK4RkUZ2k8Or5LRtPKxU4jtQ%2FI9U1TQAj%2BCIuSLtaurSN0uFqUuvNc7E4fiC7GDaoo%2BN%2BDHNnBOWmDRUcTONrZ1O3FF4PMrs%2ByJOdOJZC%2Bjjn2WrioLWaSurmIHBO5C58zidt9sonZnWR7BOlVrKr1jJul%2Bk3khUfWZEaIRa4ww%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=cordless_vacuum&toolid=10001",
+      "seller_feedback": 578492,
+      "seller_username": "vipoutlet",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -141,27 +112,27 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2024-06-07T11:43:55.000Z",
+      "inserted_at": "2025-07-30T20:28:05.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "cordless vacuum"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White \u2022 USD 18.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2021) EP-P1300TWEGUS - White",
-      "blurb": "USD 18.95 steal. Limited stock\u2014grab it now!",
-      "emojis": "\ud83d\udd25\u2728"
+      "caption": "Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best \u2022 USD 45.0",
+      "headline": "\ud83c\udfe0\ud83d\udecb Bissell 2690 Powerforce Compact Turbo Bagless Vacuum, Home Clean Best",
+      "blurb": "USD 45.00 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83c\udfe0\ud83d\udecb\ufe0f\u2728"
     },
     {
       "source": "ebay",
       "provider": "ebay",
-      "keyword": "wireless charger deals",
-      "title": "Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "price": 19.95,
+      "keyword": "bike light deals",
+      "title": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "price": 18.59,
       "currency": "USD",
-      "image_url": "https://i.ebayimg.com/images/g/yU8AAeSwzkRpRpsa/s-l225.jpg",
-      "url": "https://www.ebay.com/itm/365394628201?_skw=wireless+charger+deals&hash=item5513378e69%3Ag%3AyU8AAeSwzkRpRpsa&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UbShhTewSWRl3%2Fr4fqpBtn5UVHBeW8pC6IWO%2BejJzhnJk0ejROEjGQny0VGWOvUlvorZducp1fe4Azf9wjWB1eaudaW9UUOpjsFDx0dInZBWpTkAKtSqKok03bZaM4AoF%2BpxstwL%2FEEOEBxV4oLhRsNGTFUtFnjmM2cGaGt6MCSECViHh7%2FLr3Llu4yRwuolfdH%2Blx9x%2BUMAE6%2F6YyvBzu4i0akPA9ZFwZsuPUQYgatfFWoPQSYlIG2aME%2Fybjah6WHbAuXSiDXHqJkX5Pu63sI%2F5F65ujsYsyGS3tbhkD%2FJw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=wireless_charger&toolid=10001",
-      "seller_feedback": 862199,
-      "seller_username": "a4c",
+      "image_url": "https://i.ebayimg.com/images/g/3RkAAMXQrNtRzx33/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/391239432700?_skw=bike+light+deals&hash=item5b17aff9fc%3Ag%3A3RkAAMXQrNtRzx33&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 354475,
+      "seller_username": "buildyourbike",
       "top_rated": false,
       "buying_options": [
         "FIXED_PRICE"
@@ -171,14 +142,44 @@
       "item_end_date": "",
       "shipping_cost": 0.0,
       "returns_accepted": null,
-      "inserted_at": "2025-02-12T17:52:17.000Z",
+      "inserted_at": "2015-08-27T20:27:44.000Z",
       "signals": 9.0,
       "tags": [
-        "wireless charger"
+        "bike light"
       ],
-      "caption": "Samsung Wireless Charger Fast Charge Pad (2022) - White \u2022 USD 19.95",
-      "headline": "\ud83d\udd25\u2728 Samsung Wireless Charger Fast Charge Pad (2022) - White",
-      "blurb": "USD 19.95 steal. Limited stock\u2014grab it now!",
+      "caption": "SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24 \u2022 USD 18.59",
+      "headline": "\ud83d\udd25\u2728 SUNLITE 1\" Mini MULTI COLOR Reflectors w/ Wing Nut Bike Bicycle Safety SET OF 24",
+      "blurb": "USD 18.59 steal. Limited stock\u2014grab it now!",
+      "emojis": "\ud83d\udd25\u2728"
+    },
+    {
+      "source": "ebay",
+      "provider": "ebay",
+      "keyword": "bike light deals",
+      "title": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "price": 92.56,
+      "currency": "USD",
+      "image_url": "https://i.ebayimg.com/images/g/JkMAAeSwZyppSCQr/s-l225.jpg",
+      "url": "https://www.ebay.com/itm/164350807783?_skw=bike+light+deals&hash=item2644124ee7%3Ag%3AJkMAAeSwZyppSCQr&amdata=enc%3AAQAKAAAA8PeG5RIuIyokJHJy903%2F5UZJeYVe5jJE27JUWSdOIEqihJuOoQppP7ObEUN6xNjMWD5iF0QbOsQslD0o51KlOnYvvGp0XGGH1xKOEtCjAynpjsvqz3DTLPfz1P9yhtAuRaFojg7SNj46eCqrl%2FkJs9ed5fTr6M1drElchaL32pMhVjBrJQwzFYwwOAPGHap%2B9E0hrMmBx%2BjY2oaXN1o5RcUG8BCt1NJi04eDgYNcMsW5VAdRrCY5%2Bk2mtaSUjCbWD8%2Fr6z9IA1kXf5RdwMrUTicwUhmscTezYPW%2Bn9wXMaI%2F%2BQSCp1CZa3hVYEVO4xv7dw%3D%3D&mkcid=1&mkrid=711-53200-19255-0&mkevt=1&campid=5339121799&customid=bike_light&toolid=10001",
+      "seller_feedback": 211846,
+      "seller_username": "cyclingdeal",
+      "top_rated": false,
+      "buying_options": [
+        "FIXED_PRICE"
+      ],
+      "condition": "Brand New",
+      "condition_id": "1000",
+      "item_end_date": "",
+      "shipping_cost": 33.06,
+      "returns_accepted": null,
+      "inserted_at": "2020-08-24T11:46:29.000Z",
+      "signals": 9.0,
+      "tags": [
+        "bike light"
+      ],
+      "caption": "DNM Mountain Bike Air Rear Shock With Lockout 200x55mm \u2022 USD 92.56",
+      "headline": "\ud83d\udd25\u2728 DNM Mountain Bike Air Rear Shock With Lockout 200x55mm",
+      "blurb": "USD 92.56 steal. Limited stock\u2014grab it now!",
       "emojis": "\ud83d\udd25\u2728"
     }
   ]
