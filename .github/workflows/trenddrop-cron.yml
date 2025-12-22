@@ -2,13 +2,15 @@ name: trenddrop-cron
 
 on:
   workflow_dispatch: {}
-  push:
-    branches: [ main ]
   schedule:
-    - cron: "0 * * * *"   # hourly; tweak as you like
+    - cron: "0 * * * *"   # hourly
 
 permissions:
   contents: write   # needed to commit products.json
+
+concurrency:
+  group: trenddrop-docs-push-main
+  cancel-in-progress: false
 
 jobs:
   run:
@@ -19,27 +21,39 @@ jobs:
       # ==== REQUIRED SECRETS (Settings → Secrets and variables → Actions) ====
       EBAY_CLIENT_ID:         ${{ secrets.EBAY_CLIENT_ID }}
       EBAY_CLIENT_SECRET:     ${{ secrets.EBAY_CLIENT_SECRET }}
-      # If your code still references APP_ID, expose it too (harmless if unused)
       EBAY_APP_ID:            ${{ secrets.EBAY_APP_ID }}
       EPN_CAMPAIGN_ID:        ${{ secrets.EPN_CAMPAIGN_ID }}
+
       SUPABASE_URL:           ${{ secrets.SUPABASE_URL }}
       SUPABASE_ANON_KEY:      ${{ secrets.SUPABASE_ANON_KEY }}
-      OPENAI_API_KEY:         ${{ secrets.OPENAI_API_KEY }}
-      # Optional:
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-      TELEGRAM_BOT_TOKEN:        ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID:          ${{ secrets.TELEGRAM_CHAT_ID }}
 
-      # ==== Gumroad + redirect (so CTA + click_url works in Actions) ====
+      OPENAI_API_KEY:         ${{ secrets.OPENAI_API_KEY }}
+
+      TELEGRAM_BOT_TOKEN:        ${{ secrets.TELEGRAM_BOT_TOKEN }}
+
+      # --- Telegram routing (NEW) ---
+      # Public channel (TrendDrop Studio) can be @handle or numeric ID
+      TELEGRAM_PUBLIC_CHANNEL_ID: ${{ secrets.TELEGRAM_PUBLIC_CHANNEL_ID }}
+      # Paid channel (TrendDrop+) can be @handle or numeric ID
+      TELEGRAM_PAID_CHANNEL_ID:   ${{ secrets.TELEGRAM_PAID_CHANNEL_ID }}
+      # Admin-only channel (TrendDrop Studio Admin) MUST be numeric (recommended)
+      TELEGRAM_ADMIN_CHAT_ID:     ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+
+      # Legacy fallback (optional)
+      TELEGRAM_CHAT_ID:          ${{ secrets.TELEGRAM_CHAT_ID }}
+      TELEGRAM_CHANNEL_ID:       ${{ secrets.TELEGRAM_CHANNEL_ID }}
+
+      # ==== Gumroad + redirect ====
       GUMROAD_CTA_URL:          ${{ secrets.GUMROAD_CTA_URL }}
       CLICK_REDIRECT_BASE:      ${{ secrets.CLICK_REDIRECT_BASE }}
 
-      # ==== CTA throttle (use repo Variables so you can change without editing YAML) ====
+      # ==== CTA throttle (Variables; safe if missing) ====
       TELEGRAM_CTA_COOLDOWN_MINUTES: ${{ vars.TELEGRAM_CTA_COOLDOWN_MINUTES }}
       TELEGRAM_CTA_EVERY_N_POSTS:    ${{ vars.TELEGRAM_CTA_EVERY_N_POSTS }}
       TELEGRAM_PIN_CTA:              ${{ vars.TELEGRAM_PIN_CTA }}
 
-      # ==== OPTIONAL REPO VARIABLES (Settings → Secrets and variables → Variables) ====
+      # ==== OPTIONAL REPO VARIABLES ====
       TREND_TOPICS_LIMIT:     ${{ vars.TREND_TOPICS_LIMIT }}
       TREND_PER_PAGE:         ${{ vars.TREND_PER_PAGE }}
       TREND_SLEEP_SECS:       ${{ vars.TREND_SLEEP_SECS }}
@@ -50,12 +64,16 @@ jobs:
       EBAY_CACHE_BYPASS:      ${{ vars.EBAY_CACHE_BYPASS }}
       DEBUG_EBAY:             ${{ vars.DEBUG_EBAY }}
 
-      # Ensure module imports work for `python -m bots.trenddrop`
+      # Default behavior: broadcast to public + paid
+      TELEGRAM_POST_SCOPE:    ${{ vars.TELEGRAM_POST_SCOPE }}
+
       PYTHONPATH: ${{ github.workspace }}
 
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # IMPORTANT for rebase/push reliability
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -67,30 +85,51 @@ jobs:
           python -m pip install -U pip
           pip install -r requirements.txt
 
-      - name: Restore .env from GitHub Secret
+      - name: Restore .env from GitHub Secret (optional)
         shell: bash
         run: |
-          cat << 'EOF' > .env
+          if [ -n "${{ secrets.ENV_FILE }}" ]; then
+            cat << 'EOF' > .env
           ${{ secrets.ENV_FILE }}
           EOF
+            echo "[env] .env restored from secret"
+          else
+            echo "[env] ENV_FILE secret not set; skipping .env restore"
+          fi
 
-      - name: Debug Supabase env presence
-        run: |
-          python - <<'PY'
-          import os
-          for key in ["SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY", "SUPABASE_ANON_KEY"]:
-              print(f"{key} =>", "SET" if os.getenv(key) else "MISSING")
-          PY
-
-      - name: Run bot (same entrypoint as local)
+      - name: Run scraper + publish
         run: python trenddrop_cli.py scrape-ebay
 
-      - name: Commit updated storefront data (if any)
+      - name: Commit updated storefront data (if any) with rebase + retry
+        shell: bash
         run: |
+          set -euo pipefail
+
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add docs/data/products.json docs/og.png || true
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Update products.json [skip ci]"
-            git push
+
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "[git] No changes to commit."
+            exit 0
           fi
+
+          git commit -m "Update products.json [skip ci]" || true
+
+          # Pull/rebase to avoid non-fast-forward (another run may have pushed)
+          git pull --rebase origin main
+
+          # Retry push a few times (rare race conditions / brief conflicts)
+          for i in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "[git] Push succeeded."
+              exit 0
+            fi
+            echo "[git] Push failed (attempt $i). Sleeping then retry..."
+            sleep $((i * 3))
+            git pull --rebase origin main || true
+          done
+
+          echo "[git] Push failed after retries."
+          exit 1
