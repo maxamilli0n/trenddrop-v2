@@ -6,10 +6,10 @@ on:
     - cron: "0 * * * *"   # hourly
 
 permissions:
-  contents: write   # needed to commit products.json
+  contents: write
 
 concurrency:
-  group: trenddrop-docs-push-main
+  group: trenddrop-docs-main
   cancel-in-progress: false
 
 jobs:
@@ -18,7 +18,6 @@ jobs:
     timeout-minutes: 20
 
     env:
-      # ==== REQUIRED SECRETS (Settings → Secrets and variables → Actions) ====
       EBAY_CLIENT_ID:         ${{ secrets.EBAY_CLIENT_ID }}
       EBAY_CLIENT_SECRET:     ${{ secrets.EBAY_CLIENT_SECRET }}
       EBAY_APP_ID:            ${{ secrets.EBAY_APP_ID }}
@@ -31,49 +30,39 @@ jobs:
       OPENAI_API_KEY:         ${{ secrets.OPENAI_API_KEY }}
 
       TELEGRAM_BOT_TOKEN:        ${{ secrets.TELEGRAM_BOT_TOKEN }}
-
-      # --- Telegram routing (NEW) ---
-      # Public channel (TrendDrop Studio) can be @handle or numeric ID
       TELEGRAM_PUBLIC_CHANNEL_ID: ${{ secrets.TELEGRAM_PUBLIC_CHANNEL_ID }}
-      # Paid channel (TrendDrop+) can be @handle or numeric ID
       TELEGRAM_PAID_CHANNEL_ID:   ${{ secrets.TELEGRAM_PAID_CHANNEL_ID }}
-      # Admin-only channel (TrendDrop Studio Admin) MUST be numeric (recommended)
       TELEGRAM_ADMIN_CHAT_ID:     ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
 
-      # Legacy fallback (optional)
       TELEGRAM_CHAT_ID:          ${{ secrets.TELEGRAM_CHAT_ID }}
       TELEGRAM_CHANNEL_ID:       ${{ secrets.TELEGRAM_CHANNEL_ID }}
 
-      # ==== Gumroad + redirect ====
       GUMROAD_CTA_URL:          ${{ secrets.GUMROAD_CTA_URL }}
       CLICK_REDIRECT_BASE:      ${{ secrets.CLICK_REDIRECT_BASE }}
 
-      # ==== CTA throttle (Variables; safe if missing) ====
       TELEGRAM_CTA_COOLDOWN_MINUTES: ${{ vars.TELEGRAM_CTA_COOLDOWN_MINUTES }}
       TELEGRAM_CTA_EVERY_N_POSTS:    ${{ vars.TELEGRAM_CTA_EVERY_N_POSTS }}
       TELEGRAM_PIN_CTA:              ${{ vars.TELEGRAM_PIN_CTA }}
 
-      # ==== OPTIONAL REPO VARIABLES ====
       TREND_TOPICS_LIMIT:     ${{ vars.TREND_TOPICS_LIMIT }}
       TREND_PER_PAGE:         ${{ vars.TREND_PER_PAGE }}
       TREND_SLEEP_SECS:       ${{ vars.TREND_SLEEP_SECS }}
       TREND_SLEEP_JITTER:     ${{ vars.TREND_SLEEP_JITTER }}
       TREND_PICKS_LIMIT:      ${{ vars.TREND_PICKS_LIMIT }}
       TREND_TELEGRAM_LIMIT:   ${{ vars.TREND_TELEGRAM_LIMIT }}
+
       EBAY_CACHE_TTL_MIN:     ${{ vars.EBAY_CACHE_TTL_MIN }}
       EBAY_CACHE_BYPASS:      ${{ vars.EBAY_CACHE_BYPASS }}
       DEBUG_EBAY:             ${{ vars.DEBUG_EBAY }}
 
-      # Default behavior: broadcast to public + paid
       TELEGRAM_POST_SCOPE:    ${{ vars.TELEGRAM_POST_SCOPE }}
-
       PYTHONPATH: ${{ github.workspace }}
 
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # IMPORTANT for rebase/push reliability
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -92,21 +81,25 @@ jobs:
             cat << 'EOF' > .env
           ${{ secrets.ENV_FILE }}
           EOF
-            echo "[env] .env restored from secret"
+            echo "[env] .env restored"
           else
-            echo "[env] ENV_FILE secret not set; skipping .env restore"
+            echo "[env] ENV_FILE secret not set; skipping"
           fi
 
       - name: Run scraper + publish
         run: python trenddrop_cli.py scrape-ebay
 
-      - name: Commit updated storefront data (if any) with rebase + retry
+      - name: Commit & push docs updates safely (rebase + lease + retry)
         shell: bash
         run: |
           set -euo pipefail
 
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Always rebase onto latest main FIRST
+          git fetch origin main
+          git rebase origin/main
 
           git add docs/data/products.json docs/og.png || true
 
@@ -117,18 +110,15 @@ jobs:
 
           git commit -m "Update products.json [skip ci]" || true
 
-          # Pull/rebase to avoid non-fast-forward (another run may have pushed)
-          git pull --rebase origin main
-
-          # Retry push a few times (rare race conditions / brief conflicts)
           for i in 1 2 3 4 5; do
-            if git push origin HEAD:main; then
+            if git push --force-with-lease origin HEAD:main; then
               echo "[git] Push succeeded."
               exit 0
             fi
-            echo "[git] Push failed (attempt $i). Sleeping then retry..."
+            echo "[git] Push failed (attempt $i). Rebase and retry..."
             sleep $((i * 3))
-            git pull --rebase origin main || true
+            git fetch origin main
+            git rebase origin/main || true
           done
 
           echo "[git] Push failed after retries."
